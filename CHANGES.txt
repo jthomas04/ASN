@@ -1,0 +1,37 @@
+OSSN - OPEN SOURCE SOCIAL NETWORK v5.0
+
+* Add missing <a> tag in notifications view #1233
+* Add class identifier for each wall item #1237
+* OssnNotifications improvement #1231
+* php mcrypt is deprecated in php 7.1 and removed in 7.2 #1240
+* Restrict empty name in group on update #1276 (Malik https://github.com/Lablnet)
+* Allow a bit flexibility in overriding the pagination
+  - Can set the name for offset arg : example default is ?offset=x you can set ?custom_offset=x
+  - Set URL before ?offset=x
+* Optimized the OssnMessages,  its load more faster now. #1277
+* Load only 10 messages in notification area and allow to view more by auto pagination.
+* Support php 5.6 or larger remove support for < 5.6 #1287
+* When groupsub page isn't valid show the default page instead #1309
+* ossn.lib.entities.php seems to be not updated #1248 (https://github.com/dalilo2010)
+* Add hook to setup the password length #1317
+* load fetch query after count condition #1316
+* Load session start after classes #1318
+* Restrict calling system start file directly from browser #1315
+* Some Iphone devices unable to post #1295
+* Cache the locale files #1321
+* ossn_default_load_locales is called twice first in initialzie and second in components class.
+* add visibility of admin postings to friends-only wall? #1294
+* Allow the cache tag for the images #1314
+* Trigger callback upon component deletion, enable, installation #1111
+* Change the privacy button as per the privacy value #1289
+* Allow wheres clause to search entities.
+* Allow to add multiple images to album.
+* Add the new photos added to wall on newsfeed page.
+   - The privacy of post will be same as privacy of the album.
+
+OSSN - OPEN SOURCE SOCIAL NETWORK v4.6
+
+* input() didn't accept 0 as input and treat it as empty #1230 
+   Fixed only the inout,  the issue may still have effect in various places and will be fixed in v5.0
+* Emojii panel appears on bottom of page if you logout and cache is enabled. #1232
+
