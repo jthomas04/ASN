@@ -57,7 +57,7 @@
         </div>
 
         <div class="ossn-installation-footer">
-            <?php echo 'POWERED <a href="http://www.opensource-socialnetwork.org">OPEN SOURCE SOCIAL NETWORK</a>'; ?>
+            <?php echo 'POWERED <a href="http://www.addiee.com">Addiee</a>'; ?>
         </div>
 
 </body>
