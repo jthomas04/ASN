@@ -1,13 +1,5 @@
 <?php
-/**
- * Open Source Social Network
- *
- * @package   (softlab24.com).ossn
- * @author    OSSN Core Team <info@softlab24.com>
- * @copyright 2014-2017 SOFTLAB24 LIMITED
- * @license   Open Source Social Network License (OSSN LICENSE)  http://www.opensource-socialnetwork.org/licence
- * @link      https://www.opensource-socialnetwork.org/
- */
+
 
 $db = new OssnDatabase;
 $db->statement("ALTER TABLE `ossn_components` CHANGE `com_id` `com_id` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;");
