@@ -1,0 +1,121 @@
+\hypertarget{ossn_8lib_8annotations_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+annotations.\+php File Reference}
+\label{ossn_8lib_8annotations_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+annotations.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+annotations.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8annotations_8php_a40a5027fa5571b7c4e4bd35794c76ac3}{ossn\+\_\+get\+\_\+annotation} (\$id)
+\item 
+\hyperlink{ossn_8lib_8annotations_8php_a70c4ee7b2254d935843a742e9c61111a}{ossn\+\_\+get\+\_\+annotation\+\_\+entities} (\$annotation, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8annotations_8php_a415a4f1c066854a03468a7d2905778a0}{ossn\+\_\+get\+\_\+annotations} (array \$params)
+\item 
+\hyperlink{ossn_8lib_8annotations_8php_a1067e7bca14857c98ea6606645eb13c5}{ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type} (array \$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}!ossn\+\_\+get\+\_\+annotation@{ossn\+\_\+get\+\_\+annotation}}
+\index{ossn\+\_\+get\+\_\+annotation@{ossn\+\_\+get\+\_\+annotation}!ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+annotation(\$id)}{ossn_get_annotation($id)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+annotation (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8annotations_8php_a40a5027fa5571b7c4e4bd35794c76ac3}{}\label{ossn_8lib_8annotations_8php_a40a5027fa5571b7c4e4bd35794c76ac3}
+Ossn get annotation
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Guid of annotation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file ossn.\+lib.\+annotations.\+php.
+
+\index{ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}!ossn\+\_\+get\+\_\+annotation\+\_\+entities@{ossn\+\_\+get\+\_\+annotation\+\_\+entities}}
+\index{ossn\+\_\+get\+\_\+annotation\+\_\+entities@{ossn\+\_\+get\+\_\+annotation\+\_\+entities}!ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+annotation\+\_\+entities(\$annotation, \$params=array())}{ossn_get_annotation_entities($annotation, $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+annotation\+\_\+entities (
+\begin{DoxyParamCaption}
+\item[{}]{\$annotation, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8annotations_8php_a70c4ee7b2254d935843a742e9c61111a}{}\label{ossn_8lib_8annotations_8php_a70c4ee7b2254d935843a742e9c61111a}
+Get entities of annotation
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$annotation} & Must be valid annotation object \\
+\hline
+array & {\em \$params} & Options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file ossn.\+lib.\+annotations.\+php.
+
+\index{ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}!ossn\+\_\+get\+\_\+annotations@{ossn\+\_\+get\+\_\+annotations}}
+\index{ossn\+\_\+get\+\_\+annotations@{ossn\+\_\+get\+\_\+annotations}!ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+annotations(array \$params)}{ossn_get_annotations(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+annotations (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8annotations_8php_a415a4f1c066854a03468a7d2905778a0}{}\label{ossn_8lib_8annotations_8php_a415a4f1c066854a03468a7d2905778a0}
+Get Annotations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Options \\
+\hline
+int & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & annotation owner guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & annotation type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & annotation subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & limit of fetch data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & order fetch data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file ossn.\+lib.\+annotations.\+php.
+
+\index{ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}!ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type@{ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type}}
+\index{ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type@{ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type}!ossn.\+lib.\+annotations.\+php@{ossn.\+lib.\+annotations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type(array \$params)}{ossn_get_annotations_by_type(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+annotations\+\_\+by\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8annotations_8php_a1067e7bca14857c98ea6606645eb13c5}{}\label{ossn_8lib_8annotations_8php_a1067e7bca14857c98ea6606645eb13c5}
+Get annotations by types
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Options \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & object type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & object subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & limit of fetch data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & order fetch data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file ossn.\+lib.\+annotations.\+php.
+

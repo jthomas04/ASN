@@ -1,0 +1,256 @@
+\hypertarget{class_ossn_object}{}\section{Ossn\+Object Class Reference}
+\label{class_ossn_object}\index{Ossn\+Object@{Ossn\+Object}}
+
+
+Inheritance diagram for Ossn\+Object\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Object\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_object_a9af3669c46ee61ad247b7eb606cce9df}{\+\_\+\+\_\+construct} (\$guid=0)
+\item 
+\hyperlink{class_ossn_object_a5fee6794de13185987b790fce43d0883}{init\+Attributes} ()
+\item 
+\hyperlink{class_ossn_object_a1ca074928989238a2b58eb2782d3d984}{add\+Object} ()
+\item 
+\hyperlink{class_ossn_object_af88aebe9014ae4e5c804f4ac53111125}{get\+Object\+By\+Owner} ()
+\item 
+\hyperlink{class_ossn_object_ab6d4864953b243d501b3d3e0b90ac808}{get\+Objects\+By\+Types} ()
+\item 
+\hyperlink{class_ossn_object_a4e0363c63932a7f163d4bd79ba947c6e}{get\+Object\+By\+Id} (array \$options=array())
+\item 
+\hyperlink{class_ossn_object_a2b8331c5da70a3c47701bdfc3b54b656}{get\+Object\+Id} ()
+\item 
+\hyperlink{class_ossn_object_ada23f0004598560ca364290560087a89}{update\+Object} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}, \$guid)
+\item 
+\hyperlink{class_ossn_object_ab6e2932b2d1573a170f8c386615173ed}{delete\+Object} (\$object= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_object_aa0f93181fd6961561e24ff4b2099ffee}{search\+Object} (array \$params=array())
+\item 
+\hyperlink{class_ossn_object_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Object.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ossn\+Object@{Ossn\+Object}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$guid=0)}{__construct($guid=0)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_a9af3669c46ee61ad247b7eb606cce9df}{}\label{class_ossn_object_a9af3669c46ee61ad247b7eb606cce9df}
+Initialize the objects.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Ossn\+Object.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Object@{Ossn\+Object}!add\+Object@{add\+Object}}
+\index{add\+Object@{add\+Object}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{add\+Object()}{addObject()}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_a1ca074928989238a2b58eb2782d3d984}{}\label{class_ossn_object_a1ca074928989238a2b58eb2782d3d984}
+requires \$object-\/$>$(owner\+\_\+guid, type, subtype, title, description)
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!delete\+Object@{delete\+Object}}
+\index{delete\+Object@{delete\+Object}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{delete\+Object(\$object= \textquotesingle{}\textquotesingle{})}{deleteObject($object= '')}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$object = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_ab6e2932b2d1573a170f8c386615173ed}{}\label{class_ossn_object_ab6e2932b2d1573a170f8c386615173ed}
+Delete object;
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$object} & Object guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 262 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!get\+Object\+By\+Id@{get\+Object\+By\+Id}}
+\index{get\+Object\+By\+Id@{get\+Object\+By\+Id}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{get\+Object\+By\+Id(array \$options=array())}{getObjectById(array $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Object\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{array}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_a4e0363c63932a7f163d4bd79ba947c6e}{}\label{class_ossn_object_a4e0363c63932a7f163d4bd79ba947c6e}
+Get object by object guid;
+
+Requires \+: \$object-\/$>$object\+\_\+guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!get\+Object\+By\+Owner@{get\+Object\+By\+Owner}}
+\index{get\+Object\+By\+Owner@{get\+Object\+By\+Owner}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{get\+Object\+By\+Owner()}{getObjectByOwner()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Object\+By\+Owner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_af88aebe9014ae4e5c804f4ac53111125}{}\label{class_ossn_object_af88aebe9014ae4e5c804f4ac53111125}
+Get object by owner guid;
+
+Requires \$object-\/$>$owner\+\_\+guid \$object-\/$>$order\+\_\+by To sort the data in a recordset
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!get\+Object\+Id@{get\+Object\+Id}}
+\index{get\+Object\+Id@{get\+Object\+Id}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{get\+Object\+Id()}{getObjectId()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Object\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_a2b8331c5da70a3c47701bdfc3b54b656}{}\label{class_ossn_object_a2b8331c5da70a3c47701bdfc3b54b656}
+Get newly created object
+
+\begin{DoxyReturn}{Returns}
+void$\vert$integer 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!get\+Objects\+By\+Types@{get\+Objects\+By\+Types}}
+\index{get\+Objects\+By\+Types@{get\+Objects\+By\+Types}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{get\+Objects\+By\+Types()}{getObjectsByTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Objects\+By\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_ab6d4864953b243d501b3d3e0b90ac808}{}\label{class_ossn_object_ab6d4864953b243d501b3d3e0b90ac808}
+Get object by types;
+
+Requires \+: \$object-\/$>$(type , subtype(optional)) \$object-\/$>$order\+\_\+by To sort the data in a recordset
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_a5fee6794de13185987b790fce43d0883}{}\label{class_ossn_object_a5fee6794de13185987b790fce43d0883}
+Initialize the attributes
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!save@{save}}
+\index{save@{save}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{save()}{save()}}]{\setlength{\rightskip}{0pt plus 5cm}save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_ossn_object_afc8a3c62679cf00ade9f15fb2a6d6132}
+A object save function
+
+Note update\+Object does same job but its requires extra parements update\+Object may be removed in v5
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!search\+Object@{search\+Object}}
+\index{search\+Object@{search\+Object}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{search\+Object(array \$params=array())}{searchObject(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Object (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_aa0f93181fd6961561e24ff4b2099ffee}{}\label{class_ossn_object_aa0f93181fd6961561e24ff4b2099ffee}
+Search object by its title, description etc
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format\+: \textquotesingle{}search\+\_\+type\textquotesingle{} =$>$ true(default) to performs matching on a per-\/character basis false for performs matching on exact value. \textquotesingle{}subtype\textquotesingle{} =$>$ Valid object subtype \textquotesingle{}type\textquotesingle{} =$>$ Valid object type \textquotesingle{}title\textquotesingle{} =$>$ Valid object title \textquotesingle{}description\textquotesingle{} =$>$ Valid object description \textquotesingle{}owner\+\_\+guid\textquotesingle{} =$>$ A valid owner guid, which results integer value \textquotesingle{}entities\+\_\+pairs\textquotesingle{} =$>$ A entities pairs options, must be array \textquotesingle{}count\textquotesingle{} =$>$ True if you wanted to count search items. \textquotesingle{}limit\textquotesingle{} =$>$ Result limit default, Default is 10 values \textquotesingle{}order\+\_\+by\textquotesingle{} =$>$ To show result in sepcific order. Default is Assending\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 305 of file Ossn\+Object.\+php.
+
+\index{Ossn\+Object@{Ossn\+Object}!update\+Object@{update\+Object}}
+\index{update\+Object@{update\+Object}!Ossn\+Object@{Ossn\+Object}}
+\subsubsection[{\texorpdfstring{update\+Object(\$name, \$value, \$guid)}{updateObject($name, $value, $guid)}}]{\setlength{\rightskip}{0pt plus 5cm}update\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value, }
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_object_ada23f0004598560ca364290560087a89}{}\label{class_ossn_object_ada23f0004598560ca364290560087a89}
+Update Object;
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$name} & Names \\
+\hline
+array & {\em \$value} & Values \\
+\hline
+integer & {\em \$guid} & Object guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 222 of file Ossn\+Object.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_object_8php}{Ossn\+Object.\+php}\end{DoxyCompactItemize}

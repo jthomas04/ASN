@@ -1,0 +1,309 @@
+\hypertarget{class_ossn_notifications}{}\section{Ossn\+Notifications Class Reference}
+\label{class_ossn_notifications}\index{Ossn\+Notifications@{Ossn\+Notifications}}
+
+
+Inheritance diagram for Ossn\+Notifications\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Notifications\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_notifications_a102935d33553f9a80ebf99806558cbf3}{add} (\$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$\hyperlink{user_8php_a24eb7b66e353d8983f6f2af979250671}{poster\+\_\+guid}, \$subject\+\_\+guid, \$item\+\_\+guid=N\+U\+LL, \$notification\+\_\+owner= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_notifications_afe901b6dd25d388f781516756182ce6f}{get\+\_\+comments\+\_\+participates} (\$subject\+\_\+guid= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_notifications_af8940bc61e4d00ba24d4800902d4ac07}{get} (\$guid\+\_\+two= \textquotesingle{}\textquotesingle{}, \$unread=false, \$limit=false, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_notifications_a5b03ed55a4b5d23269c11d90258e4758}{count\+Notification} (\$guid)
+\item 
+\hyperlink{class_ossn_notifications_aa4e8a2635f8d4562de82bfd552d33c84}{getby\+G\+U\+ID} (\$guid= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_notifications_ab9b6fedd00c0300c99ca8d270a4e2b68}{set\+Viewed} (\$guid)
+\item 
+\hyperlink{class_ossn_notifications_a20b4f8e2856c6051829c058ec94a8986}{delete\+User\+Notifications} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{class_ossn_notifications_adf200d148e76479040189a7dcd98dd58}{clear\+All} (\$guid)
+\item 
+\hyperlink{class_ossn_notifications_a16ca353b2faf3c128f68a89485ac5e40}{delete\+Notification} (array \$params=array())
+\item 
+\hyperlink{class_ossn_notifications_a8fa1ed9a6d120dbabcd4241aac232cc5}{search\+Notifications} (array \$params=array())
+\item 
+\hyperlink{class_ossn_notifications_a79770541637527a76e5678a8e49d4e9f}{to\+Template} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Notifications.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Notifications@{Ossn\+Notifications}!add@{add}}
+\index{add@{add}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{add(\$type, \$poster\+\_\+guid, \$subject\+\_\+guid, \$item\+\_\+guid=\+N\+U\+L\+L, \$notification\+\_\+owner= \textquotesingle{}\textquotesingle{})}{add($type, $poster_guid, $subject_guid, $item_guid=NULL, $notification_owner= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$poster\+\_\+guid, }
+\item[{}]{\$subject\+\_\+guid, }
+\item[{}]{\$item\+\_\+guid = {\ttfamily NULL}, }
+\item[{}]{\$notification\+\_\+owner = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a102935d33553f9a80ebf99806558cbf3}{}\label{class_ossn_notifications_a102935d33553f9a80ebf99806558cbf3}
+Add notification to database
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$subject\+\_\+id} & Id of item which user comment \\
+\hline
+integer & {\em \$poster\+\_\+guid} & Guid of item poster \\
+\hline
+integer & {\em \$item\+\_\+guid,} & Guid of item \\
+\hline
+integer & {\em \$notification\+\_\+owner,} & Guid of notification owner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean; 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!clear\+All@{clear\+All}}
+\index{clear\+All@{clear\+All}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{clear\+All(\$guid)}{clearAll($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+All (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_adf200d148e76479040189a7dcd98dd58}{}\label{class_ossn_notifications_adf200d148e76479040189a7dcd98dd58}
+Clear all notifications of specific user See \+: 3 state logic for notifications \#202 \href{https://github.com/opensource-socialnetwork/opensource-socialnetwork/issues/202}{\tt https\+://github.\+com/opensource-\/socialnetwork/opensource-\/socialnetwork/issues/202}
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & User guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean; 
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!count\+Notification@{count\+Notification}}
+\index{count\+Notification@{count\+Notification}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{count\+Notification(\$guid)}{countNotification($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}count\+Notification (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a5b03ed55a4b5d23269c11d90258e4758}{}\label{class_ossn_notifications_a5b03ed55a4b5d23269c11d90258e4758}
+Count user notification
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & count user notifications\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer; 
+\end{DoxyReturn}
+
+
+Definition at line 221 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!delete\+Notification@{delete\+Notification}}
+\index{delete\+Notification@{delete\+Notification}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{delete\+Notification(array \$params=array())}{deleteNotification(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Notification (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a16ca353b2faf3c128f68a89485ac5e40}{}\label{class_ossn_notifications_a16ca353b2faf3c128f68a89485ac5e40}
+Delete a notifications
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A wheres clause\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 313 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!delete\+User\+Notifications@{delete\+User\+Notifications}}
+\index{delete\+User\+Notifications@{delete\+User\+Notifications}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{delete\+User\+Notifications(\$user)}{deleteUserNotifications($user)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+User\+Notifications (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a20b4f8e2856c6051829c058ec94a8986}{}\label{class_ossn_notifications_a20b4f8e2856c6051829c058ec94a8986}
+Delete user notifications
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & User entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean; 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!get@{get}}
+\index{get@{get}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{get(\$guid\+\_\+two= \textquotesingle{}\textquotesingle{}, \$unread=false, \$limit=false, \$count=false)}{get($guid_two= '', $unread=false, $limit=false, $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}get (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid\+\_\+two = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$unread = {\ttfamily false}, }
+\item[{}]{\$limit = {\ttfamily false}, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_af8940bc61e4d00ba24d4800902d4ac07}{}\label{class_ossn_notifications_af8940bc61e4d00ba24d4800902d4ac07}
+Get notifications
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid\+\_\+two} & User guid \\
+\hline
+integer & {\em \$poster\+\_\+guid} & Guid of item poster;\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 188 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!get\+\_\+comments\+\_\+participates@{get\+\_\+comments\+\_\+participates}}
+\index{get\+\_\+comments\+\_\+participates@{get\+\_\+comments\+\_\+participates}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{get\+\_\+comments\+\_\+participates(\$subject\+\_\+guid= \textquotesingle{}\textquotesingle{})}{get_comments_participates($subject_guid= '')}}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+comments\+\_\+participates (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+guid = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_afe901b6dd25d388f781516756182ce6f}{}\label{class_ossn_notifications_afe901b6dd25d388f781516756182ce6f}
+Get comments participates
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$subject\+\_\+id} & Id of item which user comment\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array; 
+\end{DoxyReturn}
+
+
+Definition at line 161 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!getby\+G\+U\+ID@{getby\+G\+U\+ID}}
+\index{getby\+G\+U\+ID@{getby\+G\+U\+ID}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{getby\+G\+U\+I\+D(\$guid= \textquotesingle{}\textquotesingle{})}{getbyGUID($guid= '')}}]{\setlength{\rightskip}{0pt plus 5cm}getby\+G\+U\+ID (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_aa4e8a2635f8d4562de82bfd552d33c84}{}\label{class_ossn_notifications_aa4e8a2635f8d4562de82bfd552d33c84}
+Get notitication by guid
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & Notification guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 236 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!search\+Notifications@{search\+Notifications}}
+\index{search\+Notifications@{search\+Notifications}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{search\+Notifications(array \$params=array())}{searchNotifications(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Notifications (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a8fa1ed9a6d120dbabcd4241aac232cc5}{}\label{class_ossn_notifications_a8fa1ed9a6d120dbabcd4241aac232cc5}
+Search Notifcations
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format, \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & Notification type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & Notification owner guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}poster\+\_\+guid\textquotesingle{}\mbox{]}} & Notification poster guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subject\+\_\+guid\textquotesingle{}\mbox{]}} & Notifcation subject guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}item\+\_\+created\textquotesingle{}\mbox{]}} & Notifcation time\+\_\+created \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}item\+\_\+guid\textquotesingle{}\mbox{]}} & Notifcation item guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}count\textquotesingle{}\mbox{]}} & If you wanted to count then true \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}viewed\textquotesingle{}\mbox{]}} & If viewed true, if not then false \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}guid\textquotesingle{}\mbox{]}} & Notifcation guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & Order list , default A\+SC guid\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 374 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!set\+Viewed@{set\+Viewed}}
+\index{set\+Viewed@{set\+Viewed}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{set\+Viewed(\$guid)}{setViewed($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Viewed (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_ab9b6fedd00c0300c99ca8d270a4e2b68}{}\label{class_ossn_notifications_ab9b6fedd00c0300c99ca8d270a4e2b68}
+Mark notification as viewd
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & Notification guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file Ossn\+Notifications.\+php.
+
+\index{Ossn\+Notifications@{Ossn\+Notifications}!to\+Template@{to\+Template}}
+\index{to\+Template@{to\+Template}!Ossn\+Notifications@{Ossn\+Notifications}}
+\subsubsection[{\texorpdfstring{to\+Template()}{toTemplate()}}]{\setlength{\rightskip}{0pt plus 5cm}to\+Template (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_notifications_a79770541637527a76e5678a8e49d4e9f}{}\label{class_ossn_notifications_a79770541637527a76e5678a8e49d4e9f}
+Make notifcation item to output view
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 486 of file Ossn\+Notifications.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/classes/\hyperlink{classes_2_ossn_notifications_8php}{Ossn\+Notifications.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{plugins_2default_2comments_2templates_2comment_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/plugins/default/comments/templates/comment.php File Reference}
+\label{plugins_2default_2comments_2templates_2comment_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/plugins/default/comments/templates/comment.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/plugins/default/comments/templates/comment.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{plugins_2default_2comments_2templates_2comment_8php_a536677acc0163c53c067316a97456e6c}{\$comment} = \hyperlink{ossn_8lib_8route_8php_a79ce899ce98ad90b10fee0b598e1bd5a}{array\+Object}(\$params\mbox{[}\textquotesingle{}comment\textquotesingle{}\mbox{]}, \textquotesingle{}\hyperlink{class_ossn_wall}{Ossn\+Wall}\textquotesingle{})
+\item 
+\hyperlink{plugins_2default_2comments_2templates_2comment_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \hyperlink{ossn_8lib_8users_8php_aaee344fada9e6e15470587c7cd94ea8b}{ossn\+\_\+user\+\_\+by\+\_\+guid}(\$comment-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:post\textquotesingle{}$\vert$$\vert$\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:entity\textquotesingle{}) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(class\+\_\+exists(\textquotesingle{}\hyperlink{class_ossn_likes}{Ossn\+Likes}\textquotesingle{})) \hyperlink{plugins_2default_2comments_2templates_2comment_8php_a0fee8603373d27f87efcccd55f4be6dc}{else}
+\item 
+\hyperlink{plugins_2default_2comments_2templates_2comment_8php_a68bc486a87d1dcb8365971b179013c78}{\$datalikes} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{plugins_2default_2comments_2templates_2comment_8php_ac596681ac19468a58eeaa15d42096b5c}{if} (\$likes\+\_\+total $>$ 0)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:entity\textquotesingle{}) \hyperlink{cache__settings_8php_aac633c7b6b07fcf67f4504fb5c57a856}{elseif}(\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:post\textquotesingle{}) \hyperlink{plugins_2default_2comments_2templates_2comment_8php_adf56429d29923e0dfe528abe73b5ae55}{\$image} = \$comment-\/$>$get\+Param(\textquotesingle{}file\+:comment\+:photo\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!\$comment@{\$comment}}
+\index{\$comment@{\$comment}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{\$comment}{$comment}}]{\setlength{\rightskip}{0pt plus 5cm}\$comment = {\bf array\+Object}(\$params\mbox{[}\textquotesingle{}comment\textquotesingle{}\mbox{]}, \textquotesingle{}{\bf Ossn\+Wall}\textquotesingle{})}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_a536677acc0163c53c067316a97456e6c}{}\label{plugins_2default_2comments_2templates_2comment_8php_a536677acc0163c53c067316a97456e6c}
+
+
+Definition at line 4 of file comment.\+php.
+
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!\$datalikes@{\$datalikes}}
+\index{\$datalikes@{\$datalikes}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{\$datalikes}{$datalikes}}]{\setlength{\rightskip}{0pt plus 5cm}\$datalikes = \textquotesingle{}\textquotesingle{}}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_a68bc486a87d1dcb8365971b179013c78}{}\label{plugins_2default_2comments_2templates_2comment_8php_a68bc486a87d1dcb8365971b179013c78}
+
+
+Definition at line 15 of file comment.\+php.
+
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!\$image@{\$image}}
+\index{\$image@{\$image}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{\$image}{$image}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:entity\textquotesingle{}) {\bf elseif} (\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:post\textquotesingle{}) \$image = \$comment-\/$>$get\+Param(\textquotesingle{}file\+:comment\+:photo\textquotesingle{})}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_adf56429d29923e0dfe528abe73b5ae55}{}\label{plugins_2default_2comments_2templates_2comment_8php_adf56429d29923e0dfe528abe73b5ae55}
+
+
+Definition at line 42 of file comment.\+php.
+
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = {\bf ossn\+\_\+user\+\_\+by\+\_\+guid}(\$comment-\/$>${\bf owner\+\_\+guid})}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{plugins_2default_2comments_2templates_2comment_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 5 of file comment.\+php.
+
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!else@{else}}
+\index{else@{else}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:post\textquotesingle{}$\vert$$\vert$\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:entity\textquotesingle{}) {\bf if} (class\+\_\+exists(\textquotesingle{}{\bf Ossn\+Likes}\textquotesingle{})) else}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_a0fee8603373d27f87efcccd55f4be6dc}{}\label{plugins_2default_2comments_2templates_2comment_8php_a0fee8603373d27f87efcccd55f4be6dc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    $likes\_total = 0
+\end{DoxyCode}
+
+
+Definition at line 12 of file comment.\+php.
+
+\index{plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}!if@{if}}
+\index{if@{if}!plugins/default/comments/templates/comment.\+php@{plugins/default/comments/templates/comment.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(class\+\_\+exists(\textquotesingle{}{\bf Ossn\+Likes}\textquotesingle{}))}\hypertarget{plugins_2default_2comments_2templates_2comment_8php_ac596681ac19468a58eeaa15d42096b5c}{}\label{plugins_2default_2comments_2templates_2comment_8php_ac596681ac19468a58eeaa15d42096b5c}
+
+
+Definition at line 16 of file comment.\+php.
+

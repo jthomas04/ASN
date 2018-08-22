@@ -1,0 +1,95 @@
+\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/edit.php File Reference}
+\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}{\$guid} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}guid\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a435399a950093c54baf29ad4c1e52e79}{\$post} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a52123b83a1952a68c5513e47d59ec4a6}{\$object} = \hyperlink{ossn_8lib_8objects_8php_a6b5970320e8ed1af1b6f863e7ad51f01}{ossn\+\_\+get\+\_\+object}(\$guid)
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_acedd13b51401130848ce18f4d5c52605}{\$json} = html\+\_\+entity\+\_\+decode(\$object-\/$>$\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a7f60fcaa72b0968e6b6bd7d819fa6fd9}{description})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{\$data} = json\+\_\+decode(\$json, true)
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a2636a59d3992e952f52b5efbdd7fd57f}{\$data} \mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]} = \$post
+\item 
+\$object \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a7f60fcaa72b0968e6b6bd7d819fa6fd9}{description} = \$\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}((\$object-\/$>$\hyperlink{user_8php_a24eb7b66e353d8983f6f2af979250671}{poster\+\_\+guid}==\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid$\vert$$\vert$\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$can\+Moderate())\&\&\$object-\/$>$save()) \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a947707fcbd4a8738af10ded11921378d}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$data@{\$data}}
+\index{\$data@{\$data}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$data}{$data}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf data} = json\+\_\+decode(\$json, true)}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a6efc15b5a2314dd4b5aaa556a375c6d6}
+
+
+Definition at line 16 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$data@{\$data}}
+\index{\$data@{\$data}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$data}{$data}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf data}\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]} = \$post}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a2636a59d3992e952f52b5efbdd7fd57f}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a2636a59d3992e952f52b5efbdd7fd57f}
+
+
+Definition at line 17 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$guid@{\$guid}}
+\index{\$guid@{\$guid}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$guid}{$guid}}]{\setlength{\rightskip}{0pt plus 5cm}\$guid = {\bf input}(\textquotesingle{}guid\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}
+
+
+Definition at line 3 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$json@{\$json}}
+\index{\$json@{\$json}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$json}{$json}}]{\setlength{\rightskip}{0pt plus 5cm}\$json = html\+\_\+entity\+\_\+decode(\$object-\/$>${\bf description})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_acedd13b51401130848ce18f4d5c52605}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_acedd13b51401130848ce18f4d5c52605}
+
+
+Definition at line 14 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$object@{\$object}}
+\index{\$object@{\$object}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$object}{$object}}]{\setlength{\rightskip}{0pt plus 5cm}\$object = {\bf ossn\+\_\+get\+\_\+object}(\$guid)}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a52123b83a1952a68c5513e47d59ec4a6}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a52123b83a1952a68c5513e47d59ec4a6}
+
+
+Definition at line 6 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$post@{\$post}}
+\index{\$post@{\$post}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$post}{$post}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$object$\vert$$\vert$empty(\$post)) \$post = {\bf input}(\textquotesingle{}post\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a435399a950093c54baf29ad4c1e52e79}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a435399a950093c54baf29ad4c1e52e79}
+
+
+Definition at line 4 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = {\bf ossn\+\_\+loggedin\+\_\+user}()}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 7 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!description@{description}}
+\index{description@{description}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}\$object description = \${\bf data}}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a7f60fcaa72b0968e6b6bd7d819fa6fd9}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a7f60fcaa72b0968e6b6bd7d819fa6fd9}
+
+
+Definition at line 20 of file edit.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}!else@{else}}
+\index{else@{else}!components/\+Ossn\+Wall/actions/wall/post/edit.\+php@{components/\+Ossn\+Wall/actions/wall/post/edit.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ((\$object-\/$>${\bf poster\+\_\+guid}==\${\bf user}-\/$>$guid$\vert$$\vert$\${\bf user}-\/$>$can\+Moderate())\&\&\$object-\/$>$save()) else}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a947707fcbd4a8738af10ded11921378d}{}\label{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a947707fcbd4a8738af10ded11921378d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'ossn:wall:post:save:error'}), \textcolor{stringliteral}{'error'}
+      )
+\end{DoxyCode}
+
+
+Definition at line 29 of file edit.\+php.
+

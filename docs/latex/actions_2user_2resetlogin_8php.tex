@@ -1,0 +1,31 @@
+\hypertarget{actions_2user_2resetlogin_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/actions/user/resetlogin.php File Reference}
+\label{actions_2user_2resetlogin_8php}\index{/home/jj/\+Projects/\+A\+S\+N/actions/user/resetlogin.\+php@{/home/jj/\+Projects/\+A\+S\+N/actions/user/resetlogin.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{actions_2user_2resetlogin_8php_a1a4a59dbffac643d9b101b322d73731a}{\$user} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{email}\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user} \&\&\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$Send\+Reset\+Login()) \hyperlink{actions_2user_2resetlogin_8php_a014c381221281426c442e585cca17fdb}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{actions/user/resetlogin.\+php@{actions/user/resetlogin.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/user/resetlogin.\+php@{actions/user/resetlogin.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (empty(\${\bf user})) \${\bf user} = {\bf input}(\textquotesingle{}{\bf email}\textquotesingle{})}\hypertarget{actions_2user_2resetlogin_8php_a1a4a59dbffac643d9b101b322d73731a}{}\label{actions_2user_2resetlogin_8php_a1a4a59dbffac643d9b101b322d73731a}
+
+
+Definition at line 3 of file resetlogin.\+php.
+
+\index{actions/user/resetlogin.\+php@{actions/user/resetlogin.\+php}!else@{else}}
+\index{else@{else}!actions/user/resetlogin.\+php@{actions/user/resetlogin.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf user} \&\&\${\bf user}-\/$>$Send\+Reset\+Login()) else}\hypertarget{actions_2user_2resetlogin_8php_a014c381221281426c442e585cca17fdb}{}\label{actions_2user_2resetlogin_8php_a014c381221281426c442e585cca17fdb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'passord:reset:fail'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 12 of file resetlogin.\+php.
+

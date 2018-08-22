@@ -1,0 +1,28 @@
+var class_ossn_group =
+[
+    [ "approveRequest", "class_ossn_group.html#ae75e51db4e647a7bc8badf2d9630e475", null ],
+    [ "countRequests", "class_ossn_group.html#a92fafa345b20cf7a1a6c95db8ec85240", null ],
+    [ "coverParameters", "class_ossn_group.html#a680f6835f3771d0af210dec9e142dd2c", null ],
+    [ "coverURL", "class_ossn_group.html#a369080897a012c8eeff795c09fb8fb52", null ],
+    [ "createGroup", "class_ossn_group.html#ac21bd566989fc4f2f730db8e82dd7638", null ],
+    [ "deleteGroup", "class_ossn_group.html#ae6756ed2d51292c07c3933a7ad52361e", null ],
+    [ "deleteMember", "class_ossn_group.html#af549f54147f805d3624589fdb9e7cfaf", null ],
+    [ "getGroup", "class_ossn_group.html#a193aeb5f7bc2e29ea10e58d9b315b796", null ],
+    [ "getGroups", "class_ossn_group.html#a6187b4fda76a8055bd08acafa57d9824", null ],
+    [ "getGuid", "class_ossn_group.html#a9824fb7fff6b1f348aedade7b39e7b8d", null ],
+    [ "getMembers", "class_ossn_group.html#ae1fc6879b40a1a2a837c839e0e637b4e", null ],
+    [ "getMembersRequests", "class_ossn_group.html#a770db4a5eee4b7d8578a46e71ee658fe", null ],
+    [ "getMyGroups", "class_ossn_group.html#a61f4a98193810fbb807a14d8c78196b5", null ],
+    [ "getUserGroups", "class_ossn_group.html#a33283fa2b2cb93939b29b97c8291f3d9", null ],
+    [ "groupCovers", "class_ossn_group.html#a0727aa262ae755a8a2028acfa9ff3443", null ],
+    [ "haveCover", "class_ossn_group.html#a47cc8cd2fcde5ffef4f316341a910fdf", null ],
+    [ "initAttributes", "class_ossn_group.html#a5fee6794de13185987b790fce43d0883", null ],
+    [ "isMember", "class_ossn_group.html#a8b15ce6b022a441d779d09702de1aa38", null ],
+    [ "repositionCOVER", "class_ossn_group.html#a3e27e9dc5d2c3e06eea8801353ebab6f", null ],
+    [ "requestExists", "class_ossn_group.html#a1845c2df62ccdef4f3fa076e42280877", null ],
+    [ "ResetCoverPostition", "class_ossn_group.html#af3c559710a53f8f4d88f38044505ee90", null ],
+    [ "searchGroups", "class_ossn_group.html#ad15589659e77e2c5c32b825b04b5da3c", null ],
+    [ "sendRequest", "class_ossn_group.html#a74cf873217411619b5214ef4546bdaf6", null ],
+    [ "updateGroup", "class_ossn_group.html#a9b4ae0e68a46347a9397f4526d84cc65", null ],
+    [ "UploadCover", "class_ossn_group.html#aac6531556a8c140872610e8acc5a9eb1", null ]
+];

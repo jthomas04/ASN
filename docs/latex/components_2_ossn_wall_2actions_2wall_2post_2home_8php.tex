@@ -1,0 +1,94 @@
+\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/home.php File Reference}
+\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/home.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a3fe8a689739786120fddd91dedeb172b}{\$\+Ossn\+Wall} = new \hyperlink{class_ossn_wall}{Ossn\+Wall}
+\item 
+\$\hyperlink{class_ossn_wall}{Ossn\+Wall} \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid
+\item 
+\$\hyperlink{class_ossn_wall}{Ossn\+Wall} \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a24eb7b66e353d8983f6f2af979250671}{poster\+\_\+guid} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{class_ossn_wall}{Ossn\+Wall}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}==0$\vert$$\vert$\$\hyperlink{class_ossn_wall}{Ossn\+Wall}-\/$>$\hyperlink{user_8php_a24eb7b66e353d8983f6f2af979250671}{poster\+\_\+guid}==0) \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ab0afe281b4fde7dbdeff7f1ced2b0b1f}{\$post} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_afb66104a0d5a5b286634a265d216b8d6}{\$friends} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}friends\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ac319193077976bb217112e5a7b7b8022}{\$location} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location}\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_add279b6d3dad18665dc1d892af5e6b26}{\$privacy} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}privacy\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad7fd03ae69de40b00cc4758c23a4404e}{\$access} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!empty(\$privacy)) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{class_ossn_wall}{Ossn\+Wall}-\/$>$Post(\$post, \$friends, \$\hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location}, \$access)) \hyperlink{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad1e8628c69b0a7f16ccdf61f6c054adc}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$access@{\$access}}
+\index{\$access@{\$access}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$access}{$access}}]{\setlength{\rightskip}{0pt plus 5cm}\$access = \textquotesingle{}\textquotesingle{}}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad7fd03ae69de40b00cc4758c23a4404e}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad7fd03ae69de40b00cc4758c23a4404e}
+
+
+Definition at line 25 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$friends@{\$friends}}
+\index{\$friends@{\$friends}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$friends}{$friends}}]{\setlength{\rightskip}{0pt plus 5cm}\$friends = {\bf input}(\textquotesingle{}friends\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_afb66104a0d5a5b286634a265d216b8d6}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_afb66104a0d5a5b286634a265d216b8d6}
+
+
+Definition at line 19 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$location@{\$location}}
+\index{\$location@{\$location}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$location}{$location}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf location} = {\bf input}(\textquotesingle{}{\bf location}\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ac319193077976bb217112e5a7b7b8022}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ac319193077976bb217112e5a7b7b8022}
+
+
+Definition at line 20 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$\+Ossn\+Wall@{\$\+Ossn\+Wall}}
+\index{\$\+Ossn\+Wall@{\$\+Ossn\+Wall}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$\+Ossn\+Wall}{$OssnWall}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Wall} = new {\bf Ossn\+Wall}}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a3fe8a689739786120fddd91dedeb172b}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a3fe8a689739786120fddd91dedeb172b}
+
+
+Definition at line 5 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$post@{\$post}}
+\index{\$post@{\$post}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$post}{$post}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf Ossn\+Wall}-\/$>${\bf owner\+\_\+guid}==0$\vert$$\vert$\${\bf Ossn\+Wall}-\/$>${\bf poster\+\_\+guid}==0) \$post = {\bf input}(\textquotesingle{}post\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ab0afe281b4fde7dbdeff7f1ced2b0b1f}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ab0afe281b4fde7dbdeff7f1ced2b0b1f}
+
+
+Definition at line 18 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!\$privacy@{\$privacy}}
+\index{\$privacy@{\$privacy}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{\$privacy}{$privacy}}]{\setlength{\rightskip}{0pt plus 5cm}\$privacy = {\bf input}(\textquotesingle{}privacy\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_add279b6d3dad18665dc1d892af5e6b26}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_add279b6d3dad18665dc1d892af5e6b26}
+
+
+Definition at line 21 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!else@{else}}
+\index{else@{else}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!empty(\$privacy)) {\bf if} (\${\bf Ossn\+Wall}-\/$>$Post(\$post, \$friends, \${\bf location}, \$access)) else}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad1e8628c69b0a7f16ccdf61f6c054adc}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_ad1e8628c69b0a7f16ccdf61f6c054adc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'post:create:error'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 44 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!owner\+\_\+guid@{owner\+\_\+guid}}
+\index{owner\+\_\+guid@{owner\+\_\+guid}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{owner\+\_\+guid}{owner_guid}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Wall} owner\+\_\+guid = {\bf ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a307051fefc937afd02c509c55646f50b}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a307051fefc937afd02c509c55646f50b}
+
+
+Definition at line 8 of file home.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}!poster\+\_\+guid@{poster\+\_\+guid}}
+\index{poster\+\_\+guid@{poster\+\_\+guid}!components/\+Ossn\+Wall/actions/wall/post/home.\+php@{components/\+Ossn\+Wall/actions/wall/post/home.\+php}}
+\subsubsection[{\texorpdfstring{poster\+\_\+guid}{poster_guid}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Wall} poster\+\_\+guid = {\bf ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid}\hypertarget{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a24eb7b66e353d8983f6f2af979250671}{}\label{components_2_ossn_wall_2actions_2wall_2post_2home_8php_a24eb7b66e353d8983f6f2af979250671}
+
+
+Definition at line 9 of file home.\+php.
+

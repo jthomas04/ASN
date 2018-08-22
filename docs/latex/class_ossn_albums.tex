@@ -1,0 +1,197 @@
+\hypertarget{class_ossn_albums}{}\section{Ossn\+Albums Class Reference}
+\label{class_ossn_albums}\index{Ossn\+Albums@{Ossn\+Albums}}
+
+
+Inheritance diagram for Ossn\+Albums\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Albums\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_albums_afa0bc70d29c5d79bf71ea6ac069df120}{Create\+Album} (\$owner\+\_\+id, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$access=\hyperlink{ossn_8lib_8system_8php_a8efdc824fa9025d0c02ee7c512aafdfa}{O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+IC}, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_albums_a9b49283cfc1bca4e35c86769d28205af}{Get\+Album\+Guid} ()
+\item 
+\hyperlink{class_ossn_albums_a0f8feac9097ce1b4449616cc34742a4f}{Get\+Albums} (\$owner\+\_\+id, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_albums_a2d68fc2249acdbe0606a6a641851bca2}{Get\+Album} (\$album\+\_\+id)
+\item 
+\hyperlink{class_ossn_albums_afa526bcdc64e4dc6d51a7f97bc900e04}{Get\+User\+Profile\+Photos} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{class_ossn_albums_a2f2d2cca8f5b8762c0cefe4cf756e78d}{Get\+User\+Cover\+Photos} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{class_ossn_albums_a69f6eeb9c51593a11a7236a4d9023743}{delete\+Album} (\$guid)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Albums.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Albums@{Ossn\+Albums}!Create\+Album@{Create\+Album}}
+\index{Create\+Album@{Create\+Album}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Create\+Album(\$owner\+\_\+id, \$name, \$access=\+O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+I\+C, \$type= \textquotesingle{}user\textquotesingle{})}{CreateAlbum($owner_id, $name, $access=OSSN_PUBLIC, $type= 'user')}}]{\setlength{\rightskip}{0pt plus 5cm}Create\+Album (
+\begin{DoxyParamCaption}
+\item[{}]{\$owner\+\_\+id, }
+\item[{}]{\$name, }
+\item[{}]{\$access = {\ttfamily {\bf O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+IC}}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}{\bf user}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_afa0bc70d29c5d79bf71ea6ac069df120}{}\label{class_ossn_albums_afa0bc70d29c5d79bf71ea6ac069df120}
+Create a photo album
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$owner\+\_\+id} & User guid who is creating album \\
+\hline
+string & {\em \$name} & Album name \\
+\hline
+constant & {\em \$access} & Album access \\
+\hline
+string & {\em \$type} & Album type (user, group, page etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!delete\+Album@{delete\+Album}}
+\index{delete\+Album@{delete\+Album}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{delete\+Album(\$guid)}{deleteAlbum($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Album (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_a69f6eeb9c51593a11a7236a4d9023743}{}\label{class_ossn_albums_a69f6eeb9c51593a11a7236a4d9023743}
+Delete Album
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & Album Guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!Get\+Album@{Get\+Album}}
+\index{Get\+Album@{Get\+Album}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Get\+Album(\$album\+\_\+id)}{GetAlbum($album_id)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Album (
+\begin{DoxyParamCaption}
+\item[{}]{\$album\+\_\+id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_a2d68fc2249acdbe0606a6a641851bca2}{}\label{class_ossn_albums_a2d68fc2249acdbe0606a6a641851bca2}
+Get album by id
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$album\+\_\+id} & Id of album\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\vert$object; 
+\end{DoxyReturn}
+
+
+Definition at line 72 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!Get\+Album\+Guid@{Get\+Album\+Guid}}
+\index{Get\+Album\+Guid@{Get\+Album\+Guid}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Get\+Album\+Guid()}{GetAlbumGuid()}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Album\+Guid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_a9b49283cfc1bca4e35c86769d28205af}{}\label{class_ossn_albums_a9b49283cfc1bca4e35c86769d28205af}
+Get newly created album guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!Get\+Albums@{Get\+Albums}}
+\index{Get\+Albums@{Get\+Albums}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Get\+Albums(\$owner\+\_\+id, \$type= \textquotesingle{}user\textquotesingle{})}{GetAlbums($owner_id, $type= 'user')}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Albums (
+\begin{DoxyParamCaption}
+\item[{}]{\$owner\+\_\+id, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}{\bf user}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_a0f8feac9097ce1b4449616cc34742a4f}{}\label{class_ossn_albums_a0f8feac9097ce1b4449616cc34742a4f}
+Get albums by owner id and owner type
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$owner\+\_\+id} & User guid who is creating album \\
+\hline
+string & {\em \$type} & Album type (user, group, page etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 56 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!Get\+User\+Cover\+Photos@{Get\+User\+Cover\+Photos}}
+\index{Get\+User\+Cover\+Photos@{Get\+User\+Cover\+Photos}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Get\+User\+Cover\+Photos(\$user)}{GetUserCoverPhotos($user)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+User\+Cover\+Photos (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_a2f2d2cca8f5b8762c0cefe4cf756e78d}{}\label{class_ossn_albums_a2f2d2cca8f5b8762c0cefe4cf756e78d}
+Get user cover photos album
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$user} & User guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Ossn\+Albums.\+php.
+
+\index{Ossn\+Albums@{Ossn\+Albums}!Get\+User\+Profile\+Photos@{Get\+User\+Profile\+Photos}}
+\index{Get\+User\+Profile\+Photos@{Get\+User\+Profile\+Photos}!Ossn\+Albums@{Ossn\+Albums}}
+\subsubsection[{\texorpdfstring{Get\+User\+Profile\+Photos(\$user)}{GetUserProfilePhotos($user)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+User\+Profile\+Photos (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_albums_afa526bcdc64e4dc6d51a7f97bc900e04}{}\label{class_ossn_albums_afa526bcdc64e4dc6d51a7f97bc900e04}
+Get user profile photos album
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$user} & User guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 96 of file Ossn\+Albums.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/classes/\hyperlink{_ossn_albums_8php}{Ossn\+Albums.\+php}\end{DoxyCompactItemize}

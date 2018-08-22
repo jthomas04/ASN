@@ -1,0 +1,62 @@
+\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/themes/list/item.php File Reference}
+\label{system_2plugins_2default_2admin_2themes_2list_2item_8php}\index{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/themes/list/item.\+php@{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/themes/list/item.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_ab8a3a0009c9eedf2350ba849c39c0580}{\$themes} = new \hyperlink{class_ossn_themes}{Ossn\+Themes}
+\item 
+\hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}{\$translit} = \hyperlink{class_ossn_translit_a5913009dee49e11a241b75c9dad52dd2}{Ossn\+Translit\+::urlize}(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(empty(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})) \hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_aff5afe90f2deea121e79e3e3e12c21aa}{\$id} = \$params\mbox{[}\textquotesingle{}id\textquotesingle{}\mbox{]}
+\item 
+\hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_a244d94e62cffe97e11aa1633b809dfa1}{\$requirements} = \$themes-\/$>$check\+Requirments(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_aa56794e9bcefa38b9fc897bc948634f8}{if} (\hyperlink{ossn_8lib_8system_8php_a610e2045b8a86c09f777b4d82e24e34c}{ossn\+\_\+site\+\_\+settings}(\textquotesingle{}theme\textquotesingle{})!==\$id)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{ossn_8lib_8system_8php_a610e2045b8a86c09f777b4d82e24e34c}{ossn\+\_\+site\+\_\+settings}(\textquotesingle{}theme\textquotesingle{})==\$id) \hyperlink{system_2plugins_2default_2admin_2themes_2list_2item_8php_a74d7cf7101f5c2360425f00a411e997b}{else} \{
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!\$id@{\$id}}
+\index{\$id@{\$id}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$id}{$id}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (empty(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]}-\/$>${\bf name})) \$id = \$params\mbox{[}\textquotesingle{}id\textquotesingle{}\mbox{]}}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_aff5afe90f2deea121e79e3e3e12c21aa}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_aff5afe90f2deea121e79e3e3e12c21aa}
+
+
+Definition at line 8 of file item.\+php.
+
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!\$requirements@{\$requirements}}
+\index{\$requirements@{\$requirements}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$requirements}{$requirements}}]{\setlength{\rightskip}{0pt plus 5cm}\$requirements = \$themes-\/$>$check\+Requirments(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]})}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_a244d94e62cffe97e11aa1633b809dfa1}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_a244d94e62cffe97e11aa1633b809dfa1}
+
+
+Definition at line 9 of file item.\+php.
+
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!\$themes@{\$themes}}
+\index{\$themes@{\$themes}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$themes}{$themes}}]{\setlength{\rightskip}{0pt plus 5cm}\$themes = new {\bf Ossn\+Themes}}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_ab8a3a0009c9eedf2350ba849c39c0580}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_ab8a3a0009c9eedf2350ba849c39c0580}
+
+
+Definition at line 3 of file item.\+php.
+
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!\$translit@{\$translit}}
+\index{\$translit@{\$translit}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$translit}{$translit}}]{\setlength{\rightskip}{0pt plus 5cm}\$translit = {\bf Ossn\+Translit\+::urlize}(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]}-\/$>${\bf name})}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}
+
+
+Definition at line 4 of file item.\+php.
+
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!else@{else}}
+\index{else@{else}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$themes-\/$>$is\+Old(\$params\mbox{[}\textquotesingle{}theme\textquotesingle{}\mbox{]})) else \{}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_a74d7cf7101f5c2360425f00a411e997b}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_a74d7cf7101f5c2360425f00a411e997b}
+
+
+Definition at line 29 of file item.\+php.
+
+\index{system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}!if@{if}}
+\index{if@{if}!system/plugins/default/admin/themes/list/item.\+php@{system/plugins/default/admin/themes/list/item.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if({\bf ossn\+\_\+site\+\_\+settings}(\textquotesingle{}theme\textquotesingle{})!==\$id)}\hypertarget{system_2plugins_2default_2admin_2themes_2list_2item_8php_aa56794e9bcefa38b9fc897bc948634f8}{}\label{system_2plugins_2default_2admin_2themes_2list_2item_8php_aa56794e9bcefa38b9fc897bc948634f8}
+
+
+Definition at line 11 of file item.\+php.
+

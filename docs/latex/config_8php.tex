@@ -1,0 +1,98 @@
+\hypertarget{config_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/vendors/tinymce/plugins/jbimages/config.php File Reference}
+\label{config_8php}\index{/home/jj/\+Projects/\+A\+S\+N/vendors/tinymce/plugins/jbimages/config.\+php@{/home/jj/\+Projects/\+A\+S\+N/vendors/tinymce/plugins/jbimages/config.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{config_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = loggedin\+\_\+default\+\_\+identity()
+\item 
+\hyperlink{config_8php_a3fb5345aad792cecf59950f0aeb80d3c}{\$config} \mbox{[}\textquotesingle{}img\+\_\+path\textquotesingle{}\mbox{]} = fud\+\_\+site\+\_\+url() . \char`\"{}/article/image/\{\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}identity\+\_\+id\textquotesingle{}\mbox{]}\}\char`\"{}
+\item 
+\hyperlink{config_8php_aed4396bce8ab87ece253ce0e9965669b}{\$config} \mbox{[}\textquotesingle{}upload\+\_\+path\textquotesingle{}\mbox{]} = fud\+\_\+get\+\_\+userdata(\char`\"{}article/images/\{\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}identity\+\_\+id\textquotesingle{}\mbox{]}\}/\char`\"{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!is\+\_\+dir(\$config\mbox{[}\textquotesingle{}upload\+\_\+path\textquotesingle{}\mbox{]})) \hyperlink{config_8php_a512ef03098d9904d1cf283e30737fea3}{\$config} \mbox{[}\textquotesingle{}allowed\+\_\+types\textquotesingle{}\mbox{]} = \textquotesingle{}gif$\vert$jpg$\vert$png\textquotesingle{}
+\item 
+\hyperlink{config_8php_a08ef9a43e1ca734499df35a4e9a77e49}{\$config} \mbox{[}\textquotesingle{}max\+\_\+size\textquotesingle{}\mbox{]} = 0
+\item 
+\hyperlink{config_8php_a27019f4fc442fa2b86b4477ab220a062}{\$config} \mbox{[}\textquotesingle{}max\+\_\+width\textquotesingle{}\mbox{]} = 0
+\item 
+\hyperlink{config_8php_a3b7844b3d06123a510c1cc1bd6225fe5}{\$config} \mbox{[}\textquotesingle{}max\+\_\+height\textquotesingle{}\mbox{]} = 0
+\item 
+\hyperlink{config_8php_a37f0f0a570e5355ebe3cf54b961d88be}{\$config} \mbox{[}\textquotesingle{}allow\+\_\+resize\textquotesingle{}\mbox{]} = T\+R\+UE
+\item 
+\hyperlink{config_8php_a68ed88b056af10f4a497cd806017c0c5}{\$config} \mbox{[}\textquotesingle{}encrypt\+\_\+name\textquotesingle{}\mbox{]} = T\+R\+UE
+\item 
+\hyperlink{config_8php_a90847191a70a5f5968f94903fdc6311b}{\$config} \mbox{[}\textquotesingle{}overwrite\textquotesingle{}\mbox{]} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}img\+\_\+path\textquotesingle{}\mbox{]} = fud\+\_\+site\+\_\+url() . \char`\"{}/article/image/\{\${\bf user}\mbox{[}\textquotesingle{}identity\+\_\+id\textquotesingle{}\mbox{]}\}\char`\"{}}\hypertarget{config_8php_a3fb5345aad792cecf59950f0aeb80d3c}{}\label{config_8php_a3fb5345aad792cecf59950f0aeb80d3c}
+
+
+Definition at line 5 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}upload\+\_\+path\textquotesingle{}\mbox{]} = fud\+\_\+get\+\_\+userdata(\char`\"{}article/images/\{\${\bf user}\mbox{[}\textquotesingle{}identity\+\_\+id\textquotesingle{}\mbox{]}\}/\char`\"{})}\hypertarget{config_8php_aed4396bce8ab87ece253ce0e9965669b}{}\label{config_8php_aed4396bce8ab87ece253ce0e9965669b}
+
+
+Definition at line 7 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!is\+\_\+dir(\$config\mbox{[}\textquotesingle{}upload\+\_\+path\textquotesingle{}\mbox{]})) \$config\mbox{[}\textquotesingle{}allowed\+\_\+types\textquotesingle{}\mbox{]} = \textquotesingle{}gif$\vert$jpg$\vert$png\textquotesingle{}}\hypertarget{config_8php_a512ef03098d9904d1cf283e30737fea3}{}\label{config_8php_a512ef03098d9904d1cf283e30737fea3}
+
+
+Definition at line 20 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}max\+\_\+size\textquotesingle{}\mbox{]} = 0}\hypertarget{config_8php_a08ef9a43e1ca734499df35a4e9a77e49}{}\label{config_8php_a08ef9a43e1ca734499df35a4e9a77e49}
+
+
+Definition at line 33 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}max\+\_\+width\textquotesingle{}\mbox{]} = 0}\hypertarget{config_8php_a27019f4fc442fa2b86b4477ab220a062}{}\label{config_8php_a27019f4fc442fa2b86b4477ab220a062}
+
+
+Definition at line 45 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}max\+\_\+height\textquotesingle{}\mbox{]} = 0}\hypertarget{config_8php_a3b7844b3d06123a510c1cc1bd6225fe5}{}\label{config_8php_a3b7844b3d06123a510c1cc1bd6225fe5}
+
+
+Definition at line 57 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}allow\+\_\+resize\textquotesingle{}\mbox{]} = T\+R\+UE}\hypertarget{config_8php_a37f0f0a570e5355ebe3cf54b961d88be}{}\label{config_8php_a37f0f0a570e5355ebe3cf54b961d88be}
+
+
+Definition at line 71 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}encrypt\+\_\+name\textquotesingle{}\mbox{]} = T\+R\+UE}\hypertarget{config_8php_a68ed88b056af10f4a497cd806017c0c5}{}\label{config_8php_a68ed88b056af10f4a497cd806017c0c5}
+
+
+Definition at line 85 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$config@{\$config}}
+\index{\$config@{\$config}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config\mbox{[}\textquotesingle{}overwrite\textquotesingle{}\mbox{]} = F\+A\+L\+SE}\hypertarget{config_8php_a90847191a70a5f5968f94903fdc6311b}{}\label{config_8php_a90847191a70a5f5968f94903fdc6311b}
+
+
+Definition at line 97 of file config.\+php.
+
+\index{config.\+php@{config.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!config.\+php@{config.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = loggedin\+\_\+default\+\_\+identity()}\hypertarget{config_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{config_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 4 of file config.\+php.
+

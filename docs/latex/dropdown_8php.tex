@@ -1,0 +1,78 @@
+\hypertarget{dropdown_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/input/dropdown.php File Reference}
+\label{dropdown_8php}\index{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/input/dropdown.\+php@{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/input/dropdown.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dropdown_8php_a252ba022809910ea710a068fc1bab657}{\$class} = \textquotesingle{}ossn-\/\hyperlink{jquery_8tokeninput_8js_a7195b980d89876758c8a839bcb006916}{dropdown}-\/\hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}\textquotesingle{}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(isset(\$params\mbox{[}\textquotesingle{}class\textquotesingle{}\mbox{]})) \hyperlink{dropdown_8php_a5bd63f8afd4dd4ba86dcdf5618904298}{\$value} = (isset(\$params\mbox{[}\textquotesingle{}\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}\textquotesingle{}\mbox{]})) ? \$params\mbox{[}\textquotesingle{}\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{dropdown_8php_affc45c6ace2eeb3f300b054dbf9592b6}{\$values} = (isset(\$params\mbox{[}\textquotesingle{}options\textquotesingle{}\mbox{]})) ? \$params\mbox{[}\textquotesingle{}options\textquotesingle{}\mbox{]} \+: array()
+\item 
+\hyperlink{dropdown_8php_a011800c63ece4cbbfa77136a20607023}{\$options} = array()
+\item 
+\hyperlink{user__timeline_8php_a1b18c909b5f0affc85267f294d947c4b}{foreach}(\$values as \$item=$>$ \$\hyperlink{jquery_8tokeninput_8js_a21200c34618b8c12c446cd51529ebd8c}{val}) \hyperlink{dropdown_8php_a0035e272a293e029297f6ed19d3bb10d}{\$defaults}
+\item 
+\hyperlink{dropdown_8php_afe68e6fbe7acfbffc0af0c84a1996466}{\$params} = array\+\_\+merge(\$\hyperlink{_chart_8_core_8js_afbaa35e32dd50615b39a75e1e5ec6921}{defaults}, \$params)
+\item 
+\hyperlink{dropdown_8php_adc851f7a62250e75df0490c0280aef4c}{\$attributes} = \hyperlink{ossn_8lib_8views_8php_a90922f09de8a06ea85351afb51fac9f7}{ossn\+\_\+args}(\$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{dropdown.\+php@{dropdown.\+php}!\$attributes@{\$attributes}}
+\index{\$attributes@{\$attributes}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$attributes}{$attributes}}]{\setlength{\rightskip}{0pt plus 5cm}\$attributes = {\bf ossn\+\_\+args}(\$params)}\hypertarget{dropdown_8php_adc851f7a62250e75df0490c0280aef4c}{}\label{dropdown_8php_adc851f7a62250e75df0490c0280aef4c}
+
+
+Definition at line 28 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$class@{\$class}}
+\index{\$class@{\$class}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$class}{$class}}]{\setlength{\rightskip}{0pt plus 5cm}\$class = \textquotesingle{}ossn-\/{\bf dropdown}-\/{\bf input}\textquotesingle{}}\hypertarget{dropdown_8php_a252ba022809910ea710a068fc1bab657}{}\label{dropdown_8php_a252ba022809910ea710a068fc1bab657}
+
+
+Definition at line 4 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$defaults@{\$defaults}}
+\index{\$defaults@{\$defaults}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$defaults}{$defaults}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$values as \$item=$>$ \${\bf val}) \${\bf defaults}}\hypertarget{dropdown_8php_a0035e272a293e029297f6ed19d3bb10d}{}\label{dropdown_8php_a0035e272a293e029297f6ed19d3bb10d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+    \textcolor{stringliteral}{'disabled'} => \textcolor{keyword}{false},
+    \textcolor{stringliteral}{'class'} => \hyperlink{dropdown_8php_a252ba022809910ea710a068fc1bab657}{$class},
+)
+\end{DoxyCode}
+
+
+Definition at line 21 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$options@{\$options}}
+\index{\$options@{\$options}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$options}{$options}}]{\setlength{\rightskip}{0pt plus 5cm}\$options = array()}\hypertarget{dropdown_8php_a011800c63ece4cbbfa77136a20607023}{}\label{dropdown_8php_a011800c63ece4cbbfa77136a20607023}
+
+
+Definition at line 11 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$params@{\$params}}
+\index{\$params@{\$params}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$params}{$params}}]{\setlength{\rightskip}{0pt plus 5cm}\$params = array\+\_\+merge(\${\bf defaults}, \$params)}\hypertarget{dropdown_8php_afe68e6fbe7acfbffc0af0c84a1996466}{}\label{dropdown_8php_afe68e6fbe7acfbffc0af0c84a1996466}
+
+
+Definition at line 26 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$value@{\$value}}
+\index{\$value@{\$value}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$value}{$value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (isset(\$params\mbox{[}\textquotesingle{}class\textquotesingle{}\mbox{]})) \${\bf value} = (isset(\$params\mbox{[}\textquotesingle{}{\bf value}\textquotesingle{}\mbox{]})) ? \$params\mbox{[}\textquotesingle{}{\bf value}\textquotesingle{}\mbox{]} \+: \textquotesingle{}\textquotesingle{}}\hypertarget{dropdown_8php_a5bd63f8afd4dd4ba86dcdf5618904298}{}\label{dropdown_8php_a5bd63f8afd4dd4ba86dcdf5618904298}
+
+
+Definition at line 8 of file dropdown.\+php.
+
+\index{dropdown.\+php@{dropdown.\+php}!\$values@{\$values}}
+\index{\$values@{\$values}!dropdown.\+php@{dropdown.\+php}}
+\subsubsection[{\texorpdfstring{\$values}{$values}}]{\setlength{\rightskip}{0pt plus 5cm}\$values = (isset(\$params\mbox{[}\textquotesingle{}options\textquotesingle{}\mbox{]})) ? \$params\mbox{[}\textquotesingle{}options\textquotesingle{}\mbox{]} \+: array()}\hypertarget{dropdown_8php_affc45c6ace2eeb3f300b054dbf9592b6}{}\label{dropdown_8php_affc45c6ace2eeb3f300b054dbf9592b6}
+
+
+Definition at line 9 of file dropdown.\+php.
+

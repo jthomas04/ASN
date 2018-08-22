@@ -1,0 +1,167 @@
+\hypertarget{ossn_8lib_8route_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+route.\+php File Reference}
+\label{ossn_8lib_8route_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+route.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+route.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8route_8php_a79ce899ce98ad90b10fee0b598e1bd5a}{array\+Object} (\$array, \$class= \textquotesingle{}std\+Class\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8route_8php_aca09e0f582473a9b1c19c4fd180a44ce}{force\+Object} (\&\$object)
+\item 
+\hyperlink{ossn_8lib_8route_8php_ac23dc424aa33dcd57982b72f4ed1217e}{ossn\+\_\+route} ()
+\item 
+\hyperlink{ossn_8lib_8route_8php_ae60b2619e462f20751f6938019d8edd4}{current\+\_\+url} (\$uport= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8route_8php_ac43c6e99759542a01766293beb6b364d}{ossn\+\_\+register\+\_\+class} (array \$classes=array())
+\item 
+\hyperlink{ossn_8lib_8route_8php_acdf3dd6cb81c5603579dd711f8292a64}{ossn\+\_\+autoload\+\_\+classes} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8route_8php_a7a8e15d80d1e72bf6aff8fbf156eb8c2}{ossn\+\_\+unregister\+\_\+class} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!array\+Object@{array\+Object}}
+\index{array\+Object@{array\+Object}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{array\+Object(\$array, \$class= \textquotesingle{}std\+Class\textquotesingle{})}{arrayObject($array, $class= 'stdClass')}}]{\setlength{\rightskip}{0pt plus 5cm}array\+Object (
+\begin{DoxyParamCaption}
+\item[{}]{\$array, }
+\item[{}]{\$class = {\ttfamily \textquotesingle{}stdClass\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_a79ce899ce98ad90b10fee0b598e1bd5a}{}\label{ossn_8lib_8route_8php_a79ce899ce98ad90b10fee0b598e1bd5a}
+Ossn Convert arrays to Object
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & Arrays \\
+\hline
+string & {\em \$class} & class name ,else it will be object of std\+Class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!current\+\_\+url@{current\+\_\+url}}
+\index{current\+\_\+url@{current\+\_\+url}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{current\+\_\+url(\$uport= \textquotesingle{}\textquotesingle{})}{current_url($uport= '')}}]{\setlength{\rightskip}{0pt plus 5cm}current\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$uport = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_ae60b2619e462f20751f6938019d8edd4}{}\label{ossn_8lib_8route_8php_ae60b2619e462f20751f6938019d8edd4}
+Get current url
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uport} & Want port or not? default will be disable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!force\+Object@{force\+Object}}
+\index{force\+Object@{force\+Object}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{force\+Object(\&\$object)}{forceObject(&$object)}}]{\setlength{\rightskip}{0pt plus 5cm}force\+Object (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$object}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_aca09e0f582473a9b1c19c4fd180a44ce}{}\label{ossn_8lib_8route_8php_aca09e0f582473a9b1c19c4fd180a44ce}
+Force Object Sometimes php can\textquotesingle{}t get object class , so we need to make sure that object have class name
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & Object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!ossn\+\_\+autoload\+\_\+classes@{ossn\+\_\+autoload\+\_\+classes}}
+\index{ossn\+\_\+autoload\+\_\+classes@{ossn\+\_\+autoload\+\_\+classes}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+autoload\+\_\+classes(\$name= \textquotesingle{}\textquotesingle{})}{ossn_autoload_classes($name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+autoload\+\_\+classes (
+\begin{DoxyParamCaption}
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_acdf3dd6cb81c5603579dd711f8292a64}{}\label{ossn_8lib_8route_8php_acdf3dd6cb81c5603579dd711f8292a64}
+Auto loading classes
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & of the class\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!ossn\+\_\+register\+\_\+class@{ossn\+\_\+register\+\_\+class}}
+\index{ossn\+\_\+register\+\_\+class@{ossn\+\_\+register\+\_\+class}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+class(array \$classes=array())}{ossn_register_class(array $classes=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+class (
+\begin{DoxyParamCaption}
+\item[{array}]{\$classes = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_ac43c6e99759542a01766293beb6b364d}{}\label{ossn_8lib_8route_8php_ac43c6e99759542a01766293beb6b364d}
+Register a class for autoloading
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$classes} & A classes list with the path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!ossn\+\_\+route@{ossn\+\_\+route}}
+\index{ossn\+\_\+route@{ossn\+\_\+route}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+route()}{ossn_route()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+route (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_ac23dc424aa33dcd57982b72f4ed1217e}{}\label{ossn_8lib_8route_8php_ac23dc424aa33dcd57982b72f4ed1217e}
+Get system directory paths
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file ossn.\+lib.\+route.\+php.
+
+\index{ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}!ossn\+\_\+unregister\+\_\+class@{ossn\+\_\+unregister\+\_\+class}}
+\index{ossn\+\_\+unregister\+\_\+class@{ossn\+\_\+unregister\+\_\+class}!ossn.\+lib.\+route.\+php@{ossn.\+lib.\+route.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+unregister\+\_\+class(\$name= \textquotesingle{}\textquotesingle{})}{ossn_unregister_class($name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+unregister\+\_\+class (
+\begin{DoxyParamCaption}
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8route_8php_a7a8e15d80d1e72bf6aff8fbf156eb8c2}{}\label{ossn_8lib_8route_8php_a7a8e15d80d1e72bf6aff8fbf156eb8c2}
+Unregister a class Unregistering the system classes may result in strange behaviour
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$classes} & A classes list with the path\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 136 of file ossn.\+lib.\+route.\+php.
+

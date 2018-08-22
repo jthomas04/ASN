@@ -1,0 +1,349 @@
+\hypertarget{_chart_8_doughnut_8js}{}\section{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.Doughnut.\+js File Reference}
+\label{_chart_8_doughnut_8js}\index{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.\+Doughnut.\+js@{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.\+Doughnut.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_ab33251d1fe0bcc9e58f2ec35cabfc180}{Type} \hyperlink{_chart_8_doughnut_8js_a9142bdf98256d194cef09ab24cc98c04}{extend} (\{name\+:\char`\"{}Doughnut\char`\"{}, defaults\+:default\+Config, initialize\+:function(\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data})\{this.\+segments=\mbox{[}$\,$\mbox{]};\hyperlink{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}{this.\+outer\+Radius}=(\hyperlink{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{helpers.\+min}(\mbox{[}this.\+chart.\+width, \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{this.\+chart.\+height}\mbox{]})-\/this.\+options.\+segment\+Stroke\+Width/2)/2;this.\+Segment\+Arc=Chart.\+Arc.\+extend(\{ctx\+:this.\+chart.\+ctx, x\+:this.\+chart.\+width/2, \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{y\+:this.\+chart.\+height}/2\});\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(this.\+options.\+show\+Tooltips)\{\hyperlink{_chart_8_core_8js_a0f15f235d55ddf0ac8c83f08944876f7}{helpers.\+bind\+Events}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, this.\+options.\+tooltip\+Events, function(evt)\{var active\+Segments=(evt.\+type!== \textquotesingle{}mouseout\textquotesingle{})?this.\+get\+Segments\+At\+Event(evt)\+:\mbox{[}$\,$\mbox{]};\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{helpers.\+each}(this.\+segments, function(segment)\{segment.\+restore(\mbox{[}\char`\"{}fill\+Color\char`\"{}\mbox{]});\});helpers.\+each(active\+Segments, function(active\+Segment)\{active\+Segment.\+fill\+Color=active\+Segment.\+highlight\+Color;\});this.\+show\+Tooltip(active\+Segments);\});\}this.\+calculate\+Total(\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data});\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{helpers.\+each}(\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data}, function(datapoint, index)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!datapoint.\+color)\{datapoint.\+color= \textquotesingle{}hsl(\textquotesingle{}+(360 $\ast$index/data.\+length)+ \textquotesingle{}, 100\%, 50\%)\textquotesingle{};\}this.\+add\+Data(datapoint, index, true);\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this})
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} \hyperlink{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}{render} ()
+\item 
+\hyperlink{_chart_8_radar_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} \hyperlink{_chart_8_doughnut_8js_a49fc4dd4d4bb65830142a1d40e8a3e8c}{each} (this.\+segments, function(segment)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(segment.\+in\+Range(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{location.\+x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{location.\+y})) segments\+Array.\+push(segment);\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this})
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} segments \hyperlink{_chart_8_doughnut_8js_a501e1dff87e87da709ef929d489096dc}{splice} (index, 0, new this.\+Segment\+Arc(\{\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value\+:segment.\+value}, outer\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:\hyperlink{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}{this.\+outer\+Radius}, inner\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:(\hyperlink{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}{this.\+outer\+Radius}/100)$\ast$this.\+options.\+percentage\+Inner\+Cutout, fill\+Color\+:segment.\+color, highlight\+Color\+:segment.\+highlight$\vert$$\vert$segment.\+color, show\+Stroke\+:this.\+options.\+segment\+Show\+Stroke, stroke\+Width\+:this.\+options.\+segment\+Stroke\+Width, stroke\+Color\+:this.\+options.\+segment\+Stroke\+Color, start\+Angle\+:\+Math.\+PI $\ast$1.\+5, circumference\+:(this.\+options.\+animate\+Rotate)?0\+:this.\+calculate\+Circumference(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{segment.\+value}), label\+:segment.\+label\}))
+\item 
+\hyperlink{_chart_8_doughnut_8js_a9aed12bbee23f1b0955d7efa6df33dfc}{if} (!\hyperlink{_chart_8_doughnut_8js_a997e857337c66f8d2c290f6c36d5b384}{silent})
+\item 
+\hyperlink{_chart_8_radar_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} \hyperlink{_chart_8_doughnut_8js_a13e64b843416b34cc34a4f2ad6c20751}{each} (\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data}, function(segment)\{this.\+total+=Math.\+abs(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{segment.\+value});\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this})
+\item 
+\hyperlink{_chart_8_radar_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} \hyperlink{_chart_8_doughnut_8js_aa5fb2d4fcf2243a7c3ece75bf4a21b74}{each} (this.\+active\+Elements, function(active\+Element)\{active\+Element.\+restore(\mbox{[}\textquotesingle{}fill\+Color\textquotesingle{}\mbox{]});\})
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} segments \hyperlink{_chart_8_doughnut_8js_a8bc702c8b9c8281ad0147a9bcb2c9abc}{splice} (index\+To\+Delete, 1)
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} \hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow} ()
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} \hyperlink{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}{update} ()
+\item 
+\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} \hyperlink{_chart_8_doughnut_8js_a04393833f822989236b04164e28ac1f6}{clear} ()
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a0ecd014dd4c5d61d8130961daf1eed54}{types} Doughnut \hyperlink{_chart_8_doughnut_8js_ae30de0a5bbcbff0944f6918cfa33937b}{extend} (\{name\+:\char`\"{}Pie\char`\"{}, defaults\+:helpers.\+merge(\hyperlink{_chart_8_polar_area_8js_aaff5d944ccfef1ee4cdd0c929e3e2209}{default\+Config},\{percentage\+Inner\+Cutout\+:0\})\})
+\item 
+\hyperlink{_chart_8_doughnut_8js_aafc46d047b4d7639fd2c4b927ec5048c}{call} (\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{_chart_8_doughnut_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root} = \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}
+\item 
+var \hyperlink{_chart_8_doughnut_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} = root.\+Chart
+\item 
+var \hyperlink{_chart_8_doughnut_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} = Chart.\+helpers
+\item 
+var \hyperlink{_chart_8_doughnut_8js_aaff5d944ccfef1ee4cdd0c929e3e2209}{default\+Config}
+\item 
+get\+Segments\+At\+Event \hyperlink{_chart_8_doughnut_8js_a41e2ac47dca4a2c55e4f9587d8e1b1a7}{\+\_\+\+\_\+pad0\+\_\+\+\_\+}
+\item 
+var \hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location} = \hyperlink{_chart_8_core_8js_a51c851b052259e9ad3b7645977d54c51}{helpers.\+get\+Relative\+Position}(\hyperlink{jquery-ui_8min_8js_abea95a4e94bc6f4151d5683d4c12c3f4}{e})
+\item 
+return \hyperlink{_chart_8_doughnut_8js_a88e95933c84863e77b2fb4e77a130d88}{segments\+Array}
+\item 
+add\+Data \hyperlink{_chart_8_doughnut_8js_ab9b7e8466408420e01378c5fe9cb0ea8}{\+\_\+\+\_\+pad1\+\_\+\+\_\+}
+\item 
+add\+Data \hyperlink{_chart_8_doughnut_8js_ac8447bdb8052334b628decfd9dcee5bf}{at\+Index}
+\item 
+add\+Data \hyperlink{_chart_8_doughnut_8js_a997e857337c66f8d2c290f6c36d5b384}{silent}
+\item 
+calculate\+Circumference \hyperlink{_chart_8_doughnut_8js_a7f29a57d47a3c4c2ca19795c27136f40}{\+\_\+\+\_\+pad2\+\_\+\+\_\+}
+\item 
+\hyperlink{_chart_8_doughnut_8js_a0544c3fe466e421738dae463968b70ba}{else}
+\item 
+calculate\+Total \hyperlink{_chart_8_doughnut_8js_adedfb21bd2e659edd55e1dbd5b72eca2}{\+\_\+\+\_\+pad3\+\_\+\+\_\+}
+\item 
+\hyperlink{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}{update} \hyperlink{_chart_8_doughnut_8js_a8db714e8e732ed69f514e077751fc32b}{\+\_\+\+\_\+pad4\+\_\+\+\_\+}
+\item 
+remove\+Data \hyperlink{_chart_8_doughnut_8js_a5143179213f8a68f256a6274f68c5011}{\+\_\+\+\_\+pad5\+\_\+\+\_\+}
+\item 
+\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow} \hyperlink{_chart_8_doughnut_8js_a30de1a1f1c7622736b9212bd68b8a858}{\+\_\+\+\_\+pad6\+\_\+\+\_\+}
+\item 
+\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow} \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this} \hyperlink{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}{outer\+Radius} = (\hyperlink{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{helpers.\+min}(\mbox{[}this.\+chart.\+width,\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{this.\+chart.\+height}\mbox{]}) -\/ this.\+options.\+segment\+Stroke\+Width/2)/2
+\item 
+draw \hyperlink{_chart_8_doughnut_8js_a2110ed8898a93b6f92f2a88131f4137a}{\+\_\+\+\_\+pad7\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!call@{call}}
+\index{call@{call}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{call(this)}{call(this)}}]{\setlength{\rightskip}{0pt plus 5cm}call (
+\begin{DoxyParamCaption}
+\item[{{\bf this}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_aafc46d047b4d7639fd2c4b927ec5048c}{}\label{_chart_8_doughnut_8js_aafc46d047b4d7639fd2c4b927ec5048c}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!clear@{clear}}
+\index{clear@{clear}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{clear()}{clear()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a04393833f822989236b04164e28ac1f6}{}\label{_chart_8_doughnut_8js_a04393833f822989236b04164e28ac1f6}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!each@{each}}
+\index{each@{each}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{each(this.\+segments, function(segment)\lcurly{}if(segment.\+in\+Range(location.\+x, location.\+y)) segments\+Array.\+push(segment);\rcurly{}, this)}{each(this.segments, function(segment)\{if(segment.inRange(location.x, location.y)) segmentsArray.push(segment);\}, this)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf helpers} each (
+\begin{DoxyParamCaption}
+\item[{this.}]{segments, }
+\item[{function(segment)\{{\bf if}(segment.\+in\+Range({\bf location.\+x}, {\bf location.\+y})) segments\+Array.\+push(segment);\}}]{, }
+\item[{{\bf this}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a49fc4dd4d4bb65830142a1d40e8a3e8c}{}\label{_chart_8_doughnut_8js_a49fc4dd4d4bb65830142a1d40e8a3e8c}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!each@{each}}
+\index{each@{each}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{each(data, function(segment)\lcurly{}this.\+total+=\+Math.\+abs(segment.\+value);\rcurly{}, this)}{each(data, function(segment)\{this.total+=Math.abs(segment.value);\}, this)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf helpers} each (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{function(segment)\{this.\+total+=Math.\+abs({\bf segment.\+value});\}}]{, }
+\item[{{\bf this}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a13e64b843416b34cc34a4f2ad6c20751}{}\label{_chart_8_doughnut_8js_a13e64b843416b34cc34a4f2ad6c20751}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!each@{each}}
+\index{each@{each}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{each(this.\+active\+Elements, function(active\+Element)\lcurly{}active\+Element.\+restore([\textquotesingle{}fill\+Color\textquotesingle{}]);\rcurly{})}{each(this.activeElements, function(activeElement)\{activeElement.restore(['fillColor']);\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf helpers} each (
+\begin{DoxyParamCaption}
+\item[{this.}]{active\+Elements, }
+\item[{function(active\+Element)\{active\+Element.\+restore(\mbox{[}\textquotesingle{}fill\+Color\textquotesingle{}\mbox{]});\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_aa5fb2d4fcf2243a7c3ece75bf4a21b74}{}\label{_chart_8_doughnut_8js_aa5fb2d4fcf2243a7c3ece75bf4a21b74}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!extend@{extend}}
+\index{extend@{extend}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{extend(\lcurly{}name\+:""Doughnut"", defaults\+:default\+Config, initialize\+:function(data)\lcurly{}this.\+segments=[];this.\+outer\+Radius=(helpers.\+min([this.\+chart.\+width, this.\+chart.\+height])-\/this.\+options.\+segment\+Stroke\+Width/2)/2;this.\+Segment\+Arc=\+Chart.\+Arc.\+extend(\lcurly{}ctx\+:this.\+chart.\+ctx, x\+:this.\+chart.\+width/2, y\+:this.\+chart.\+height/2\rcurly{});if(this.\+options.\+show\+Tooltips)\lcurly{}helpers.\+bind\+Events(this, this.\+options.\+tooltip\+Events, function(evt)\lcurly{}var active\+Segments=(evt.\+type"!== \textquotesingle{}mouseout\textquotesingle{})?this.\+get\+Segments\+At\+Event(evt)\+:[];helpers.\+each(this.\+segments, function(segment)\lcurly{}segment.\+restore([""fill\+Color""]);\rcurly{});helpers.\+each(active\+Segments, function(active\+Segment)\lcurly{}active\+Segment.\+fill\+Color=active\+Segment.\+highlight\+Color;\rcurly{});this.\+show\+Tooltip(active\+Segments);\rcurly{});\rcurly{}this.\+calculate\+Total(data);helpers.\+each(data, function(datapoint, index)\lcurly{}if("!datapoint.\+color)\lcurly{}datapoint.\+color= \textquotesingle{}hsl(\textquotesingle{}+(360 $\ast$index/data.\+length)+ \textquotesingle{}, 100\%, 50\%)\textquotesingle{};\rcurly{}this.\+add\+Data(datapoint, index, true);\rcurly{}, this)}{extend(\{name:"Doughnut", defaults:defaultConfig, initialize:function(data)\{this.segments=[];this.outerRadius=(helpers.min([this.chart.width, this.chart.height])-this.options.segmentStrokeWidth/2)/2;this.SegmentArc=Chart.Arc.extend(\{ctx:this.chart.ctx, x:this.chart.width/2, y:this.chart.height/2\});if(this.options.showTooltips)\{helpers.bindEvents(this, this.options.tooltipEvents, function(evt)\{var activeSegments=(evt.type!== 'mouseout')?this.getSegmentsAtEvent(evt):[];helpers.each(this.segments, function(segment)\{segment.restore(["fillColor"]);\});helpers.each(activeSegments, function(activeSegment)\{activeSegment.fillColor=activeSegment.highlightColor;\});this.showTooltip(activeSegments);\});\}this.calculateTotal(data);helpers.each(data, function(datapoint, index)\{if(!datapoint.color)\{datapoint.color= 'hsl('+(360 *index/data.length)+ ', 100%, 50%)';\}this.addData(datapoint, index, true);\}, this)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} {\bf Type} extend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a9142bdf98256d194cef09ab24cc98c04}{}\label{_chart_8_doughnut_8js_a9142bdf98256d194cef09ab24cc98c04}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!extend@{extend}}
+\index{extend@{extend}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{extend(\lcurly{}name\+:""Pie"", defaults\+:helpers.\+merge(default\+Config,\lcurly{}percentage\+Inner\+Cutout\+:0\rcurly{})\rcurly{})}{extend(\{name:"Pie", defaults:helpers.merge(defaultConfig,\{percentageInnerCutout:0\})\})}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} {\bf types} Doughnut extend (
+\begin{DoxyParamCaption}
+\item[{\{name\+:\char`\"{}Pie\char`\"{}, defaults\+:helpers.\+merge({\bf default\+Config},\{percentage\+Inner\+Cutout\+:0\})\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_ae30de0a5bbcbff0944f6918cfa33937b}{}\label{_chart_8_doughnut_8js_ae30de0a5bbcbff0944f6918cfa33937b}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!if@{if}}
+\index{if@{if}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{if("!silent)}{if(!silent)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{!}]{silent}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a9aed12bbee23f1b0955d7efa6df33dfc}{}\label{_chart_8_doughnut_8js_a9aed12bbee23f1b0955d7efa6df33dfc}
+
+
+Definition at line 108 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!reflow@{reflow}}
+\index{reflow@{reflow}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{reflow()}{reflow()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} reflow (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{}\label{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!render@{render}}
+\index{render@{render}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{render()}{render()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}{}\label{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!splice@{splice}}
+\index{splice@{splice}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{splice(index, 0, new this.\+Segment\+Arc(\lcurly{}value\+:segment.\+value, outer\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:this.\+outer\+Radius, inner\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:(this.\+outer\+Radius/100)$\ast$this.\+options.\+percentage\+Inner\+Cutout, fill\+Color\+:segment.\+color, highlight\+Color\+:segment.\+highlight\texttt{"|}\texttt{"|}segment.\+color, show\+Stroke\+:this.\+options.\+segment\+Show\+Stroke, stroke\+Width\+:this.\+options.\+segment\+Stroke\+Width, stroke\+Color\+:this.\+options.\+segment\+Stroke\+Color, start\+Angle\+:\+Math.\+P\+I $\ast$1.\+5, circumference\+:(this.\+options.\+animate\+Rotate)?0\+:this.\+calculate\+Circumference(segment.\+value), label\+:segment.\+label\rcurly{}))}{splice(index, 0, new this.SegmentArc(\{value:segment.value, outerRadius:(this.options.animateScale)?0:this.outerRadius, innerRadius:(this.options.animateScale)?0:(this.outerRadius/100)*this.options.percentageInnerCutout, fillColor:segment.color, highlightColor:segment.highlight||segment.color, showStroke:this.options.segmentShowStroke, strokeWidth:this.options.segmentStrokeWidth, strokeColor:this.options.segmentStrokeColor, startAngle:Math.PI *1.5, circumference:(this.options.animateRotate)?0:this.calculateCircumference(segment.value), label:segment.label\}))}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} segments splice (
+\begin{DoxyParamCaption}
+\item[{index}]{, }
+\item[{0}]{, }
+\item[{new this.}]{Segment\+Arc\{value\+:segment.\+value, outer\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:this.\+outer\+Radius, inner\+Radius\+:(this.\+options.\+animate\+Scale)?0\+:(this.\+outer\+Radius/100)$\ast$this.\+options.\+percentage\+Inner\+Cutout, fill\+Color\+:segment.\+color, highlight\+Color\+:segment.\+highlight$\vert$$\vert$segment.\+color, show\+Stroke\+:this.\+options.\+segment\+Show\+Stroke, stroke\+Width\+:this.\+options.\+segment\+Stroke\+Width, stroke\+Color\+:this.\+options.\+segment\+Stroke\+Color, start\+Angle\+:\+Math.\+P\+I $\ast$1.\+5, circumference\+:(this.\+options.\+animate\+Rotate)?0\+:this.\+calculate\+Circumference(segment.\+value), label\+:segment.\+label\}}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a501e1dff87e87da709ef929d489096dc}{}\label{_chart_8_doughnut_8js_a501e1dff87e87da709ef929d489096dc}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!splice@{splice}}
+\index{splice@{splice}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{splice(index\+To\+Delete, 1)}{splice(indexToDelete, 1)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} segments splice (
+\begin{DoxyParamCaption}
+\item[{index\+To\+Delete}]{, }
+\item[{1}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_a8bc702c8b9c8281ad0147a9bcb2c9abc}{}\label{_chart_8_doughnut_8js_a8bc702c8b9c8281ad0147a9bcb2c9abc}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!update@{update}}
+\index{update@{update}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf this} update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}{}\label{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}
+
+
+\subsection{Variable Documentation}
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad0\+\_\+\+\_\+@{\+\_\+\+\_\+pad0\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad0\+\_\+\+\_\+@{\+\_\+\+\_\+pad0\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad0\+\_\+\+\_\+}{__pad0__}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Segments\+At\+Event \+\_\+\+\_\+pad0\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a41e2ac47dca4a2c55e4f9587d8e1b1a7}{}\label{_chart_8_doughnut_8js_a41e2ac47dca4a2c55e4f9587d8e1b1a7}
+
+
+Definition at line 82 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad1\+\_\+\+\_\+@{\+\_\+\+\_\+pad1\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad1\+\_\+\+\_\+@{\+\_\+\+\_\+pad1\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad1\+\_\+\+\_\+}{__pad1__}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Data \+\_\+\+\_\+pad1\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_ab9b7e8466408420e01378c5fe9cb0ea8}{}\label{_chart_8_doughnut_8js_ab9b7e8466408420e01378c5fe9cb0ea8}
+
+
+Definition at line 92 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad2\+\_\+\+\_\+@{\+\_\+\+\_\+pad2\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad2\+\_\+\+\_\+@{\+\_\+\+\_\+pad2\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad2\+\_\+\+\_\+}{__pad2__}}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Circumference \+\_\+\+\_\+pad2\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a7f29a57d47a3c4c2ca19795c27136f40}{}\label{_chart_8_doughnut_8js_a7f29a57d47a3c4c2ca19795c27136f40}
+
+
+Definition at line 112 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad3\+\_\+\+\_\+@{\+\_\+\+\_\+pad3\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad3\+\_\+\+\_\+@{\+\_\+\+\_\+pad3\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad3\+\_\+\+\_\+}{__pad3__}}]{\setlength{\rightskip}{0pt plus 5cm}calculate\+Total \+\_\+\+\_\+pad3\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_adedfb21bd2e659edd55e1dbd5b72eca2}{}\label{_chart_8_doughnut_8js_adedfb21bd2e659edd55e1dbd5b72eca2}
+
+
+Definition at line 119 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad4\+\_\+\+\_\+@{\+\_\+\+\_\+pad4\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad4\+\_\+\+\_\+@{\+\_\+\+\_\+pad4\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad4\+\_\+\+\_\+}{__pad4__}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf update} \+\_\+\+\_\+pad4\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a8db714e8e732ed69f514e077751fc32b}{}\label{_chart_8_doughnut_8js_a8db714e8e732ed69f514e077751fc32b}
+
+
+Definition at line 125 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad5\+\_\+\+\_\+@{\+\_\+\+\_\+pad5\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad5\+\_\+\+\_\+@{\+\_\+\+\_\+pad5\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad5\+\_\+\+\_\+}{__pad5__}}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Data \+\_\+\+\_\+pad5\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a5143179213f8a68f256a6274f68c5011}{}\label{_chart_8_doughnut_8js_a5143179213f8a68f256a6274f68c5011}
+
+
+Definition at line 138 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad6\+\_\+\+\_\+@{\+\_\+\+\_\+pad6\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad6\+\_\+\+\_\+@{\+\_\+\+\_\+pad6\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad6\+\_\+\+\_\+}{__pad6__}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf reflow} \+\_\+\+\_\+pad6\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a30de1a1f1c7622736b9212bd68b8a858}{}\label{_chart_8_doughnut_8js_a30de1a1f1c7622736b9212bd68b8a858}
+
+
+Definition at line 145 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!\+\_\+\+\_\+pad7\+\_\+\+\_\+@{\+\_\+\+\_\+pad7\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+pad7\+\_\+\+\_\+@{\+\_\+\+\_\+pad7\+\_\+\+\_\+}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+pad7\+\_\+\+\_\+}{__pad7__}}]{\setlength{\rightskip}{0pt plus 5cm}draw \+\_\+\+\_\+pad7\+\_\+\+\_\+}\hypertarget{_chart_8_doughnut_8js_a2110ed8898a93b6f92f2a88131f4137a}{}\label{_chart_8_doughnut_8js_a2110ed8898a93b6f92f2a88131f4137a}
+
+
+Definition at line 159 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!at\+Index@{at\+Index}}
+\index{at\+Index@{at\+Index}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{at\+Index}{atIndex}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Data at\+Index}\hypertarget{_chart_8_doughnut_8js_ac8447bdb8052334b628decfd9dcee5bf}{}\label{_chart_8_doughnut_8js_ac8447bdb8052334b628decfd9dcee5bf}
+
+
+Definition at line 92 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!Chart@{Chart}}
+\index{Chart@{Chart}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{Chart}{Chart}}]{\setlength{\rightskip}{0pt plus 5cm}var Chart = root.\+Chart}\hypertarget{_chart_8_doughnut_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{}\label{_chart_8_doughnut_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}
+
+
+Definition at line 5 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!default\+Config@{default\+Config}}
+\index{default\+Config@{default\+Config}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{default\+Config}{defaultConfig}}]{\setlength{\rightskip}{0pt plus 5cm}var default\+Config}\hypertarget{_chart_8_doughnut_8js_aaff5d944ccfef1ee4cdd0c929e3e2209}{}\label{_chart_8_doughnut_8js_aaff5d944ccfef1ee4cdd0c929e3e2209}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+        
+        segmentShowStroke : \textcolor{keyword}{true},
+
+        
+        segmentStrokeColor : \textcolor{stringliteral}{"#fff"},
+
+        
+        segmentStrokeWidth : 2,
+
+        
+        percentageInnerCutout : 50,
+
+        
+        animationSteps : 100,
+
+        
+        animationEasing : \textcolor{stringliteral}{"easeOutBounce"},
+
+        
+        animateRotate : \textcolor{keyword}{true},
+
+        
+        animateScale : \textcolor{keyword}{false},
+
+        
+        legendTemplate : \textcolor{stringliteral}{"<ul class=\(\backslash\)"<%=name.toLowerCase()%>-legend\(\backslash\)"><% for (var i=0; i<segments.length;
+       i++)\{%><li><span style=\(\backslash\)"background-color:<%=segments[i].fillColor%>\(\backslash\)"
+      ><%if(segments[i].label)\{%><%=segments[i].label%><%\}%></span></li><%\}%></ul>"}
+
+    \}
+\end{DoxyCode}
+
+
+Definition at line 9 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!else@{else}}
+\index{else@{else}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}else}\hypertarget{_chart_8_doughnut_8js_a0544c3fe466e421738dae463968b70ba}{}\label{_chart_8_doughnut_8js_a0544c3fe466e421738dae463968b70ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+                \textcolor{keywordflow}{return} 0
+\end{DoxyCode}
+
+
+Definition at line 116 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!helpers@{helpers}}
+\index{helpers@{helpers}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{helpers}{helpers}}]{\setlength{\rightskip}{0pt plus 5cm}var helpers = Chart.\+helpers}\hypertarget{_chart_8_doughnut_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{}\label{_chart_8_doughnut_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}
+
+
+Definition at line 7 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!location@{location}}
+\index{location@{location}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{location}{location}}]{\setlength{\rightskip}{0pt plus 5cm}var location = {\bf helpers.\+get\+Relative\+Position}({\bf e})}\hypertarget{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{}\label{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}
+
+
+Definition at line 86 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!outer\+Radius@{outer\+Radius}}
+\index{outer\+Radius@{outer\+Radius}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{outer\+Radius}{outerRadius}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf reflow} {\bf this} outer\+Radius = ({\bf helpers.\+min}(\mbox{[}this.\+chart.\+width,{\bf this.\+chart.\+height}\mbox{]}) -\/ this.\+options.\+segment\+Stroke\+Width/2)/2}\hypertarget{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}{}\label{_chart_8_doughnut_8js_acc874a18481d349513bfcb4280fa2cdb}
+
+
+Definition at line 152 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!root@{root}}
+\index{root@{root}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}var root = {\bf this}}\hypertarget{_chart_8_doughnut_8js_a33796d6d1aed1fe6b4c866bfd3867459}{}\label{_chart_8_doughnut_8js_a33796d6d1aed1fe6b4c866bfd3867459}
+
+
+Definition at line 4 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!segments\+Array@{segments\+Array}}
+\index{segments\+Array@{segments\+Array}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{segments\+Array}{segmentsArray}}]{\setlength{\rightskip}{0pt plus 5cm}return segments\+Array}\hypertarget{_chart_8_doughnut_8js_a88e95933c84863e77b2fb4e77a130d88}{}\label{_chart_8_doughnut_8js_a88e95933c84863e77b2fb4e77a130d88}
+
+
+Definition at line 91 of file Chart.\+Doughnut.\+js.
+
+\index{Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}!silent@{silent}}
+\index{silent@{silent}!Chart.\+Doughnut.\+js@{Chart.\+Doughnut.\+js}}
+\subsubsection[{\texorpdfstring{silent}{silent}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Data silent}\hypertarget{_chart_8_doughnut_8js_a997e857337c66f8d2c290f6c36d5b384}{}\label{_chart_8_doughnut_8js_a997e857337c66f8d2c290f6c36d5b384}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+            var index = \hyperlink{_chart_8_doughnut_8js_ac8447bdb8052334b628decfd9dcee5bf}{atIndex} || this.segments.length
+\end{DoxyCode}
+
+
+Definition at line 93 of file Chart.\+Doughnut.\+js.
+

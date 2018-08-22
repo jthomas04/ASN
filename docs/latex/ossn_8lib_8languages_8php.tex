@@ -1,0 +1,254 @@
+\hypertarget{ossn_8lib_8languages_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+languages.\+php File Reference}
+\label{ossn_8lib_8languages_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+languages.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+languages.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a771c65906fc1b9fca3bd621d161e4dfd}{ossn\+\_\+register\+\_\+language} (\$code= \textquotesingle{}\textquotesingle{}, \$file)
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a9b2c48a44b716a232b578c66629cff11}{ossn\+\_\+register\+\_\+languages} (\$code, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a7d8bbac0ecba41e1845d333c626da187}{ossn\+\_\+locales} ()
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\+\_\+print} (\$id= \textquotesingle{}\textquotesingle{}, \$args=array())
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a4385959c578bfa324055c7f241757f8a}{ossn\+\_\+default\+\_\+load\+\_\+locales} ()
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a925b41c354c21b6419ef43ec8a0d92cb}{ossn\+\_\+load\+\_\+json\+\_\+locales} (\$lcode=\char`\"{}\char`\"{})
+\item 
+\hyperlink{ossn_8lib_8languages_8php_abe7c17fb8d8dc01c326fb0f86bf1deea}{ossn\+\_\+get\+\_\+installed\+\_\+translations} (\$percentage=true)
+\item 
+\hyperlink{ossn_8lib_8languages_8php_aa0f7cfce368f7ee99af3176e6ad5b684}{ossn\+\_\+get\+\_\+language\+\_\+completeness} (\$language)
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a5203ac909da6816a7b6a7f4381a18540}{ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys} (\$language)
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a939b880ed3166dd7190fc0e047157a8d}{ossn\+\_\+standard\+\_\+language\+\_\+codes} ()
+\item 
+\hyperlink{ossn_8lib_8languages_8php_a478384e8a009be1081ef26908d5d3d00}{ossn\+\_\+load\+\_\+available\+\_\+languages} ()
+\item 
+\hyperlink{ossn_8lib_8languages_8php_aacfdf2defbdd672a72a05af06772d97b}{ossn\+\_\+get\+\_\+available\+\_\+languages} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+default\+\_\+load\+\_\+locales@{ossn\+\_\+default\+\_\+load\+\_\+locales}}
+\index{ossn\+\_\+default\+\_\+load\+\_\+locales@{ossn\+\_\+default\+\_\+load\+\_\+locales}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+default\+\_\+load\+\_\+locales()}{ossn_default_load_locales()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+default\+\_\+load\+\_\+locales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a4385959c578bfa324055c7f241757f8a}{}\label{ossn_8lib_8languages_8php_a4385959c578bfa324055c7f241757f8a}
+Load system locales
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+get\+\_\+available\+\_\+languages@{ossn\+\_\+get\+\_\+available\+\_\+languages}}
+\index{ossn\+\_\+get\+\_\+available\+\_\+languages@{ossn\+\_\+get\+\_\+available\+\_\+languages}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+available\+\_\+languages()}{ossn_get_available_languages()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+available\+\_\+languages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_aacfdf2defbdd672a72a05af06772d97b}{}\label{ossn_8lib_8languages_8php_aacfdf2defbdd672a72a05af06772d97b}
+Get list of all available languages
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 406 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+get\+\_\+installed\+\_\+translations@{ossn\+\_\+get\+\_\+installed\+\_\+translations}}
+\index{ossn\+\_\+get\+\_\+installed\+\_\+translations@{ossn\+\_\+get\+\_\+installed\+\_\+translations}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+installed\+\_\+translations(\$percentage=true)}{ossn_get_installed_translations($percentage=true)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+installed\+\_\+translations (
+\begin{DoxyParamCaption}
+\item[{}]{\$percentage = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_abe7c17fb8d8dc01c326fb0f86bf1deea}{}\label{ossn_8lib_8languages_8php_abe7c17fb8d8dc01c326fb0f86bf1deea}
+Return an array of installed translations as an associative array \char`\"{}two letter code\char`\"{} =$>$ \char`\"{}native language name\char`\"{}.
+
+This function contain code from other project See licenses/elgg/\+L\+I\+C\+E\+N\+S\+E.\+txt
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 156 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+get\+\_\+language\+\_\+completeness@{ossn\+\_\+get\+\_\+language\+\_\+completeness}}
+\index{ossn\+\_\+get\+\_\+language\+\_\+completeness@{ossn\+\_\+get\+\_\+language\+\_\+completeness}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+language\+\_\+completeness(\$language)}{ossn_get_language_completeness($language)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+language\+\_\+completeness (
+\begin{DoxyParamCaption}
+\item[{}]{\$language}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_aa0f7cfce368f7ee99af3176e6ad5b684}{}\label{ossn_8lib_8languages_8php_aa0f7cfce368f7ee99af3176e6ad5b684}
+Return the level of completeness for a given language code (compared to english)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$language} & Language\\
+\hline
+\end{DoxyParams}
+This function contain code from other project See licenses/elgg/\+L\+I\+C\+E\+N\+S\+E.\+txt
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys@{ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys}}
+\index{ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys@{ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys(\$language)}{ossn_get_missing_language_keys($language)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+missing\+\_\+language\+\_\+keys (
+\begin{DoxyParamCaption}
+\item[{}]{\$language}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a5203ac909da6816a7b6a7f4381a18540}{}\label{ossn_8lib_8languages_8php_a5203ac909da6816a7b6a7f4381a18540}
+Return the translation keys missing from a given language, or those that are identical to the english version.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$language} & The language\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Definition at line 205 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+load\+\_\+available\+\_\+languages@{ossn\+\_\+load\+\_\+available\+\_\+languages}}
+\index{ossn\+\_\+load\+\_\+available\+\_\+languages@{ossn\+\_\+load\+\_\+available\+\_\+languages}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+load\+\_\+available\+\_\+languages()}{ossn_load_available_languages()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+load\+\_\+available\+\_\+languages (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a478384e8a009be1081ef26908d5d3d00}{}\label{ossn_8lib_8languages_8php_a478384e8a009be1081ef26908d5d3d00}
+Load all available languages
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 377 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+load\+\_\+json\+\_\+locales@{ossn\+\_\+load\+\_\+json\+\_\+locales}}
+\index{ossn\+\_\+load\+\_\+json\+\_\+locales@{ossn\+\_\+load\+\_\+json\+\_\+locales}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+load\+\_\+json\+\_\+locales(\$lcode="""")}{ossn_load_json_locales($lcode="")}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+load\+\_\+json\+\_\+locales (
+\begin{DoxyParamCaption}
+\item[{}]{\$lcode = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a925b41c354c21b6419ef43ec8a0d92cb}{}\label{ossn_8lib_8languages_8php_a925b41c354c21b6419ef43ec8a0d92cb}
+Load json locales.
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false or false 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+locales@{ossn\+\_\+locales}}
+\index{ossn\+\_\+locales@{ossn\+\_\+locales}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+locales()}{ossn_locales()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+locales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a7d8bbac0ecba41e1845d333c626da187}{}\label{ossn_8lib_8languages_8php_a7d8bbac0ecba41e1845d333c626da187}
+Get registered language codes;
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+print@{ossn\+\_\+print}}
+\index{ossn\+\_\+print@{ossn\+\_\+print}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+print(\$id= \textquotesingle{}\textquotesingle{}, \$args=array())}{ossn_print($id= '', $args=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+print (
+\begin{DoxyParamCaption}
+\item[{}]{\$id = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$args = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{}\label{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}
+Print a locale; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & Id of locale; \\
+\hline
+array & {\em \$args} & Array;\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+register\+\_\+language@{ossn\+\_\+register\+\_\+language}}
+\index{ossn\+\_\+register\+\_\+language@{ossn\+\_\+register\+\_\+language}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+language(\$code= \textquotesingle{}\textquotesingle{}, \$file)}{ossn_register_language($code= '', $file)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+language (
+\begin{DoxyParamCaption}
+\item[{}]{\$code = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a771c65906fc1b9fca3bd621d161e4dfd}{}\label{ossn_8lib_8languages_8php_a771c65906fc1b9fca3bd621d161e4dfd}
+Register a language in system; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & code of language;\\
+\hline
+\end{DoxyParams}
+edit\+: \$arsalanshah \begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+register\+\_\+languages@{ossn\+\_\+register\+\_\+languages}}
+\index{ossn\+\_\+register\+\_\+languages@{ossn\+\_\+register\+\_\+languages}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+languages(\$code, \$params=array())}{ossn_register_languages($code, $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+languages (
+\begin{DoxyParamCaption}
+\item[{}]{\$code, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a9b2c48a44b716a232b578c66629cff11}{}\label{ossn_8lib_8languages_8php_a9b2c48a44b716a232b578c66629cff11}
+Get a languages strings; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & Code of language; \\
+\hline
+array & {\em \$params} & Translations;\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file ossn.\+lib.\+languages.\+php.
+
+\index{ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}!ossn\+\_\+standard\+\_\+language\+\_\+codes@{ossn\+\_\+standard\+\_\+language\+\_\+codes}}
+\index{ossn\+\_\+standard\+\_\+language\+\_\+codes@{ossn\+\_\+standard\+\_\+language\+\_\+codes}!ossn.\+lib.\+languages.\+php@{ossn.\+lib.\+languages.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+standard\+\_\+language\+\_\+codes()}{ossn_standard_language_codes()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+standard\+\_\+language\+\_\+codes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8languages_8php_a939b880ed3166dd7190fc0e047157a8d}{}\label{ossn_8lib_8languages_8php_a939b880ed3166dd7190fc0e047157a8d}
+Get list of I\+SO 639-\/1 language codes
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 227 of file ossn.\+lib.\+languages.\+php.
+

@@ -1,0 +1,98 @@
+\hypertarget{actions_2invite_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Invite/actions/invite.php File Reference}
+\label{actions_2invite_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Invite/actions/invite.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Invite/actions/invite.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{actions_2invite_8php_a63b1079dcf5a0f374b4b8100f9e49ae3}{\$invite} = new \hyperlink{class_ossn_invite}{Ossn\+Invite}
+\item 
+\hyperlink{actions_2invite_8php_a9fbeb6aeca916af4f45de53880787ef9}{\$addresses} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}addresses\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(empty(\$addresses)) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(strlen(\$addresses) $>$ 0) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(empty(\$emails)) \hyperlink{actions_2invite_8php_a0ba6bb4c55084a54da885773a3abb418}{\$wrong\+\_\+emails} = array()
+\item 
+\hyperlink{actions_2invite_8php_ad50fdb62ae2a9888161a9d8da46b7ee7}{\$correct\+\_\+emails} = array()
+\item 
+\hyperlink{actions_2invite_8php_a2faf6128f17333472f8ca59788771c2a}{\$failed\+\_\+emails} = array()
+\item 
+\hyperlink{actions_2invite_8php_ac2dd584e09b60032ab474d13e1f5816d}{\$users\+\_\+exist} = array()
+\item 
+\hyperlink{actions_2invite_8php_a429621079ef9c42d6c1022a4a8c75030}{\$sent} = 0
+\item 
+\hyperlink{actions_2invite_8php_aeba2ab722cedda53dbb7ec1a59f45550}{\$error} = false
+\item 
+\hyperlink{actions_2invite_8php_a145d4f1dd5e06d4d3d49ebc01751747a}{\$failed} = false
+\item 
+\hyperlink{actions_2invite_8php_a944564ee11ad329573548875b62a269e}{\$success} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{actions/invite.\+php@{actions/invite.\+php}!\$addresses@{\$addresses}}
+\index{\$addresses@{\$addresses}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$addresses}{$addresses}}]{\setlength{\rightskip}{0pt plus 5cm}\$addresses = {\bf input}(\textquotesingle{}addresses\textquotesingle{})}\hypertarget{actions_2invite_8php_a9fbeb6aeca916af4f45de53880787ef9}{}\label{actions_2invite_8php_a9fbeb6aeca916af4f45de53880787ef9}
+
+
+Definition at line 4 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$correct\+\_\+emails@{\$correct\+\_\+emails}}
+\index{\$correct\+\_\+emails@{\$correct\+\_\+emails}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$correct\+\_\+emails}{$correct_emails}}]{\setlength{\rightskip}{0pt plus 5cm}\$correct\+\_\+emails = array()}\hypertarget{actions_2invite_8php_ad50fdb62ae2a9888161a9d8da46b7ee7}{}\label{actions_2invite_8php_ad50fdb62ae2a9888161a9d8da46b7ee7}
+
+
+Definition at line 26 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$error@{\$error}}
+\index{\$error@{\$error}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$error}{$error}}]{\setlength{\rightskip}{0pt plus 5cm}\$error = false}\hypertarget{actions_2invite_8php_aeba2ab722cedda53dbb7ec1a59f45550}{}\label{actions_2invite_8php_aeba2ab722cedda53dbb7ec1a59f45550}
+
+
+Definition at line 32 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$failed@{\$failed}}
+\index{\$failed@{\$failed}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$failed}{$failed}}]{\setlength{\rightskip}{0pt plus 5cm}\$failed = false}\hypertarget{actions_2invite_8php_a145d4f1dd5e06d4d3d49ebc01751747a}{}\label{actions_2invite_8php_a145d4f1dd5e06d4d3d49ebc01751747a}
+
+
+Definition at line 33 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$failed\+\_\+emails@{\$failed\+\_\+emails}}
+\index{\$failed\+\_\+emails@{\$failed\+\_\+emails}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$failed\+\_\+emails}{$failed_emails}}]{\setlength{\rightskip}{0pt plus 5cm}\$failed\+\_\+emails = array()}\hypertarget{actions_2invite_8php_a2faf6128f17333472f8ca59788771c2a}{}\label{actions_2invite_8php_a2faf6128f17333472f8ca59788771c2a}
+
+
+Definition at line 27 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$invite@{\$invite}}
+\index{\$invite@{\$invite}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$invite}{$invite}}]{\setlength{\rightskip}{0pt plus 5cm}\$invite = new {\bf Ossn\+Invite}}\hypertarget{actions_2invite_8php_a63b1079dcf5a0f374b4b8100f9e49ae3}{}\label{actions_2invite_8php_a63b1079dcf5a0f374b4b8100f9e49ae3}
+
+
+Definition at line 3 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$sent@{\$sent}}
+\index{\$sent@{\$sent}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$sent}{$sent}}]{\setlength{\rightskip}{0pt plus 5cm}\$sent = 0}\hypertarget{actions_2invite_8php_a429621079ef9c42d6c1022a4a8c75030}{}\label{actions_2invite_8php_a429621079ef9c42d6c1022a4a8c75030}
+
+
+Definition at line 30 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$success@{\$success}}
+\index{\$success@{\$success}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$success}{$success}}]{\setlength{\rightskip}{0pt plus 5cm}\$success = false}\hypertarget{actions_2invite_8php_a944564ee11ad329573548875b62a269e}{}\label{actions_2invite_8php_a944564ee11ad329573548875b62a269e}
+
+
+Definition at line 34 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$users\+\_\+exist@{\$users\+\_\+exist}}
+\index{\$users\+\_\+exist@{\$users\+\_\+exist}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$users\+\_\+exist}{$users_exist}}]{\setlength{\rightskip}{0pt plus 5cm}\$users\+\_\+exist = array()}\hypertarget{actions_2invite_8php_ac2dd584e09b60032ab474d13e1f5816d}{}\label{actions_2invite_8php_ac2dd584e09b60032ab474d13e1f5816d}
+
+
+Definition at line 28 of file invite.\+php.
+
+\index{actions/invite.\+php@{actions/invite.\+php}!\$wrong\+\_\+emails@{\$wrong\+\_\+emails}}
+\index{\$wrong\+\_\+emails@{\$wrong\+\_\+emails}!actions/invite.\+php@{actions/invite.\+php}}
+\subsubsection[{\texorpdfstring{\$wrong\+\_\+emails}{$wrong_emails}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (empty(\$addresses)) {\bf if} (strlen(\$addresses) $>$ 0) {\bf if} (empty(\$emails)) \$wrong\+\_\+emails = array()}\hypertarget{actions_2invite_8php_a0ba6bb4c55084a54da885773a3abb418}{}\label{actions_2invite_8php_a0ba6bb4c55084a54da885773a3abb418}
+
+
+Definition at line 25 of file invite.\+php.
+

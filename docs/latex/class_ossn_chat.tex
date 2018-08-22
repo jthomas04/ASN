@@ -1,0 +1,296 @@
+\hypertarget{class_ossn_chat}{}\section{Ossn\+Chat Class Reference}
+\label{class_ossn_chat}\index{Ossn\+Chat@{Ossn\+Chat}}
+
+
+Inheritance diagram for Ossn\+Chat\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Chat\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_chat_a3e5128f5d2857f5ff72e6ec15455a2a6}{send} (\$from, \$to, \$message)
+\item 
+\hyperlink{class_ossn_chat_ac375857b49f863c35a6ee8e16f7ab3ab}{get} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_chat_af9e75a329022d58cdf3742ca19ebda68}{mark\+Viewed} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_chat_afaaef0fcadfb9521efb2f49ebdb25fbc}{get\+New} (\$from, \$to, \$viewed=0)
+\item 
+\hyperlink{class_ossn_chat_a36fba0593d9b24dd1a0c569739374e59}{count\+Online\+Friends} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}, \$intervals=100)
+\item 
+\hyperlink{class_ossn_chat_a49c696d1fc17fe21d0bedfc6d61f7146}{get\+Online\+Friends} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}, \$intervals=100)
+\item 
+\hyperlink{class_ossn_chat_a22a4d0bf8b3e52af9130a8cf0a5c595e}{get\+New\+All} (\$parm=array())
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_chat_a50c65b155bccbc9ed2fdd4f527650b0c}{set\+User\+Chat\+Session} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+static \hyperlink{class_ossn_chat_ab7560516e7bbdae5aa7529f3d9fa870a}{Get\+Active\+Sessions} ()
+\item 
+static \hyperlink{class_ossn_chat_a301019bda337dbac5509003719e3b822}{get\+Chat\+User\+Status} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}, \$intervals=100)
+\item 
+static \hyperlink{class_ossn_chat_adebcbd6e03a2d2b4d2f023e16a634da2}{remove\+Chat\+Tab} (\$tab)
+\item 
+static \hyperlink{class_ossn_chat_a87143a6bcfa6f925984aea61c01e9586}{message\+Time} (\$time)
+\item 
+static \hyperlink{class_ossn_chat_a2cf575b75a8fd733d3a1dc0548ece5d6}{All\+New} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Chat.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Chat@{Ossn\+Chat}!All\+New@{All\+New}}
+\index{All\+New@{All\+New}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{All\+New()}{AllNew()}}]{\setlength{\rightskip}{0pt plus 5cm}static All\+New (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_a2cf575b75a8fd733d3a1dc0548ece5d6}{}\label{class_ossn_chat_a2cf575b75a8fd733d3a1dc0548ece5d6}
+Get all new friends json
+
+\begin{DoxyReturn}{Returns}
+json; 
+\end{DoxyReturn}
+
+
+Definition at line 83 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!count\+Online\+Friends@{count\+Online\+Friends}}
+\index{count\+Online\+Friends@{count\+Online\+Friends}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{count\+Online\+Friends(\$user, \$intervals=100)}{countOnlineFriends($user, $intervals=100)}}]{\setlength{\rightskip}{0pt plus 5cm}count\+Online\+Friends (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$intervals = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_a36fba0593d9b24dd1a0c569739374e59}{}\label{class_ossn_chat_a36fba0593d9b24dd1a0c569739374e59}
+Count online user friends
+
+= \$intervals =$>$ seconds \$user User guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!get@{get}}
+\index{get@{get}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{get(\$from, \$to)}{get($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}get (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_ac375857b49f863c35a6ee8e16f7ab3ab}{}\label{class_ossn_chat_ac375857b49f863c35a6ee8e16f7ab3ab}
+Get messages between two users
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 155 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!Get\+Active\+Sessions@{Get\+Active\+Sessions}}
+\index{Get\+Active\+Sessions@{Get\+Active\+Sessions}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{Get\+Active\+Sessions()}{GetActiveSessions()}}]{\setlength{\rightskip}{0pt plus 5cm}static Get\+Active\+Sessions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_ab7560516e7bbdae5aa7529f3d9fa870a}{}\label{class_ossn_chat_ab7560516e7bbdae5aa7529f3d9fa870a}
+Get active sessions
+
+\begin{DoxyReturn}{Returns}
+array; 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!get\+Chat\+User\+Status@{get\+Chat\+User\+Status}}
+\index{get\+Chat\+User\+Status@{get\+Chat\+User\+Status}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{get\+Chat\+User\+Status(\$user, \$intervals=100)}{getChatUserStatus($user, $intervals=100)}}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Chat\+User\+Status (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$intervals = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_a301019bda337dbac5509003719e3b822}{}\label{class_ossn_chat_a301019bda337dbac5509003719e3b822}
+Get user chat status
+
+= \$user User guid \$intervals Time itervals
+
+\begin{DoxyReturn}{Returns}
+string; 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!get\+New@{get\+New}}
+\index{get\+New@{get\+New}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{get\+New(\$from, \$to, \$viewed=0)}{getNew($from, $to, $viewed=0)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+New (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$viewed = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_afaaef0fcadfb9521efb2f49ebdb25fbc}{}\label{class_ossn_chat_afaaef0fcadfb9521efb2f49ebdb25fbc}
+Get new messages
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 201 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!get\+New\+All@{get\+New\+All}}
+\index{get\+New\+All@{get\+New\+All}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{get\+New\+All(\$parm=array())}{getNewAll($parm=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+New\+All (
+\begin{DoxyParamCaption}
+\item[{}]{\$parm = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_a22a4d0bf8b3e52af9130a8cf0a5c595e}{}\label{class_ossn_chat_a22a4d0bf8b3e52af9130a8cf0a5c595e}
+Get all new non-\/viewed messages
+
+= \$parm (ossn\+\_\+messages)
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 268 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!get\+Online\+Friends@{get\+Online\+Friends}}
+\index{get\+Online\+Friends@{get\+Online\+Friends}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{get\+Online\+Friends(\$user, \$intervals=100)}{getOnlineFriends($user, $intervals=100)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Online\+Friends (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$intervals = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_a49c696d1fc17fe21d0bedfc6d61f7146}{}\label{class_ossn_chat_a49c696d1fc17fe21d0bedfc6d61f7146}
+Get online user friends
+
+= \$intervals =$>$ seconds \$user User guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 235 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!mark\+Viewed@{mark\+Viewed}}
+\index{mark\+Viewed@{mark\+Viewed}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{mark\+Viewed(\$from, \$to)}{markViewed($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}mark\+Viewed (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_af9e75a329022d58cdf3742ca19ebda68}{}\label{class_ossn_chat_af9e75a329022d58cdf3742ca19ebda68}
+Mark message as viewed
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 175 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!message\+Time@{message\+Time}}
+\index{message\+Time@{message\+Time}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{message\+Time(\$time)}{messageTime($time)}}]{\setlength{\rightskip}{0pt plus 5cm}static message\+Time (
+\begin{DoxyParamCaption}
+\item[{}]{\$time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_a87143a6bcfa6f925984aea61c01e9586}{}\label{class_ossn_chat_a87143a6bcfa6f925984aea61c01e9586}
+Get user friendly time
+
+= \$time Timestamp
+
+\begin{DoxyReturn}{Returns}
+string; 
+\end{DoxyReturn}
+
+
+Definition at line 73 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!remove\+Chat\+Tab@{remove\+Chat\+Tab}}
+\index{remove\+Chat\+Tab@{remove\+Chat\+Tab}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{remove\+Chat\+Tab(\$tab)}{removeChatTab($tab)}}]{\setlength{\rightskip}{0pt plus 5cm}static remove\+Chat\+Tab (
+\begin{DoxyParamCaption}
+\item[{}]{\$tab}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_adebcbd6e03a2d2b4d2f023e16a634da2}{}\label{class_ossn_chat_adebcbd6e03a2d2b4d2f023e16a634da2}
+Remove chat tab
+
+= \$tab Tab id
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!send@{send}}
+\index{send@{send}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{send(\$from, \$to, \$message)}{send($from, $to, $message)}}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_chat_a3e5128f5d2857f5ff72e6ec15455a2a6}{}\label{class_ossn_chat_a3e5128f5d2857f5ff72e6ec15455a2a6}
+Send message
+
+\$from\+: User 1 guid \$to User 2 guid \$message Message
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Ossn\+Chat.\+php.
+
+\index{Ossn\+Chat@{Ossn\+Chat}!set\+User\+Chat\+Session@{set\+User\+Chat\+Session}}
+\index{set\+User\+Chat\+Session@{set\+User\+Chat\+Session}!Ossn\+Chat@{Ossn\+Chat}}
+\subsubsection[{\texorpdfstring{set\+User\+Chat\+Session(\$user)}{setUserChatSession($user)}}]{\setlength{\rightskip}{0pt plus 5cm}static set\+User\+Chat\+Session (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_chat_a50c65b155bccbc9ed2fdd4f527650b0c}{}\label{class_ossn_chat_a50c65b155bccbc9ed2fdd4f527650b0c}
+Set uesr chat session
+
+= \$to Friend Guid
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Ossn\+Chat.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Chat/classes/\hyperlink{classes_2_ossn_chat_8php}{Ossn\+Chat.\+php}\end{DoxyCompactItemize}

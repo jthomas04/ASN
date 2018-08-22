@@ -1,0 +1,167 @@
+\hypertarget{class_minify___c_s_s___uri_rewriter}{}\section{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter Class Reference}
+\label{class_minify___c_s_s___uri_rewriter}\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_a96f66fbccdd00032722f1e6338f3bd19}{rewrite} (\$css, \$current\+Dir, \$doc\+Root=null, \$symlinks=array())
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_aebcfd302657ddfacee88ab3964683806}{prepend} (\$css, \$path)
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_a96784884f70389c5a0419017576ff6e0}{rewrite\+Relative} (\$uri, \$real\+Current\+Dir, \$real\+Doc\+Root, \$symlinks=array())
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_ae1e033836f8516eac6ef8cb3aafe5e96}{\$debug\+Text} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_affe1d7c81f17e01b9bc735bae70aa0ef}{\+\_\+realpath} (\$path)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___c_s_s___uri_rewriter_acd6a475a6eeb092f4eea3e19e502d67d}{\$class\+Name} = \textquotesingle{}\hyperlink{class_minify___c_s_s___uri_rewriter}{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Uri\+Rewriter.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!\+\_\+realpath@{\+\_\+realpath}}
+\index{\+\_\+realpath@{\+\_\+realpath}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{\+\_\+realpath(\$path)}{_realpath($path)}}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+realpath (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___uri_rewriter_affe1d7c81f17e01b9bc735bae70aa0ef}{}\label{class_minify___c_s_s___uri_rewriter_affe1d7c81f17e01b9bc735bae70aa0ef}
+Get realpath with any trailing slash removed. If realpath() fails, just remove the trailing slash.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed path with no trailing slash 
+\end{DoxyReturn}
+
+
+Definition at line 107 of file Uri\+Rewriter.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!prepend@{prepend}}
+\index{prepend@{prepend}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{prepend(\$css, \$path)}{prepend($css, $path)}}]{\setlength{\rightskip}{0pt plus 5cm}string path to prepend (
+\begin{DoxyParamCaption}
+\item[{}]{\$css, }
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___c_s_s___uri_rewriter_aebcfd302657ddfacee88ab3964683806}{}\label{class_minify___c_s_s___uri_rewriter_aebcfd302657ddfacee88ab3964683806}
+Prepend a path to relative U\+R\+Is in C\+SS files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$css} & \\
+\hline
+string & {\em \$path} & The path to prepend.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file Uri\+Rewriter.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!rewrite@{rewrite}}
+\index{rewrite@{rewrite}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{rewrite(\$css, \$current\+Dir, \$doc\+Root=null, \$symlinks=array())}{rewrite($css, $currentDir, $docRoot=null, $symlinks=array())}}]{\setlength{\rightskip}{0pt plus 5cm}static rewrite (
+\begin{DoxyParamCaption}
+\item[{}]{\$css, }
+\item[{}]{\$current\+Dir, }
+\item[{}]{\$doc\+Root = {\ttfamily null}, }
+\item[{}]{\$symlinks = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___c_s_s___uri_rewriter_a96f66fbccdd00032722f1e6338f3bd19}{}\label{class_minify___c_s_s___uri_rewriter_a96f66fbccdd00032722f1e6338f3bd19}
+Rewrite file relative U\+R\+Is as root relative in C\+SS files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$css} & \\
+\hline
+string & {\em \$current\+Dir} & The directory of the current C\+SS file.\\
+\hline
+string & {\em \$doc\+Root} & The document root of the web site in which the C\+SS file resides (default = \$\+\_\+\+S\+E\+R\+V\+ER\mbox{[}\textquotesingle{}D\+O\+C\+U\+M\+E\+N\+T\+\_\+\+R\+O\+OT\textquotesingle{}\mbox{]}).\\
+\hline
+array & {\em \$symlinks} & (default = array()) If the C\+SS file is stored in a symlink-\/ed directory, provide an array of link paths to target paths, where the link paths are within the document root. Because paths need to be normalized for this to work, use \char`\"{}//\char`\"{} to substitute the doc root in the link paths (the array keys). E.\+g.\+: {\ttfamily  array(\textquotesingle{}//symlink\textquotesingle{} =$>$ \textquotesingle{}/real/target/path\textquotesingle{}) // unix array(\textquotesingle{}//static\textquotesingle{} =$>$ \textquotesingle{}D\+:\textbackslash{}static\+Storage\textquotesingle{}) // Windows }\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Uri\+Rewriter.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!rewrite\+Relative@{rewrite\+Relative}}
+\index{rewrite\+Relative@{rewrite\+Relative}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{rewrite\+Relative(\$uri, \$real\+Current\+Dir, \$real\+Doc\+Root, \$symlinks=array())}{rewriteRelative($uri, $realCurrentDir, $realDocRoot, $symlinks=array())}}]{\setlength{\rightskip}{0pt plus 5cm}static rewrite\+Relative (
+\begin{DoxyParamCaption}
+\item[{}]{\$uri, }
+\item[{}]{\$real\+Current\+Dir, }
+\item[{}]{\$real\+Doc\+Root, }
+\item[{}]{\$symlinks = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___c_s_s___uri_rewriter_a96784884f70389c5a0419017576ff6e0}{}\label{class_minify___c_s_s___uri_rewriter_a96784884f70389c5a0419017576ff6e0}
+Rewrite a file relative U\+RI as root relative
+
+{\ttfamily  \hyperlink{class_minify___c_s_s___uri_rewriter_a96784884f70389c5a0419017576ff6e0}{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter\+::rewrite\+Relative}( \textquotesingle{}../img/hello.gif\textquotesingle{} , \textquotesingle{}/home/user/www/css\textquotesingle{} // path of C\+SS file , \textquotesingle{}/home/user/www\textquotesingle{} // doc root ); // returns \textquotesingle{}/img/hello.gif\textquotesingle{}}
+
+{\ttfamily // example where static files are stored in a symlinked directory \hyperlink{class_minify___c_s_s___uri_rewriter_a96784884f70389c5a0419017576ff6e0}{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter\+::rewrite\+Relative}( \textquotesingle{}hello.\+gif\textquotesingle{} , \textquotesingle{}/var/static\+Files/theme\textquotesingle{} , \textquotesingle{}/home/user/www\textquotesingle{} , array(\textquotesingle{}/home/user/www/static\textquotesingle{} =$>$ \textquotesingle{}/var/static\+Files\textquotesingle{}) ); // returns \textquotesingle{}/static/theme/hello.gif\textquotesingle{} }
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & file relative U\+RI\\
+\hline
+string & {\em \$real\+Current\+Dir} & realpath of the current file\textquotesingle{}s directory.\\
+\hline
+string & {\em \$real\+Doc\+Root} & realpath of the site document root.\\
+\hline
+array & {\em \$symlinks} & (default = array()) If the file is stored in a symlink-\/ed directory, provide an array of link paths to real target paths, where the link paths \char`\"{}appear\char`\"{} to be within the document root. E.\+g.\+: {\ttfamily  array(\textquotesingle{}/home/foo/www/not/real/path\textquotesingle{} =$>$ \textquotesingle{}/real/target/path\textquotesingle{}) // unix array(\textquotesingle{}C\+:\textbackslash{}htdocs\textbackslash{}not\textbackslash{}real\textquotesingle{} =$>$ \textquotesingle{}D\+:\textbackslash{}real\textbackslash{}target\textbackslash{}path\textquotesingle{}) // Windows }\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 214 of file Uri\+Rewriter.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!\$class\+Name@{\$class\+Name}}
+\index{\$class\+Name@{\$class\+Name}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{\$class\+Name}{$className}}]{\setlength{\rightskip}{0pt plus 5cm}\$class\+Name = \textquotesingle{}{\bf Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___uri_rewriter_acd6a475a6eeb092f4eea3e19e502d67d}{}\label{class_minify___c_s_s___uri_rewriter_acd6a475a6eeb092f4eea3e19e502d67d}
+
+
+Definition at line 25 of file Uri\+Rewriter.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}!\$debug\+Text@{\$debug\+Text}}
+\index{\$debug\+Text@{\$debug\+Text}!Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter@{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}}
+\subsubsection[{\texorpdfstring{\$debug\+Text}{$debugText}}]{\setlength{\rightskip}{0pt plus 5cm}\$debug\+Text = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___c_s_s___uri_rewriter_ae1e033836f8516eac6ef8cb3aafe5e96}{}\label{class_minify___c_s_s___uri_rewriter_ae1e033836f8516eac6ef8cb3aafe5e96}
+
+
+Definition at line 19 of file Uri\+Rewriter.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/libraries/minify/\+Minify/\+C\+S\+S/\hyperlink{_uri_rewriter_8php}{Uri\+Rewriter.\+php}\end{DoxyCompactItemize}

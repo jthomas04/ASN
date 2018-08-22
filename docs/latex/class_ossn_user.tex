@@ -1,0 +1,883 @@
+\hypertarget{class_ossn_user}{}\section{Ossn\+User Class Reference}
+\label{class_ossn_user}\index{Ossn\+User@{Ossn\+User}}
+
+
+Inheritance diagram for Ossn\+User\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+User\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_user_a5fee6794de13185987b790fce43d0883}{init\+Attributes} ()
+\item 
+\hyperlink{class_ossn_user_a09efd63872d11025320bb6e18cb86020}{add\+User} ()
+\item 
+\hyperlink{class_ossn_user_ab5ade1c0e7eaee9f04767984a1b31491}{is\+Ossn\+Username} ()
+\item 
+\hyperlink{class_ossn_user_a84d07c7fa7de316f1c0cc495a4be6032}{is\+Ossn\+Email} ()
+\item 
+\hyperlink{class_ossn_user_ae81b7186fb97a7c6457edcc68c9aa2ef}{get\+User} ()
+\item 
+\hyperlink{class_ossn_user_ad118eb5e86552a7c6d00e6e390805764}{is\+Password} ()
+\item 
+\hyperlink{class_ossn_user_a66c5ceda86401887e89ada05c6ce32f2}{is\+Email} ()
+\item 
+\hyperlink{class_ossn_user_a1e97cb0ac526e6d42c669fa7d9f65bf8}{is\+Username} ()
+\item 
+\hyperlink{class_ossn_user_a33cc0c61820432ba8724e7e21af0a6fb}{generate\+Salt} ()
+\item 
+\hyperlink{class_ossn_user_ad33793eb83a7126777709b9c5aa6d1e6}{generate\+\_\+password} (\$\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password}= \textquotesingle{}\textquotesingle{}, \$salt= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_user_a8db48c2902872da0ee80463db6696375}{Login} ()
+\item 
+\hyperlink{class_ossn_user_a5d4b41552168405cfc50a3f3927c5b5f}{update\+\_\+last\+\_\+login} ()
+\item 
+\hyperlink{class_ossn_user_abf6dc5faf8016704040b859570dca691}{get\+Friend\+Requests} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_user_a669087d8a2169649b7b76e66a2502bb7}{is\+Friend} (\$usera, \$user2)
+\item 
+\hyperlink{class_ossn_user_ae2ab40e80487abc9b3251fe855790bc1}{get\+Friends} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}= \textquotesingle{}\textquotesingle{}, array \$options=array())
+\item 
+\hyperlink{class_ossn_user_ad7f6e3c42fbe1373f41a78bb5fb92043}{send\+Request} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_user_a91dd4075374ca0c1e082e3093f19c284}{request\+Exists} (\$from, \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{class_ossn_user_afa8453c434c76c37973a4deeb97d1088}{delete\+Friend} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_user_a3d7c8bd2f23157fb82938f4483fa96fa}{get\+Site\+Users} (\$params=array())
+\item 
+\hyperlink{class_ossn_user_a451896c212bc72020029642e8c86e343}{update\+\_\+last\+\_\+activity} ()
+\item 
+\hyperlink{class_ossn_user_aa4e9e703523721959b8fd21d063d2f6e}{online\+\_\+total} ()
+\item 
+\hyperlink{class_ossn_user_aaf9e411226ae1c8231ad6fc6811c2e06}{get\+Online} (\$intervals= \textquotesingle{}100\textquotesingle{})
+\item 
+\hyperlink{class_ossn_user_abcfcb1f1bfba94db29cfeb7767f59ca7}{search\+Users} (array \$params=array())
+\item 
+\hyperlink{class_ossn_user_a9f15a213cf4ddb9cbc6385e5aefb8b51}{Validate\+Registration} (\$code)
+\item 
+\hyperlink{class_ossn_user_aeceb5cef62a3133d282fbb6706bcb1fa}{icon\+U\+RL} ()
+\item 
+\hyperlink{class_ossn_user_a1bdb669c6b82b21188d65d7ac9f42428}{profile\+U\+RL} (\$extends= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_user_a4ba3f5f1a4abd7cf8abf29f56b09627f}{Send\+Reset\+Login} ()
+\item 
+\hyperlink{class_ossn_user_a145103c5602feef3a79b2fada0499a99}{reset\+Password} (\$\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password})
+\item 
+\hyperlink{class_ossn_user_a6185742d538e536c90d3132fa2c2ccc6}{delete\+Reset\+Code} ()
+\item 
+\hyperlink{class_ossn_user_a81915715c995de565632dff4af66032b}{is\+Online} (\$intervals=100)
+\item 
+\hyperlink{class_ossn_user_a7bc7bfa5384d57b7bfd159a47f730466}{delete\+User} ()
+\item 
+\hyperlink{class_ossn_user_a4f00da3edbb0d2000987ad71947ad8b9}{is\+User\+V\+A\+L\+I\+D\+A\+T\+ED} ()
+\item 
+\hyperlink{class_ossn_user_a61fc9257b3e0bec9e061a45f081adcf3}{resend\+Validation\+Email} ()
+\item 
+\hyperlink{class_ossn_user_aa2f53c456cd8699b4a79ddff1d507cdb}{get\+Unvalidated\+U\+S\+E\+RS} (\$search= \textquotesingle{}\textquotesingle{}, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_user_aff8a05eaa827edda4d8560e61795fc13}{get\+Profile\+Photo} ()
+\item 
+\hyperlink{class_ossn_user_a8f77354a5caf2549d61c62fe606f3a1f}{get\+Profile\+Cover} ()
+\item 
+\hyperlink{class_ossn_user_acef7cf678db3f923c9b3aefab11cb6c3}{count\+By\+Year\+Month} ()
+\item 
+\hyperlink{class_ossn_user_a00afe7d65d7165920380a51ca8404826}{gender\+Types} ()
+\item 
+\hyperlink{class_ossn_user_a69d1e27767624df490c53128a04f2c4e}{count\+By\+Gender} (\$\hyperlink{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{gender}= \textquotesingle{}male\textquotesingle{})
+\item 
+\hyperlink{class_ossn_user_ab211695556bc39bc443f9a978b769aef}{online\+By\+Gender} (\$\hyperlink{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{gender}= \textquotesingle{}male\textquotesingle{}, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false, \$intervals=100)
+\item 
+\hyperlink{class_ossn_user_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\item 
+\hyperlink{class_ossn_user_a98d94a0f64c3f7df0eca5671a331fb06}{can\+Moderate} ()
+\item 
+\hyperlink{class_ossn_user_aabf23b66cd362adaa508de5bfb22706a}{is\+Admin} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_user_af6f57f96052d0c659ae5200c7e953f7c}{Logout} ()
+\item 
+static \hyperlink{class_ossn_user_a8a0a23c099246365648988e069b69afa}{set\+Login} (\$userid)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+User.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+User@{Ossn\+User}!add\+User@{add\+User}}
+\index{add\+User@{add\+User}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{add\+User()}{addUser()}}]{\setlength{\rightskip}{0pt plus 5cm}add\+User (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a09efd63872d11025320bb6e18cb86020}{}\label{class_ossn_user_a09efd63872d11025320bb6e18cb86020}
+Add user to system.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 23 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!can\+Moderate@{can\+Moderate}}
+\index{can\+Moderate@{can\+Moderate}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{can\+Moderate()}{canModerate()}}]{\setlength{\rightskip}{0pt plus 5cm}can\+Moderate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a98d94a0f64c3f7df0eca5671a331fb06}{}\label{class_ossn_user_a98d94a0f64c3f7df0eca5671a331fb06}
+Can Moderate Check if user can moderate the requested item or not
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1075 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!count\+By\+Gender@{count\+By\+Gender}}
+\index{count\+By\+Gender@{count\+By\+Gender}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{count\+By\+Gender(\$gender= \textquotesingle{}male\textquotesingle{})}{countByGender($gender= 'male')}}]{\setlength{\rightskip}{0pt plus 5cm}count\+By\+Gender (
+\begin{DoxyParamCaption}
+\item[{}]{\$gender = {\ttfamily \textquotesingle{}male\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a69d1e27767624df490c53128a04f2c4e}{}\label{class_ossn_user_a69d1e27767624df490c53128a04f2c4e}
+Get total users per month for each year
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false  public 
+\end{DoxyReturn}
+
+
+Definition at line 978 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!count\+By\+Year\+Month@{count\+By\+Year\+Month}}
+\index{count\+By\+Year\+Month@{count\+By\+Year\+Month}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{count\+By\+Year\+Month()}{countByYearMonth()}}]{\setlength{\rightskip}{0pt plus 5cm}count\+By\+Year\+Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_acef7cf678db3f923c9b3aefab11cb6c3}{}\label{class_ossn_user_acef7cf678db3f923c9b3aefab11cb6c3}
+Get total users per month for each year
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false  public 
+\end{DoxyReturn}
+
+
+Definition at line 936 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!delete\+Friend@{delete\+Friend}}
+\index{delete\+Friend@{delete\+Friend}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{delete\+Friend(\$from, \$to)}{deleteFriend($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Friend (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_afa8453c434c76c37973a4deeb97d1088}{}\label{class_ossn_user_afa8453c434c76c37973a4deeb97d1088}
+Delete friend from list
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 409 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!delete\+Reset\+Code@{delete\+Reset\+Code}}
+\index{delete\+Reset\+Code@{delete\+Reset\+Code}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{delete\+Reset\+Code()}{deleteResetCode()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Reset\+Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a6185742d538e536c90d3132fa2c2ccc6}{}\label{class_ossn_user_a6185742d538e536c90d3132fa2c2ccc6}
+Remove user reset code
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 749 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!delete\+User@{delete\+User}}
+\index{delete\+User@{delete\+User}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{delete\+User()}{deleteUser()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+User (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a7bc7bfa5384d57b7bfd159a47f730466}{}\label{class_ossn_user_a7bc7bfa5384d57b7bfd159a47f730466}
+Delete user from syste,
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 780 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!gender\+Types@{gender\+Types}}
+\index{gender\+Types@{gender\+Types}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{gender\+Types()}{genderTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}gender\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a00afe7d65d7165920380a51ca8404826}{}\label{class_ossn_user_a00afe7d65d7165920380a51ca8404826}
+Gender types
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false  public 
+\end{DoxyReturn}
+
+
+Definition at line 965 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!generate\+\_\+password@{generate\+\_\+password}}
+\index{generate\+\_\+password@{generate\+\_\+password}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{generate\+\_\+password(\$password= \textquotesingle{}\textquotesingle{}, \$salt= \textquotesingle{}\textquotesingle{})}{generate_password($password= '', $salt= '')}}]{\setlength{\rightskip}{0pt plus 5cm}generate\+\_\+password (
+\begin{DoxyParamCaption}
+\item[{}]{\$password = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$salt = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ad33793eb83a7126777709b9c5aa6d1e6}{}\label{class_ossn_user_ad33793eb83a7126777709b9c5aa6d1e6}
+Generate password.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 239 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!generate\+Salt@{generate\+Salt}}
+\index{generate\+Salt@{generate\+Salt}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{generate\+Salt()}{generateSalt()}}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Salt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a33cc0c61820432ba8724e7e21af0a6fb}{}\label{class_ossn_user_a33cc0c61820432ba8724e7e21af0a6fb}
+Generate salt.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Friend\+Requests@{get\+Friend\+Requests}}
+\index{get\+Friend\+Requests@{get\+Friend\+Requests}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Friend\+Requests(\$user= \textquotesingle{}\textquotesingle{})}{getFriendRequests($user= '')}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Friend\+Requests (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_abf6dc5faf8016704040b859570dca691}{}\label{class_ossn_user_abf6dc5faf8016704040b859570dca691}
+Get user friends requests.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 297 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Friends@{get\+Friends}}
+\index{get\+Friends@{get\+Friends}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Friends(\$user= \textquotesingle{}\textquotesingle{}, array \$options=array())}{getFriends($user= '', array $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Friends (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{array}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ae2ab40e80487abc9b3251fe855790bc1}{}\label{class_ossn_user_ae2ab40e80487abc9b3251fe855790bc1}
+Get user friends.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 342 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Online@{get\+Online}}
+\index{get\+Online@{get\+Online}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Online(\$intervals= \textquotesingle{}100\textquotesingle{})}{getOnline($intervals= '100')}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Online (
+\begin{DoxyParamCaption}
+\item[{}]{\$intervals = {\ttfamily \textquotesingle{}100\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aaf9e411226ae1c8231ad6fc6811c2e06}{}\label{class_ossn_user_aaf9e411226ae1c8231ad6fc6811c2e06}
+Get online site users.
+
+integer \$intervals Seconds
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 479 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Profile\+Cover@{get\+Profile\+Cover}}
+\index{get\+Profile\+Cover@{get\+Profile\+Cover}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Profile\+Cover()}{getProfileCover()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Profile\+Cover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a8f77354a5caf2549d61c62fe606f3a1f}{}\label{class_ossn_user_a8f77354a5caf2549d61c62fe606f3a1f}
+Get a user last coverphoto photo
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 906 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Profile\+Photo@{get\+Profile\+Photo}}
+\index{get\+Profile\+Photo@{get\+Profile\+Photo}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Profile\+Photo()}{getProfilePhoto()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Profile\+Photo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aff8a05eaa827edda4d8560e61795fc13}{}\label{class_ossn_user_aff8a05eaa827edda4d8560e61795fc13}
+Get a user last profile photo
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 887 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Site\+Users@{get\+Site\+Users}}
+\index{get\+Site\+Users@{get\+Site\+Users}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Site\+Users(\$params=array())}{getSiteUsers($params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Site\+Users (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a3d7c8bd2f23157fb82938f4483fa96fa}{}\label{class_ossn_user_a3d7c8bd2f23157fb82938f4483fa96fa}
+Get site users.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A options values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method will be removed from Ossn v5
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 428 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+Unvalidated\+U\+S\+E\+RS@{get\+Unvalidated\+U\+S\+E\+RS}}
+\index{get\+Unvalidated\+U\+S\+E\+RS@{get\+Unvalidated\+U\+S\+E\+RS}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+Unvalidated\+U\+S\+E\+R\+S(\$search= \textquotesingle{}\textquotesingle{}, \$count=false)}{getUnvalidatedUSERS($search= '', $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Unvalidated\+U\+S\+E\+RS (
+\begin{DoxyParamCaption}
+\item[{}]{\$search = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aa2f53c456cd8699b4a79ddff1d507cdb}{}\label{class_ossn_user_aa2f53c456cd8699b4a79ddff1d507cdb}
+Get list of unvalidated users
+
+\begin{DoxyReturn}{Returns}
+false$\vert$object 
+\end{DoxyReturn}
+
+
+Definition at line 854 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!get\+User@{get\+User}}
+\index{get\+User@{get\+User}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{get\+User()}{getUser()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+User (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ae81b7186fb97a7c6457edcc68c9aa2ef}{}\label{class_ossn_user_ae81b7186fb97a7c6457edcc68c9aa2ef}
+Get user with its entities.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!icon\+U\+RL@{icon\+U\+RL}}
+\index{icon\+U\+RL@{icon\+U\+RL}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{icon\+U\+R\+L()}{iconURL()}}]{\setlength{\rightskip}{0pt plus 5cm}icon\+U\+RL (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aeceb5cef62a3133d282fbb6706bcb1fa}{}\label{class_ossn_user_aeceb5cef62a3133d282fbb6706bcb1fa}
+View user icon url
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 661 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a5fee6794de13185987b790fce43d0883}{}\label{class_ossn_user_a5fee6794de13185987b790fce43d0883}
+Initialize the objects.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Admin@{is\+Admin}}
+\index{is\+Admin@{is\+Admin}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Admin()}{isAdmin()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Admin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aabf23b66cd362adaa508de5bfb22706a}{}\label{class_ossn_user_aabf23b66cd362adaa508de5bfb22706a}
+is\+Admin Check if user is admin or not
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1090 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Email@{is\+Email}}
+\index{is\+Email@{is\+Email}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Email()}{isEmail()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Email (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a66c5ceda86401887e89ada05c6ce32f2}{}\label{class_ossn_user_a66c5ceda86401887e89ada05c6ce32f2}
+Check if password is $>$ 5 or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 207 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Friend@{is\+Friend}}
+\index{is\+Friend@{is\+Friend}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Friend(\$usera, \$user2)}{isFriend($usera, $user2)}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Friend (
+\begin{DoxyParamCaption}
+\item[{}]{\$usera, }
+\item[{}]{\$user2}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a669087d8a2169649b7b76e66a2502bb7}{}\label{class_ossn_user_a669087d8a2169649b7b76e66a2502bb7}
+Check if the user is friend with other or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 333 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Online@{is\+Online}}
+\index{is\+Online@{is\+Online}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Online(\$intervals=100)}{isOnline($intervals=100)}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Online (
+\begin{DoxyParamCaption}
+\item[{}]{\$intervals = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a81915715c995de565632dff4af66032b}{}\label{class_ossn_user_a81915715c995de565632dff4af66032b}
+Check if user is online or not
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 765 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Ossn\+Email@{is\+Ossn\+Email}}
+\index{is\+Ossn\+Email@{is\+Ossn\+Email}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Ossn\+Email()}{isOssnEmail()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Ossn\+Email (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a84d07c7fa7de316f1c0cc495a4be6032}{}\label{class_ossn_user_a84d07c7fa7de316f1c0cc495a4be6032}
+Check if email is exist in database or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Ossn\+Username@{is\+Ossn\+Username}}
+\index{is\+Ossn\+Username@{is\+Ossn\+Username}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Ossn\+Username()}{isOssnUsername()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Ossn\+Username (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ab5ade1c0e7eaee9f04767984a1b31491}{}\label{class_ossn_user_ab5ade1c0e7eaee9f04767984a1b31491}
+Check if username is exist in database or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Password@{is\+Password}}
+\index{is\+Password@{is\+Password}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Password()}{isPassword()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ad118eb5e86552a7c6d00e6e390805764}{}\label{class_ossn_user_ad118eb5e86552a7c6d00e6e390805764}
+Check if password is $>$ 5 or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+Username@{is\+Username}}
+\index{is\+Username@{is\+Username}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+Username()}{isUsername()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Username (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a1e97cb0ac526e6d42c669fa7d9f65bf8}{}\label{class_ossn_user_a1e97cb0ac526e6d42c669fa7d9f65bf8}
+Check if the user is correct or not.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 218 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!is\+User\+V\+A\+L\+I\+D\+A\+T\+ED@{is\+User\+V\+A\+L\+I\+D\+A\+T\+ED}}
+\index{is\+User\+V\+A\+L\+I\+D\+A\+T\+ED@{is\+User\+V\+A\+L\+I\+D\+A\+T\+ED}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{is\+User\+V\+A\+L\+I\+D\+A\+T\+E\+D()}{isUserVALIDATED()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+User\+V\+A\+L\+I\+D\+A\+T\+ED (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a4f00da3edbb0d2000987ad71947ad8b9}{}\label{class_ossn_user_a4f00da3edbb0d2000987ad71947ad8b9}
+Check if user is validated or not
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 819 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!Login@{Login}}
+\index{Login@{Login}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{Login()}{Login()}}]{\setlength{\rightskip}{0pt plus 5cm}Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a8db48c2902872da0ee80463db6696375}{}\label{class_ossn_user_a8db48c2902872da0ee80463db6696375}
+Login into site.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 248 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!Logout@{Logout}}
+\index{Logout@{Logout}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{Logout()}{Logout()}}]{\setlength{\rightskip}{0pt plus 5cm}static Logout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_user_af6f57f96052d0c659ae5200c7e953f7c}{}\label{class_ossn_user_af6f57f96052d0c659ae5200c7e953f7c}
+User logout
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 925 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!online\+\_\+total@{online\+\_\+total}}
+\index{online\+\_\+total@{online\+\_\+total}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{online\+\_\+total()}{online_total()}}]{\setlength{\rightskip}{0pt plus 5cm}online\+\_\+total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_aa4e9e703523721959b8fd21d063d2f6e}{}\label{class_ossn_user_aa4e9e703523721959b8fd21d063d2f6e}
+Count Total online site users.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 468 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!online\+By\+Gender@{online\+By\+Gender}}
+\index{online\+By\+Gender@{online\+By\+Gender}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{online\+By\+Gender(\$gender= \textquotesingle{}male\textquotesingle{}, \$count=false, \$intervals=100)}{onlineByGender($gender= 'male', $count=false, $intervals=100)}}]{\setlength{\rightskip}{0pt plus 5cm}online\+By\+Gender (
+\begin{DoxyParamCaption}
+\item[{}]{\$gender = {\ttfamily \textquotesingle{}male\textquotesingle{}}, }
+\item[{}]{\$count = {\ttfamily false}, }
+\item[{}]{\$intervals = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ab211695556bc39bc443f9a978b769aef}{}\label{class_ossn_user_ab211695556bc39bc443f9a978b769aef}
+Get online users by gender
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$gender} & Gender type \\
+\hline
+boolean & {\em \$count} & true or false \\
+\hline
+integer & {\em \$intervals} & Seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object$\vert$false  public 
+\end{DoxyReturn}
+
+
+Definition at line 1006 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!profile\+U\+RL@{profile\+U\+RL}}
+\index{profile\+U\+RL@{profile\+U\+RL}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{profile\+U\+R\+L(\$extends= \textquotesingle{}\textquotesingle{})}{profileURL($extends= '')}}]{\setlength{\rightskip}{0pt plus 5cm}profile\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{}]{\$extends = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a1bdb669c6b82b21188d65d7ac9f42428}{}\label{class_ossn_user_a1bdb669c6b82b21188d65d7ac9f42428}
+View user profile url
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 676 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!request\+Exists@{request\+Exists}}
+\index{request\+Exists@{request\+Exists}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{request\+Exists(\$from, \$user)}{requestExists($from, $user)}}]{\setlength{\rightskip}{0pt plus 5cm}request\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a91dd4075374ca0c1e082e3093f19c284}{}\label{class_ossn_user_a91dd4075374ca0c1e082e3093f19c284}
+Check if the request already sent or not.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$from} & Relation from guid \\
+\hline
+integer & {\em \$user} & Relation to , user guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 397 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!resend\+Validation\+Email@{resend\+Validation\+Email}}
+\index{resend\+Validation\+Email@{resend\+Validation\+Email}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{resend\+Validation\+Email()}{resendValidationEmail()}}]{\setlength{\rightskip}{0pt plus 5cm}resend\+Validation\+Email (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a61fc9257b3e0bec9e061a45f081adcf3}{}\label{class_ossn_user_a61fc9257b3e0bec9e061a45f081adcf3}
+Resend validation email to user
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 830 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!reset\+Password@{reset\+Password}}
+\index{reset\+Password@{reset\+Password}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{reset\+Password(\$password)}{resetPassword($password)}}]{\setlength{\rightskip}{0pt plus 5cm}reset\+Password (
+\begin{DoxyParamCaption}
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a145103c5602feef3a79b2fada0499a99}{}\label{class_ossn_user_a145103c5602feef3a79b2fada0499a99}
+Reset user password
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 721 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!save@{save}}
+\index{save@{save}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{save()}{save()}}]{\setlength{\rightskip}{0pt plus 5cm}save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_ossn_user_afc8a3c62679cf00ade9f15fb2a6d6132}
+Save a user entity
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1053 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!search\+Users@{search\+Users}}
+\index{search\+Users@{search\+Users}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{search\+Users(array \$params=array())}{searchUsers(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Users (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_abcfcb1f1bfba94db29cfeb7767f59ca7}{}\label{class_ossn_user_abcfcb1f1bfba94db29cfeb7767f59ca7}
+Search users using a keyword or entities\+\_\+pairs
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format\+: \textquotesingle{}keyword\textquotesingle{} =$>$ A keyword to search users \textquotesingle{}entities\+\_\+pairs\textquotesingle{} =$>$ A entities pairs options, must be array \textquotesingle{}limit\textquotesingle{} =$>$ Result limit default, Default is 10 values \textquotesingle{}count\textquotesingle{} =$>$ True if you wanted to count search items. \textquotesingle{}order\+\_\+by\textquotesingle{} =$>$ To show result in sepcific order. Default is Assending\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 508 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{send\+Request(\$from, \$to)}{sendRequest($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}send\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_ad7f6e3c42fbe1373f41a78bb5fb92043}{}\label{class_ossn_user_ad7f6e3c42fbe1373f41a78bb5fb92043}
+Send request to other user.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 379 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!Send\+Reset\+Login@{Send\+Reset\+Login}}
+\index{Send\+Reset\+Login@{Send\+Reset\+Login}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{Send\+Reset\+Login()}{SendResetLogin()}}]{\setlength{\rightskip}{0pt plus 5cm}Send\+Reset\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a4ba3f5f1a4abd7cf8abf29f56b09627f}{}\label{class_ossn_user_a4ba3f5f1a4abd7cf8abf29f56b09627f}
+Send user reset password link
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 686 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!set\+Login@{set\+Login}}
+\index{set\+Login@{set\+Login}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{set\+Login(\$userid)}{setLogin($userid)}}]{\setlength{\rightskip}{0pt plus 5cm}static set\+Login (
+\begin{DoxyParamCaption}
+\item[{}]{\$userid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_user_a8a0a23c099246365648988e069b69afa}{}\label{class_ossn_user_a8a0a23c099246365648988e069b69afa}
+login the user based on given input (by username, email, guid)
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string & {\em \$user} & A username, email, guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1103 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!update\+\_\+last\+\_\+activity@{update\+\_\+last\+\_\+activity}}
+\index{update\+\_\+last\+\_\+activity@{update\+\_\+last\+\_\+activity}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{update\+\_\+last\+\_\+activity()}{update_last_activity()}}]{\setlength{\rightskip}{0pt plus 5cm}update\+\_\+last\+\_\+activity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a451896c212bc72020029642e8c86e343}{}\label{class_ossn_user_a451896c212bc72020029642e8c86e343}
+Update user last activity time
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 442 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!update\+\_\+last\+\_\+login@{update\+\_\+last\+\_\+login}}
+\index{update\+\_\+last\+\_\+login@{update\+\_\+last\+\_\+login}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{update\+\_\+last\+\_\+login()}{update_last_login()}}]{\setlength{\rightskip}{0pt plus 5cm}update\+\_\+last\+\_\+login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a5d4b41552168405cfc50a3f3927c5b5f}{}\label{class_ossn_user_a5d4b41552168405cfc50a3f3927c5b5f}
+Update user last login time.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 273 of file Ossn\+User.\+php.
+
+\index{Ossn\+User@{Ossn\+User}!Validate\+Registration@{Validate\+Registration}}
+\index{Validate\+Registration@{Validate\+Registration}!Ossn\+User@{Ossn\+User}}
+\subsubsection[{\texorpdfstring{Validate\+Registration(\$code)}{ValidateRegistration($code)}}]{\setlength{\rightskip}{0pt plus 5cm}Validate\+Registration (
+\begin{DoxyParamCaption}
+\item[{}]{\$code}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_user_a9f15a213cf4ddb9cbc6385e5aefb8b51}{}\label{class_ossn_user_a9f15a213cf4ddb9cbc6385e5aefb8b51}
+Validate User Registration
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 635 of file Ossn\+User.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_user_8php}{Ossn\+User.\+php}\end{DoxyCompactItemize}

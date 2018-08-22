@@ -1,0 +1,48 @@
+\hypertarget{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/admin/settings.php File Reference}
+\label{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a9a4a6fba2208984cabb3afacadf33919}{\$type} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a92d70a97331cc6fc0a79d9da50895be8}{\$types}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!in\+\_\+array(\$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$\hyperlink{_chart_8_core_8js_a0ecd014dd4c5d61d8130961daf1eed54}{types})) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{_ossn_wall_2ossn__com_8php_a31de08b753872350ff56d81d50fb89c1}{ossn\+\_\+set\+\_\+homepage\+\_\+wall\+\_\+access}(\$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type})) \hyperlink{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a448512a6dada4cd8e4918585968bf038}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}!\$type@{\$type}}
+\index{\$type@{\$type}!components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}}
+\subsubsection[{\texorpdfstring{\$type}{$type}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf type} = {\bf input}(\textquotesingle{}{\bf type}\textquotesingle{})}\hypertarget{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a9a4a6fba2208984cabb3afacadf33919}{}\label{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a9a4a6fba2208984cabb3afacadf33919}
+
+
+Definition at line 3 of file settings.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}!\$types@{\$types}}
+\index{\$types@{\$types}!components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}}
+\subsubsection[{\texorpdfstring{\$types}{$types}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf types}}\hypertarget{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a92d70a97331cc6fc0a79d9da50895be8}{}\label{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a92d70a97331cc6fc0a79d9da50895be8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'friends'},
+        \textcolor{stringliteral}{'public'}
+)
+\end{DoxyCode}
+
+
+Definition at line 4 of file settings.\+php.
+
+\index{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}!else@{else}}
+\index{else@{else}!components/\+Ossn\+Wall/actions/wall/admin/settings.\+php@{components/\+Ossn\+Wall/actions/wall/admin/settings.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!in\+\_\+array(\${\bf type}, \${\bf types})) {\bf if} ({\bf ossn\+\_\+set\+\_\+homepage\+\_\+wall\+\_\+access}(\${\bf type})) else}\hypertarget{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a448512a6dada4cd8e4918585968bf038}{}\label{components_2_ossn_wall_2actions_2wall_2admin_2settings_8php_a448512a6dada4cd8e4918585968bf038}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'ossn:wall:settings:save:error'}), \textcolor{stringliteral}{'
+      error'})
+\end{DoxyCode}
+
+
+Definition at line 14 of file settings.\+php.
+

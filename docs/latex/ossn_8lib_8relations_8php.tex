@@ -1,0 +1,182 @@
+\hypertarget{ossn_8lib_8relations_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+relations.\+php File Reference}
+\label{ossn_8lib_8relations_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+relations.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+relations.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8relations_8php_a022f2f307f8500b9bdc2feabbb360e9a}{ossn\+\_\+add\+\_\+relation} (\$from, \$to, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type})
+\item 
+\hyperlink{ossn_8lib_8relations_8php_afa54670de78f7ee76dc706d8b3a8e07f}{ossn\+\_\+relation\+\_\+exists} (\$from, \$to, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$recursive=false)
+\item 
+\hyperlink{ossn_8lib_8relations_8php_a9324205a6fe17e0219201dc3cb7f935e}{ossn\+\_\+get\+\_\+relationships} (array \$params=array())
+\item 
+\hyperlink{ossn_8lib_8relations_8php_ae2e3b4a6f45ba05d2533ab5a7f57cc34}{ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id} (\$id)
+\item 
+\hyperlink{ossn_8lib_8relations_8php_aaa1d8729a602568b3beb522d9c6b4025}{ossn\+\_\+delete\+\_\+relationship} (array \$vars=array())
+\item 
+\hyperlink{ossn_8lib_8relations_8php_a64eb69922ba19511a395295f3c818d45}{ossn\+\_\+delete\+\_\+user\+\_\+relations} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{ossn_8lib_8relations_8php_ad12cf4192e328bf026654b78d787d871}{ossn\+\_\+delete\+\_\+group\+\_\+relations} (\$group)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+add\+\_\+relation@{ossn\+\_\+add\+\_\+relation}}
+\index{ossn\+\_\+add\+\_\+relation@{ossn\+\_\+add\+\_\+relation}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+add\+\_\+relation(\$from, \$to, \$type)}{ossn_add_relation($from, $to, $type)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+add\+\_\+relation (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_a022f2f307f8500b9bdc2feabbb360e9a}{}\label{ossn_8lib_8relations_8php_a022f2f307f8500b9bdc2feabbb360e9a}
+Ossn Add Relations
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$from} & Relation from guid \\
+\hline
+integer & {\em \$to} & Relation to guid \\
+\hline
+string & {\em \$type} & Relation type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+delete\+\_\+group\+\_\+relations@{ossn\+\_\+delete\+\_\+group\+\_\+relations}}
+\index{ossn\+\_\+delete\+\_\+group\+\_\+relations@{ossn\+\_\+delete\+\_\+group\+\_\+relations}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+delete\+\_\+group\+\_\+relations(\$group)}{ossn_delete_group_relations($group)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+delete\+\_\+group\+\_\+relations (
+\begin{DoxyParamCaption}
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_ad12cf4192e328bf026654b78d787d871}{}\label{ossn_8lib_8relations_8php_ad12cf4192e328bf026654b78d787d871}
+Delete group relations if user is deleted
+
+
+\begin{DoxyParams}{Parameters}
+{\em (object)} & \$group Group Entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 250 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+delete\+\_\+relationship@{ossn\+\_\+delete\+\_\+relationship}}
+\index{ossn\+\_\+delete\+\_\+relationship@{ossn\+\_\+delete\+\_\+relationship}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+delete\+\_\+relationship(array \$vars=array())}{ossn_delete_relationship(array $vars=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+delete\+\_\+relationship (
+\begin{DoxyParamCaption}
+\item[{array}]{\$vars = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_aaa1d8729a602568b3beb522d9c6b4025}{}\label{ossn_8lib_8relations_8php_aaa1d8729a602568b3beb522d9c6b4025}
+Ossn Delete Relation
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$id} & ID of the relationship\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id@{ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id}}
+\index{ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id@{ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id(\$id)}{ossn_delete_relationship_by_id($id)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+delete\+\_\+relationship\+\_\+by\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_ae2e3b4a6f45ba05d2533ab5a7f57cc34}{}\label{ossn_8lib_8relations_8php_ae2e3b4a6f45ba05d2533ab5a7f57cc34}
+Ossn Delete Relation
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$id} & ID of the relationship\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 179 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+delete\+\_\+user\+\_\+relations@{ossn\+\_\+delete\+\_\+user\+\_\+relations}}
+\index{ossn\+\_\+delete\+\_\+user\+\_\+relations@{ossn\+\_\+delete\+\_\+user\+\_\+relations}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+delete\+\_\+user\+\_\+relations(\$user)}{ossn_delete_user_relations($user)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+delete\+\_\+user\+\_\+relations (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_a64eb69922ba19511a395295f3c818d45}{}\label{ossn_8lib_8relations_8php_a64eb69922ba19511a395295f3c818d45}
+Delete user relations if user is deleted
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_ossn_user}{Ossn\+User} & {\em \$user} & Entity of user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+get\+\_\+relationships@{ossn\+\_\+get\+\_\+relationships}}
+\index{ossn\+\_\+get\+\_\+relationships@{ossn\+\_\+get\+\_\+relationships}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+relationships(array \$params=array())}{ossn_get_relationships(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+relationships (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_a9324205a6fe17e0219201dc3cb7f935e}{}\label{ossn_8lib_8relations_8php_a9324205a6fe17e0219201dc3cb7f935e}
+Ossn get relationships
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+objects 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file ossn.\+lib.\+relations.\+php.
+
+\index{ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}!ossn\+\_\+relation\+\_\+exists@{ossn\+\_\+relation\+\_\+exists}}
+\index{ossn\+\_\+relation\+\_\+exists@{ossn\+\_\+relation\+\_\+exists}!ossn.\+lib.\+relations.\+php@{ossn.\+lib.\+relations.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+relation\+\_\+exists(\$from, \$to, \$type, \$recursive=false)}{ossn_relation_exists($from, $to, $type, $recursive=false)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+relation\+\_\+exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$type, }
+\item[{}]{\$recursive = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8relations_8php_afa54670de78f7ee76dc706d8b3a8e07f}{}\label{ossn_8lib_8relations_8php_afa54670de78f7ee76dc706d8b3a8e07f}
+Ossn relation exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$from} & Relation from guid \\
+\hline
+integer & {\em \$to} & Relation to guid \\
+\hline
+string & {\em \$type} & Relation type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file ossn.\+lib.\+relations.\+php.
+

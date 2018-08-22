@@ -1,0 +1,67 @@
+\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/actions/comment/edit.php File Reference}
+\label{components_2_ossn_comments_2actions_2comment_2edit_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/actions/comment/edit.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}{\$guid} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}guid\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_adf95f30eaafccead90ab5e2cdb55e9b9}{\$text} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}comment\textquotesingle{})
+\item 
+\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a536677acc0163c53c067316a97456e6c}{\$comment} = \hyperlink{ossn_8lib_8annotations_8php_a40a5027fa5571b7c4e4bd35794c76ac3}{ossn\+\_\+get\+\_\+annotation}(\$guid)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$comment$\vert$$\vert$empty(\$text)) \$comment \hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data} = new std\+Class
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:entity\textquotesingle{}) \hyperlink{cache__settings_8php_aac633c7b6b07fcf67f4504fb5c57a856}{elseif}(\$comment-\/$>$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}== \textquotesingle{}comments\+:post\textquotesingle{}) \hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a03177e81750f5daa5f640386753f2bac}{\$user} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}((\$comment-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}==\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid$\vert$$\vert$\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$can\+Moderate())\&\&\$comment-\/$>$save()) \hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_ad15aa746af6df58f5a69621972c6aee7}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!\$comment@{\$comment}}
+\index{\$comment@{\$comment}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$comment}{$comment}}]{\setlength{\rightskip}{0pt plus 5cm}\$comment = {\bf ossn\+\_\+get\+\_\+annotation}(\$guid)}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_a536677acc0163c53c067316a97456e6c}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_a536677acc0163c53c067316a97456e6c}
+
+
+Definition at line 5 of file edit.\+php.
+
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!\$guid@{\$guid}}
+\index{\$guid@{\$guid}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$guid}{$guid}}]{\setlength{\rightskip}{0pt plus 5cm}\$guid = {\bf input}(\textquotesingle{}guid\textquotesingle{})}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_af99126304cbcb2e1483892c40bb3aae4}
+
+
+Definition at line 3 of file edit.\+php.
+
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!\$text@{\$text}}
+\index{\$text@{\$text}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$text}{$text}}]{\setlength{\rightskip}{0pt plus 5cm}\$text = {\bf input}(\textquotesingle{}comment\textquotesingle{})}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_adf95f30eaafccead90ab5e2cdb55e9b9}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_adf95f30eaafccead90ab5e2cdb55e9b9}
+
+
+Definition at line 4 of file edit.\+php.
+
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:entity\textquotesingle{}) {\bf elseif} (\$comment-\/$>${\bf type}== \textquotesingle{}comments\+:post\textquotesingle{}) \${\bf user} = {\bf ossn\+\_\+loggedin\+\_\+user}()}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_a03177e81750f5daa5f640386753f2bac}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_a03177e81750f5daa5f640386753f2bac}
+
+
+Definition at line 18 of file edit.\+php.
+
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!data@{data}}
+\index{data@{data}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$comment$\vert$$\vert$empty(\$text)) \$comment data = new std\+Class}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}
+
+
+Definition at line 12 of file edit.\+php.
+
+\index{components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}!else@{else}}
+\index{else@{else}!components/\+Ossn\+Comments/actions/comment/edit.\+php@{components/\+Ossn\+Comments/actions/comment/edit.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ((\$comment-\/$>${\bf owner\+\_\+guid}==\${\bf user}-\/$>$guid$\vert$$\vert$\${\bf user}-\/$>$can\+Moderate())\&\&\$comment-\/$>$save()) else}\hypertarget{components_2_ossn_comments_2actions_2comment_2edit_8php_ad15aa746af6df58f5a69621972c6aee7}{}\label{components_2_ossn_comments_2actions_2comment_2edit_8php_ad15aa746af6df58f5a69621972c6aee7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'comment:edit:failed'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 27 of file edit.\+php.
+

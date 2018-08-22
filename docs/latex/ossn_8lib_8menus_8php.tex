@@ -1,0 +1,199 @@
+\hypertarget{ossn_8lib_8menus_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+menus.\+php File Reference}
+\label{ossn_8lib_8menus_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+menus.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+menus.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8menus_8php_a5910be474027aef6bf611a36b1f456a9}{ossn\+\_\+register\+\_\+menu\+\_\+link} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$text, \$link, \$menutype= \textquotesingle{}site\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8menus_8php_a48ae31572338fca3793047458ce6dac9}{ossn\+\_\+register\+\_\+menu\+\_\+item} (\$menutype, array \$options=array())
+\item 
+\hyperlink{ossn_8lib_8menus_8php_a29865db21770e01bce1a4fda9cca0215}{ossn\+\_\+unregister\+\_\+menu} (\$menu, \$menutype= \textquotesingle{}site\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8menus_8php_a86e5e8929b2d8a97472ee4e660a88cf3}{ossn\+\_\+unregister\+\_\+menu\+\_\+item} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$menu, \$menutype= \textquotesingle{}site\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8menus_8php_ad2b0ea062432a8b878c3945c8c294e3d}{ossn\+\_\+view\+\_\+menu} (\$menu, \$custom=false)
+\item 
+\hyperlink{ossn_8lib_8menus_8php_ad31e4ee8d9436b57537511dc8cc8f7d3}{ossn\+\_\+register\+\_\+sections\+\_\+menu} (\$menu= \textquotesingle{}\textquotesingle{}, array \$params=array())
+\item 
+\hyperlink{ossn_8lib_8menus_8php_a4f69dd8d47e7b9df9f4181bc031f6407}{ossn\+\_\+view\+\_\+sections\+\_\+menu} (\$menu, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}frontend\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+register\+\_\+menu\+\_\+item@{ossn\+\_\+register\+\_\+menu\+\_\+item}}
+\index{ossn\+\_\+register\+\_\+menu\+\_\+item@{ossn\+\_\+register\+\_\+menu\+\_\+item}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+menu\+\_\+item(\$menutype, array \$options=array())}{ossn_register_menu_item($menutype, array $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+menu\+\_\+item (
+\begin{DoxyParamCaption}
+\item[{}]{\$menutype, }
+\item[{array}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_a48ae31572338fca3793047458ce6dac9}{}\label{ossn_8lib_8menus_8php_a48ae31572338fca3793047458ce6dac9}
+Register a menu item
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & menu name; \\
+\hline
+array & {\em \$options} & A link options; \\
+\hline
+string & {\em \$menutype} & A menu name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+register\+\_\+menu\+\_\+link@{ossn\+\_\+register\+\_\+menu\+\_\+link}}
+\index{ossn\+\_\+register\+\_\+menu\+\_\+link@{ossn\+\_\+register\+\_\+menu\+\_\+link}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+menu\+\_\+link(\$name, \$text, \$link, \$menutype= \textquotesingle{}site\textquotesingle{})}{ossn_register_menu_link($name, $text, $link, $menutype= 'site')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+menu\+\_\+link (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$text, }
+\item[{}]{\$link, }
+\item[{}]{\$menutype = {\ttfamily \textquotesingle{}site\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_a5910be474027aef6bf611a36b1f456a9}{}\label{ossn_8lib_8menus_8php_a5910be474027aef6bf611a36b1f456a9}
+Register a menu; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of menu; \\
+\hline
+string & {\em \$text} & Text for menu; \\
+\hline
+string & {\em \$link} & Link for menu;\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+register\+\_\+sections\+\_\+menu@{ossn\+\_\+register\+\_\+sections\+\_\+menu}}
+\index{ossn\+\_\+register\+\_\+sections\+\_\+menu@{ossn\+\_\+register\+\_\+sections\+\_\+menu}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+sections\+\_\+menu(\$menu= \textquotesingle{}\textquotesingle{}, array \$params=array())}{ossn_register_sections_menu($menu= '', array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+sections\+\_\+menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_ad31e4ee8d9436b57537511dc8cc8f7d3}{}\label{ossn_8lib_8menus_8php_ad31e4ee8d9436b57537511dc8cc8f7d3}
+Register a section base menu
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$menu} & A name of menu \$param array \$params A option values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$null 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+unregister\+\_\+menu@{ossn\+\_\+unregister\+\_\+menu}}
+\index{ossn\+\_\+unregister\+\_\+menu@{ossn\+\_\+unregister\+\_\+menu}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+unregister\+\_\+menu(\$menu, \$menutype= \textquotesingle{}site\textquotesingle{})}{ossn_unregister_menu($menu, $menutype= 'site')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+unregister\+\_\+menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu, }
+\item[{}]{\$menutype = {\ttfamily \textquotesingle{}site\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_a29865db21770e01bce1a4fda9cca0215}{}\label{ossn_8lib_8menus_8php_a29865db21770e01bce1a4fda9cca0215}
+Unregister menu from system; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$menu} & Menu name \\
+\hline
+string & {\em \$menutype} & Menu\+Type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+unregister\+\_\+menu\+\_\+item@{ossn\+\_\+unregister\+\_\+menu\+\_\+item}}
+\index{ossn\+\_\+unregister\+\_\+menu\+\_\+item@{ossn\+\_\+unregister\+\_\+menu\+\_\+item}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+unregister\+\_\+menu\+\_\+item(\$name, \$menu, \$menutype= \textquotesingle{}site\textquotesingle{})}{ossn_unregister_menu_item($name, $menu, $menutype= 'site')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+unregister\+\_\+menu\+\_\+item (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$menu, }
+\item[{}]{\$menutype = {\ttfamily \textquotesingle{}site\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_a86e5e8929b2d8a97472ee4e660a88cf3}{}\label{ossn_8lib_8menus_8php_a86e5e8929b2d8a97472ee4e660a88cf3}
+Unregister Type -\/$>$ Menu -\/$>$ Menu Item
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of Menu Item \\
+\hline
+string & {\em \$menu} & Name of Menu \\
+\hline
+string & {\em \$menutype} & The name of menutype\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+view\+\_\+menu@{ossn\+\_\+view\+\_\+menu}}
+\index{ossn\+\_\+view\+\_\+menu@{ossn\+\_\+view\+\_\+menu}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+menu(\$menu, \$custom=false)}{ossn_view_menu($menu, $custom=false)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu, }
+\item[{}]{\$custom = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_ad2b0ea062432a8b878c3945c8c294e3d}{}\label{ossn_8lib_8menus_8php_ad2b0ea062432a8b878c3945c8c294e3d}
+View a menu
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$menu} & Menu name \\
+\hline
+boolean & {\em \$custom} & if the file path is custom\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This will fetch layout from defualt template that how menu should appear; check menu file for more info;
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 74 of file ossn.\+lib.\+menus.\+php.
+
+\index{ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}!ossn\+\_\+view\+\_\+sections\+\_\+menu@{ossn\+\_\+view\+\_\+sections\+\_\+menu}}
+\index{ossn\+\_\+view\+\_\+sections\+\_\+menu@{ossn\+\_\+view\+\_\+sections\+\_\+menu}!ossn.\+lib.\+menus.\+php@{ossn.\+lib.\+menus.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+sections\+\_\+menu(\$menu, \$type= \textquotesingle{}frontend\textquotesingle{})}{ossn_view_sections_menu($menu, $type= 'frontend')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+sections\+\_\+menu (
+\begin{DoxyParamCaption}
+\item[{}]{\$menu, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}frontend\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8menus_8php_a4f69dd8d47e7b9df9f4181bc031f6407}{}\label{ossn_8lib_8menus_8php_a4f69dd8d47e7b9df9f4181bc031f6407}
+View section base menu
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & (frontend or backend( \\
+\hline
+string & {\em \$menu} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This will fetch layout from defualt template that how menu should appear; check menu file for more info;
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file ossn.\+lib.\+menus.\+php.
+

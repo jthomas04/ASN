@@ -1,0 +1,89 @@
+\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/plugins/default/groups/pages/profile.php File Reference}
+\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}{\$cover} = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$have\+Cover()
+\item 
+\hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a0a8ba950d04c375d81c1be56311ce4de}{\$cover\+\_\+left} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a3d7d04e2526de7a4e23e0cf138b05fdf}{\$iscover} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$cover) \hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a2f710c0f52109e082cc8cdc179d002d4}{\$members} = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$get\+Members()
+\item 
+if(\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}==\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert$\hyperlink{ossn_8lib_8users_8php_abf45a4c659ffd196160e8173c2af1106}{ossn\+\_\+is\+Admin\+Loggedin}()) \hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a1973cb4de7b19378e96144c69f833e9a}{if} (\$cover)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{ossn_8lib_8users_8php_a709b82b89b564332723652ed2a36e6b8}{ossn\+\_\+is\+Loggedin}()\&\&\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$owner\+\_\+guid!==\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}==\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert$\hyperlink{ossn_8lib_8users_8php_abf45a4c659ffd196160e8173c2af1106}{ossn\+\_\+is\+Admin\+Loggedin}()) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(isset(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})\&\&!empty(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})\&\&\hyperlink{libraries_2groups_8php_a0b01c462e1a0cf0d909f90270a8dd85c}{ossn\+\_\+is\+\_\+group\+\_\+subapge}(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})) \hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a49429671369637cdcf71e54d17118c0d}{else} \{
+\item 
+\hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a8c40c1917df317d92ce8569173ee54cb}{if} (\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$membership==\hyperlink{ossn_8lib_8system_8php_a982684c5e83907832c9079348ec7edd3}{O\+S\+S\+N\+\_\+\+P\+R\+I\+V\+A\+TE} \&\&\$ismember!==1)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}==\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert$\hyperlink{ossn_8lib_8users_8php_abf45a4c659ffd196160e8173c2af1106}{ossn\+\_\+is\+Admin\+Loggedin}()) \hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a722fdd44e79886d1c9a6c444813ca835}{\$count} = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$get\+Members(true)
+\item 
+\hyperlink{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_ae05862a0294251c88629b141b5ce329a}{\$limit} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$count@{\$count}}
+\index{\$count@{\$count}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$count}{$count}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>${\bf owner\+\_\+guid}=={\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert${\bf ossn\+\_\+is\+Admin\+Loggedin}()) \${\bf count} = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$get\+Members(true)}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a722fdd44e79886d1c9a6c444813ca835}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a722fdd44e79886d1c9a6c444813ca835}
+
+
+Definition at line 173 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$cover@{\$cover}}
+\index{\$cover@{\$cover}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$cover}{$cover}}]{\setlength{\rightskip}{0pt plus 5cm}\$cover = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$have\+Cover()}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}
+
+
+Definition at line 3 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$cover\+\_\+left@{\$cover\+\_\+left}}
+\index{\$cover\+\_\+left@{\$cover\+\_\+left}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$cover\+\_\+left}{$cover_left}}]{\setlength{\rightskip}{0pt plus 5cm}\$cover\+\_\+left = \textquotesingle{}\textquotesingle{}}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a0a8ba950d04c375d81c1be56311ce4de}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a0a8ba950d04c375d81c1be56311ce4de}
+
+
+Definition at line 4 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$iscover@{\$iscover}}
+\index{\$iscover@{\$iscover}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$iscover}{$iscover}}]{\setlength{\rightskip}{0pt plus 5cm}\$iscover = \textquotesingle{}\textquotesingle{}}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a3d7d04e2526de7a4e23e0cf138b05fdf}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a3d7d04e2526de7a4e23e0cf138b05fdf}
+
+
+Definition at line 5 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$limit@{\$limit}}
+\index{\$limit@{\$limit}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$limit}{$limit}}]{\setlength{\rightskip}{0pt plus 5cm}\$limit = 1}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_ae05862a0294251c88629b141b5ce329a}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_ae05862a0294251c88629b141b5ce329a}
+
+
+Definition at line 174 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!\$members@{\$members}}
+\index{\$members@{\$members}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$members}{$members}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$cover) \$members = \$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$get\+Members()}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a2f710c0f52109e082cc8cdc179d002d4}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a2f710c0f52109e082cc8cdc179d002d4}
+
+
+Definition at line 17 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!else@{else}}
+\index{else@{else}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ({\bf ossn\+\_\+is\+Loggedin}()\&\&\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$owner\+\_\+guid!=={\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid) {\bf if} (\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>${\bf owner\+\_\+guid}=={\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert${\bf ossn\+\_\+is\+Admin\+Loggedin}()) {\bf if} (isset(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})\&\&!empty(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})\&\&{\bf ossn\+\_\+is\+\_\+group\+\_\+subapge}(\$params\mbox{[}\textquotesingle{}subpage\textquotesingle{}\mbox{]})) else \{}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a49429671369637cdcf71e54d17118c0d}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a49429671369637cdcf71e54d17118c0d}
+
+
+Definition at line 108 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!if@{if}}
+\index{if@{if}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if (\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>${\bf owner\+\_\+guid}=={\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid$\vert$$\vert${\bf ossn\+\_\+is\+Admin\+Loggedin}()) if(\$cover)}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a1973cb4de7b19378e96144c69f833e9a}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a1973cb4de7b19378e96144c69f833e9a}
+
+
+Definition at line 34 of file profile.\+php.
+
+\index{Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}!if@{if}}
+\index{if@{if}!Ossn\+Groups/plugins/default/groups/pages/profile.\+php@{Ossn\+Groups/plugins/default/groups/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(\$params\mbox{[}\textquotesingle{}group\textquotesingle{}\mbox{]}-\/$>$membership=={\bf O\+S\+S\+N\+\_\+\+P\+R\+I\+V\+A\+TE} \&\&\$ismember!==1)}\hypertarget{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a8c40c1917df317d92ce8569173ee54cb}{}\label{_ossn_groups_2plugins_2default_2groups_2pages_2profile_8php_a8c40c1917df317d92ce8569173ee54cb}
+
+
+Definition at line 120 of file profile.\+php.
+

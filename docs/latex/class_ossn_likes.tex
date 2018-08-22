@@ -1,0 +1,178 @@
+\hypertarget{class_ossn_likes}{}\section{Ossn\+Likes Class Reference}
+\label{class_ossn_likes}\index{Ossn\+Likes@{Ossn\+Likes}}
+
+
+Inheritance diagram for Ossn\+Likes\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Likes\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_likes_a5e5139fae4d7caccf57dd9b4ede4d051}{Like} (\$subject\+\_\+id, \$guid, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_likes_a3baca95de684db53db2b0e2f59d25621}{is\+Liked} (\$subject\+\_\+id, \$guid, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_likes_adc475010e49664fad992c97333c88096}{Un\+Like} (\$subject\+\_\+id, \$guid, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_likes_a5e9cd5591ddd2b2ea96a46b0c1d324b0}{delete\+Likes} (\$subject\+\_\+id, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_likes_a45563cbf084047ffa309637c63100529}{delete\+Likes\+By\+Owner\+Guid} (\$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid})
+\item 
+\hyperlink{class_ossn_likes_ad2d88f71839b546c755acc10ebb9bc39}{Count\+Likes} (\$subject\+\_\+id, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_likes_aa6e6eb8e21d8252ce6b7a6315b7fa9da}{Get\+Likes} (\$subject\+\_\+id, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Likes.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Likes@{Ossn\+Likes}!Count\+Likes@{Count\+Likes}}
+\index{Count\+Likes@{Count\+Likes}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{Count\+Likes(\$subject\+\_\+id, \$type= \textquotesingle{}post\textquotesingle{})}{CountLikes($subject_id, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Count\+Likes (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_ad2d88f71839b546c755acc10ebb9bc39}{}\label{class_ossn_likes_ad2d88f71839b546c755acc10ebb9bc39}
+Count likes
+
+integer \$subject\+\_\+id Id of item which users liked  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 144 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!delete\+Likes@{delete\+Likes}}
+\index{delete\+Likes@{delete\+Likes}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{delete\+Likes(\$subject\+\_\+id, \$type= \textquotesingle{}post\textquotesingle{})}{deleteLikes($subject_id, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Likes (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_a5e9cd5591ddd2b2ea96a46b0c1d324b0}{}\label{class_ossn_likes_a5e9cd5591ddd2b2ea96a46b0c1d324b0}
+Delte subject likes
+
+integer \$subject\+\_\+id Id of item which users liked  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!delete\+Likes\+By\+Owner\+Guid@{delete\+Likes\+By\+Owner\+Guid}}
+\index{delete\+Likes\+By\+Owner\+Guid@{delete\+Likes\+By\+Owner\+Guid}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{delete\+Likes\+By\+Owner\+Guid(\$owner\+\_\+guid)}{deleteLikesByOwnerGuid($owner_guid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Likes\+By\+Owner\+Guid (
+\begin{DoxyParamCaption}
+\item[{}]{\$owner\+\_\+guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_a45563cbf084047ffa309637c63100529}{}\label{class_ossn_likes_a45563cbf084047ffa309637c63100529}
+Delte likes by user guid
+
+integer \$owner\+\_\+guid Guid of user
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 126 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!Get\+Likes@{Get\+Likes}}
+\index{Get\+Likes@{Get\+Likes}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{Get\+Likes(\$subject\+\_\+id, \$type= \textquotesingle{}post\textquotesingle{})}{GetLikes($subject_id, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Likes (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_aa6e6eb8e21d8252ce6b7a6315b7fa9da}{}\label{class_ossn_likes_aa6e6eb8e21d8252ce6b7a6315b7fa9da}
+Get likes
+
+integer \$subject\+\_\+id Id of item which users liked  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 163 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!is\+Liked@{is\+Liked}}
+\index{is\+Liked@{is\+Liked}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{is\+Liked(\$subject\+\_\+id, \$guid, \$type= \textquotesingle{}post\textquotesingle{})}{isLiked($subject_id, $guid, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Liked (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$guid, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_a3baca95de684db53db2b0e2f59d25621}{}\label{class_ossn_likes_a3baca95de684db53db2b0e2f59d25621}
+Check if user liked item or not
+
+integer \$subject\+\_\+id Id of item which users liked  integer \$guid Guid of user  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!Like@{Like}}
+\index{Like@{Like}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{Like(\$subject\+\_\+id, \$guid, \$type= \textquotesingle{}post\textquotesingle{})}{Like($subject_id, $guid, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Like (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$guid, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_a5e5139fae4d7caccf57dd9b4ede4d051}{}\label{class_ossn_likes_a5e5139fae4d7caccf57dd9b4ede4d051}
+Like item
+
+integer \$subject\+\_\+id Id of item which users liked  integer \$guid Guid of user  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Ossn\+Likes.\+php.
+
+\index{Ossn\+Likes@{Ossn\+Likes}!Un\+Like@{Un\+Like}}
+\index{Un\+Like@{Un\+Like}!Ossn\+Likes@{Ossn\+Likes}}
+\subsubsection[{\texorpdfstring{Un\+Like(\$subject\+\_\+id, \$guid, \$type= \textquotesingle{}post\textquotesingle{})}{UnLike($subject_id, $guid, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Un\+Like (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$guid, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_likes_adc475010e49664fad992c97333c88096}{}\label{class_ossn_likes_adc475010e49664fad992c97333c88096}
+Unlike item
+
+integer \$subject\+\_\+id Id of item which users liked  integer \$guid Guid of user  string \$type Subject type
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 78 of file Ossn\+Likes.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Likes/classes/\hyperlink{classes_2_ossn_likes_8php}{Ossn\+Likes.\+php}\end{DoxyCompactItemize}

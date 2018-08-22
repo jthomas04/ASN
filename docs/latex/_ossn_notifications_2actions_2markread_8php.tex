@@ -1,0 +1,41 @@
+\hypertarget{_ossn_notifications_2actions_2markread_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/actions/markread.php File Reference}
+\label{_ossn_notifications_2actions_2markread_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/actions/markread.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/actions/markread.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_notifications_2actions_2markread_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()
+\item 
+\hyperlink{_ossn_notifications_2actions_2markread_8php_a31b24031fc7fcaa7848766b56934949b}{\$notification} = new \hyperlink{class_ossn_notifications}{Ossn\+Notifications}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$notification-\/$>$clear\+All(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid)) \hyperlink{_ossn_notifications_2actions_2markread_8php_a5eb027f9c791fd26d341031417e0d3e6}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}!\$notification@{\$notification}}
+\index{\$notification@{\$notification}!Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}}
+\subsubsection[{\texorpdfstring{\$notification}{$notification}}]{\setlength{\rightskip}{0pt plus 5cm}\$notification = new {\bf Ossn\+Notifications}}\hypertarget{_ossn_notifications_2actions_2markread_8php_a31b24031fc7fcaa7848766b56934949b}{}\label{_ossn_notifications_2actions_2markread_8php_a31b24031fc7fcaa7848766b56934949b}
+
+
+Definition at line 4 of file markread.\+php.
+
+\index{Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = {\bf ossn\+\_\+loggedin\+\_\+user}()}\hypertarget{_ossn_notifications_2actions_2markread_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{_ossn_notifications_2actions_2markread_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 3 of file markread.\+php.
+
+\index{Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}!else@{else}}
+\index{else@{else}!Ossn\+Notifications/actions/markread.\+php@{Ossn\+Notifications/actions/markread.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$notification-\/$>$clear\+All(\${\bf user}-\/$>$guid)) else}\hypertarget{_ossn_notifications_2actions_2markread_8php_a5eb027f9c791fd26d341031417e0d3e6}{}\label{_ossn_notifications_2actions_2markread_8php_a5eb027f9c791fd26d341031417e0d3e6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'ossn:notification:mark:read:error'}), \textcolor{stringliteral}{'
+      error'})
+\end{DoxyCode}
+
+
+Definition at line 8 of file markread.\+php.
+

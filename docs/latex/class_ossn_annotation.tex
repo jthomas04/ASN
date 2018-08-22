@@ -1,0 +1,308 @@
+\hypertarget{class_ossn_annotation}{}\section{Ossn\+Annotation Class Reference}
+\label{class_ossn_annotation}\index{Ossn\+Annotation@{Ossn\+Annotation}}
+
+
+Inheritance diagram for Ossn\+Annotation\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Annotation\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_annotation_a5fee6794de13185987b790fce43d0883}{init\+Attributes} ()
+\item 
+\hyperlink{class_ossn_annotation_a47cd22e5c53a181b96cf29be370234ad}{add\+Annotation} ()
+\item 
+\hyperlink{class_ossn_annotation_a81010169311fc08b1027ab1402c07b16}{get\+Annotation\+By\+Id} ()
+\item 
+\hyperlink{class_ossn_annotation_a952a987cb2d3b815deba7f46327d3c98}{get\+Annotations\+By\+Type} ()
+\item 
+\hyperlink{class_ossn_annotation_aff8dba7d75dd0f6d34e84a675b05d923}{get\+Annotations\+By\+Owner} ()
+\item 
+\hyperlink{class_ossn_annotation_a42989c2fb919e792bea4ff3677ae6974}{annon\+\_\+delete\+\_\+by\+\_\+subject} (\$subject, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type})
+\item 
+\hyperlink{class_ossn_annotation_ad7c55d183a4daa02021a1c40b3b6bf21}{get\+Annotation\+By\+Subject} ()
+\item 
+\hyperlink{class_ossn_annotation_a5079c98fc58063c2ff8e1e9560eac0f4}{delete\+Annotation} (\$annotation)
+\item 
+\hyperlink{class_ossn_annotation_aadd1b94e0c646ad7914868046150e5f1}{delete\+Annotation\+By\+Owner} (\$ownerguid)
+\item 
+\hyperlink{class_ossn_annotation_a2a164093fee97379c5b93b66832e28ac}{get\+Annotation\+Id} ()
+\item 
+\hyperlink{class_ossn_annotation_afba62ee7e1ea979b1a9896e7bc610f96}{search\+Annotation} (array \$params=array())
+\item 
+\hyperlink{class_ossn_annotation_a05804a6fe9cab2e6bb201030fabfa357}{can\+Change} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_annotation_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Annotation.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Annotation@{Ossn\+Annotation}!add\+Annotation@{add\+Annotation}}
+\index{add\+Annotation@{add\+Annotation}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{add\+Annotation()}{addAnnotation()}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a47cd22e5c53a181b96cf29be370234ad}{}\label{class_ossn_annotation_a47cd22e5c53a181b96cf29be370234ad}
+Create annotation;
+
+Requires the owner\+\_\+guid, subject\+\_\+guid, and annotation type
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!annon\+\_\+delete\+\_\+by\+\_\+subject@{annon\+\_\+delete\+\_\+by\+\_\+subject}}
+\index{annon\+\_\+delete\+\_\+by\+\_\+subject@{annon\+\_\+delete\+\_\+by\+\_\+subject}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{annon\+\_\+delete\+\_\+by\+\_\+subject(\$subject, \$type)}{annon_delete_by_subject($subject, $type)}}]{\setlength{\rightskip}{0pt plus 5cm}annon\+\_\+delete\+\_\+by\+\_\+subject (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject, }
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a42989c2fb919e792bea4ff3677ae6974}{}\label{class_ossn_annotation_a42989c2fb919e792bea4ff3677ae6974}
+Delete annotations by subject guid
+
+\$subject = subject\+\_\+guid, \$type = annotation type 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!can\+Change@{can\+Change}}
+\index{can\+Change@{can\+Change}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{can\+Change(\$user= \textquotesingle{}\textquotesingle{})}{canChange($user= '')}}]{\setlength{\rightskip}{0pt plus 5cm}can\+Change (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a05804a6fe9cab2e6bb201030fabfa357}{}\label{class_ossn_annotation_a05804a6fe9cab2e6bb201030fabfa357}
+Can change Check if user can change the requested item or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & User \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 443 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!delete\+Annotation@{delete\+Annotation}}
+\index{delete\+Annotation@{delete\+Annotation}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{delete\+Annotation(\$annotation)}{deleteAnnotation($annotation)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Annotation (
+\begin{DoxyParamCaption}
+\item[{}]{\$annotation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a5079c98fc58063c2ff8e1e9560eac0f4}{}\label{class_ossn_annotation_a5079c98fc58063c2ff8e1e9560eac0f4}
+Delete Annotation
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$annotation} & annotation\+\_\+id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean; 
+\end{DoxyReturn}
+
+
+Definition at line 201 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!delete\+Annotation\+By\+Owner@{delete\+Annotation\+By\+Owner}}
+\index{delete\+Annotation\+By\+Owner@{delete\+Annotation\+By\+Owner}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{delete\+Annotation\+By\+Owner(\$ownerguid)}{deleteAnnotationByOwner($ownerguid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Annotation\+By\+Owner (
+\begin{DoxyParamCaption}
+\item[{}]{\$ownerguid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_aadd1b94e0c646ad7914868046150e5f1}{}\label{class_ossn_annotation_aadd1b94e0c646ad7914868046150e5f1}
+Delete Annotation
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$annotation} & annotation\+\_\+id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 232 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!get\+Annotation\+By\+Id@{get\+Annotation\+By\+Id}}
+\index{get\+Annotation\+By\+Id@{get\+Annotation\+By\+Id}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{get\+Annotation\+By\+Id()}{getAnnotationById()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Annotation\+By\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a81010169311fc08b1027ab1402c07b16}{}\label{class_ossn_annotation_a81010169311fc08b1027ab1402c07b16}
+Get annotation by annotation id;
+
+Requires \+: \$object-\/$>$(annotation\+\_\+id)
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 82 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!get\+Annotation\+By\+Subject@{get\+Annotation\+By\+Subject}}
+\index{get\+Annotation\+By\+Subject@{get\+Annotation\+By\+Subject}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{get\+Annotation\+By\+Subject()}{getAnnotationBySubject()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Annotation\+By\+Subject (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_ad7c55d183a4daa02021a1c40b3b6bf21}{}\label{class_ossn_annotation_ad7c55d183a4daa02021a1c40b3b6bf21}
+Get annotation by subject\+\_\+guid;
+
+Requires \+: \$object-\/$>$(subject\+\_\+guid, types(optional))
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 173 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!get\+Annotation\+Id@{get\+Annotation\+Id}}
+\index{get\+Annotation\+Id@{get\+Annotation\+Id}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{get\+Annotation\+Id()}{getAnnotationId()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Annotation\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a2a164093fee97379c5b93b66832e28ac}{}\label{class_ossn_annotation_a2a164093fee97379c5b93b66832e28ac}
+Get newly create annoation id
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+Definition at line 250 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!get\+Annotations\+By\+Owner@{get\+Annotations\+By\+Owner}}
+\index{get\+Annotations\+By\+Owner@{get\+Annotations\+By\+Owner}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{get\+Annotations\+By\+Owner()}{getAnnotationsByOwner()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Annotations\+By\+Owner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_aff8dba7d75dd0f6d34e84a675b05d923}{}\label{class_ossn_annotation_aff8dba7d75dd0f6d34e84a675b05d923}
+Get annotations by owner
+
+Requires \+: \$this-\/$>$owner\+\_\+guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!get\+Annotations\+By\+Type@{get\+Annotations\+By\+Type}}
+\index{get\+Annotations\+By\+Type@{get\+Annotations\+By\+Type}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{get\+Annotations\+By\+Type()}{getAnnotationsByType()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Annotations\+By\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a952a987cb2d3b815deba7f46327d3c98}{}\label{class_ossn_annotation_a952a987cb2d3b815deba7f46327d3c98}
+Get annotations by annotation type
+
+Requires\+: \$object-\/$>$(annotation\+\_\+id)
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_a5fee6794de13185987b790fce43d0883}{}\label{class_ossn_annotation_a5fee6794de13185987b790fce43d0883}
+Initialize the objects.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!save@{save}}
+\index{save@{save}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{save()}{save()}}]{\setlength{\rightskip}{0pt plus 5cm}save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_ossn_annotation_afc8a3c62679cf00ade9f15fb2a6d6132}
+A annotation save method
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 460 of file Ossn\+Annotation.\+php.
+
+\index{Ossn\+Annotation@{Ossn\+Annotation}!search\+Annotation@{search\+Annotation}}
+\index{search\+Annotation@{search\+Annotation}!Ossn\+Annotation@{Ossn\+Annotation}}
+\subsubsection[{\texorpdfstring{search\+Annotation(array \$params=array())}{searchAnnotation(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Annotation (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_annotation_afba62ee7e1ea979b1a9896e7bc610f96}{}\label{class_ossn_annotation_afba62ee7e1ea979b1a9896e7bc610f96}
+Search annotation by its type, owner etc
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format\+: \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}search\+\_\+type\textquotesingle{}\mbox{]}} & true(default) to performs matching on a per-\/character basis , false to performs matching on exact value. \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & Valid annotation type \\
+\hline
+integer & {\em \$params,\mbox{[}\textquotesingle{}subject\+\_\+guid\textquotesingle{}\mbox{]}} & A valid subject guid, which results integer value \\
+\hline
+integer & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & A valid owner guid, which results integer value \\
+\hline
+integer & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & Result limit default, Default is 20 values \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & To show result in sepcific order. There is no default order.\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 266 of file Ossn\+Annotation.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_annotation_8php}{Ossn\+Annotation.\+php}\end{DoxyCompactItemize}

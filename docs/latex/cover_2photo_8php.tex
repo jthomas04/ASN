@@ -1,0 +1,42 @@
+\hypertarget{cover_2photo_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/wall/cover/photo.php File Reference}
+\label{cover_2photo_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/wall/cover/photo.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/wall/cover/photo.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cover_2photo_8php_aac6146b4cdec66c94263ddb55afd5946}{\$image} = \hyperlink{ossn_8lib_8entities_8php_a6167f40e5a04dc1984990eef4fc7c112}{ossn\+\_\+get\+\_\+entity}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{ossn_8lib_8system_8php_ae29c30c131d7600928d7a2fc28bcd322}{ossn\+\_\+is\+\_\+hook}(\textquotesingle{}wall\textquotesingle{}, \textquotesingle{}post\+:menu\textquotesingle{})\&\&ossn\+\_\+is\+Logged\+In()) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid==\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid}) \hyperlink{cover_2photo_8php_a455b1f9c77db61838a93b44445ad7413}{else}
+\item 
+\hyperlink{cover_2photo_8php_aa07d093940e8b3330058e9f2c4396426}{\$vars} \mbox{[}\textquotesingle{}entity\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8entities_8php_a6167f40e5a04dc1984990eef4fc7c112}{ossn\+\_\+get\+\_\+entity}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{cover/photo.\+php@{cover/photo.\+php}!\$image@{\$image}}
+\index{\$image@{\$image}!cover/photo.\+php@{cover/photo.\+php}}
+\subsubsection[{\texorpdfstring{\$image}{$image}}]{\setlength{\rightskip}{0pt plus 5cm}\$image = {\bf ossn\+\_\+get\+\_\+entity}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)}\hypertarget{cover_2photo_8php_aac6146b4cdec66c94263ddb55afd5946}{}\label{cover_2photo_8php_aac6146b4cdec66c94263ddb55afd5946}
+
+
+Definition at line 4 of file photo.\+php.
+
+\index{cover/photo.\+php@{cover/photo.\+php}!\$vars@{\$vars}}
+\index{\$vars@{\$vars}!cover/photo.\+php@{cover/photo.\+php}}
+\subsubsection[{\texorpdfstring{\$vars}{$vars}}]{\setlength{\rightskip}{0pt plus 5cm}\$vars\mbox{[}\textquotesingle{}entity\textquotesingle{}\mbox{]} = {\bf ossn\+\_\+get\+\_\+entity}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)}\hypertarget{cover_2photo_8php_aa07d093940e8b3330058e9f2c4396426}{}\label{cover_2photo_8php_aa07d093940e8b3330058e9f2c4396426}
+
+
+Definition at line 46 of file photo.\+php.
+
+\index{cover/photo.\+php@{cover/photo.\+php}!else@{else}}
+\index{else@{else}!cover/photo.\+php@{cover/photo.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ({\bf ossn\+\_\+is\+\_\+hook}(\textquotesingle{}wall\textquotesingle{}, \textquotesingle{}post\+:menu\textquotesingle{})\&\&ossn\+\_\+is\+Logged\+In()) {\bf if} (\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid==\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>${\bf owner\+\_\+guid}) else}\hypertarget{cover_2photo_8php_a455b1f9c77db61838a93b44445ad7413}{}\label{cover_2photo_8php_a455b1f9c77db61838a93b44445ad7413}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+
+                \hyperlink{components_2_ossn_photos_2actions_2photo_2delete_8php_a9aabf46bdb166877480b2094d7ca01a7}{$owner} = \hyperlink{ossn_8lib_8users_8php_aaee344fada9e6e15470587c7cd94ea8b}{ossn\_user\_by\_guid}(\hyperlink{actions_2administrator_2user_2edit_8php_a6d3a8e48e146c9e256cd43475253986e}{$params}[\textcolor{stringliteral}{'post'}]->
+      \hyperlink{_ossn_profile_2actions_2cover_2upload_8php_ae1eac7270110a6c219e7f3f2006b013d}{owner\_guid})
+\end{DoxyCode}
+
+
+Definition at line 26 of file photo.\+php.
+

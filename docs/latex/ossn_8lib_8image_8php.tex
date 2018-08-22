@@ -1,0 +1,149 @@
+\hypertarget{ossn_8lib_8image_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+image.\+php File Reference}
+\label{ossn_8lib_8image_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+image.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+image.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_elgg_1_1_core}{Elgg\textbackslash{}\+Core}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8image_8php_a998db60a54eb07edcc673ea94bb921fb}{ossn\+\_\+image\+\_\+resize\+\_\+parameters} (\$width, \$\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height}, \$options)
+\item 
+\hyperlink{ossn_8lib_8image_8php_adc046b4fd66e6dfc1f04c42ef6c2a998}{ossn\+\_\+resize\+\_\+image} (\$input\+\_\+name, \$maxwidth, \$maxheight, \$square=F\+A\+L\+SE, \$x1=0, \$y1=0, \$x2=0, \$y2=0, \$upscale=F\+A\+L\+SE)
+\item 
+\hyperlink{ossn_8lib_8image_8php_aa6e7a9eef0774ab80b3a2fe4c2d0f7a6}{ossn\+\_\+save\+\_\+image} (\$file, \$destination)
+\item 
+\hyperlink{ossn_8lib_8image_8php_a554bea8c01aee759e58a943c017c2f1e}{ossn\+\_\+user\+\_\+image\+\_\+sizes} ()
+\item 
+\hyperlink{ossn_8lib_8image_8php_a90854a979b254fd62fe3f5a27927d481}{ossn\+\_\+input\+\_\+images} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}!ossn\+\_\+image\+\_\+resize\+\_\+parameters@{ossn\+\_\+image\+\_\+resize\+\_\+parameters}}
+\index{ossn\+\_\+image\+\_\+resize\+\_\+parameters@{ossn\+\_\+image\+\_\+resize\+\_\+parameters}!ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+image\+\_\+resize\+\_\+parameters(\$width, \$height, \$options)}{ossn_image_resize_parameters($width, $height, $options)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+image\+\_\+resize\+\_\+parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$width, }
+\item[{}]{\$height, }
+\item[{}]{\$options}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8image_8php_a998db60a54eb07edcc673ea94bb921fb}{}\label{ossn_8lib_8image_8php_a998db60a54eb07edcc673ea94bb921fb}
+Calculate the parameters for resizing an image
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$width} & Width of the original image \\
+\hline
+int & {\em \$height} & Height of the original image \\
+\hline
+array & {\em \$options} & See \$defaults for the options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource or F\+A\+L\+SE 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file ossn.\+lib.\+image.\+php.
+
+\index{ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}!ossn\+\_\+input\+\_\+images@{ossn\+\_\+input\+\_\+images}}
+\index{ossn\+\_\+input\+\_\+images@{ossn\+\_\+input\+\_\+images}!ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+input\+\_\+images(\$name)}{ossn_input_images($name)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+input\+\_\+images (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8image_8php_a90854a979b254fd62fe3f5a27927d481}{}\label{ossn_8lib_8image_8php_a90854a979b254fd62fe3f5a27927d481}
+Conver multiple images into normalized array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$files} & An array of files \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$array 
+\end{DoxyReturn}
+
+
+Definition at line 259 of file ossn.\+lib.\+image.\+php.
+
+\index{ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}!ossn\+\_\+resize\+\_\+image@{ossn\+\_\+resize\+\_\+image}}
+\index{ossn\+\_\+resize\+\_\+image@{ossn\+\_\+resize\+\_\+image}!ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+resize\+\_\+image(\$input\+\_\+name, \$maxwidth, \$maxheight, \$square=\+F\+A\+L\+S\+E, \$x1=0, \$y1=0, \$x2=0, \$y2=0, \$upscale=\+F\+A\+L\+S\+E)}{ossn_resize_image($input_name, $maxwidth, $maxheight, $square=FALSE, $x1=0, $y1=0, $x2=0, $y2=0, $upscale=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+resize\+\_\+image (
+\begin{DoxyParamCaption}
+\item[{}]{\$input\+\_\+name, }
+\item[{}]{\$maxwidth, }
+\item[{}]{\$maxheight, }
+\item[{}]{\$square = {\ttfamily FALSE}, }
+\item[{}]{\$x1 = {\ttfamily 0}, }
+\item[{}]{\$y1 = {\ttfamily 0}, }
+\item[{}]{\$x2 = {\ttfamily 0}, }
+\item[{}]{\$y2 = {\ttfamily 0}, }
+\item[{}]{\$upscale = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8image_8php_adc046b4fd66e6dfc1f04c42ef6c2a998}{}\label{ossn_8lib_8image_8php_adc046b4fd66e6dfc1f04c42ef6c2a998}
+Gets the jpeg contents of the resized version of an already uploaded image (Returns false if the file was not an image)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input\+\_\+name} & The name of the file on the disk \\
+\hline
+int & {\em \$maxwidth} & The desired width of the resized image \\
+\hline
+int & {\em \$maxheight} & The desired height of the resized image \\
+\hline
+bool & {\em \$square} & If set to true, takes the smallest of maxwidth and maxheight and use it to set the dimensions on the new image. If no crop parameters are set, the largest square that fits in the image centered will be used for the resize. If square, the crop must be a square region. \\
+\hline
+int & {\em \$x1} & x coordinate for top, left corner \\
+\hline
+int & {\em \$y1} & y coordinate for top, left corner \\
+\hline
+int & {\em \$x2} & x coordinate for bottom, right corner \\
+\hline
+int & {\em \$y2} & y coordinate for bottom, right corner \\
+\hline
+bool & {\em \$upscale} & Resize images smaller than \$maxwidth x \$maxheight?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$string The contents of the resized image, or false on failure 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file ossn.\+lib.\+image.\+php.
+
+\index{ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}!ossn\+\_\+save\+\_\+image@{ossn\+\_\+save\+\_\+image}}
+\index{ossn\+\_\+save\+\_\+image@{ossn\+\_\+save\+\_\+image}!ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+save\+\_\+image(\$file, \$destination)}{ossn_save_image($file, $destination)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+save\+\_\+image (
+\begin{DoxyParamCaption}
+\item[{}]{\$file, }
+\item[{}]{\$destination}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8image_8php_aa6e7a9eef0774ab80b3a2fe4c2d0f7a6}{}\label{ossn_8lib_8image_8php_aa6e7a9eef0774ab80b3a2fe4c2d0f7a6}
+Convert image to jpeg and compress it
+
+\begin{DoxyReturn}{Returns}
+The contents of generate image 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file ossn.\+lib.\+image.\+php.
+
+\index{ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}!ossn\+\_\+user\+\_\+image\+\_\+sizes@{ossn\+\_\+user\+\_\+image\+\_\+sizes}}
+\index{ossn\+\_\+user\+\_\+image\+\_\+sizes@{ossn\+\_\+user\+\_\+image\+\_\+sizes}!ossn.\+lib.\+image.\+php@{ossn.\+lib.\+image.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+user\+\_\+image\+\_\+sizes()}{ossn_user_image_sizes()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+user\+\_\+image\+\_\+sizes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8image_8php_a554bea8c01aee759e58a943c017c2f1e}{}\label{ossn_8lib_8image_8php_a554bea8c01aee759e58a943c017c2f1e}
+Get image crop sizes for profile picture
+
+\begin{DoxyReturn}{Returns}
+The contents of generate image 
+\end{DoxyReturn}
+
+
+Definition at line 244 of file ossn.\+lib.\+image.\+php.
+

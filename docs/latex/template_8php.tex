@@ -1,0 +1,82 @@
+\hypertarget{template_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/wall/template.php File Reference}
+\label{template_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/wall/template.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/wall/template.\+php}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_informatikon_1_1com}{Informatikon\textbackslash{}com}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{template_8php_ac40a9764673b6d86593dc674331c5116}{\$album} = \hyperlink{ossn_8lib_8objects_8php_a6b5970320e8ed1af1b6f863e7ad51f01}{ossn\+\_\+get\+\_\+object}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$album) \hyperlink{template_8php_ac5b889be5aaba96358f3eb8ac72c21bf}{\$photos\+\_\+guid} = \$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$photos\+\_\+guids
+\item 
+\hyperlink{template_8php_a7d16539c7a3688bee1d3184c81c47487}{\$photos}
+\item 
+\hyperlink{template_8php_a241b818f48030b628685b2e5119c5624}{\$total} = \hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}((array) \$photos)
+\item 
+\hyperlink{template_8php_ab97dd40df90f4ce6f0fce9091e7c7872}{\$container} = \textquotesingle{}ossn-\/photos-\/wall\textquotesingle{}
+\item 
+\hyperlink{template_8php_adc75a6541acf09bfbf09a8105cd84624}{if} (\$total==1)
+\item 
+if(\hyperlink{ossn_8lib_8system_8php_ae29c30c131d7600928d7a2fc28bcd322}{ossn\+\_\+is\+\_\+hook}(\textquotesingle{}wall\textquotesingle{}, \textquotesingle{}post\+:menu\textquotesingle{})\&\&ossn\+\_\+is\+Logged\+In()) \hyperlink{template_8php_a01283bd6df56fa280ea988dfb8dbbfaf}{if} (\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid==\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{template.\+php@{template.\+php}!\$album@{\$album}}
+\index{\$album@{\$album}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{\$album}{$album}}]{\setlength{\rightskip}{0pt plus 5cm}\$album = {\bf ossn\+\_\+get\+\_\+object}(\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$item\+\_\+guid)}\hypertarget{template_8php_ac40a9764673b6d86593dc674331c5116}{}\label{template_8php_ac40a9764673b6d86593dc674331c5116}
+
+
+Definition at line 12 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!\$container@{\$container}}
+\index{\$container@{\$container}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{\$container}{$container}}]{\setlength{\rightskip}{0pt plus 5cm}\$container = \textquotesingle{}ossn-\/photos-\/wall\textquotesingle{}}\hypertarget{template_8php_ab97dd40df90f4ce6f0fce9091e7c7872}{}\label{template_8php_ab97dd40df90f4ce6f0fce9091e7c7872}
+
+
+Definition at line 21 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!\$photos@{\$photos}}
+\index{\$photos@{\$photos}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{\$photos}{$photos}}]{\setlength{\rightskip}{0pt plus 5cm}\$photos}\hypertarget{template_8php_a7d16539c7a3688bee1d3184c81c47487}{}\label{template_8php_a7d16539c7a3688bee1d3184c81c47487}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{ossn_8lib_8entities_8php_a9f5ff2f2853395ef7cb7fd1824324395}{ossn\_get\_entities}(array(
+        \textcolor{stringliteral}{'wheres'} => \textcolor{stringliteral}{"e.guid IN(\{$photos\_guid\})"}
+))
+\end{DoxyCode}
+
+
+Definition at line 17 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!\$photos\+\_\+guid@{\$photos\+\_\+guid}}
+\index{\$photos\+\_\+guid@{\$photos\+\_\+guid}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{\$photos\+\_\+guid}{$photos_guid}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$album) \$photos\+\_\+guid = \$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>$photos\+\_\+guids}\hypertarget{template_8php_ac5b889be5aaba96358f3eb8ac72c21bf}{}\label{template_8php_ac5b889be5aaba96358f3eb8ac72c21bf}
+
+
+Definition at line 16 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!\$total@{\$total}}
+\index{\$total@{\$total}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{\$total}{$total}}]{\setlength{\rightskip}{0pt plus 5cm}\$total = {\bf count}((array) \$photos)}\hypertarget{template_8php_a241b818f48030b628685b2e5119c5624}{}\label{template_8php_a241b818f48030b628685b2e5119c5624}
+
+
+Definition at line 20 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!if@{if}}
+\index{if@{if}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(\$total==1)}\hypertarget{template_8php_adc75a6541acf09bfbf09a8105cd84624}{}\label{template_8php_adc75a6541acf09bfbf09a8105cd84624}
+
+
+Definition at line 23 of file template.\+php.
+
+\index{template.\+php@{template.\+php}!if@{if}}
+\index{if@{if}!template.\+php@{template.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if ({\bf ossn\+\_\+is\+\_\+hook}(\textquotesingle{}wall\textquotesingle{}, \textquotesingle{}post\+:menu\textquotesingle{})\&\&ossn\+\_\+is\+Logged\+In()) if(\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid==\$params\mbox{[}\textquotesingle{}post\textquotesingle{}\mbox{]}-\/$>${\bf owner\+\_\+guid})}\hypertarget{template_8php_a01283bd6df56fa280ea988dfb8dbbfaf}{}\label{template_8php_a01283bd6df56fa280ea988dfb8dbbfaf}
+
+
+Definition at line 42 of file template.\+php.
+

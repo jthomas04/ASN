@@ -1,0 +1,312 @@
+\hypertarget{class_c_i___config}{}\section{C\+I\+\_\+\+Config Class Reference}
+\label{class_c_i___config}\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___config_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_c_i___config_a3cbd3bcacb546d42f5dd12213df48627}{set\+\_\+item} (\$\hyperlink{class_c_i___config_accce7538d9763368e5955daf97d28f42}{item}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value})
+\item 
+\hyperlink{class_c_i___config_a0a60e9c6f42437ae6516365cde24f43d}{load} (\$file= \textquotesingle{}\textquotesingle{}, \$use\+\_\+sections=F\+A\+L\+SE, \$fail\+\_\+gracefully=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___config_a13bf10ba2927ce9b0bd17a1bd27c1f1a}{site\+\_\+url} (\$uri= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_c_i___config_abead21ebddc51d12402b5320d531eb1f}{slash\+\_\+item} (\$\hyperlink{class_c_i___config_accce7538d9763368e5955daf97d28f42}{item})
+\item 
+\hyperlink{class_c_i___config_accce7538d9763368e5955daf97d28f42}{item} (\$item, \$index= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_c_i___config_a1ece6d97b2f22c30cac390f926db1e43}{base\+\_\+url} (\$uri= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_c_i___config_a71e857f8dd38c230f1ce11bacf177ba8}{system\+\_\+url} ()
+\item 
+\hyperlink{class_c_i___config_a4eef305686918461a7ea846a8081be1e}{\+\_\+assign\+\_\+to\+\_\+config} (\$items=array())
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___config_a49c7011be9c979d9174c52a8b83e5d8e}{\$config} = array()
+\item 
+\hyperlink{class_c_i___config_a908e9ad52a5d1956d360689452f6bdbe}{\$is\+\_\+loaded} = array()
+\item 
+\hyperlink{class_c_i___config_a5f47dbd2111b5bb6c91ece69fefebf26}{\$\+\_\+config\+\_\+paths} = array(A\+P\+P\+P\+A\+TH)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___config_a8a0a35d53f0904d9f655e82804b9998d}{\+\_\+uri\+\_\+string} (\$uri)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Config.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct()}{__construct()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a095c5d389db211932136b53f25f39685}{}\label{class_c_i___config_a095c5d389db211932136b53f25f39685}
+Constructor
+
+Sets the \$config data from the primary config.\+php file as a class variable
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & the config file name \\
+\hline
+{\em boolean} & if configuration values should be loaded into their own section \\
+\hline
+{\em boolean} & true if errors should just return false, false if an error message should be displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean$\vert$null if the file was successfully loaded or not 
+\end{DoxyReturn}
+
+
+Definition at line 62 of file Config.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\+\_\+assign\+\_\+to\+\_\+config@{\+\_\+assign\+\_\+to\+\_\+config}}
+\index{\+\_\+assign\+\_\+to\+\_\+config@{\+\_\+assign\+\_\+to\+\_\+config}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\+\_\+assign\+\_\+to\+\_\+config(\$items=array())}{_assign_to_config($items=array())}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+assign\+\_\+to\+\_\+config (
+\begin{DoxyParamCaption}
+\item[{}]{\$items = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a4eef305686918461a7ea846a8081be1e}{}\label{class_c_i___config_a4eef305686918461a7ea846a8081be1e}
+Assign to Config
+
+This function is called by the front controller (\hyperlink{_code_igniter_8php}{Code\+Igniter.\+php}) after the Config class is instantiated. It permits config items to be assigned or overriden by variables contained in the index.\+php file
+
+private 
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 321 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\+\_\+uri\+\_\+string@{\+\_\+uri\+\_\+string}}
+\index{\+\_\+uri\+\_\+string@{\+\_\+uri\+\_\+string}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\+\_\+uri\+\_\+string(\$uri)}{_uri_string($uri)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+uri\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{}]{\$uri}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_c_i___config_a8a0a35d53f0904d9f655e82804b9998d}{}\label{class_c_i___config_a8a0a35d53f0904d9f655e82804b9998d}
+Build U\+RI string for use in Config\+::site\+\_\+url() and Config\+::base\+\_\+url()
+
+protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 260 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!base\+\_\+url@{base\+\_\+url}}
+\index{base\+\_\+url@{base\+\_\+url}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{base\+\_\+url(\$uri= \textquotesingle{}\textquotesingle{})}{base_url($uri= '')}}]{\setlength{\rightskip}{0pt plus 5cm}base\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$uri = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a1ece6d97b2f22c30cac390f926db1e43}{}\label{class_c_i___config_a1ece6d97b2f22c30cac390f926db1e43}
+Base U\+RL Returns base\+\_\+url \mbox{[}. uri\+\_\+string\mbox{]}
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 291 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!item@{item}}
+\index{item@{item}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{item(\$item, \$index= \textquotesingle{}\textquotesingle{})}{item($item, $index= '')}}]{\setlength{\rightskip}{0pt plus 5cm}item (
+\begin{DoxyParamCaption}
+\item[{}]{\$item, }
+\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_accce7538d9763368e5955daf97d28f42}{}\label{class_c_i___config_accce7538d9763368e5955daf97d28f42}
+Fetch a config file item
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string} & the config item name \\
+\hline
+ & {\em string} & the index name \\
+\hline
+ & {\em bool} & \\
+\hline
+string & {\em \$item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 229 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!load@{load}}
+\index{load@{load}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{load(\$file= \textquotesingle{}\textquotesingle{}, \$use\+\_\+sections=\+F\+A\+L\+S\+E, \$fail\+\_\+gracefully=\+F\+A\+L\+S\+E)}{load($file= '', $use_sections=FALSE, $fail_gracefully=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}load (
+\begin{DoxyParamCaption}
+\item[{}]{\$file = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$use\+\_\+sections = {\ttfamily FALSE}, }
+\item[{}]{\$fail\+\_\+gracefully = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a0a60e9c6f42437ae6516365cde24f43d}{}\label{class_c_i___config_a0a60e9c6f42437ae6516365cde24f43d}
+Load Config File
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & the config file name \\
+\hline
+{\em boolean} & if configuration values should be loaded into their own section \\
+\hline
+{\em boolean} & true if errors should just return false, false if an error message should be displayed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean if the file was loaded correctly 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!set\+\_\+item@{set\+\_\+item}}
+\index{set\+\_\+item@{set\+\_\+item}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{set\+\_\+item(\$item, \$value)}{set_item($item, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+\_\+item (
+\begin{DoxyParamCaption}
+\item[{}]{\$item, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a3cbd3bcacb546d42f5dd12213df48627}{}\label{class_c_i___config_a3cbd3bcacb546d42f5dd12213df48627}
+Set a config file item
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & the config item key \\
+\hline
+{\em string} & the config item value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!site\+\_\+url@{site\+\_\+url}}
+\index{site\+\_\+url@{site\+\_\+url}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{site\+\_\+url(\$uri= \textquotesingle{}\textquotesingle{})}{site_url($uri= '')}}]{\setlength{\rightskip}{0pt plus 5cm}site\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$uri = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a13bf10ba2927ce9b0bd17a1bd27c1f1a}{}\label{class_c_i___config_a13bf10ba2927ce9b0bd17a1bd27c1f1a}
+Site U\+RL Returns base\+\_\+url . index\+\_\+page \mbox{[}. uri\+\_\+string\mbox{]}
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & the U\+RI string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!slash\+\_\+item@{slash\+\_\+item}}
+\index{slash\+\_\+item@{slash\+\_\+item}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{slash\+\_\+item(\$item)}{slash_item($item)}}]{\setlength{\rightskip}{0pt plus 5cm}slash\+\_\+item (
+\begin{DoxyParamCaption}
+\item[{}]{\$item}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_abead21ebddc51d12402b5320d531eb1f}{}\label{class_c_i___config_abead21ebddc51d12402b5320d531eb1f}
+Fetch a config file item -\/ adds slash after item (if item is not empty)
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string} & the config item name \\
+\hline
+ & {\em bool} & \\
+\hline
+string & {\em \$item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 205 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!system\+\_\+url@{system\+\_\+url}}
+\index{system\+\_\+url@{system\+\_\+url}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{system\+\_\+url()}{system_url()}}]{\setlength{\rightskip}{0pt plus 5cm}system\+\_\+url (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___config_a71e857f8dd38c230f1ce11bacf177ba8}{}\label{class_c_i___config_a71e857f8dd38c230f1ce11bacf177ba8}
+System U\+RL
+
+public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Config.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\$\+\_\+config\+\_\+paths@{\$\+\_\+config\+\_\+paths}}
+\index{\$\+\_\+config\+\_\+paths@{\$\+\_\+config\+\_\+paths}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\$\+\_\+config\+\_\+paths}{$_config_paths}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+config\+\_\+paths = array(A\+P\+P\+P\+A\+TH)}\hypertarget{class_c_i___config_a5f47dbd2111b5bb6c91ece69fefebf26}{}\label{class_c_i___config_a5f47dbd2111b5bb6c91ece69fefebf26}
+
+
+Definition at line 49 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\$config@{\$config}}
+\index{\$config@{\$config}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\$config}{$config}}]{\setlength{\rightskip}{0pt plus 5cm}\$config = array()}\hypertarget{class_c_i___config_a49c7011be9c979d9174c52a8b83e5d8e}{}\label{class_c_i___config_a49c7011be9c979d9174c52a8b83e5d8e}
+
+
+Definition at line 37 of file Config.\+php.
+
+\index{C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}!\$is\+\_\+loaded@{\$is\+\_\+loaded}}
+\index{\$is\+\_\+loaded@{\$is\+\_\+loaded}!C\+I\+\_\+\+Config@{C\+I\+\_\+\+Config}}
+\subsubsection[{\texorpdfstring{\$is\+\_\+loaded}{$is_loaded}}]{\setlength{\rightskip}{0pt plus 5cm}\$is\+\_\+loaded = array()}\hypertarget{class_c_i___config_a908e9ad52a5d1956d360689452f6bdbe}{}\label{class_c_i___config_a908e9ad52a5d1956d360689452f6bdbe}
+
+
+Definition at line 43 of file Config.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/vendors/tinymce/plugins/jbimages/ci/system/core/\hyperlink{_config_8php}{Config.\+php}\end{DoxyCompactItemize}

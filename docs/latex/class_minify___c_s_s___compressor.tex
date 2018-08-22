@@ -1,0 +1,165 @@
+\hypertarget{class_minify___c_s_s___compressor}{}\section{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor Class Reference}
+\label{class_minify___c_s_s___compressor}\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___c_s_s___compressor_a57ecacdd2bca0a7441d8eda7c409306b}{process} (\$css, \$options=array())
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minify___c_s_s___compressor_a9582e18b72e25a20ef779dd0678c666f}{\+\_\+process} (\$css)
+\item 
+\hyperlink{class_minify___c_s_s___compressor_aea029ba0d0a267bdd3dfb1f3c7fa62cc}{\+\_\+selectors\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___c_s_s___compressor_adcc2cc65695e86d694a6b5563660264e}{\+\_\+comment\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___c_s_s___compressor_a3599150d0e20c1f74db13c6132ff824d}{\+\_\+font\+Family\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minify___c_s_s___compressor_a1bebdc689c84eee59ad24c77e5531762}{\$\+\_\+options} = null
+\item 
+\hyperlink{class_minify___c_s_s___compressor_a2ab85deb779cfccba3087bd0efa85ecb}{\$\+\_\+in\+Hack} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Compressor.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\+\_\+comment\+CB@{\+\_\+comment\+CB}}
+\index{\+\_\+comment\+CB@{\+\_\+comment\+CB}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\+\_\+comment\+C\+B(\$m)}{_commentCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+comment\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_adcc2cc65695e86d694a6b5563660264e}{}\label{class_minify___c_s_s___compressor_adcc2cc65695e86d694a6b5563660264e}
+Process a comment and return a replacement
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$m} & regex matches\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 176 of file Compressor.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\+\_\+font\+Family\+CB@{\+\_\+font\+Family\+CB}}
+\index{\+\_\+font\+Family\+CB@{\+\_\+font\+Family\+CB}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\+\_\+font\+Family\+C\+B(\$m)}{_fontFamilyCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+font\+Family\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_a3599150d0e20c1f74db13c6132ff824d}{}\label{class_minify___c_s_s___compressor_a3599150d0e20c1f74db13c6132ff824d}
+Process a font-\/family listing and return a replacement
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$m} & regex matches\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 234 of file Compressor.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\+\_\+process@{\+\_\+process}}
+\index{\+\_\+process@{\+\_\+process}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\+\_\+process(\$css)}{_process($css)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+process (
+\begin{DoxyParamCaption}
+\item[{}]{\$css}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_a9582e18b72e25a20ef779dd0678c666f}{}\label{class_minify___c_s_s___compressor_a9582e18b72e25a20ef779dd0678c666f}
+\hyperlink{namespace_minify}{Minify} a C\+SS string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$css} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Compressor.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\+\_\+selectors\+CB@{\+\_\+selectors\+CB}}
+\index{\+\_\+selectors\+CB@{\+\_\+selectors\+CB}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\+\_\+selectors\+C\+B(\$m)}{_selectorsCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+selectors\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_aea029ba0d0a267bdd3dfb1f3c7fa62cc}{}\label{class_minify___c_s_s___compressor_aea029ba0d0a267bdd3dfb1f3c7fa62cc}
+Replace what looks like a set of selectors
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$m} & regex matches\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Compressor.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!process@{process}}
+\index{process@{process}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{process(\$css, \$options=array())}{process($css, $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}static process (
+\begin{DoxyParamCaption}
+\item[{}]{\$css, }
+\item[{}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___c_s_s___compressor_a57ecacdd2bca0a7441d8eda7c409306b}{}\label{class_minify___c_s_s___compressor_a57ecacdd2bca0a7441d8eda7c409306b}
+\hyperlink{namespace_minify}{Minify} a C\+SS string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$css} & \\
+\hline
+array & {\em \$options} & (currently ignored)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Compressor.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\$\+\_\+in\+Hack@{\$\+\_\+in\+Hack}}
+\index{\$\+\_\+in\+Hack@{\$\+\_\+in\+Hack}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\$\+\_\+in\+Hack}{$_inHack}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+in\+Hack = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_a2ab85deb779cfccba3087bd0efa85ecb}{}\label{class_minify___c_s_s___compressor_a2ab85deb779cfccba3087bd0efa85ecb}
+
+
+Definition at line 32 of file Compressor.\+php.
+
+\index{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}!\$\+\_\+options@{\$\+\_\+options}}
+\index{\$\+\_\+options@{\$\+\_\+options}!Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor@{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}}
+\subsubsection[{\texorpdfstring{\$\+\_\+options}{$_options}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+options = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___c_s_s___compressor_a1bebdc689c84eee59ad24c77e5531762}{}\label{class_minify___c_s_s___compressor_a1bebdc689c84eee59ad24c77e5531762}
+
+
+Definition at line 26 of file Compressor.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/libraries/minify/\+Minify/\+C\+S\+S/\hyperlink{_compressor_8php}{Compressor.\+php}\end{DoxyCompactItemize}

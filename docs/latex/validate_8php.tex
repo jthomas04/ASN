@@ -1,0 +1,40 @@
+\hypertarget{validate_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/user/validate.php File Reference}
+\label{validate_8php}\index{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/user/validate.\+php@{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/user/validate.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{validate_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \hyperlink{ossn_8lib_8users_8php_aaee344fada9e6e15470587c7cd94ea8b}{ossn\+\_\+user\+\_\+by\+\_\+guid}(\hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}guid\textquotesingle{}))
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}) \hyperlink{validate_8php_a61c932a527546c905ebcb0ae988d3969}{\$code} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$activation
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$Validate\+Registration(\$code)) \hyperlink{validate_8php_a3f9d4ad5dc367c00e2516f0d03431aea}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{validate.\+php@{validate.\+php}!\$code@{\$code}}
+\index{\$code@{\$code}!validate.\+php@{validate.\+php}}
+\subsubsection[{\texorpdfstring{\$code}{$code}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\${\bf user}) \$code = \${\bf user}-\/$>$activation}\hypertarget{validate_8php_a61c932a527546c905ebcb0ae988d3969}{}\label{validate_8php_a61c932a527546c905ebcb0ae988d3969}
+
+
+Definition at line 8 of file validate.\+php.
+
+\index{validate.\+php@{validate.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!validate.\+php@{validate.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = {\bf ossn\+\_\+user\+\_\+by\+\_\+guid}({\bf input}(\textquotesingle{}guid\textquotesingle{}))}\hypertarget{validate_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{validate_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 3 of file validate.\+php.
+
+\index{validate.\+php@{validate.\+php}!else@{else}}
+\index{else@{else}!validate.\+php@{validate.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf user}-\/$>$Validate\+Registration(\$code)) else}\hypertarget{validate_8php_a3f9d4ad5dc367c00e2516f0d03431aea}{}\label{validate_8php_a3f9d4ad5dc367c00e2516f0d03431aea}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'admin:user:validate:error'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 11 of file validate.\+php.
+

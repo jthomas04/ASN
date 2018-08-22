@@ -1,0 +1,117 @@
+\hypertarget{1415553653_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/upgrade/upgrades/1415553653.php File Reference}
+\label{1415553653_8php}\index{/home/jj/\+Projects/\+A\+S\+N/upgrade/upgrades/1415553653.\+php@{/home/jj/\+Projects/\+A\+S\+N/upgrade/upgrades/1415553653.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{1415553653_8php_a211527c21ba56109545060b49b628e59}{\$component} = new \hyperlink{class_ossn_components}{Ossn\+Components}
+\item 
+\hyperlink{1415553653_8php_a7691c0162d89de0b6ba47edcd8ba8878}{\$database} = new \hyperlink{class_ossn_database}{Ossn\+Database}
+\item 
+\hyperlink{1415553653_8php_ac228c31a229875fce5416792b17c9eee}{\$delete} \mbox{[}\textquotesingle{}from\textquotesingle{}\mbox{]} = \textquotesingle{}\hyperlink{_ossn_notifications_2ossn__com_8php_ab2b4e6857fa4ab775e70e28fa8daa4e8}{ossn\+\_\+notifications}\textquotesingle{}
+\item 
+\hyperlink{1415553653_8php_a9bef9b9c519ccfae44ff986580419667}{\$delete} \mbox{[}\textquotesingle{}wheres\textquotesingle{}\mbox{]} = array(\char`\"{}type=\textquotesingle{}like\+:post\+:group\+:wall\textquotesingle{}\char`\"{})
+\item 
+\hyperlink{1415553653_8php_a512525d0f5eb608ac72ca7b85e5fbf65}{\$upgrade\+\_\+json} = array\+\_\+merge(\hyperlink{ossn_8lib_8upgrade_8php_a984d0f1ee4273d739939d28d00a8bedb}{ossn\+\_\+get\+\_\+upgraded\+\_\+files}(), array(\$upgrade))
+\item 
+\hyperlink{1415553653_8php_aee7ba5985ddf023a93862ab77e9718f9}{\$update} \mbox{[}\textquotesingle{}table\textquotesingle{}\mbox{]} = \textquotesingle{}\hyperlink{ossn_8lib_8system_8php_a610e2045b8a86c09f777b4d82e24e34c}{ossn\+\_\+site\+\_\+settings}\textquotesingle{}
+\item 
+\hyperlink{1415553653_8php_abcf5ad2e4fef35de04bef0168cc91ddc}{\$update} \mbox{[}\textquotesingle{}names\textquotesingle{}\mbox{]} = array(\textquotesingle{}\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}\textquotesingle{})
+\item 
+\hyperlink{1415553653_8php_ac82a75b4c6df37380ff77c88f041785e}{\$update} \mbox{[}\textquotesingle{}values\textquotesingle{}\mbox{]} = array(\$upgrade\+\_\+json)
+\item 
+\hyperlink{1415553653_8php_aacde4479a904b32d0f24dea4e01f148c}{\$update} \mbox{[}\textquotesingle{}wheres\textquotesingle{}\mbox{]} = array(\char`\"{}name=\textquotesingle{}upgrades\textquotesingle{}\char`\"{})
+\item 
+\hyperlink{1415553653_8php_a9084097ce600d3cc7a79a20ecaea9906}{\$upgrade} = str\+\_\+replace(\textquotesingle{}.php\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \$upgrade)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{ossn_8config_8db_8example_8php_a4e0ca996705612048240f76ff8d4da95}{database}-\/$>$\hyperlink{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}{update}(\$\hyperlink{_chart_8_doughnut_8js_ad58a8121caa8678969d1ff32848a77c4}{update})) \hyperlink{1415553653_8php_aa7c58ee9f19ec0c0f3a1951839273e79}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{1415553653.\+php@{1415553653.\+php}!\$component@{\$component}}
+\index{\$component@{\$component}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$component}{$component}}]{\setlength{\rightskip}{0pt plus 5cm}\$component = new {\bf Ossn\+Components}}\hypertarget{1415553653_8php_a211527c21ba56109545060b49b628e59}{}\label{1415553653_8php_a211527c21ba56109545060b49b628e59}
+
+
+Definition at line 4 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$database@{\$database}}
+\index{\$database@{\$database}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$database}{$database}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf database} = new {\bf Ossn\+Database}}\hypertarget{1415553653_8php_a7691c0162d89de0b6ba47edcd8ba8878}{}\label{1415553653_8php_a7691c0162d89de0b6ba47edcd8ba8878}
+
+
+Definition at line 5 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$delete@{\$delete}}
+\index{\$delete@{\$delete}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$delete}{$delete}}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\mbox{[}\textquotesingle{}from\textquotesingle{}\mbox{]} = \textquotesingle{}{\bf ossn\+\_\+notifications}\textquotesingle{}}\hypertarget{1415553653_8php_ac228c31a229875fce5416792b17c9eee}{}\label{1415553653_8php_ac228c31a229875fce5416792b17c9eee}
+Delete invalid notification from system (group like)
+
+private 
+
+Definition at line 18 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$delete@{\$delete}}
+\index{\$delete@{\$delete}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$delete}{$delete}}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\mbox{[}\textquotesingle{}wheres\textquotesingle{}\mbox{]} = array(\char`\"{}type=\textquotesingle{}like\+:post\+:group\+:wall\textquotesingle{}\char`\"{})}\hypertarget{1415553653_8php_a9bef9b9c519ccfae44ff986580419667}{}\label{1415553653_8php_a9bef9b9c519ccfae44ff986580419667}
+
+
+Definition at line 19 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$update@{\$update}}
+\index{\$update@{\$update}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$update}{$update}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf update}\mbox{[}\textquotesingle{}table\textquotesingle{}\mbox{]} = \textquotesingle{}{\bf ossn\+\_\+site\+\_\+settings}\textquotesingle{}}\hypertarget{1415553653_8php_aee7ba5985ddf023a93862ab77e9718f9}{}\label{1415553653_8php_aee7ba5985ddf023a93862ab77e9718f9}
+
+
+Definition at line 31 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$update@{\$update}}
+\index{\$update@{\$update}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$update}{$update}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf update}\mbox{[}\textquotesingle{}names\textquotesingle{}\mbox{]} = array(\textquotesingle{}{\bf value}\textquotesingle{})}\hypertarget{1415553653_8php_abcf5ad2e4fef35de04bef0168cc91ddc}{}\label{1415553653_8php_abcf5ad2e4fef35de04bef0168cc91ddc}
+
+
+Definition at line 32 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$update@{\$update}}
+\index{\$update@{\$update}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$update}{$update}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf update}\mbox{[}\textquotesingle{}values\textquotesingle{}\mbox{]} = array(\$upgrade\+\_\+json)}\hypertarget{1415553653_8php_ac82a75b4c6df37380ff77c88f041785e}{}\label{1415553653_8php_ac82a75b4c6df37380ff77c88f041785e}
+
+
+Definition at line 33 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$update@{\$update}}
+\index{\$update@{\$update}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$update}{$update}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf update}\mbox{[}\textquotesingle{}wheres\textquotesingle{}\mbox{]} = array(\char`\"{}name=\textquotesingle{}upgrades\textquotesingle{}\char`\"{})}\hypertarget{1415553653_8php_aacde4479a904b32d0f24dea4e01f148c}{}\label{1415553653_8php_aacde4479a904b32d0f24dea4e01f148c}
+
+
+Definition at line 34 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$upgrade@{\$upgrade}}
+\index{\$upgrade@{\$upgrade}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$upgrade}{$upgrade}}]{\setlength{\rightskip}{0pt plus 5cm}\$upgrade = str\+\_\+replace(\textquotesingle{}.php\textquotesingle{}, \textquotesingle{}\textquotesingle{}, \$upgrade)}\hypertarget{1415553653_8php_a9084097ce600d3cc7a79a20ecaea9906}{}\label{1415553653_8php_a9084097ce600d3cc7a79a20ecaea9906}
+
+
+Definition at line 36 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!\$upgrade\+\_\+json@{\$upgrade\+\_\+json}}
+\index{\$upgrade\+\_\+json@{\$upgrade\+\_\+json}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{\$upgrade\+\_\+json}{$upgrade_json}}]{\setlength{\rightskip}{0pt plus 5cm}\$upgrade\+\_\+json = array\+\_\+merge({\bf ossn\+\_\+get\+\_\+upgraded\+\_\+files}(), array(\$upgrade))}\hypertarget{1415553653_8php_a512525d0f5eb608ac72ca7b85e5fbf65}{}\label{1415553653_8php_a512525d0f5eb608ac72ca7b85e5fbf65}
+Update processed updates in database so user cannot upgrade again and again.
+
+private 
+
+Definition at line 28 of file 1415553653.\+php.
+
+\index{1415553653.\+php@{1415553653.\+php}!else@{else}}
+\index{else@{else}!1415553653.\+php@{1415553653.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf database}-\/$>${\bf update}(\${\bf update})) else}\hypertarget{1415553653_8php_aa7c58ee9f19ec0c0f3a1951839273e79}{}\label{1415553653_8php_aa7c58ee9f19ec0c0f3a1951839273e79}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'upgrade:failed'}, array(
+      \hyperlink{1415553653_8php_a9084097ce600d3cc7a79a20ecaea9906}{$upgrade})), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 39 of file 1415553653.\+php.
+

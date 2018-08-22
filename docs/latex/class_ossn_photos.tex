@@ -1,0 +1,171 @@
+\hypertarget{class_ossn_photos}{}\section{Ossn\+Photos Class Reference}
+\label{class_ossn_photos}\index{Ossn\+Photos@{Ossn\+Photos}}
+
+
+Inheritance diagram for Ossn\+Photos\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Photos\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_photos_afed7c0f2182c11726a3f41f1a93ebe9d}{Add\+Photo} (\$album, \$photo= \textquotesingle{}ossnphoto\textquotesingle{}, \$access=\hyperlink{ossn_8lib_8system_8php_a8efdc824fa9025d0c02ee7c512aafdfa}{O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+IC})
+\item 
+\hyperlink{class_ossn_photos_abe26ef694047baa004d1594110129120}{Get\+Photos} (\$album)
+\item 
+\hyperlink{class_ossn_photos_aeb2780167dce3d50f91e1daecf099861}{Get\+Photo} (\$photo)
+\item 
+\hyperlink{class_ossn_photos_a794643232d6e9aae6ec2f77b20100db7}{delete\+Profile\+Photo} ()
+\item 
+\hyperlink{class_ossn_photos_aebaa766b616e2279e3ed62fa73a95d26}{delete\+Profile\+Cover\+Photo} ()
+\item 
+\hyperlink{class_ossn_photos_a21bcd3b91e54782676001b0a84690fb2}{delete\+Album\+Photo} ()
+\item 
+\hyperlink{class_ossn_photos_a8dbd009c6a0f77e85dba0955de1a1718}{add\+Wall} (\$itemguid= \textquotesingle{}\textquotesingle{}, array \$images\+\_\+guid=array())
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Photos.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Photos@{Ossn\+Photos}!Add\+Photo@{Add\+Photo}}
+\index{Add\+Photo@{Add\+Photo}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{Add\+Photo(\$album, \$photo= \textquotesingle{}ossnphoto\textquotesingle{}, \$access=\+O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+I\+C)}{AddPhoto($album, $photo= 'ossnphoto', $access=OSSN_PUBLIC)}}]{\setlength{\rightskip}{0pt plus 5cm}Add\+Photo (
+\begin{DoxyParamCaption}
+\item[{}]{\$album, }
+\item[{}]{\$photo = {\ttfamily \textquotesingle{}ossnphoto\textquotesingle{}}, }
+\item[{}]{\$access = {\ttfamily {\bf O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+IC}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_afed7c0f2182c11726a3f41f1a93ebe9d}{}\label{class_ossn_photos_afed7c0f2182c11726a3f41f1a93ebe9d}
+Add photo to album
+
+= \$album Album guid \$photo Photo type \$access Private or Public ( its actually depend on album privacy)
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!add\+Wall@{add\+Wall}}
+\index{add\+Wall@{add\+Wall}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{add\+Wall(\$itemguid= \textquotesingle{}\textquotesingle{}, array \$images\+\_\+guid=array())}{addWall($itemguid= '', array $images_guid=array())}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Wall (
+\begin{DoxyParamCaption}
+\item[{}]{\$itemguid = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{array}]{\$images\+\_\+guid = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_a8dbd009c6a0f77e85dba0955de1a1718}{}\label{class_ossn_photos_a8dbd009c6a0f77e85dba0955de1a1718}
+Add images to wall
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$itemguid} & A album guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!delete\+Album\+Photo@{delete\+Album\+Photo}}
+\index{delete\+Album\+Photo@{delete\+Album\+Photo}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{delete\+Album\+Photo()}{deleteAlbumPhoto()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Album\+Photo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_a21bcd3b91e54782676001b0a84690fb2}{}\label{class_ossn_photos_a21bcd3b91e54782676001b0a84690fb2}
+Delete profile photo
+
+= \$this-\/$>$photoid Id of photo
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!delete\+Profile\+Cover\+Photo@{delete\+Profile\+Cover\+Photo}}
+\index{delete\+Profile\+Cover\+Photo@{delete\+Profile\+Cover\+Photo}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{delete\+Profile\+Cover\+Photo()}{deleteProfileCoverPhoto()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Profile\+Cover\+Photo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_aebaa766b616e2279e3ed62fa73a95d26}{}\label{class_ossn_photos_aebaa766b616e2279e3ed62fa73a95d26}
+Delete profile cover photo
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 138 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!delete\+Profile\+Photo@{delete\+Profile\+Photo}}
+\index{delete\+Profile\+Photo@{delete\+Profile\+Photo}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{delete\+Profile\+Photo()}{deleteProfilePhoto()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Profile\+Photo (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_a794643232d6e9aae6ec2f77b20100db7}{}\label{class_ossn_photos_a794643232d6e9aae6ec2f77b20100db7}
+Delete profile photo
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 106 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!Get\+Photo@{Get\+Photo}}
+\index{Get\+Photo@{Get\+Photo}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{Get\+Photo(\$photo)}{GetPhoto($photo)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Photo (
+\begin{DoxyParamCaption}
+\item[{}]{\$photo}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_aeb2780167dce3d50f91e1daecf099861}{}\label{class_ossn_photos_aeb2780167dce3d50f91e1daecf099861}
+Get photo of album
+
+= \$photo Photo id
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Ossn\+Photos.\+php.
+
+\index{Ossn\+Photos@{Ossn\+Photos}!Get\+Photos@{Get\+Photos}}
+\index{Get\+Photos@{Get\+Photos}!Ossn\+Photos@{Ossn\+Photos}}
+\subsubsection[{\texorpdfstring{Get\+Photos(\$album)}{GetPhotos($album)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Photos (
+\begin{DoxyParamCaption}
+\item[{}]{\$album}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_photos_abe26ef694047baa004d1594110129120}{}\label{class_ossn_photos_abe26ef694047baa004d1594110129120}
+Get photos of album
+
+= \$album Album guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file Ossn\+Photos.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/classes/\hyperlink{classes_2_ossn_photos_8php}{Ossn\+Photos.\+php}\end{DoxyCompactItemize}

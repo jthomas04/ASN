@@ -1,0 +1,300 @@
+\hypertarget{class_ossn_wall}{}\section{Ossn\+Wall Class Reference}
+\label{class_ossn_wall}\index{Ossn\+Wall@{Ossn\+Wall}}
+
+
+Inheritance diagram for Ossn\+Wall\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Wall\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_wall_aeadb0aa3a5fb5b9d1425567c20942520}{Post} (\$post, \$friends= \textquotesingle{}\textquotesingle{}, \$\hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location}= \textquotesingle{}\textquotesingle{}, \$access= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_wall_a5fee6794de13185987b790fce43d0883}{init\+Attributes} ()
+\item 
+\hyperlink{class_ossn_wall_a9f17709243f74afc78d1ae713505d0b3}{Get\+Post\+By\+Owner} (\$owner, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_wall_a84aad06cd5aff1e1f1001de94047d429}{Get\+User\+Posts} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_wall_a5058502978e1b2f0ed7b0de731092683}{Get\+Post} (\$guid)
+\item 
+\hyperlink{class_ossn_wall_a8f736af6fb63fc982d04aa10025517f2}{delete\+Post} (\$post)
+\item 
+\hyperlink{class_ossn_wall_af31442c809884a2acb25802f88dfed26}{delete\+All\+Posts} ()
+\item 
+\hyperlink{class_ossn_wall_a1dd557d1847bc067d0b91a62821fc8d2}{Get\+Posts} (array \$params=array())
+\item 
+\hyperlink{class_ossn_wall_a5a4de51f95bf3d107b00ea718ceed53e}{get\+Friends\+Posts} (\$params=array())
+\item 
+\hyperlink{class_ossn_wall_ad58827706ce79ed3dec2fa93802f8636}{get\+Public\+Posts} (\$params=array())
+\item 
+\hyperlink{class_ossn_wall_ad4cedacd8cd95b4b942eb9e756795a76}{get\+All\+Posts} (\$params=array())
+\item 
+\hyperlink{class_ossn_wall_a89cc3aad74f1440e1dd0eedbae07edf6}{get\+Poster\+Posts} (\$guid=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_wall_a0f592a9df4629edeec727cb183c98514}{get\+User\+Group\+Posts\+Guids} (\$userguid)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Wall.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Wall@{Ossn\+Wall}!delete\+All\+Posts@{delete\+All\+Posts}}
+\index{delete\+All\+Posts@{delete\+All\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{delete\+All\+Posts()}{deleteAllPosts()}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+All\+Posts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_af31442c809884a2acb25802f88dfed26}{}\label{class_ossn_wall_af31442c809884a2acb25802f88dfed26}
+Delete All Posts
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!delete\+Post@{delete\+Post}}
+\index{delete\+Post@{delete\+Post}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{delete\+Post(\$post)}{deletePost($post)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$post}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a8f736af6fb63fc982d04aa10025517f2}{}\label{class_ossn_wall_a8f736af6fb63fc982d04aa10025517f2}
+Delete post
+
+\$post\+: Post guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!get\+All\+Posts@{get\+All\+Posts}}
+\index{get\+All\+Posts@{get\+All\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{get\+All\+Posts(\$params=array())}{getAllPosts($params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+All\+Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_ad4cedacd8cd95b4b942eb9e756795a76}{}\label{class_ossn_wall_ad4cedacd8cd95b4b942eb9e756795a76}
+Get all user wall posts for admins
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 338 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!get\+Friends\+Posts@{get\+Friends\+Posts}}
+\index{get\+Friends\+Posts@{get\+Friends\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{get\+Friends\+Posts(\$params=array())}{getFriendsPosts($params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Friends\+Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a5a4de51f95bf3d107b00ea718ceed53e}{}\label{class_ossn_wall_a5a4de51f95bf3d107b00ea718ceed53e}
+Get user wall postings for wall mode set to Friends-\/\+Only
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!Get\+Post@{Get\+Post}}
+\index{Get\+Post@{Get\+Post}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{Get\+Post(\$guid)}{GetPost($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a5058502978e1b2f0ed7b0de731092683}{}\label{class_ossn_wall_a5058502978e1b2f0ed7b0de731092683}
+Get post by guid
+
+\$guid\+: Post guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 146 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!Get\+Post\+By\+Owner@{Get\+Post\+By\+Owner}}
+\index{Get\+Post\+By\+Owner@{Get\+Post\+By\+Owner}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{Get\+Post\+By\+Owner(\$owner, \$type= \textquotesingle{}user\textquotesingle{}, \$count=false)}{GetPostByOwner($owner, $type= 'user', $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Post\+By\+Owner (
+\begin{DoxyParamCaption}
+\item[{}]{\$owner, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}{\bf user}\textquotesingle{}}, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a9f17709243f74afc78d1ae713505d0b3}{}\label{class_ossn_wall_a9f17709243f74afc78d1ae713505d0b3}
+Get posts by owner
+
+\$owner\+: Owner guid \$type Owner type
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!get\+Poster\+Posts@{get\+Poster\+Posts}}
+\index{get\+Poster\+Posts@{get\+Poster\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{get\+Poster\+Posts(\$guid="""")}{getPosterPosts($guid="")}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Poster\+Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a89cc3aad74f1440e1dd0eedbae07edf6}{}\label{class_ossn_wall_a89cc3aad74f1440e1dd0eedbae07edf6}
+Get Posts of user
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & A user id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array; 
+\end{DoxyReturn}
+
+
+Definition at line 384 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!Get\+Posts@{Get\+Posts}}
+\index{Get\+Posts@{Get\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{Get\+Posts(array \$params=array())}{GetPosts(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Posts (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a1dd557d1847bc067d0b91a62821fc8d2}{}\label{class_ossn_wall_a1dd557d1847bc067d0b91a62821fc8d2}
+Get all site wall posts
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!get\+Public\+Posts@{get\+Public\+Posts}}
+\index{get\+Public\+Posts@{get\+Public\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{get\+Public\+Posts(\$params=array())}{getPublicPosts($params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Public\+Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_ad58827706ce79ed3dec2fa93802f8636}{}\label{class_ossn_wall_ad58827706ce79ed3dec2fa93802f8636}
+Get user wall postings for wall mode set to All-\/\+Site-\/\+Posts
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 291 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!get\+User\+Group\+Posts\+Guids@{get\+User\+Group\+Posts\+Guids}}
+\index{get\+User\+Group\+Posts\+Guids@{get\+User\+Group\+Posts\+Guids}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{get\+User\+Group\+Posts\+Guids(\$userguid)}{getUserGroupPostsGuids($userguid)}}]{\setlength{\rightskip}{0pt plus 5cm}static get\+User\+Group\+Posts\+Guids (
+\begin{DoxyParamCaption}
+\item[{}]{\$userguid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_wall_a0f592a9df4629edeec727cb183c98514}{}\label{class_ossn_wall_a0f592a9df4629edeec727cb183c98514}
+Get user group posts guids
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$userguid} & Guid of user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array; 
+\end{DoxyReturn}
+
+
+Definition at line 204 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!Get\+User\+Posts@{Get\+User\+Posts}}
+\index{Get\+User\+Posts@{Get\+User\+Posts}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{Get\+User\+Posts(\$user, \$count=false)}{GetUserPosts($user, $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+User\+Posts (
+\begin{DoxyParamCaption}
+\item[{}]{\$user, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a84aad06cd5aff1e1f1001de94047d429}{}\label{class_ossn_wall_a84aad06cd5aff1e1f1001de94047d429}
+Get user posts
+
+\$user\+: User guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_a5fee6794de13185987b790fce43d0883}{}\label{class_ossn_wall_a5fee6794de13185987b790fce43d0883}
+Initialize the objects.
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file Ossn\+Wall.\+php.
+
+\index{Ossn\+Wall@{Ossn\+Wall}!Post@{Post}}
+\index{Post@{Post}!Ossn\+Wall@{Ossn\+Wall}}
+\subsubsection[{\texorpdfstring{Post(\$post, \$friends= \textquotesingle{}\textquotesingle{}, \$location= \textquotesingle{}\textquotesingle{}, \$access= \textquotesingle{}\textquotesingle{})}{Post($post, $friends= '', $location= '', $access= '')}}]{\setlength{\rightskip}{0pt plus 5cm}Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$post, }
+\item[{}]{\$friends = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$location = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$access = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_wall_aeadb0aa3a5fb5b9d1425567c20942520}{}\label{class_ossn_wall_aeadb0aa3a5fb5b9d1425567c20942520}
+Post on wall
+
+\$post\+: Post text \$friends\+: Friend guids \$location\+: Post location \$access\+: (O\+S\+S\+N\+\_\+\+P\+U\+B\+L\+IC, O\+S\+S\+N\+\_\+\+P\+R\+I\+V\+A\+TE, O\+S\+S\+N\+\_\+\+F\+R\+I\+E\+N\+DS) 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$post} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file Ossn\+Wall.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/classes/\hyperlink{_ossn_wall_8php}{Ossn\+Wall.\+php}\end{DoxyCompactItemize}

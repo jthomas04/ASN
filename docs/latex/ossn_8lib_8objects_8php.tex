@@ -1,0 +1,121 @@
+\hypertarget{ossn_8lib_8objects_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+objects.\+php File Reference}
+\label{ossn_8lib_8objects_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+objects.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+objects.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8objects_8php_a6b5970320e8ed1af1b6f863e7ad51f01}{ossn\+\_\+get\+\_\+object} (\$guid)
+\item 
+\hyperlink{ossn_8lib_8objects_8php_aad70da6939b743b54c623597ffbc410f}{ossn\+\_\+get\+\_\+object\+\_\+entities} (\$object, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8objects_8php_a0812375d07c8abee41dd4fecce16c4db}{ossn\+\_\+get\+\_\+objects} (array \$params)
+\item 
+\hyperlink{ossn_8lib_8objects_8php_a9a09e1549ed5c39e3008defcd72fbe7a}{ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type} (array \$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}!ossn\+\_\+get\+\_\+object@{ossn\+\_\+get\+\_\+object}}
+\index{ossn\+\_\+get\+\_\+object@{ossn\+\_\+get\+\_\+object}!ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+object(\$guid)}{ossn_get_object($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+object (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8objects_8php_a6b5970320e8ed1af1b6f863e7ad51f01}{}\label{ossn_8lib_8objects_8php_a6b5970320e8ed1af1b6f863e7ad51f01}
+Ossn get object
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Guid of object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file ossn.\+lib.\+objects.\+php.
+
+\index{ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}!ossn\+\_\+get\+\_\+object\+\_\+entities@{ossn\+\_\+get\+\_\+object\+\_\+entities}}
+\index{ossn\+\_\+get\+\_\+object\+\_\+entities@{ossn\+\_\+get\+\_\+object\+\_\+entities}!ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+object\+\_\+entities(\$object, \$params=array())}{ossn_get_object_entities($object, $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+object\+\_\+entities (
+\begin{DoxyParamCaption}
+\item[{}]{\$object, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8objects_8php_aad70da6939b743b54c623597ffbc410f}{}\label{ossn_8lib_8objects_8php_aad70da6939b743b54c623597ffbc410f}
+Get entities of object
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$object} & Must be valid object \\
+\hline
+array & {\em \$params} & Options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file ossn.\+lib.\+objects.\+php.
+
+\index{ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}!ossn\+\_\+get\+\_\+objects@{ossn\+\_\+get\+\_\+objects}}
+\index{ossn\+\_\+get\+\_\+objects@{ossn\+\_\+get\+\_\+objects}!ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+objects(array \$params)}{ossn_get_objects(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+objects (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8objects_8php_a0812375d07c8abee41dd4fecce16c4db}{}\label{ossn_8lib_8objects_8php_a0812375d07c8abee41dd4fecce16c4db}
+Get objects
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Options \\
+\hline
+int & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & object owner guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & object type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & object subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & limit of fetch data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & order fetch data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 52 of file ossn.\+lib.\+objects.\+php.
+
+\index{ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}!ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type@{ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type}}
+\index{ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type@{ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type}!ossn.\+lib.\+objects.\+php@{ossn.\+lib.\+objects.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type(array \$params)}{ossn_get_objects_by_type(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+objects\+\_\+by\+\_\+type (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8objects_8php_a9a09e1549ed5c39e3008defcd72fbe7a}{}\label{ossn_8lib_8objects_8php_a9a09e1549ed5c39e3008defcd72fbe7a}
+Get objects by type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Options \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & object type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & object subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & limit of fetch data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & order fetch data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 67 of file ossn.\+lib.\+objects.\+php.
+

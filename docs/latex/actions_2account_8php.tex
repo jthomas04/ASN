@@ -1,0 +1,230 @@
+\hypertarget{actions_2account_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/installation/actions/account.php File Reference}
+\label{actions_2account_8php}\index{/home/jj/\+Projects/\+A\+S\+N/installation/actions/account.\+php@{/home/jj/\+Projects/\+A\+S\+N/installation/actions/account.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{actions_2account_8php_a73aeae1243c8451cb328ddfe84637175}{O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT} T\+R\+UE
+\item 
+\hyperlink{actions_2account_8php_a48c184d1487bdbc0b0d2fe6e1521dd7d}{\$user} \mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username}\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username}\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a3c8ba9ea696968574370c51a90ff638c}{\$user} \mbox{[}\textquotesingle{}firstname\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}firstname\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a1187774c6d9942181216e0839e5e73bc}{\$user} \mbox{[}\textquotesingle{}lastname\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}lastname\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_ae9de5cc5ae3fec81bb110d3a77ad7eec}{\$user} \mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{email}\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{email}\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a51e0459c93e600b4959a74463028a5e1}{\$user} \mbox{[}\textquotesingle{}reemail\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}email\+\_\+re\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a5afbe215d7a53599cd9f661abf8196e2}{\$user} \mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password}\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password}\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a332175f698fc3f3621ba3c118bbc1d47}{\$user} \mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{gender}\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{gender}\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a65df881a94b5d52d3ef1af341679a762}{\$user} \mbox{[}\textquotesingle{}bdd\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}birthday\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a3785f2b5cf7efe5d305486227d0b4c39}{\$user} \mbox{[}\textquotesingle{}bdm\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}birthm\textquotesingle{})
+\item 
+\hyperlink{actions_2account_8php_a92cb1e1829b4b30d3823bdf025e17a03}{\$user} \mbox{[}\textquotesingle{}bdy\textquotesingle{}\mbox{]} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}birthy\textquotesingle{})
+\item 
+\hyperlink{user__timeline_8php_a1b18c909b5f0affc85267f294d947c4b}{foreach}(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user} as \$field=$>$ \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}reemail\textquotesingle{}\mbox{]}!==\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{email}\textquotesingle{}\mbox{]}) \hyperlink{actions_2account_8php_a2862e61a0af8842af31bb09415bc6086}{\$user} \mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_adcebf70992c7074e4bab2e0d5f831536}{birthdate}\textquotesingle{}\mbox{]} = \char`\"{}\{\$user\mbox{[}\textquotesingle{}bdd\textquotesingle{}\mbox{]}\}/\{\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}bdm\textquotesingle{}\mbox{]}\}/\{\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}bdy\textquotesingle{}\mbox{]}\}\char`\"{}
+\item 
+\hyperlink{actions_2account_8php_a76aeb354fc71a358526ea9fbd7aae7a4}{\$add} = new \hyperlink{class_ossn_user}{Ossn\+User}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}username\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a9a79298edb546fb2a33bc6d266131c04}{first\+\_\+name} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}firstname\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_ad28df3187bc8c49657d3800bb449f939}{last\+\_\+name} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}lastname\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{email} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}email\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}password\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{gender} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}gender\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_adcebf70992c7074e4bab2e0d5f831536}{birthdate} = \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}birthdate\textquotesingle{}\mbox{]}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a11fe66faec6579a15979e62879ba8950}{sendactiviation} = false
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a13a7b92f40fdd23da18bc3eb7dcfd346}{usertype} = \textquotesingle{}admin\textquotesingle{}
+\item 
+\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add} \hyperlink{actions_2account_8php_a2e76c73baded04b16081921afc8a709f}{validated} = true
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add}-\/$>$is\+Username(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\mbox{[}\textquotesingle{}\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username}\textquotesingle{}\mbox{]})) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add}-\/$>$is\+Password()) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{theme_8min_8js_a79ed6f45c867c160601f70dfa5ec2f95}{add}-\/$>$add\+User()) \hyperlink{actions_2account_8php_a49a98b4576a0eca7fdcd120dfc90f7a1}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{actions/account.\+php@{actions/account.\+php}!\$add@{\$add}}
+\index{\$add@{\$add}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$add}{$add}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} = new {\bf Ossn\+User}}\hypertarget{actions_2account_8php_a76aeb354fc71a358526ea9fbd7aae7a4}{}\label{actions_2account_8php_a76aeb354fc71a358526ea9fbd7aae7a4}
+
+
+Definition at line 34 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}{\bf username}\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}{\bf username}\textquotesingle{})}\hypertarget{actions_2account_8php_a48c184d1487bdbc0b0d2fe6e1521dd7d}{}\label{actions_2account_8php_a48c184d1487bdbc0b0d2fe6e1521dd7d}
+
+
+Definition at line 7 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}firstname\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}firstname\textquotesingle{})}\hypertarget{actions_2account_8php_a3c8ba9ea696968574370c51a90ff638c}{}\label{actions_2account_8php_a3c8ba9ea696968574370c51a90ff638c}
+
+
+Definition at line 8 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}lastname\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}lastname\textquotesingle{})}\hypertarget{actions_2account_8php_a1187774c6d9942181216e0839e5e73bc}{}\label{actions_2account_8php_a1187774c6d9942181216e0839e5e73bc}
+
+
+Definition at line 9 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}{\bf email}\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}{\bf email}\textquotesingle{})}\hypertarget{actions_2account_8php_ae9de5cc5ae3fec81bb110d3a77ad7eec}{}\label{actions_2account_8php_ae9de5cc5ae3fec81bb110d3a77ad7eec}
+
+
+Definition at line 10 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}reemail\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}email\+\_\+re\textquotesingle{})}\hypertarget{actions_2account_8php_a51e0459c93e600b4959a74463028a5e1}{}\label{actions_2account_8php_a51e0459c93e600b4959a74463028a5e1}
+
+
+Definition at line 11 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}{\bf password}\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}{\bf password}\textquotesingle{})}\hypertarget{actions_2account_8php_a5afbe215d7a53599cd9f661abf8196e2}{}\label{actions_2account_8php_a5afbe215d7a53599cd9f661abf8196e2}
+
+
+Definition at line 12 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}{\bf gender}\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}{\bf gender}\textquotesingle{})}\hypertarget{actions_2account_8php_a332175f698fc3f3621ba3c118bbc1d47}{}\label{actions_2account_8php_a332175f698fc3f3621ba3c118bbc1d47}
+
+
+Definition at line 13 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}bdd\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}birthday\textquotesingle{})}\hypertarget{actions_2account_8php_a65df881a94b5d52d3ef1af341679a762}{}\label{actions_2account_8php_a65df881a94b5d52d3ef1af341679a762}
+
+
+Definition at line 15 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}bdm\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}birthm\textquotesingle{})}\hypertarget{actions_2account_8php_a3785f2b5cf7efe5d305486227d0b4c39}{}\label{actions_2account_8php_a3785f2b5cf7efe5d305486227d0b4c39}
+
+
+Definition at line 16 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user}\mbox{[}\textquotesingle{}bdy\textquotesingle{}\mbox{]} = {\bf input}(\textquotesingle{}birthy\textquotesingle{})}\hypertarget{actions_2account_8php_a92cb1e1829b4b30d3823bdf025e17a03}{}\label{actions_2account_8php_a92cb1e1829b4b30d3823bdf025e17a03}
+
+
+Definition at line 17 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\${\bf user} as \$field=$>$ \${\bf value}) {\bf if} (\${\bf user}\mbox{[}\textquotesingle{}reemail\textquotesingle{}\mbox{]}!==\${\bf user}\mbox{[}\textquotesingle{}{\bf email}\textquotesingle{}\mbox{]}) \${\bf user}\mbox{[}\textquotesingle{}{\bf birthdate}\textquotesingle{}\mbox{]} = \char`\"{}\{\$user\mbox{[}\textquotesingle{}bdd\textquotesingle{}\mbox{]}\}/\{\${\bf user}\mbox{[}\textquotesingle{}bdm\textquotesingle{}\mbox{]}\}/\{\${\bf user}\mbox{[}\textquotesingle{}bdy\textquotesingle{}\mbox{]}\}\char`\"{}}\hypertarget{actions_2account_8php_a2862e61a0af8842af31bb09415bc6086}{}\label{actions_2account_8php_a2862e61a0af8842af31bb09415bc6086}
+
+
+Definition at line 32 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!birthdate@{birthdate}}
+\index{birthdate@{birthdate}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{birthdate}{birthdate}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} birthdate = \${\bf user}\mbox{[}\textquotesingle{}birthdate\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_adcebf70992c7074e4bab2e0d5f831536}{}\label{actions_2account_8php_adcebf70992c7074e4bab2e0d5f831536}
+
+
+Definition at line 41 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!else@{else}}
+\index{else@{else}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\${\bf add}-\/$>$is\+Username(\${\bf user}\mbox{[}\textquotesingle{}{\bf username}\textquotesingle{}\mbox{]})) {\bf if} (!\${\bf add}-\/$>$is\+Password()) {\bf if} (\${\bf add}-\/$>$add\+User()) else}\hypertarget{actions_2account_8php_a49a98b4576a0eca7fdcd120dfc90f7a1}{}\label{actions_2account_8php_a49a98b4576a0eca7fdcd120dfc90f7a1}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8install_8php_a8b23c77f42cdb1f5638c78b7d61c9468}{ossn\_installation\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'account:create:error:admin'}), \textcolor{stringliteral}{
+      'fail'})
+\end{DoxyCode}
+
+
+Definition at line 58 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!email@{email}}
+\index{email@{email}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{email}{email}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} email = \${\bf user}\mbox{[}\textquotesingle{}email\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}{}\label{actions_2account_8php_a011c66ae212438e0d7de7c0e40451bb3}
+
+
+Definition at line 38 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!first\+\_\+name@{first\+\_\+name}}
+\index{first\+\_\+name@{first\+\_\+name}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{first\+\_\+name}{first_name}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} first\+\_\+name = \${\bf user}\mbox{[}\textquotesingle{}firstname\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_a9a79298edb546fb2a33bc6d266131c04}{}\label{actions_2account_8php_a9a79298edb546fb2a33bc6d266131c04}
+
+
+Definition at line 36 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!gender@{gender}}
+\index{gender@{gender}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{gender}{gender}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} gender = \${\bf user}\mbox{[}\textquotesingle{}gender\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}{}\label{actions_2account_8php_a44147631c08dfda5f5bf50dc774f7090}
+
+
+Definition at line 40 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!last\+\_\+name@{last\+\_\+name}}
+\index{last\+\_\+name@{last\+\_\+name}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{last\+\_\+name}{last_name}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} last\+\_\+name = \${\bf user}\mbox{[}\textquotesingle{}lastname\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_ad28df3187bc8c49657d3800bb449f939}{}\label{actions_2account_8php_ad28df3187bc8c49657d3800bb449f939}
+
+
+Definition at line 37 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT@{O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT}}
+\index{O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT@{O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT}{OSSN_ALLOW_SYSTEM_START}}]{\setlength{\rightskip}{0pt plus 5cm}const O\+S\+S\+N\+\_\+\+A\+L\+L\+O\+W\+\_\+\+S\+Y\+S\+T\+E\+M\+\_\+\+S\+T\+A\+RT T\+R\+UE}\hypertarget{actions_2account_8php_a73aeae1243c8451cb328ddfe84637175}{}\label{actions_2account_8php_a73aeae1243c8451cb328ddfe84637175}
+
+
+Definition at line 4 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!password@{password}}
+\index{password@{password}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{password}{password}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} password = \${\bf user}\mbox{[}\textquotesingle{}password\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{}\label{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}
+
+
+Definition at line 39 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!sendactiviation@{sendactiviation}}
+\index{sendactiviation@{sendactiviation}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{sendactiviation}{sendactiviation}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} sendactiviation = false}\hypertarget{actions_2account_8php_a11fe66faec6579a15979e62879ba8950}{}\label{actions_2account_8php_a11fe66faec6579a15979e62879ba8950}
+
+
+Definition at line 42 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!username@{username}}
+\index{username@{username}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{username}{username}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} username = \${\bf user}\mbox{[}\textquotesingle{}username\textquotesingle{}\mbox{]}}\hypertarget{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{}\label{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}
+
+
+Definition at line 35 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!usertype@{usertype}}
+\index{usertype@{usertype}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{usertype}{usertype}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} usertype = \textquotesingle{}admin\textquotesingle{}}\hypertarget{actions_2account_8php_a13a7b92f40fdd23da18bc3eb7dcfd346}{}\label{actions_2account_8php_a13a7b92f40fdd23da18bc3eb7dcfd346}
+
+
+Definition at line 43 of file account.\+php.
+
+\index{actions/account.\+php@{actions/account.\+php}!validated@{validated}}
+\index{validated@{validated}!actions/account.\+php@{actions/account.\+php}}
+\subsubsection[{\texorpdfstring{validated}{validated}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf add} validated = true}\hypertarget{actions_2account_8php_a2e76c73baded04b16081921afc8a709f}{}\label{actions_2account_8php_a2e76c73baded04b16081921afc8a709f}
+
+
+Definition at line 44 of file account.\+php.
+

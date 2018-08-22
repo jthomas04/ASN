@@ -1,0 +1,1183 @@
+\hypertarget{_chart_8_core_8js}{}\section{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.Core.\+js File Reference}
+\label{_chart_8_core_8js}\index{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.\+Core.\+js@{/home/jj/\+Projects/\+A\+S\+N/vendors/\+Chartjs/src/\+Chart.\+Core.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_chart_8_core_8js_a3672d127ceea781724cbd00092448467}{extend} (\hyperlink{jquery-ui_8min_8js_abfef64d93b55dd875c27588ad2be02b8}{Chart.\+Type.\+prototype},\{initialize\+:function()\{return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, clear\+:function()\{\hyperlink{_chart_8_doughnut_8js_a04393833f822989236b04164e28ac1f6}{clear}(this.\+chart);return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, stop\+:function()\{Chart.\+animation\+Service.\+cancel\+Animation(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, resize\+:function(callback)\{this.\+stop();var canvas=this.\+chart.\+canvas, new\+Width=\hyperlink{_chart_8_core_8js_a62e1df47de0e602c56ec8b3b60380a85}{get\+Maximum\+Width}(this.\+chart.\+canvas), new\+Height=this.\+options.\+maintain\+Aspect\+Ratio?new\+Width/this.\+chart.\+aspect\+Ratio\+:get\+Maximum\+Height(this.\+chart.\+canvas);canvas.\+width=this.\+chart.\+width=new\+Width;\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{canvas.\+height}=\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{this.\+chart.\+height}=new\+Height;\hyperlink{_chart_8_core_8js_ac43c44d9366651256ea07cbc9280f707}{retina\+Scale}(this.\+chart);\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(typeof callback===\char`\"{}function\char`\"{})\{callback.\+apply(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, \hyperlink{_chart_8_radar_8js_aafc46d047b4d7639fd2c4b927ec5048c}{Array.\+prototype.\+slice.\+call}(arguments, 1));\}return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, reflow\+:noop, render\+:function(\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow})\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow})\{\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{this.\+reflow}();\}\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(this.\+options.\+animation \&\&!\hyperlink{_chart_8_doughnut_8js_af831e49f8518a13317db070b20a237a4}{reflow})\{var animation=new \hyperlink{_chart_8_core_8js_afc65bf774192d9a52ff345a1b3976ef5}{Chart.\+Animation}();animation.\+num\+Steps=this.\+options.\+animation\+Steps;animation.\+easing=this.\+options.\+animation\+Easing;\hyperlink{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}{animation.\+render}=function(chart\+Instance, animation\+Object)\{var easing\+Function=\hyperlink{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}{helpers.\+easing\+Effects}\mbox{[}animation\+Object.\+easing\mbox{]};var step\+Decimal=animation\+Object.\+current\+Step/animation\+Object.\+num\+Steps;var ease\+Decimal=easing\+Function(step\+Decimal);chart\+Instance.\+draw(ease\+Decimal, step\+Decimal, animation\+Object.\+current\+Step);\};animation.\+on\+Animation\+Progress=this.\+options.\+on\+Animation\+Progress;animation.\+on\+Animation\+Complete=this.\+options.\+on\+Animation\+Complete;Chart.\+animation\+Service.\+add\+Animation(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, animation);\}\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else}\{this.\+draw();\hyperlink{_chart_8_radar_8js_aafc46d047b4d7639fd2c4b927ec5048c}{this.\+options.\+on\+Animation\+Complete.\+call}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});\}return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, generate\+Legend\+:function()\{return \hyperlink{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}{template}(this.\+options.\+legend\+Template, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});\}, destroy\+:function()\{\hyperlink{_chart_8_doughnut_8js_a04393833f822989236b04164e28ac1f6}{this.\+clear}();\hyperlink{_chart_8_core_8js_a7761a7c971e3766f489ef3fba77be9bc}{unbind\+Events}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, this.\+events);var canvas=this.\+chart.\+canvas;canvas.\+width=this.\+chart.\+width;\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{canvas.\+height}=\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{this.\+chart.\+height};\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(canvas.\+style.\+remove\+Property)\{canvas.\+style.\+remove\+Property(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Property(\textquotesingle{}\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height}\textquotesingle{});\}\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else}\{canvas.\+style.\+remove\+Attribute(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Attribute(\textquotesingle{}\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height}\textquotesingle{});\}delete \hyperlink{_chart_8_core_8js_ae3272ba3c328da03d99f95cc79e2cd8e}{Chart.\+instances}\mbox{[}this.\+id\mbox{]};\}, show\+Tooltip\+:function(Chart\+Elements, force\+Redraw)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(typeof this.\+active\+Elements=== \textquotesingle{}\hyperlink{jquery-1_811_81_8min_8js_ae21cc36bf0d65014c717a481a3f8a468}{undefined}\textquotesingle{}) this.\+active\+Elements=\mbox{[}$\,$\mbox{]};var is\+Changed=(function(Elements)\{var changed=false;\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(Elements.\+length!==this.\+active\+Elements.\+length)\{changed=true;return changed;\}\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(Elements, function(element, index)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(element!==this.\+active\+Elements\mbox{[}index\mbox{]})\{changed=true;\}\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});return changed;\}).\hyperlink{_chart_8_radar_8js_aafc46d047b4d7639fd2c4b927ec5048c}{call}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, Chart\+Elements);\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!is\+Changed \&\&!force\+Redraw)\{return;\}\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else}\{this.\+active\+Elements=Chart\+Elements;\}this.\+draw();\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(this.\+options.\+custom\+Tooltips)\{this.\+options.\+custom\+Tooltips(false);\}\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(Chart\+Elements.\+length $>$ 0)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(this.\+datasets \&\&this.\+datasets.\+length $>$ 1)\{var data\+Array, data\+Index;\hyperlink{jquery-ui_8min_8js_a75bc805cf26ad48d8e8a98f5af2c3e76}{for}(var \hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}=this.\+datasets.\+length-\/1;\hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} $>$=0;\hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}-\/-\/)\{data\+Array=this.\+datasets\mbox{[}\hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}\mbox{]}.points$\vert$$\vert$this.\+datasets\mbox{[}\hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}\mbox{]}.bars$\vert$$\vert$this.\+datasets\mbox{[}\hyperlink{jquery-ui_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}\mbox{]}.segments;data\+Index=\hyperlink{_chart_8_core_8js_a2b42b59c40371ac6f69bdd12a58bdf7d}{index\+Of}(data\+Array, Chart\+Elements\mbox{[}0\mbox{]});\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(data\+Index!==-\/1)\{break;\}\}var tooltip\+Labels=\mbox{[}$\,$\mbox{]}, tooltip\+Colors=\mbox{[}$\,$\mbox{]}, median\+Position=(function(index)\{var Elements=\mbox{[}$\,$\mbox{]}, data\+Collection, x\+Positions=\mbox{[}$\,$\mbox{]}, y\+Positions=\mbox{[}$\,$\mbox{]}, x\+Max, y\+Max, x\+Min, y\+Min;\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{helpers.\+each}(this.\+datasets, function(dataset)\{data\+Collection=dataset.\+points$\vert$$\vert$dataset.\+bars$\vert$$\vert$dataset.\+segments;\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(data\+Collection\mbox{[}data\+Index\mbox{]}\&\&data\+Collection\mbox{[}data\+Index\mbox{]}.has\+Value())\{Elements.\+push(data\+Collection\mbox{[}data\+Index\mbox{]});\}\});\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{helpers.\+each}(Elements, function(element)\{x\+Positions.\+push(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{element.\+x});y\+Positions.\+push(\hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{element.\+y});tooltip\+Labels.\+push(\hyperlink{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}{helpers.\+template}(this.\+options.\+multi\+Tooltip\+Template, element));tooltip\+Colors.\+push(\{fill\+:element.\+\_\+saved.\+fill\+Color$\vert$$\vert$element.\+fill\+Color, stroke\+:element.\+\_\+saved.\+stroke\+Color$\vert$$\vert$element.\+stroke\+Color\});\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});y\+Min=\hyperlink{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{min}(y\+Positions);y\+Max=\hyperlink{_chart_8_core_8js_a04fa2ea575d5471ca09e1b344ec4a69e}{max}(y\+Positions);x\+Min=\hyperlink{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{min}(x\+Positions);x\+Max=\hyperlink{_chart_8_core_8js_a04fa2ea575d5471ca09e1b344ec4a69e}{max}(x\+Positions);return\{x\+:(x\+Min $>$ this.\+chart.\+width/2)?x\+Min\+:x\+Max, y\+:(y\+Min+y\+Max)/2\};\}).\hyperlink{_chart_8_radar_8js_aafc46d047b4d7639fd2c4b927ec5048c}{call}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, data\+Index);new \hyperlink{_chart_8_core_8js_a554af2603601a5615ec8c120fd106f2f}{Chart.\+Multi\+Tooltip}(\{\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x\+:median\+Position.\+x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y\+:median\+Position.\+y}, x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, x\+Offset\+:this.\+options.\+tooltip\+X\+Offset, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, title\+Text\+Color\+:this.\+options.\+tooltip\+Title\+Font\+Color, title\+Font\+Family\+:this.\+options.\+tooltip\+Title\+Font\+Family, title\+Font\+Style\+:this.\+options.\+tooltip\+Title\+Font\+Style, title\+Font\+Size\+:this.\+options.\+tooltip\+Title\+Font\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, labels\+:tooltip\+Labels, legend\+Colors\+:tooltip\+Colors, legend\+Color\+Background\+:this.\+options.\+multi\+Tooltip\+Key\+Background, title\+:\+Chart\+Elements\mbox{[}0\mbox{]}.label, chart\+:this.\+chart, ctx\+:this.\+chart.\+ctx, custom\+:this.\+options.\+custom\+Tooltips\}).draw();\}\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else}\{\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(Chart\+Elements, function(\hyperlink{_chart_8_core_8js_a3949d8f6e60ee364e5612e0bb15289d6}{Element})\{var tooltip\+Position=Element.\+tooltip\+Position();new \hyperlink{_chart_8_core_8js_a74a44601e10d7f69765b5db7cce3ca9e}{Chart.\+Tooltip}(\{x\+:\+Math.\+round(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{tooltip\+Position.\+x}), y\+:\+Math.\+round(\hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{tooltip\+Position.\+y}), x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, caret\+Height\+:this.\+options.\+tooltip\+Caret\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, text\+:template(this.\+options.\+tooltip\+Template, \hyperlink{_chart_8_core_8js_a3949d8f6e60ee364e5612e0bb15289d6}{Element}), chart\+:this.\+chart, custom\+:this.\+options.\+custom\+Tooltips\}).draw();\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});\}\}return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, to\+Base64\+Image\+:function()\{return this.\+chart.\+canvas.\+to\+Data\+U\+R\+L.\+apply(this.\+chart.\+canvas, arguments);\}\})
+\item 
+\hyperlink{_chart_8_core_8js_a3f457dd3bdf8c4c7cd78bb1c86238a83}{extend} (\hyperlink{jquery-ui_8min_8js_abfef64d93b55dd875c27588ad2be02b8}{Chart.\+Element.\+prototype},\{initialize\+:function()\{\}, restore\+:function(props)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!props)\{extend(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}, this.\+\_\+saved);\}\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else}\{\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(props, function(key)\{\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}\mbox{[}key\mbox{]}=this.\+\_\+saved\mbox{[}key\mbox{]};\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});\}return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, save\+:function()\{this.\+\_\+saved=\hyperlink{_chart_8_core_8js_afc3223fdf45a8e7832ffd9a845a82397}{clone}(\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});delete this.\+\_\+saved.\+\_\+saved;return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, update\+:function(new\+Props)\{\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(new\+Props, function(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}, key)\{this.\+\_\+saved\mbox{[}key\mbox{]}=\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}\mbox{[}key\mbox{]};\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}\mbox{[}key\mbox{]}=\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value};\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, transition\+:function(props, ease)\{\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(props, function(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}, key)\{\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}\mbox{[}key\mbox{]}=((\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}-\/this.\+\_\+saved\mbox{[}key\mbox{]})$\ast$ease)+this.\+\_\+saved\mbox{[}key\mbox{]};\}, \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this});return \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this};\}, tooltip\+Position\+:function()\{return\{\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x\+:this.\+x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y\+:this.\+y}\};\}, has\+Value\+:function()\{return \hyperlink{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{is\+Number}(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{this.\+value});\}\})
+\item 
+\hyperlink{_chart_8_radar_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} \hyperlink{_chart_8_core_8js_ae1a9473d42a738d466e08ce34177113e}{add\+Event} (window,\char`\"{}resize\char`\"{},(function()\{var \hyperlink{jquery_8tokeninput_8js_a819aaeaa17cffb37ebc9c81d46edf048}{timeout};return function()\{clear\+Timeout(\hyperlink{jquery_8tokeninput_8js_a819aaeaa17cffb37ebc9c81d46edf048}{timeout});\hyperlink{jquery_8tokeninput_8js_a819aaeaa17cffb37ebc9c81d46edf048}{timeout}=set\+Timeout(function()\{\hyperlink{fullpage_2plugin_8min_8js_a536422939f8cd6b5867a8fb424c3c02e}{each}(\hyperlink{_chart_8_core_8js_ae3272ba3c328da03d99f95cc79e2cd8e}{Chart.\+instances}, function(instance)\{\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(instance.\+options.\+responsive)\{instance.\+resize(\hyperlink{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}{instance.\+render}, true);\}\});\}, 50);\};\})())
+\item 
+\hyperlink{_chart_8_core_8js_aab28af72d93310e9614c6f132cee1b5e}{if} (\hyperlink{_chart_8_core_8js_a15c58c0e6b64253319856d961f05c63d}{amd})
+\item 
+\hyperlink{_code_igniter_8php_a92382071610da06a8cb62a44c4530e10}{else} \hyperlink{_chart_8_core_8js_a5fc6c6aefaf6a8223beee6ce5694b709}{if} (typeof module=== \textquotesingle{}object\textquotesingle{}\&\&module.\+exports)
+\item 
+\hyperlink{_chart_8_core_8js_aafc46d047b4d7639fd2c4b927ec5048c}{call} (\hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{_chart_8_core_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root} = \hyperlink{table_2plugin_8min_8js_a05c09a5e9d53fa7adf0a7936038c2fa3}{this}
+\item 
+var \hyperlink{_chart_8_core_8js_a7478dd57a0abee417aa8db7e2eb3680a}{previous} = \hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{root.\+Chart}
+\item 
+var \hyperlink{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}{Chart}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_afbaa35e32dd50615b39a75e1e5ec6921}{defaults}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a0ecd014dd4c5d61d8130961daf1eed54}{types} = \{\}
+\item 
+var \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers} = Chart.\+helpers = \{\}
+\item 
+var \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}
+\item 
+var \hyperlink{_chart_8_core_8js_afc3223fdf45a8e7832ffd9a845a82397}{clone}
+\item 
+var \hyperlink{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}{extend}
+\item 
+var \hyperlink{_chart_8_core_8js_a3fda54bf53a2d62c0f154400825c4b57}{merge}
+\item 
+var \hyperlink{_chart_8_core_8js_a2b42b59c40371ac6f69bdd12a58bdf7d}{index\+Of}
+\item 
+var \hyperlink{_chart_8_core_8js_a2cd0517fad42cd949966517e5f2b302b}{where}
+\item 
+var \hyperlink{_chart_8_core_8js_a3939fb661abdf2321a7e370a397c9b51}{find\+Next\+Where}
+\item 
+var \hyperlink{_chart_8_core_8js_ae95bb195969756fec23189979024e11b}{find\+Previous\+Where}
+\item 
+var \hyperlink{_chart_8_core_8js_ad6a6bf005e2dec42f5216af44232388b}{inherits}
+\item 
+var \hyperlink{_chart_8_core_8js_a21a726f42d8c0735338b0d0f2ab70873}{noop} = helpers.\+noop = function()\{\}
+\item 
+var \hyperlink{_chart_8_core_8js_a44806c676bfb70de845fd7dcd7403b01}{uid}
+\item 
+var \hyperlink{_chart_8_core_8js_ad8c5c796d017ca2e3db7513c25558fbc}{warn}
+\item 
+var \hyperlink{_chart_8_core_8js_a15c58c0e6b64253319856d961f05c63d}{amd} = helpers.\+amd = (typeof \hyperlink{_chart_8min_8js_a4aec19360c03c52da3c1ffcb8618a819}{define} === \textquotesingle{}function\textquotesingle{} \&\& define.\+amd)
+\item 
+var \hyperlink{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{is\+Number}
+\item 
+var \hyperlink{_chart_8_core_8js_a04fa2ea575d5471ca09e1b344ec4a69e}{max}
+\item 
+var \hyperlink{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{min}
+\item 
+var \hyperlink{_chart_8_core_8js_a37b1f160b9c42dd358c6e27da25570fb}{cap}
+\item 
+var \hyperlink{_chart_8_core_8js_a7a6a4884fb92e6c7bd230097721bfe52}{get\+Decimal\+Places}
+\item 
+var \hyperlink{_chart_8_core_8js_aec647a8e6c8ff5b9c7b5476ade8be8a0}{to\+Radians}
+\item 
+var \hyperlink{_chart_8_core_8js_a8e87d305c8c0976b4e8cbb6ac4970ee7}{get\+Angle\+From\+Point}
+\item 
+var \hyperlink{_chart_8_core_8js_a4f692a3c5666ca44d47314157ebaba8e}{alias\+Pixel}
+\item 
+var \hyperlink{_chart_8_core_8js_ae1e4289f3d5490343974382c1df7e42d}{spline\+Curve}
+\item 
+var \hyperlink{_chart_8_core_8js_a44c792f0aed1895a4c25d10e4f214283}{calculate\+Order\+Of\+Magnitude}
+\item 
+var \hyperlink{_chart_8_core_8js_a17bca8b7d88e61558169a3e07d256a46}{calculate\+Scale\+Range}
+\item 
+var \hyperlink{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}{template}
+\item 
+var \hyperlink{_chart_8_core_8js_afd63a6c9768ae50b444672ec3499ebb0}{generate\+Labels}
+\item 
+var \hyperlink{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}{easing\+Effects}
+\item 
+var \hyperlink{_chart_8_core_8js_a48a28fc2cc8821c0bc8e742541d78eba}{request\+Anim\+Frame}
+\item 
+var \hyperlink{_chart_8_core_8js_a6a1177d9270047d3382a65487a3858f5}{cancel\+Anim\+Frame}
+\item 
+var \hyperlink{_chart_8_core_8js_a109b4528a2b126a5144d76e6c79a9b1c}{animation\+Loop}
+\item 
+var \hyperlink{_chart_8_core_8js_a51c851b052259e9ad3b7645977d54c51}{get\+Relative\+Position}
+\item 
+var \hyperlink{_chart_8_core_8js_a861fc5bcef53c22080e92b756f6f13ba}{add\+Event}
+\item 
+var \hyperlink{_chart_8_core_8js_ab9676d3f11734214868f7620b56eb10a}{remove\+Event}
+\item 
+var \hyperlink{_chart_8_core_8js_a0f15f235d55ddf0ac8c83f08944876f7}{bind\+Events}
+\item 
+var \hyperlink{_chart_8_core_8js_a7761a7c971e3766f489ef3fba77be9bc}{unbind\+Events}
+\item 
+var \hyperlink{_chart_8_core_8js_a62e1df47de0e602c56ec8b3b60380a85}{get\+Maximum\+Width}
+\item 
+var \hyperlink{_chart_8_core_8js_ae8abcc4ae917ba86742b9bfc49be9c50}{get\+Maximum\+Height}
+\item 
+var \hyperlink{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{get\+Style}
+\item 
+var \hyperlink{_chart_8_core_8js_a5db0a35629d0f62b0cc30069c3dbe44a}{get\+Maximum\+Size} = helpers.\+get\+Maximum\+Size = \hyperlink{_chart_8_core_8js_a62e1df47de0e602c56ec8b3b60380a85}{helpers.\+get\+Maximum\+Width}
+\item 
+var \hyperlink{_chart_8_core_8js_ac43c44d9366651256ea07cbc9280f707}{retina\+Scale}
+\item 
+var \hyperlink{_chart_8_core_8js_ab1a8cc7b9c80428ce0167d293297a56a}{clear}
+\item 
+var \hyperlink{_chart_8_core_8js_ac1f95877f4f16d3c2bcaf8d7f544cd2b}{font\+String}
+\item 
+var \hyperlink{_chart_8_core_8js_af77dc8b7dfaeb5a5a45318fecf3bfc7b}{longest\+Text}
+\item 
+var \hyperlink{_chart_8_core_8js_a50c635f0b396335ca792d58d1236021f}{draw\+Rounded\+Rectangle}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_ae3272ba3c328da03d99f95cc79e2cd8e}{instances} = \{\}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_ab33251d1fe0bcc9e58f2ec35cabfc180}{Type}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a3949d8f6e60ee364e5612e0bb15289d6}{Element}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a7b37a02c7bcde34d563b324ac9831176}{Point}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_ae09f92dc3a3c2142e7d7c725eb9cb404}{Arc}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a6242ada53d9b7795cc7b877a30f400c8}{Rectangle}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_afc65bf774192d9a52ff345a1b3976ef5}{Animation}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a74a44601e10d7f69765b5db7cce3ca9e}{Tooltip}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a554af2603601a5615ec8c120fd106f2f}{Multi\+Tooltip}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_accee6c5689275bf99a6840c1aed622fb}{Scale}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_afb4f9a6f02fdb1fae65de928e9fb3853}{Radial\+Scale}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a2a193e15244ceda38118ca02c6c4d2eb}{animation\+Service}
+\item 
+\hyperlink{_chart_8_radar_8js_acfe3cbf36fe1fb0f7d9d4a6c4c23affd}{Chart} \hyperlink{_chart_8_core_8js_a4b23be7ce44129f975e6deef81ef7a16}{no\+Conflict}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{add\+Event(window,""resize"",(function()\lcurly{}var timeout;return function()\lcurly{}clear\+Timeout(timeout);timeout=set\+Timeout(function()\lcurly{}each(\+Chart.\+instances, function(instance)\lcurly{}if(instance.\+options.\+responsive)\lcurly{}instance.\+resize(instance.\+render, true);\rcurly{}\rcurly{});\rcurly{}, 50);\rcurly{};\rcurly{})())}{addEvent(window,"resize",(function()\{var timeout;return function()\{clearTimeout(timeout);timeout=setTimeout(function()\{each(Chart.instances, function(instance)\{if(instance.options.responsive)\{instance.resize(instance.render, true);\}\});\}, 50);\};\})())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf helpers} add\+Event (
+\begin{DoxyParamCaption}
+\item[{window}]{, }
+\item[{\char`\"{}resize\char`\"{}}]{, }
+\item[{(function()\{var {\bf timeout};return function()\{clear\+Timeout({\bf timeout});{\bf timeout}=set\+Timeout(function()\{{\bf each}({\bf Chart.\+instances}, function(instance)\{{\bf if}(instance.\+options.\+responsive)\{instance.\+resize({\bf instance.\+render}, true);\}\});\}, 50);\};\})()}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_core_8js_ae1a9473d42a738d466e08ce34177113e}{}\label{_chart_8_core_8js_ae1a9473d42a738d466e08ce34177113e}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!call@{call}}
+\index{call@{call}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{call(this)}{call(this)}}]{\setlength{\rightskip}{0pt plus 5cm}call (
+\begin{DoxyParamCaption}
+\item[{{\bf this}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_core_8js_aafc46d047b4d7639fd2c4b927ec5048c}{}\label{_chart_8_core_8js_aafc46d047b4d7639fd2c4b927ec5048c}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!extend@{extend}}
+\index{extend@{extend}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{extend(\+Chart.\+Type.\+prototype,\lcurly{}initialize\+:function()\lcurly{}return this;\rcurly{}, clear\+:function()\lcurly{}clear(this.\+chart);return this;\rcurly{}, stop\+:function()\lcurly{}Chart.\+animation\+Service.\+cancel\+Animation(this);return this;\rcurly{}, resize\+:function(callback)\lcurly{}this.\+stop();var canvas=this.\+chart.\+canvas, new\+Width=get\+Maximum\+Width(this.\+chart.\+canvas), new\+Height=this.\+options.\+maintain\+Aspect\+Ratio?new\+Width/this.\+chart.\+aspect\+Ratio\+:get\+Maximum\+Height(this.\+chart.\+canvas);canvas.\+width=this.\+chart.\+width=new\+Width;canvas.\+height=this.\+chart.\+height=new\+Height;retina\+Scale(this.\+chart);if(typeof callback===""function"")\lcurly{}callback.\+apply(this, Array.\+prototype.\+slice.\+call(arguments, 1));\rcurly{}return this;\rcurly{}, reflow\+:noop, render\+:function(reflow)\lcurly{}if(reflow)\lcurly{}this.\+reflow();\rcurly{}if(this.\+options.\+animation \&\&"!reflow)\lcurly{}var animation=new Chart.\+Animation();animation.\+num\+Steps=this.\+options.\+animation\+Steps;animation.\+easing=this.\+options.\+animation\+Easing;animation.\+render=function(chart\+Instance, animation\+Object)\lcurly{}var easing\+Function=helpers.\+easing\+Effects[animation\+Object.\+easing];var step\+Decimal=animation\+Object.\+current\+Step/animation\+Object.\+num\+Steps;var ease\+Decimal=easing\+Function(step\+Decimal);chart\+Instance.\+draw(ease\+Decimal, step\+Decimal, animation\+Object.\+current\+Step);\rcurly{};animation.\+on\+Animation\+Progress=this.\+options.\+on\+Animation\+Progress;animation.\+on\+Animation\+Complete=this.\+options.\+on\+Animation\+Complete;\+Chart.\+animation\+Service.\+add\+Animation(this, animation);\rcurly{}else\lcurly{}this.\+draw();this.\+options.\+on\+Animation\+Complete.\+call(this);\rcurly{}return this;\rcurly{}, generate\+Legend\+:function()\lcurly{}return template(this.\+options.\+legend\+Template, this);\rcurly{}, destroy\+:function()\lcurly{}this.\+clear();unbind\+Events(this, this.\+events);var canvas=this.\+chart.\+canvas;canvas.\+width=this.\+chart.\+width;canvas.\+height=this.\+chart.\+height;if(canvas.\+style.\+remove\+Property)\lcurly{}canvas.\+style.\+remove\+Property(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Property(\textquotesingle{}height\textquotesingle{});\rcurly{}else\lcurly{}canvas.\+style.\+remove\+Attribute(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Attribute(\textquotesingle{}height\textquotesingle{});\rcurly{}delete Chart.\+instances[this.\+id];\rcurly{}, show\+Tooltip\+:function(\+Chart\+Elements, force\+Redraw)\lcurly{}if(typeof this.\+active\+Elements=== \textquotesingle{}undefined\textquotesingle{}) this.\+active\+Elements=[];var is\+Changed=(function(\+Elements)\lcurly{}var changed=false;if(\+Elements.\+length"!==this.\+active\+Elements.\+length)\lcurly{}changed=true;return changed;\rcurly{}each(\+Elements, function(element, index)\lcurly{}if(element"!==this.\+active\+Elements[index])\lcurly{}changed=true;\rcurly{}\rcurly{}, this);return changed;\rcurly{}).\+call(this, Chart\+Elements);if("!is\+Changed \&\&"!force\+Redraw)\lcurly{}return;\rcurly{}else\lcurly{}this.\+active\+Elements=\+Chart\+Elements;\rcurly{}this.\+draw();if(this.\+options.\+custom\+Tooltips)\lcurly{}this.\+options.\+custom\+Tooltips(false);\rcurly{}if(\+Chart\+Elements.\+length $>$ 0)\lcurly{}if(this.\+datasets \&\&this.\+datasets.\+length $>$ 1)\lcurly{}var data\+Array, data\+Index;for(var i=this.\+datasets.\+length-\/1;i $>$=0;i-\/-\/)\lcurly{}data\+Array=this.\+datasets[i].\+points\texttt{"|}\texttt{"|}this.\+datasets[i].\+bars\texttt{"|}\texttt{"|}this.\+datasets[i].\+segments;data\+Index=index\+Of(data\+Array, Chart\+Elements[0]);if(data\+Index"!==-\/1)\lcurly{}break;\rcurly{}\rcurly{}var tooltip\+Labels=[], tooltip\+Colors=[], median\+Position=(function(index)\lcurly{}var Elements=[], data\+Collection, x\+Positions=[], y\+Positions=[], x\+Max, y\+Max, x\+Min, y\+Min;helpers.\+each(this.\+datasets, function(dataset)\lcurly{}data\+Collection=dataset.\+points\texttt{"|}\texttt{"|}dataset.\+bars\texttt{"|}\texttt{"|}dataset.\+segments;if(data\+Collection[data\+Index]\&\&data\+Collection[data\+Index].\+has\+Value())\lcurly{}Elements.\+push(data\+Collection[data\+Index]);\rcurly{}\rcurly{});helpers.\+each(\+Elements, function(element)\lcurly{}x\+Positions.\+push(element.\+x);y\+Positions.\+push(element.\+y);tooltip\+Labels.\+push(helpers.\+template(this.\+options.\+multi\+Tooltip\+Template, element));tooltip\+Colors.\+push(\lcurly{}fill\+:element.\+\_\+saved.\+fill\+Color\texttt{"|}\texttt{"|}element.\+fill\+Color, stroke\+:element.\+\_\+saved.\+stroke\+Color\texttt{"|}\texttt{"|}element.\+stroke\+Color\rcurly{});\rcurly{}, this);y\+Min=min(y\+Positions);y\+Max=max(y\+Positions);x\+Min=min(x\+Positions);x\+Max=max(x\+Positions);return\lcurly{}x\+:(x\+Min $>$ this.\+chart.\+width/2)?x\+Min\+:x\+Max, y\+:(y\+Min+y\+Max)/2\rcurly{};\rcurly{}).\+call(this, data\+Index);new Chart.\+Multi\+Tooltip(\lcurly{}x\+:median\+Position.\+x, y\+:median\+Position.\+y, x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, x\+Offset\+:this.\+options.\+tooltip\+X\+Offset, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, title\+Text\+Color\+:this.\+options.\+tooltip\+Title\+Font\+Color, title\+Font\+Family\+:this.\+options.\+tooltip\+Title\+Font\+Family, title\+Font\+Style\+:this.\+options.\+tooltip\+Title\+Font\+Style, title\+Font\+Size\+:this.\+options.\+tooltip\+Title\+Font\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, labels\+:tooltip\+Labels, legend\+Colors\+:tooltip\+Colors, legend\+Color\+Background\+:this.\+options.\+multi\+Tooltip\+Key\+Background, title\+:\+Chart\+Elements[0].\+label, chart\+:this.\+chart, ctx\+:this.\+chart.\+ctx, custom\+:this.\+options.\+custom\+Tooltips\rcurly{}).\+draw();\rcurly{}else\lcurly{}each(\+Chart\+Elements, function(\+Element)\lcurly{}var tooltip\+Position=\+Element.\+tooltip\+Position();new Chart.\+Tooltip(\lcurly{}x\+:\+Math.\+round(tooltip\+Position.\+x), y\+:\+Math.\+round(tooltip\+Position.\+y), x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, caret\+Height\+:this.\+options.\+tooltip\+Caret\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, text\+:template(this.\+options.\+tooltip\+Template, Element), chart\+:this.\+chart, custom\+:this.\+options.\+custom\+Tooltips\rcurly{}).\+draw();\rcurly{}, this);\rcurly{}\rcurly{}return this;\rcurly{}, to\+Base64\+Image\+:function()\lcurly{}return this.\+chart.\+canvas.\+to\+Data\+U\+R\+L.\+apply(this.\+chart.\+canvas, arguments);\rcurly{}\rcurly{})}{extend(Chart.Type.prototype,\{initialize:function()\{return this;\}, clear:function()\{clear(this.chart);return this;\}, stop:function()\{Chart.animationService.cancelAnimation(this);return this;\}, resize:function(callback)\{this.stop();var canvas=this.chart.canvas, newWidth=getMaximumWidth(this.chart.canvas), newHeight=this.options.maintainAspectRatio?newWidth/this.chart.aspectRatio:getMaximumHeight(this.chart.canvas);canvas.width=this.chart.width=newWidth;canvas.height=this.chart.height=newHeight;retinaScale(this.chart);if(typeof callback==="function")\{callback.apply(this, Array.prototype.slice.call(arguments, 1));\}return this;\}, reflow:noop, render:function(reflow)\{if(reflow)\{this.reflow();\}if(this.options.animation &&!reflow)\{var animation=new Chart.Animation();animation.numSteps=this.options.animationSteps;animation.easing=this.options.animationEasing;animation.render=function(chartInstance, animationObject)\{var easingFunction=helpers.easingEffects[animationObject.easing];var stepDecimal=animationObject.currentStep/animationObject.numSteps;var easeDecimal=easingFunction(stepDecimal);chartInstance.draw(easeDecimal, stepDecimal, animationObject.currentStep);\};animation.onAnimationProgress=this.options.onAnimationProgress;animation.onAnimationComplete=this.options.onAnimationComplete;Chart.animationService.addAnimation(this, animation);\}else\{this.draw();this.options.onAnimationComplete.call(this);\}return this;\}, generateLegend:function()\{return template(this.options.legendTemplate, this);\}, destroy:function()\{this.clear();unbindEvents(this, this.events);var canvas=this.chart.canvas;canvas.width=this.chart.width;canvas.height=this.chart.height;if(canvas.style.removeProperty)\{canvas.style.removeProperty('width');canvas.style.removeProperty('height');\}else\{canvas.style.removeAttribute('width');canvas.style.removeAttribute('height');\}delete Chart.instances[this.id];\}, showTooltip:function(ChartElements, forceRedraw)\{if(typeof this.activeElements=== 'undefined') this.activeElements=[];var isChanged=(function(Elements)\{var changed=false;if(Elements.length!==this.activeElements.length)\{changed=true;return changed;\}each(Elements, function(element, index)\{if(element!==this.activeElements[index])\{changed=true;\}\}, this);return changed;\}).call(this, ChartElements);if(!isChanged &&!forceRedraw)\{return;\}else\{this.activeElements=ChartElements;\}this.draw();if(this.options.customTooltips)\{this.options.customTooltips(false);\}if(ChartElements.length > 0)\{if(this.datasets &&this.datasets.length > 1)\{var dataArray, dataIndex;for(var i=this.datasets.length-1;i >=0;i--)\{dataArray=this.datasets[i].points||this.datasets[i].bars||this.datasets[i].segments;dataIndex=indexOf(dataArray, ChartElements[0]);if(dataIndex!==-1)\{break;\}\}var tooltipLabels=[], tooltipColors=[], medianPosition=(function(index)\{var Elements=[], dataCollection, xPositions=[], yPositions=[], xMax, yMax, xMin, yMin;helpers.each(this.datasets, function(dataset)\{dataCollection=dataset.points||dataset.bars||dataset.segments;if(dataCollection[dataIndex]&&dataCollection[dataIndex].hasValue())\{Elements.push(dataCollection[dataIndex]);\}\});helpers.each(Elements, function(element)\{xPositions.push(element.x);yPositions.push(element.y);tooltipLabels.push(helpers.template(this.options.multiTooltipTemplate, element));tooltipColors.push(\{fill:element._saved.fillColor||element.fillColor, stroke:element._saved.strokeColor||element.strokeColor\});\}, this);yMin=min(yPositions);yMax=max(yPositions);xMin=min(xPositions);xMax=max(xPositions);return\{x:(xMin > this.chart.width/2)?xMin:xMax, y:(yMin+yMax)/2\};\}).call(this, dataIndex);new Chart.MultiTooltip(\{x:medianPosition.x, y:medianPosition.y, xPadding:this.options.tooltipXPadding, yPadding:this.options.tooltipYPadding, xOffset:this.options.tooltipXOffset, fillColor:this.options.tooltipFillColor, textColor:this.options.tooltipFontColor, fontFamily:this.options.tooltipFontFamily, fontStyle:this.options.tooltipFontStyle, fontSize:this.options.tooltipFontSize, titleTextColor:this.options.tooltipTitleFontColor, titleFontFamily:this.options.tooltipTitleFontFamily, titleFontStyle:this.options.tooltipTitleFontStyle, titleFontSize:this.options.tooltipTitleFontSize, cornerRadius:this.options.tooltipCornerRadius, labels:tooltipLabels, legendColors:tooltipColors, legendColorBackground:this.options.multiTooltipKeyBackground, title:ChartElements[0].label, chart:this.chart, ctx:this.chart.ctx, custom:this.options.customTooltips\}).draw();\}else\{each(ChartElements, function(Element)\{var tooltipPosition=Element.tooltipPosition();new Chart.Tooltip(\{x:Math.round(tooltipPosition.x), y:Math.round(tooltipPosition.y), xPadding:this.options.tooltipXPadding, yPadding:this.options.tooltipYPadding, fillColor:this.options.tooltipFillColor, textColor:this.options.tooltipFontColor, fontFamily:this.options.tooltipFontFamily, fontStyle:this.options.tooltipFontStyle, fontSize:this.options.tooltipFontSize, caretHeight:this.options.tooltipCaretSize, cornerRadius:this.options.tooltipCornerRadius, text:template(this.options.tooltipTemplate, Element), chart:this.chart, custom:this.options.customTooltips\}).draw();\}, this);\}\}return this;\}, toBase64Image:function()\{return this.chart.canvas.toDataURL.apply(this.chart.canvas, arguments);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}extend (
+\begin{DoxyParamCaption}
+\item[{Chart.\+Type.}]{prototype, }
+\item[{\{initialize\+:function()\{return {\bf this};\}, clear\+:function()\{{\bf clear}(this.\+chart);return {\bf this};\}, stop\+:function()\{Chart.\+animation\+Service.\+cancel\+Animation({\bf this});return {\bf this};\}, resize\+:function(callback)\{this.\+stop();var canvas=this.\+chart.\+canvas, new\+Width={\bf get\+Maximum\+Width}(this.\+chart.\+canvas), new\+Height=this.\+options.\+maintain\+Aspect\+Ratio?new\+Width/this.\+chart.\+aspect\+Ratio\+:get\+Maximum\+Height(this.\+chart.\+canvas);canvas.\+width=this.\+chart.\+width=new\+Width;{\bf canvas.\+height}={\bf this.\+chart.\+height}=new\+Height;{\bf retina\+Scale}(this.\+chart);{\bf if}(typeof callback===\char`\"{}function\char`\"{})\{callback.\+apply({\bf this}, {\bf Array.\+prototype.\+slice.\+call}(arguments, 1));\}return {\bf this};\}, reflow\+:noop, render\+:function({\bf reflow})\{{\bf if}({\bf reflow})\{{\bf this.\+reflow}();\}{\bf if}(this.\+options.\+animation \&\&!{\bf reflow})\{var animation=new {\bf Chart.\+Animation}();animation.\+num\+Steps=this.\+options.\+animation\+Steps;animation.\+easing=this.\+options.\+animation\+Easing;{\bf animation.\+render}=function(chart\+Instance, animation\+Object)\{var easing\+Function={\bf helpers.\+easing\+Effects}\mbox{[}animation\+Object.\+easing\mbox{]};var step\+Decimal=animation\+Object.\+current\+Step/animation\+Object.\+num\+Steps;var ease\+Decimal=easing\+Function(step\+Decimal);chart\+Instance.\+draw(ease\+Decimal, step\+Decimal, animation\+Object.\+current\+Step);\};animation.\+on\+Animation\+Progress=this.\+options.\+on\+Animation\+Progress;animation.\+on\+Animation\+Complete=this.\+options.\+on\+Animation\+Complete;Chart.\+animation\+Service.\+add\+Animation({\bf this}, animation);\}{\bf else}\{this.\+draw();{\bf this.\+options.\+on\+Animation\+Complete.\+call}({\bf this});\}return {\bf this};\}, generate\+Legend\+:function()\{return {\bf template}(this.\+options.\+legend\+Template, {\bf this});\}, destroy\+:function()\{{\bf this.\+clear}();{\bf unbind\+Events}({\bf this}, this.\+events);var canvas=this.\+chart.\+canvas;canvas.\+width=this.\+chart.\+width;{\bf canvas.\+height}={\bf this.\+chart.\+height};{\bf if}(canvas.\+style.\+remove\+Property)\{canvas.\+style.\+remove\+Property(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Property(\textquotesingle{}{\bf height}\textquotesingle{});\}{\bf else}\{canvas.\+style.\+remove\+Attribute(\textquotesingle{}width\textquotesingle{});canvas.\+style.\+remove\+Attribute(\textquotesingle{}{\bf height}\textquotesingle{});\}delete {\bf Chart.\+instances}\mbox{[}this.\+id\mbox{]};\}, show\+Tooltip\+:function(Chart\+Elements, force\+Redraw)\{{\bf if}(typeof this.\+active\+Elements=== \textquotesingle{}{\bf undefined}\textquotesingle{}) this.\+active\+Elements=\mbox{[}$\,$\mbox{]};var is\+Changed=(function(Elements)\{var changed=false;{\bf if}(Elements.\+length!==this.\+active\+Elements.\+length)\{changed=true;return changed;\}{\bf each}(Elements, function(element, index)\{{\bf if}(element!==this.\+active\+Elements\mbox{[}index\mbox{]})\{changed=true;\}\}, {\bf this});return changed;\}).{\bf call}({\bf this}, Chart\+Elements);{\bf if}(!is\+Changed \&\&!force\+Redraw)\{return;\}{\bf else}\{this.\+active\+Elements=Chart\+Elements;\}this.\+draw();{\bf if}(this.\+options.\+custom\+Tooltips)\{this.\+options.\+custom\+Tooltips(false);\}{\bf if}(Chart\+Elements.\+length $>$ 0)\{{\bf if}(this.\+datasets \&\&this.\+datasets.\+length $>$ 1)\{var data\+Array, data\+Index;{\bf for}(var {\bf i}=this.\+datasets.\+length-\/1;{\bf i} $>$=0;{\bf i}-\/-\/)\{data\+Array=this.\+datasets\mbox{[}{\bf i}\mbox{]}.points$\vert$$\vert$this.\+datasets\mbox{[}{\bf i}\mbox{]}.bars$\vert$$\vert$this.\+datasets\mbox{[}{\bf i}\mbox{]}.segments;data\+Index={\bf index\+Of}(data\+Array, Chart\+Elements\mbox{[}0\mbox{]});{\bf if}(data\+Index!==-\/1)\{break;\}\}var tooltip\+Labels=\mbox{[}$\,$\mbox{]}, tooltip\+Colors=\mbox{[}$\,$\mbox{]}, median\+Position=(function(index)\{var Elements=\mbox{[}$\,$\mbox{]}, data\+Collection, x\+Positions=\mbox{[}$\,$\mbox{]}, y\+Positions=\mbox{[}$\,$\mbox{]}, x\+Max, y\+Max, x\+Min, y\+Min;{\bf helpers.\+each}(this.\+datasets, function(dataset)\{data\+Collection=dataset.\+points$\vert$$\vert$dataset.\+bars$\vert$$\vert$dataset.\+segments;{\bf if}(data\+Collection\mbox{[}data\+Index\mbox{]}\&\&data\+Collection\mbox{[}data\+Index\mbox{]}.has\+Value())\{Elements.\+push(data\+Collection\mbox{[}data\+Index\mbox{]});\}\});{\bf helpers.\+each}(Elements, function(element)\{x\+Positions.\+push({\bf element.\+x});y\+Positions.\+push({\bf element.\+y});tooltip\+Labels.\+push({\bf helpers.\+template}(this.\+options.\+multi\+Tooltip\+Template, element));tooltip\+Colors.\+push(\{fill\+:element.\+\_\+saved.\+fill\+Color$\vert$$\vert$element.\+fill\+Color, stroke\+:element.\+\_\+saved.\+stroke\+Color$\vert$$\vert$element.\+stroke\+Color\});\}, {\bf this});y\+Min={\bf min}(y\+Positions);y\+Max={\bf max}(y\+Positions);x\+Min={\bf min}(x\+Positions);x\+Max={\bf max}(x\+Positions);return\{x\+:(x\+Min $>$ this.\+chart.\+width/2)?x\+Min\+:x\+Max, y\+:(y\+Min+y\+Max)/2\};\}).{\bf call}({\bf this}, data\+Index);new {\bf Chart.\+Multi\+Tooltip}(\{{\bf x\+:median\+Position.\+x}, {\bf y\+:median\+Position.\+y}, x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, x\+Offset\+:this.\+options.\+tooltip\+X\+Offset, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, title\+Text\+Color\+:this.\+options.\+tooltip\+Title\+Font\+Color, title\+Font\+Family\+:this.\+options.\+tooltip\+Title\+Font\+Family, title\+Font\+Style\+:this.\+options.\+tooltip\+Title\+Font\+Style, title\+Font\+Size\+:this.\+options.\+tooltip\+Title\+Font\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, labels\+:tooltip\+Labels, legend\+Colors\+:tooltip\+Colors, legend\+Color\+Background\+:this.\+options.\+multi\+Tooltip\+Key\+Background, title\+:\+Chart\+Elements\mbox{[}0\mbox{]}.label, chart\+:this.\+chart, ctx\+:this.\+chart.\+ctx, custom\+:this.\+options.\+custom\+Tooltips\}).draw();\}{\bf else}\{{\bf each}(Chart\+Elements, function({\bf Element})\{var tooltip\+Position=Element.\+tooltip\+Position();new {\bf Chart.\+Tooltip}(\{x\+:\+Math.\+round({\bf tooltip\+Position.\+x}), y\+:\+Math.\+round({\bf tooltip\+Position.\+y}), x\+Padding\+:this.\+options.\+tooltip\+X\+Padding, y\+Padding\+:this.\+options.\+tooltip\+Y\+Padding, fill\+Color\+:this.\+options.\+tooltip\+Fill\+Color, text\+Color\+:this.\+options.\+tooltip\+Font\+Color, font\+Family\+:this.\+options.\+tooltip\+Font\+Family, font\+Style\+:this.\+options.\+tooltip\+Font\+Style, font\+Size\+:this.\+options.\+tooltip\+Font\+Size, caret\+Height\+:this.\+options.\+tooltip\+Caret\+Size, corner\+Radius\+:this.\+options.\+tooltip\+Corner\+Radius, text\+:template(this.\+options.\+tooltip\+Template, {\bf Element}), chart\+:this.\+chart, custom\+:this.\+options.\+custom\+Tooltips\}).draw();\}, {\bf this});\}\}return {\bf this};\}, to\+Base64\+Image\+:function()\{return this.\+chart.\+canvas.\+to\+Data\+U\+R\+L.\+apply(this.\+chart.\+canvas, arguments);\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_core_8js_a3672d127ceea781724cbd00092448467}{}\label{_chart_8_core_8js_a3672d127ceea781724cbd00092448467}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!extend@{extend}}
+\index{extend@{extend}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{extend(\+Chart.\+Element.\+prototype,\lcurly{}initialize\+:function()\lcurly{}\rcurly{}, restore\+:function(props)\lcurly{}if("!props)\lcurly{}extend(this, this.\+\_\+saved);\rcurly{}else\lcurly{}each(props, function(key)\lcurly{}this[key]=this.\+\_\+saved[key];\rcurly{}, this);\rcurly{}return this;\rcurly{}, save\+:function()\lcurly{}this.\+\_\+saved=clone(this);delete this.\+\_\+saved.\+\_\+saved;return this;\rcurly{}, update\+:function(new\+Props)\lcurly{}each(new\+Props, function(value, key)\lcurly{}this.\+\_\+saved[key]=this[key];this[key]=value;\rcurly{}, this);return this;\rcurly{}, transition\+:function(props, ease)\lcurly{}each(props, function(value, key)\lcurly{}this[key]=((value-\/this.\+\_\+saved[key])$\ast$ease)+this.\+\_\+saved[key];\rcurly{}, this);return this;\rcurly{}, tooltip\+Position\+:function()\lcurly{}return\lcurly{}x\+:this.\+x, y\+:this.\+y\rcurly{};\rcurly{}, has\+Value\+:function()\lcurly{}return is\+Number(this.\+value);\rcurly{}\rcurly{})}{extend(Chart.Element.prototype,\{initialize:function()\{\}, restore:function(props)\{if(!props)\{extend(this, this._saved);\}else\{each(props, function(key)\{this[key]=this._saved[key];\}, this);\}return this;\}, save:function()\{this._saved=clone(this);delete this._saved._saved;return this;\}, update:function(newProps)\{each(newProps, function(value, key)\{this._saved[key]=this[key];this[key]=value;\}, this);return this;\}, transition:function(props, ease)\{each(props, function(value, key)\{this[key]=((value-this._saved[key])*ease)+this._saved[key];\}, this);return this;\}, tooltipPosition:function()\{return\{x:this.x, y:this.y\};\}, hasValue:function()\{return isNumber(this.value);\}\})}}]{\setlength{\rightskip}{0pt plus 5cm}extend (
+\begin{DoxyParamCaption}
+\item[{Chart.\+Element.}]{prototype, }
+\item[{\{initialize\+:function()\{\}, restore\+:function(props)\{{\bf if}(!props)\{extend({\bf this}, this.\+\_\+saved);\}{\bf else}\{{\bf each}(props, function(key)\{{\bf this}\mbox{[}key\mbox{]}=this.\+\_\+saved\mbox{[}key\mbox{]};\}, {\bf this});\}return {\bf this};\}, save\+:function()\{this.\+\_\+saved={\bf clone}({\bf this});delete this.\+\_\+saved.\+\_\+saved;return {\bf this};\}, update\+:function(new\+Props)\{{\bf each}(new\+Props, function({\bf value}, key)\{this.\+\_\+saved\mbox{[}key\mbox{]}={\bf this}\mbox{[}key\mbox{]};{\bf this}\mbox{[}key\mbox{]}={\bf value};\}, {\bf this});return {\bf this};\}, transition\+:function(props, ease)\{{\bf each}(props, function({\bf value}, key)\{{\bf this}\mbox{[}key\mbox{]}=(({\bf value}-\/this.\+\_\+saved\mbox{[}key\mbox{]})$\ast$ease)+this.\+\_\+saved\mbox{[}key\mbox{]};\}, {\bf this});return {\bf this};\}, tooltip\+Position\+:function()\{return\{{\bf x\+:this.\+x}, {\bf y\+:this.\+y}\};\}, has\+Value\+:function()\{return {\bf is\+Number}({\bf this.\+value});\}\}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_core_8js_a3f457dd3bdf8c4c7cd78bb1c86238a83}{}\label{_chart_8_core_8js_a3f457dd3bdf8c4c7cd78bb1c86238a83}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!if@{if}}
+\index{if@{if}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{if(amd)}{if(amd)}}]{\setlength{\rightskip}{0pt plus 5cm}if (
+\begin{DoxyParamCaption}
+\item[{\char`\"{}undefined\char`\"{}}]{ = {\ttfamily =typeof~{\bf j\+Query}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [new]}}\hypertarget{_chart_8_core_8js_aab28af72d93310e9614c6f132cee1b5e}{}\label{_chart_8_core_8js_aab28af72d93310e9614c6f132cee1b5e}
+Bootstrap v3.\+3.\+4 (\href{http://getbootstrap.com}{\tt http\+://getbootstrap.\+com}) Copyright 2011-\/2015 Twitter, Inc. Licensed under M\+IT (\href{https://github.com/twbs/bootstrap/blob/master/LICENSE}{\tt https\+://github.\+com/twbs/bootstrap/blob/master/\+L\+I\+C\+E\+N\+SE}) 
+
+Definition at line 2186 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!if@{if}}
+\index{if@{if}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{if(typeof module=== \textquotesingle{}object\textquotesingle{}\&\&module.\+exports)}{if(typeof module=== 'object'&&module.exports)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf else} if (
+\begin{DoxyParamCaption}
+\item[{typeof}]{module = {\ttfamily ==~\textquotesingle{}object\textquotesingle{}~\&\&~module.exports}}
+\end{DoxyParamCaption}
+)}\hypertarget{_chart_8_core_8js_a5fc6c6aefaf6a8223beee6ce5694b709}{}\label{_chart_8_core_8js_a5fc6c6aefaf6a8223beee6ce5694b709}
+
+
+Definition at line 2190 of file Chart.\+Core.\+js.
+
+
+
+\subsection{Variable Documentation}
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!add\+Event@{add\+Event}}
+\index{add\+Event@{add\+Event}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{add\+Event}{addEvent}}]{\setlength{\rightskip}{0pt plus 5cm}var add\+Event}\hypertarget{_chart_8_core_8js_a861fc5bcef53c22080e92b756f6f13ba}{}\label{_chart_8_core_8js_a861fc5bcef53c22080e92b756f6f13ba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.addEvent = \textcolor{keyword}{function}(node,eventType,method)\{
+            \textcolor{keywordflow}{if} (node.addEventListener)\{
+                node.addEventListener(eventType,method);
+            \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (node.attachEvent)\{
+                node.attachEvent(\textcolor{stringliteral}{"on"}+eventType, method);
+            \} \textcolor{keywordflow}{else} \{
+                node[\textcolor{stringliteral}{"on"}+eventType] = method;
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 794 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!alias\+Pixel@{alias\+Pixel}}
+\index{alias\+Pixel@{alias\+Pixel}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{alias\+Pixel}{aliasPixel}}]{\setlength{\rightskip}{0pt plus 5cm}var alias\+Pixel}\hypertarget{_chart_8_core_8js_a4f692a3c5666ca44d47314157ebaba8e}{}\label{_chart_8_core_8js_a4f692a3c5666ca44d47314157ebaba8e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.aliasPixel = \textcolor{keyword}{function}(pixelWidth)\{
+            \textcolor{keywordflow}{return} (pixelWidth % 2 === 0) ? 0 : 0.5;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 376 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!amd@{amd}}
+\index{amd@{amd}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{amd}{amd}}]{\setlength{\rightskip}{0pt plus 5cm}var amd = helpers.\+amd = (typeof {\bf define} === \textquotesingle{}function\textquotesingle{} \&\& define.\+amd)}\hypertarget{_chart_8_core_8js_a15c58c0e6b64253319856d961f05c63d}{}\label{_chart_8_core_8js_a15c58c0e6b64253319856d961f05c63d}
+
+
+Definition at line 309 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Animation@{Animation}}
+\index{Animation@{Animation}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Animation}{Animation}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Animation}\hypertarget{_chart_8_core_8js_afc65bf774192d9a52ff345a1b3976ef5}{}\label{_chart_8_core_8js_afc65bf774192d9a52ff345a1b3976ef5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}{Chart}.Element.extend(\{
+        currentStep: null, 
+        numSteps: 60, 
+        easing: \textcolor{stringliteral}{""}, 
+        \hyperlink{_chart_8_doughnut_8js_ab3d558b7ed38d514580aa4aca8f94525}{render}: null, 
+        
+        onAnimationProgress: null, 
+        onAnimationComplete: null, 
+    \})
+\end{DoxyCode}
+
+
+Definition at line 1368 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!animation\+Loop@{animation\+Loop}}
+\index{animation\+Loop@{animation\+Loop}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{animation\+Loop}{animationLoop}}]{\setlength{\rightskip}{0pt plus 5cm}var animation\+Loop}\hypertarget{_chart_8_core_8js_a109b4528a2b126a5144d76e6c79a9b1c}{}\label{_chart_8_core_8js_a109b4528a2b126a5144d76e6c79a9b1c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.animationLoop = \textcolor{keyword}{function}(callback,totalSteps,easingString,onProgress,onComplete,
+      chartInstance)\{
+
+            var currentStep = 0,
+                easingFunction = \hyperlink{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}{easingEffects}[easingString] || 
+      \hyperlink{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}{easingEffects}.linear;
+
+            var animationFrame = \textcolor{keyword}{function}()\{
+                currentStep++;
+                var stepDecimal = currentStep/totalSteps;
+                var easeDecimal = easingFunction(stepDecimal);
+
+                callback.call(chartInstance,easeDecimal,stepDecimal, currentStep);
+                onProgress.call(chartInstance,easeDecimal,stepDecimal);
+                \textcolor{keywordflow}{if} (currentStep < totalSteps)\{
+                    chartInstance.animationFrame = \hyperlink{_chart_8_core_8js_a48a28fc2cc8821c0bc8e742541d78eba}{requestAnimFrame}(animationFrame);
+                \} \textcolor{keywordflow}{else}\{
+                    onComplete.apply(chartInstance);
+                \}
+            \};
+            \hyperlink{_chart_8_core_8js_a48a28fc2cc8821c0bc8e742541d78eba}{requestAnimFrame}(animationFrame);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 751 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!animation\+Service@{animation\+Service}}
+\index{animation\+Service@{animation\+Service}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{animation\+Service}{animationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} animation\+Service}\hypertarget{_chart_8_core_8js_a2a193e15244ceda38118ca02c6c4d2eb}{}\label{_chart_8_core_8js_a2a193e15244ceda38118ca02c6c4d2eb}
+
+
+Definition at line 2083 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Arc@{Arc}}
+\index{Arc@{Arc}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Arc}{Arc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Arc}\hypertarget{_chart_8_core_8js_ae09f92dc3a3c2142e7d7c725eb9cb404}{}\label{_chart_8_core_8js_ae09f92dc3a3c2142e7d7c725eb9cb404}
+
+
+Definition at line 1276 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!bind\+Events@{bind\+Events}}
+\index{bind\+Events@{bind\+Events}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{bind\+Events}{bindEvents}}]{\setlength{\rightskip}{0pt plus 5cm}var bind\+Events}\hypertarget{_chart_8_core_8js_a0f15f235d55ddf0ac8c83f08944876f7}{}\label{_chart_8_core_8js_a0f15f235d55ddf0ac8c83f08944876f7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.bindEvents = \textcolor{keyword}{function}(chartInstance, arrayOfEvents, handler)\{
+            
+            \textcolor{keywordflow}{if} (!chartInstance.events) chartInstance.events = \{\};
+
+            \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(arrayOfEvents,\textcolor{keyword}{function}(eventName)\{
+                chartInstance.events[eventName] = \textcolor{keyword}{function}()\{
+                    handler.apply(chartInstance, arguments);
+                \};
+                \hyperlink{_chart_8_core_8js_a861fc5bcef53c22080e92b756f6f13ba}{addEvent}(chartInstance.chart.canvas,eventName,chartInstance.events[eventName]);
+            \});
+        \}
+\end{DoxyCode}
+
+
+Definition at line 812 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!calculate\+Order\+Of\+Magnitude@{calculate\+Order\+Of\+Magnitude}}
+\index{calculate\+Order\+Of\+Magnitude@{calculate\+Order\+Of\+Magnitude}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{calculate\+Order\+Of\+Magnitude}{calculateOrderOfMagnitude}}]{\setlength{\rightskip}{0pt plus 5cm}var calculate\+Order\+Of\+Magnitude}\hypertarget{_chart_8_core_8js_a44c792f0aed1895a4c25d10e4f214283}{}\label{_chart_8_core_8js_a44c792f0aed1895a4c25d10e4f214283}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.calculateOrderOfMagnitude = \textcolor{keyword}{function}(\hyperlink{jquery_8tokeninput_8js_a21200c34618b8c12c446cd51529ebd8c}{val})\{
+            \textcolor{keywordflow}{return} Math.floor(Math.log(\hyperlink{jquery_8tokeninput_8js_a21200c34618b8c12c446cd51529ebd8c}{val}) / Math.LN10);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 397 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!calculate\+Scale\+Range@{calculate\+Scale\+Range}}
+\index{calculate\+Scale\+Range@{calculate\+Scale\+Range}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{calculate\+Scale\+Range}{calculateScaleRange}}]{\setlength{\rightskip}{0pt plus 5cm}var calculate\+Scale\+Range}\hypertarget{_chart_8_core_8js_a17bca8b7d88e61558169a3e07d256a46}{}\label{_chart_8_core_8js_a17bca8b7d88e61558169a3e07d256a46}
+
+
+Definition at line 400 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!cancel\+Anim\+Frame@{cancel\+Anim\+Frame}}
+\index{cancel\+Anim\+Frame@{cancel\+Anim\+Frame}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{cancel\+Anim\+Frame}{cancelAnimFrame}}]{\setlength{\rightskip}{0pt plus 5cm}var cancel\+Anim\+Frame}\hypertarget{_chart_8_core_8js_a6a1177d9270047d3382a65487a3858f5}{}\label{_chart_8_core_8js_a6a1177d9270047d3382a65487a3858f5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.cancelAnimFrame = (\textcolor{keyword}{function}()\{
+            \textcolor{keywordflow}{return} window.cancelAnimationFrame ||
+                window.webkitCancelAnimationFrame ||
+                window.mozCancelAnimationFrame ||
+                window.oCancelAnimationFrame ||
+                window.msCancelAnimationFrame ||
+                \textcolor{keyword}{function}(callback) \{
+                    \textcolor{keywordflow}{return} window.clearTimeout(callback, 1000 / 60);
+                \};
+        \})()
+\end{DoxyCode}
+
+
+Definition at line 741 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!cap@{cap}}
+\index{cap@{cap}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{cap}{cap}}]{\setlength{\rightskip}{0pt plus 5cm}var cap}\hypertarget{_chart_8_core_8js_a37b1f160b9c42dd358c6e27da25570fb}{}\label{_chart_8_core_8js_a37b1f160b9c42dd358c6e27da25570fb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.cap = \textcolor{keyword}{function}(valueToCap,maxValue,minValue)\{
+            \textcolor{keywordflow}{if}(\hyperlink{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{isNumber}(maxValue)) \{
+                \textcolor{keywordflow}{if}( valueToCap > maxValue ) \{
+                    \textcolor{keywordflow}{return} maxValue;
+                \}
+            \}
+            \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\hyperlink{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{isNumber}(minValue))\{
+                \textcolor{keywordflow}{if} ( valueToCap < minValue )\{
+                    \textcolor{keywordflow}{return} minValue;
+                \}
+            \}
+            \textcolor{keywordflow}{return} valueToCap;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 320 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Chart@{Chart}}
+\index{Chart@{Chart}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Chart}{Chart}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf root} Chart}\hypertarget{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}{}\label{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}
+
+
+Definition at line 21 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!clear@{clear}}
+\index{clear@{clear}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{clear}{clear}}]{\setlength{\rightskip}{0pt plus 5cm}var clear}\hypertarget{_chart_8_core_8js_ab1a8cc7b9c80428ce0167d293297a56a}{}\label{_chart_8_core_8js_ab1a8cc7b9c80428ce0167d293297a56a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.clear = \textcolor{keyword}{function}(chart)\{
+            chart.ctx.clearRect(0,0,chart.width,chart.height);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 860 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!clone@{clone}}
+\index{clone@{clone}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{clone}{clone}}]{\setlength{\rightskip}{0pt plus 5cm}var clone}\hypertarget{_chart_8_core_8js_afc3223fdf45a8e7832ffd9a845a82397}{}\label{_chart_8_core_8js_afc3223fdf45a8e7832ffd9a845a82397}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.clone = \textcolor{keyword}{function}(obj)\{
+            var objClone = \{\};
+            \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(obj,\textcolor{keyword}{function}(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value},key)\{
+                \textcolor{keywordflow}{if} (obj.hasOwnProperty(key))\{
+                    objClone[key] = \hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value};
+                \}
+            \});
+            \textcolor{keywordflow}{return} objClone;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 210 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!defaults@{defaults}}
+\index{defaults@{defaults}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{defaults}{defaults}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} defaults}\hypertarget{_chart_8_core_8js_afbaa35e32dd50615b39a75e1e5ec6921}{}\label{_chart_8_core_8js_afbaa35e32dd50615b39a75e1e5ec6921}
+
+
+Definition at line 56 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!draw\+Rounded\+Rectangle@{draw\+Rounded\+Rectangle}}
+\index{draw\+Rounded\+Rectangle@{draw\+Rounded\+Rectangle}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{draw\+Rounded\+Rectangle}{drawRoundedRectangle}}]{\setlength{\rightskip}{0pt plus 5cm}var draw\+Rounded\+Rectangle}\hypertarget{_chart_8_core_8js_a50c635f0b396335ca792d58d1236021f}{}\label{_chart_8_core_8js_a50c635f0b396335ca792d58d1236021f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.drawRoundedRectangle = \textcolor{keyword}{function}(ctx,\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x},\hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y},width,\hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height},radius)\{
+            ctx.beginPath();
+            ctx.moveTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + radius, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y});
+            ctx.lineTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width - radius, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y});
+            ctx.quadraticCurveTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}, \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + radius);
+            ctx.lineTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height} - radius);
+            ctx.quadraticCurveTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height}, \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + width - radius, 
+      \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height});
+            ctx.lineTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + radius, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height});
+            ctx.quadraticCurveTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height}, \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height} - radius);
+            ctx.lineTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} + radius);
+            ctx.quadraticCurveTo(\hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x}, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y}, \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} + radius, \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y});
+            ctx.closePath();
+        \}
+\end{DoxyCode}
+
+
+Definition at line 875 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!each@{each}}
+\index{each@{each}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{each}{each}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf helpers} each}\hypertarget{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{}\label{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.each = \textcolor{keyword}{function}(loopable,callback,\textcolor{keyword}{self})\{
+            var additionalArgs = Array.prototype.slice.call(arguments, 3);
+            
+            \textcolor{keywordflow}{if} (loopable)\{
+                \textcolor{keywordflow}{if} (loopable.length === +loopable.length)\{
+                    var \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i};
+                    \textcolor{keywordflow}{for} (i=0; i<loopable.length; i++)\{
+                        callback.apply(\textcolor{keyword}{self},[loopable[i], i].concat(additionalArgs));
+                    \}
+                \}
+                \textcolor{keywordflow}{else}\{
+                    \textcolor{keywordflow}{for} (var item in loopable)\{
+                        callback.apply(\textcolor{keyword}{self},[loopable[item],item].concat(additionalArgs));
+                    \}
+                \}
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 193 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!easing\+Effects@{easing\+Effects}}
+\index{easing\+Effects@{easing\+Effects}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{easing\+Effects}{easingEffects}}]{\setlength{\rightskip}{0pt plus 5cm}var easing\+Effects}\hypertarget{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}{}\label{_chart_8_core_8js_a6fd596ed5270a3eb4607190e326e7644}
+
+
+Definition at line 535 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Element@{Element}}
+\index{Element@{Element}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Element}{Element}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Element}\hypertarget{_chart_8_core_8js_a3949d8f6e60ee364e5612e0bb15289d6}{}\label{_chart_8_core_8js_a3949d8f6e60ee364e5612e0bb15289d6}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(configuration)\{
+        \hyperlink{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}{extend}(\textcolor{keyword}{this},configuration);
+        this.initialize.apply(\textcolor{keyword}{this},arguments);
+        this.save();
+    \}
+\end{DoxyCode}
+
+
+Definition at line 1176 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!extend@{extend}}
+\index{extend@{extend}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{extend}{extend}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} {\bf Element} extend}\hypertarget{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}{}\label{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.extend = \textcolor{keyword}{function}(base)\{
+            \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(Array.prototype.slice.call(arguments,1), \textcolor{keyword}{function}(extensionObject) \{
+                \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(extensionObject,\textcolor{keyword}{function}(\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value},key)\{
+                    \textcolor{keywordflow}{if} (extensionObject.hasOwnProperty(key))\{
+                        base[key] = \hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value};
+                    \}
+                \});
+            \});
+            \textcolor{keywordflow}{return} base;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 219 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!find\+Next\+Where@{find\+Next\+Where}}
+\index{find\+Next\+Where@{find\+Next\+Where}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{find\+Next\+Where}{findNextWhere}}]{\setlength{\rightskip}{0pt plus 5cm}var find\+Next\+Where}\hypertarget{_chart_8_core_8js_a3939fb661abdf2321a7e370a397c9b51}{}\label{_chart_8_core_8js_a3939fb661abdf2321a7e370a397c9b51}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.findNextWhere = \textcolor{keyword}{function}(arrayToSearch, filterCallback, startIndex)\{
+            
+            \textcolor{keywordflow}{if} (!startIndex)\{
+                startIndex = -1;
+            \}
+            \textcolor{keywordflow}{for} (var \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} = startIndex + 1; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} < arrayToSearch.length; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}++) \{
+                var currentItem = arrayToSearch[\hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}];
+                \textcolor{keywordflow}{if} (filterCallback(currentItem))\{
+                    \textcolor{keywordflow}{return} currentItem;
+                \}
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 257 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!find\+Previous\+Where@{find\+Previous\+Where}}
+\index{find\+Previous\+Where@{find\+Previous\+Where}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{find\+Previous\+Where}{findPreviousWhere}}]{\setlength{\rightskip}{0pt plus 5cm}var find\+Previous\+Where}\hypertarget{_chart_8_core_8js_ae95bb195969756fec23189979024e11b}{}\label{_chart_8_core_8js_ae95bb195969756fec23189979024e11b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.findPreviousWhere = \textcolor{keyword}{function}(arrayToSearch, filterCallback, startIndex)\{
+            
+            \textcolor{keywordflow}{if} (!startIndex)\{
+                startIndex = arrayToSearch.length;
+            \}
+            \textcolor{keywordflow}{for} (var \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} = startIndex - 1; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} >= 0; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}--) \{
+                var currentItem = arrayToSearch[\hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}];
+                \textcolor{keywordflow}{if} (filterCallback(currentItem))\{
+                    \textcolor{keywordflow}{return} currentItem;
+                \}
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 269 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!font\+String@{font\+String}}
+\index{font\+String@{font\+String}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{font\+String}{fontString}}]{\setlength{\rightskip}{0pt plus 5cm}var font\+String}\hypertarget{_chart_8_core_8js_ac1f95877f4f16d3c2bcaf8d7f544cd2b}{}\label{_chart_8_core_8js_ac1f95877f4f16d3c2bcaf8d7f544cd2b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.fontString = \textcolor{keyword}{function}(pixelSize,fontStyle,fontFamily)\{
+            \textcolor{keywordflow}{return} fontStyle + \textcolor{stringliteral}{" "} + pixelSize+\textcolor{stringliteral}{"px "} + fontFamily;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 863 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!generate\+Labels@{generate\+Labels}}
+\index{generate\+Labels@{generate\+Labels}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{generate\+Labels}{generateLabels}}]{\setlength{\rightskip}{0pt plus 5cm}var generate\+Labels}\hypertarget{_chart_8_core_8js_afd63a6c9768ae50b444672ec3499ebb0}{}\label{_chart_8_core_8js_afd63a6c9768ae50b444672ec3499ebb0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.generateLabels = \textcolor{keyword}{function}(templateString,numberOfSteps,graphMin,stepValue)\{
+            var labelsArray = \textcolor{keyword}{new} Array(numberOfSteps);
+            \textcolor{keywordflow}{if} (templateString)\{
+                \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(labelsArray,\textcolor{keyword}{function}(\hyperlink{jquery_8tokeninput_8js_a21200c34618b8c12c446cd51529ebd8c}{val},index)\{
+                    labelsArray[index] = \textcolor{keyword}{template}(templateString,\{\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}: (graphMin + (stepValue*(index
+      +1)))\});
+                \});
+            \}
+            \textcolor{keywordflow}{return} labelsArray;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 523 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Angle\+From\+Point@{get\+Angle\+From\+Point}}
+\index{get\+Angle\+From\+Point@{get\+Angle\+From\+Point}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Angle\+From\+Point}{getAngleFromPoint}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Angle\+From\+Point}\hypertarget{_chart_8_core_8js_a8e87d305c8c0976b4e8cbb6ac4970ee7}{}\label{_chart_8_core_8js_a8e87d305c8c0976b4e8cbb6ac4970ee7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getAngleFromPoint = \textcolor{keyword}{function}(centrePoint, anglePoint)\{
+            var distanceFromXCenter = anglePoint.x - centrePoint.x,
+                distanceFromYCenter = anglePoint.y - centrePoint.y,
+                radialDistanceFromCenter = Math.sqrt( distanceFromXCenter * distanceFromXCenter + 
+      distanceFromYCenter * distanceFromYCenter);
+
+
+            var angle = Math.PI * 2 + Math.atan2(distanceFromYCenter, distanceFromXCenter);
+
+            
+            \textcolor{keywordflow}{if} (distanceFromXCenter < 0 && distanceFromYCenter < 0)\{
+                angle += Math.PI*2;
+            \}
+
+            \textcolor{keywordflow}{return} \{
+                angle: angle,
+                distance: radialDistanceFromCenter
+            \};
+        \}
+\end{DoxyCode}
+
+
+Definition at line 358 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Decimal\+Places@{get\+Decimal\+Places}}
+\index{get\+Decimal\+Places@{get\+Decimal\+Places}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Decimal\+Places}{getDecimalPlaces}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Decimal\+Places}\hypertarget{_chart_8_core_8js_a7a6a4884fb92e6c7bd230097721bfe52}{}\label{_chart_8_core_8js_a7a6a4884fb92e6c7bd230097721bfe52}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getDecimalPlaces = \textcolor{keyword}{function}(num)\{
+            \textcolor{keywordflow}{if} (num%1!==0 && \hyperlink{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{isNumber}(num))\{
+                var \hyperlink{_chart_8min_8js_ad9a7d92cb87932d25187fdec3ba1b621}{s} = num.toString();
+                \textcolor{keywordflow}{if}(s.indexOf(\textcolor{stringliteral}{"e-"}) < 0)\{
+                    
+                    \textcolor{keywordflow}{return} s.split(\textcolor{stringliteral}{"."})[1].length;
+                \}
+                \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(s.indexOf(\textcolor{stringliteral}{"."}) < 0) \{
+                    
+                    \textcolor{keywordflow}{return} parseInt(s.split(\textcolor{stringliteral}{"e-"})[1]);
+                \}
+                \textcolor{keywordflow}{else} \{
+                    
+                    var parts = s.split(\textcolor{stringliteral}{"."})[1].split(\textcolor{stringliteral}{"e-"});
+                    \textcolor{keywordflow}{return} parts[0].length + parseInt(parts[1]);
+                \}
+            \}
+            \textcolor{keywordflow}{else} \{
+                \textcolor{keywordflow}{return} 0;
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 333 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Maximum\+Height@{get\+Maximum\+Height}}
+\index{get\+Maximum\+Height@{get\+Maximum\+Height}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Maximum\+Height}{getMaximumHeight}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Maximum\+Height}\hypertarget{_chart_8_core_8js_ae8abcc4ae917ba86742b9bfc49be9c50}{}\label{_chart_8_core_8js_ae8abcc4ae917ba86742b9bfc49be9c50}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getMaximumHeight = \textcolor{keyword}{function}(domNode)\{
+            var container = domNode.parentNode,
+                padding = parseInt(\hyperlink{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{getStyle}(container, \textcolor{stringliteral}{'padding-bottom'})) + parseInt(
+      \hyperlink{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{getStyle}(container, \textcolor{stringliteral}{'padding-top'}));
+            
+            \textcolor{keywordflow}{return} container.clientHeight - padding;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 834 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Maximum\+Size@{get\+Maximum\+Size}}
+\index{get\+Maximum\+Size@{get\+Maximum\+Size}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Maximum\+Size}{getMaximumSize}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Maximum\+Size = helpers.\+get\+Maximum\+Size = {\bf helpers.\+get\+Maximum\+Width}}\hypertarget{_chart_8_core_8js_a5db0a35629d0f62b0cc30069c3dbe44a}{}\label{_chart_8_core_8js_a5db0a35629d0f62b0cc30069c3dbe44a}
+
+
+Definition at line 845 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Maximum\+Width@{get\+Maximum\+Width}}
+\index{get\+Maximum\+Width@{get\+Maximum\+Width}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Maximum\+Width}{getMaximumWidth}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Maximum\+Width}\hypertarget{_chart_8_core_8js_a62e1df47de0e602c56ec8b3b60380a85}{}\label{_chart_8_core_8js_a62e1df47de0e602c56ec8b3b60380a85}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getMaximumWidth = \textcolor{keyword}{function}(domNode)\{
+            var container = domNode.parentNode,
+                padding = parseInt(\hyperlink{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{getStyle}(container, \textcolor{stringliteral}{'padding-left'})) + parseInt(
+      \hyperlink{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{getStyle}(container, \textcolor{stringliteral}{'padding-right'}));
+            
+            \textcolor{keywordflow}{return} container.clientWidth - padding;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 828 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Relative\+Position@{get\+Relative\+Position}}
+\index{get\+Relative\+Position@{get\+Relative\+Position}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Relative\+Position}{getRelativePosition}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Relative\+Position}\hypertarget{_chart_8_core_8js_a51c851b052259e9ad3b7645977d54c51}{}\label{_chart_8_core_8js_a51c851b052259e9ad3b7645977d54c51}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getRelativePosition = \textcolor{keyword}{function}(evt)\{
+            var mouseX, mouseY;
+            var \hyperlink{bootstrap_8min_8js_a2c038346d47955cbe2cb91e338edd7e1}{e} = evt.originalEvent || evt,
+                canvas = evt.currentTarget || evt.srcElement,
+                boundingRect = canvas.getBoundingClientRect();
+
+            \textcolor{keywordflow}{if} (e.touches)\{
+                mouseX = e.touches[0].clientX - boundingRect.left;
+                mouseY = e.touches[0].clientY - boundingRect.top;
+
+            \}
+            \textcolor{keywordflow}{else}\{
+                mouseX = e.clientX - boundingRect.left;
+                mouseY = e.clientY - boundingRect.top;
+            \}
+
+            \textcolor{keywordflow}{return} \{
+                \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} : mouseX,
+                \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} : mouseY
+            \};
+
+        \}
+\end{DoxyCode}
+
+
+Definition at line 772 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!get\+Style@{get\+Style}}
+\index{get\+Style@{get\+Style}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{get\+Style}{getStyle}}]{\setlength{\rightskip}{0pt plus 5cm}var get\+Style}\hypertarget{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}{}\label{_chart_8_core_8js_af02a82dca3496bd64b89dde6daf4586a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.getStyle = \textcolor{keyword}{function} (el, property) \{
+            \textcolor{keywordflow}{return} el.currentStyle ?
+                el.currentStyle[property] :
+                document.defaultView.getComputedStyle(el, null).getPropertyValue(property);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 840 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!helpers@{helpers}}
+\index{helpers@{helpers}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{helpers}{helpers}}]{\setlength{\rightskip}{0pt plus 5cm}var helpers = Chart.\+helpers = \{\}}\hypertarget{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{}\label{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}
+
+
+Definition at line 190 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!index\+Of@{index\+Of}}
+\index{index\+Of@{index\+Of}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{index\+Of}{indexOf}}]{\setlength{\rightskip}{0pt plus 5cm}var index\+Of}\hypertarget{_chart_8_core_8js_a2b42b59c40371ac6f69bdd12a58bdf7d}{}\label{_chart_8_core_8js_a2b42b59c40371ac6f69bdd12a58bdf7d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.indexOf = \textcolor{keyword}{function}(arrayToSearch, item)\{
+            \textcolor{keywordflow}{if} (Array.prototype.indexOf) \{
+                \textcolor{keywordflow}{return} arrayToSearch.indexOf(item);
+            \}
+            \textcolor{keywordflow}{else}\{
+                \textcolor{keywordflow}{for} (var \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} = 0; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i} < arrayToSearch.length; \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}++) \{
+                    \textcolor{keywordflow}{if} (arrayToSearch[\hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i}] === item) \textcolor{keywordflow}{return} \hyperlink{_chart_8min_8js_a83e0f8a79d7f496783fc7527db51773e}{i};
+                \}
+                \textcolor{keywordflow}{return} -1;
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 235 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!inherits@{inherits}}
+\index{inherits@{inherits}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{inherits}{inherits}}]{\setlength{\rightskip}{0pt plus 5cm}var inherits}\hypertarget{_chart_8_core_8js_ad6a6bf005e2dec42f5216af44232388b}{}\label{_chart_8_core_8js_ad6a6bf005e2dec42f5216af44232388b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.inherits = \textcolor{keyword}{function}(extensions)\{
+            
+            var parent = \textcolor{keyword}{this};
+            var ChartElement = (extensions && extensions.hasOwnProperty(\textcolor{stringliteral}{"constructor"})) ? extensions.
+      constructor : \textcolor{keyword}{function}()\{ \textcolor{keywordflow}{return} parent.apply(\textcolor{keyword}{this}, arguments); \};
+
+            var Surrogate = \textcolor{keyword}{function}()\{ this.constructor = ChartElement;\};
+            Surrogate.prototype = parent.prototype;
+            ChartElement.prototype = \textcolor{keyword}{new} Surrogate();
+
+            ChartElement.extend = \hyperlink{_chart_8_core_8js_ad6a6bf005e2dec42f5216af44232388b}{inherits};
+
+            \textcolor{keywordflow}{if} (extensions) \hyperlink{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}{extend}(ChartElement.prototype, extensions);
+
+            ChartElement.\_\_super\_\_ = parent.prototype;
+
+            \textcolor{keywordflow}{return} ChartElement;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 281 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!instances@{instances}}
+\index{instances@{instances}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{instances}{instances}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} instances = \{\}}\hypertarget{_chart_8_core_8js_ae3272ba3c328da03d99f95cc79e2cd8e}{}\label{_chart_8_core_8js_ae3272ba3c328da03d99f95cc79e2cd8e}
+
+
+Definition at line 892 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!is\+Number@{is\+Number}}
+\index{is\+Number@{is\+Number}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{is\+Number}{isNumber}}]{\setlength{\rightskip}{0pt plus 5cm}var is\+Number}\hypertarget{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}{}\label{_chart_8_core_8js_a95b7e9e8158e2a452c3dd1cc85af2a3c}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.isNumber = \textcolor{keyword}{function}(\hyperlink{_chart_8min_8js_a9c9a7417e882d54b8c0d50ef64a3ed77}{n})\{
+            \textcolor{keywordflow}{return} !isNaN(parseFloat(\hyperlink{_chart_8min_8js_a9c9a7417e882d54b8c0d50ef64a3ed77}{n})) && isFinite(\hyperlink{_chart_8min_8js_a9c9a7417e882d54b8c0d50ef64a3ed77}{n});
+        \}
+\end{DoxyCode}
+
+
+Definition at line 311 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!longest\+Text@{longest\+Text}}
+\index{longest\+Text@{longest\+Text}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{longest\+Text}{longestText}}]{\setlength{\rightskip}{0pt plus 5cm}var longest\+Text}\hypertarget{_chart_8_core_8js_af77dc8b7dfaeb5a5a45318fecf3bfc7b}{}\label{_chart_8_core_8js_af77dc8b7dfaeb5a5a45318fecf3bfc7b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.longestText = \textcolor{keyword}{function}(ctx,font,arrayOfStrings)\{
+            ctx.font = font;
+            var longest = 0;
+            \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(arrayOfStrings,\textcolor{keyword}{function}(\textcolor{keywordtype}{string})\{
+                var textWidth = ctx.measureText(\textcolor{keywordtype}{string}).width;
+                longest = (textWidth > longest) ? textWidth : longest;
+            \});
+            \textcolor{keywordflow}{return} longest;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 866 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!max@{max}}
+\index{max@{max}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{max}{max}}]{\setlength{\rightskip}{0pt plus 5cm}var max}\hypertarget{_chart_8_core_8js_a04fa2ea575d5471ca09e1b344ec4a69e}{}\label{_chart_8_core_8js_a04fa2ea575d5471ca09e1b344ec4a69e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.max = \textcolor{keyword}{function}(array)\{
+            \textcolor{keywordflow}{return} Math.max.apply( Math, array );
+        \}
+\end{DoxyCode}
+
+
+Definition at line 314 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!merge@{merge}}
+\index{merge@{merge}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{merge}{merge}}]{\setlength{\rightskip}{0pt plus 5cm}var merge}\hypertarget{_chart_8_core_8js_a3fda54bf53a2d62c0f154400825c4b57}{}\label{_chart_8_core_8js_a3fda54bf53a2d62c0f154400825c4b57}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.merge = \textcolor{keyword}{function}(base,master)\{
+            
+            var args = Array.prototype.slice.call(arguments,0);
+            args.unshift(\{\});
+            \textcolor{keywordflow}{return} \hyperlink{_chart_8_core_8js_a55bcafb127a41186f73e10c6888e1bf3}{extend}.apply(null, args);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 229 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!min@{min}}
+\index{min@{min}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{min}{min}}]{\setlength{\rightskip}{0pt plus 5cm}var min}\hypertarget{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}{}\label{_chart_8_core_8js_af99c323f6f9ad466be52be1b688d26fe}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.min = \textcolor{keyword}{function}(array)\{
+            \textcolor{keywordflow}{return} Math.min.apply( Math, array );
+        \}
+\end{DoxyCode}
+
+
+Definition at line 317 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Multi\+Tooltip@{Multi\+Tooltip}}
+\index{Multi\+Tooltip@{Multi\+Tooltip}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Multi\+Tooltip}{MultiTooltip}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Multi\+Tooltip}\hypertarget{_chart_8_core_8js_a554af2603601a5615ec8c120fd106f2f}{}\label{_chart_8_core_8js_a554af2603601a5615ec8c120fd106f2f}
+
+
+Definition at line 1461 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!no\+Conflict@{no\+Conflict}}
+\index{no\+Conflict@{no\+Conflict}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{no\+Conflict}{noConflict}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} no\+Conflict}\hypertarget{_chart_8_core_8js_a4b23be7ce44129f975e6deef81ef7a16}{}\label{_chart_8_core_8js_a4b23be7ce44129f975e6deef81ef7a16}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}()\{
+        \hyperlink{_chart_8_core_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root}.Chart = \hyperlink{_chart_8_core_8js_a7478dd57a0abee417aa8db7e2eb3680a}{previous};
+        \textcolor{keywordflow}{return} \hyperlink{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}{Chart};
+    \}
+\end{DoxyCode}
+
+
+Definition at line 2196 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!noop@{noop}}
+\index{noop@{noop}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{noop}{noop}}]{\setlength{\rightskip}{0pt plus 5cm}var noop = helpers.\+noop = function()\{\}}\hypertarget{_chart_8_core_8js_a21a726f42d8c0735338b0d0f2ab70873}{}\label{_chart_8_core_8js_a21a726f42d8c0735338b0d0f2ab70873}
+
+
+Definition at line 298 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Point@{Point}}
+\index{Point@{Point}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Point}{Point}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Point}\hypertarget{_chart_8_core_8js_a7b37a02c7bcde34d563b324ac9831176}{}\label{_chart_8_core_8js_a7b37a02c7bcde34d563b324ac9831176}
+
+
+Definition at line 1225 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!previous@{previous}}
+\index{previous@{previous}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{previous}{previous}}]{\setlength{\rightskip}{0pt plus 5cm}var previous = {\bf root.\+Chart}}\hypertarget{_chart_8_core_8js_a7478dd57a0abee417aa8db7e2eb3680a}{}\label{_chart_8_core_8js_a7478dd57a0abee417aa8db7e2eb3680a}
+
+
+Definition at line 18 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Radial\+Scale@{Radial\+Scale}}
+\index{Radial\+Scale@{Radial\+Scale}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Radial\+Scale}{RadialScale}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Radial\+Scale}\hypertarget{_chart_8_core_8js_afb4f9a6f02fdb1fae65de928e9fb3853}{}\label{_chart_8_core_8js_afb4f9a6f02fdb1fae65de928e9fb3853}
+
+
+Definition at line 1821 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Rectangle}{Rectangle}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Rectangle}\hypertarget{_chart_8_core_8js_a6242ada53d9b7795cc7b877a30f400c8}{}\label{_chart_8_core_8js_a6242ada53d9b7795cc7b877a30f400c8}
+
+
+Definition at line 1326 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!remove\+Event@{remove\+Event}}
+\index{remove\+Event@{remove\+Event}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{remove\+Event}{removeEvent}}]{\setlength{\rightskip}{0pt plus 5cm}var remove\+Event}\hypertarget{_chart_8_core_8js_ab9676d3f11734214868f7620b56eb10a}{}\label{_chart_8_core_8js_ab9676d3f11734214868f7620b56eb10a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.removeEvent = \textcolor{keyword}{function}(node, eventType, handler)\{
+            \textcolor{keywordflow}{if} (node.removeEventListener)\{
+                node.removeEventListener(eventType, handler, \textcolor{keyword}{false});
+            \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (node.detachEvent)\{
+                node.detachEvent(\textcolor{stringliteral}{"on"}+eventType,handler);
+            \} \textcolor{keywordflow}{else}\{
+                node[\textcolor{stringliteral}{"on"} + eventType] = \hyperlink{_chart_8_core_8js_a21a726f42d8c0735338b0d0f2ab70873}{noop};
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 803 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!request\+Anim\+Frame@{request\+Anim\+Frame}}
+\index{request\+Anim\+Frame@{request\+Anim\+Frame}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{request\+Anim\+Frame}{requestAnimFrame}}]{\setlength{\rightskip}{0pt plus 5cm}var request\+Anim\+Frame}\hypertarget{_chart_8_core_8js_a48a28fc2cc8821c0bc8e742541d78eba}{}\label{_chart_8_core_8js_a48a28fc2cc8821c0bc8e742541d78eba}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.requestAnimFrame = (\textcolor{keyword}{function}()\{
+            \textcolor{keywordflow}{return} window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                \textcolor{keyword}{function}(callback) \{
+                    \textcolor{keywordflow}{return} window.setTimeout(callback, 1000 / 60);
+                \};
+        \})()
+\end{DoxyCode}
+
+
+Definition at line 731 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!retina\+Scale@{retina\+Scale}}
+\index{retina\+Scale@{retina\+Scale}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{retina\+Scale}{retinaScale}}]{\setlength{\rightskip}{0pt plus 5cm}var retina\+Scale}\hypertarget{_chart_8_core_8js_ac43c44d9366651256ea07cbc9280f707}{}\label{_chart_8_core_8js_ac43c44d9366651256ea07cbc9280f707}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.retinaScale = \textcolor{keyword}{function}(chart)\{
+            var ctx = chart.ctx,
+                width = chart.canvas.width,
+                \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height} = chart.canvas.height;
+
+            \textcolor{keywordflow}{if} (window.devicePixelRatio) \{
+                ctx.canvas.style.width = width + \textcolor{stringliteral}{"px"};
+                ctx.canvas.style.height = \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height} + \textcolor{stringliteral}{"px"};
+                ctx.canvas.height = \hyperlink{jquery-ui_8min_8js_a7ec7f4e8243c6c20295ecc9a90225d43}{height} * window.devicePixelRatio;
+                ctx.canvas.width = width * window.devicePixelRatio;
+                ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+            \}
+        \}
+\end{DoxyCode}
+
+
+Definition at line 846 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!root@{root}}
+\index{root@{root}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{root}{root}}]{\setlength{\rightskip}{0pt plus 5cm}var root = {\bf this}}\hypertarget{_chart_8_core_8js_a33796d6d1aed1fe6b4c866bfd3867459}{}\label{_chart_8_core_8js_a33796d6d1aed1fe6b4c866bfd3867459}
+Chart.\+js \href{http://chartjs.org/}{\tt http\+://chartjs.\+org/} Version\+: \{\{ version \}\}
+
+Copyright 2015 Nick Downie Released under the M\+IT license \href{https://github.com/nnnick/Chart.js/blob/master/LICENSE.md}{\tt https\+://github.\+com/nnnick/\+Chart.\+js/blob/master/\+L\+I\+C\+E\+N\+S\+E.\+md} 
+
+Definition at line 17 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Scale@{Scale}}
+\index{Scale@{Scale}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Scale}{Scale}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Scale}\hypertarget{_chart_8_core_8js_accee6c5689275bf99a6840c1aed622fb}{}\label{_chart_8_core_8js_accee6c5689275bf99a6840c1aed622fb}
+
+
+Definition at line 1549 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!spline\+Curve@{spline\+Curve}}
+\index{spline\+Curve@{spline\+Curve}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{spline\+Curve}{splineCurve}}]{\setlength{\rightskip}{0pt plus 5cm}var spline\+Curve}\hypertarget{_chart_8_core_8js_ae1e4289f3d5490343974382c1df7e42d}{}\label{_chart_8_core_8js_ae1e4289f3d5490343974382c1df7e42d}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.splineCurve = \textcolor{keyword}{function}(FirstPoint,MiddlePoint,AfterPoint,\hyperlink{_chart_8min_8js_a23c5666e83bbbceee94adcd0851f50c4}{t})\{
+            
+            
+            var d01=Math.sqrt(Math.pow(MiddlePoint.x-FirstPoint.x,2)+Math.pow(MiddlePoint.y-FirstPoint.y,2)
+      ),
+                d12=Math.sqrt(Math.pow(AfterPoint.x-MiddlePoint.x,2)+Math.pow(AfterPoint.y-MiddlePoint.y,2)
+      ),
+                fa=\hyperlink{_chart_8min_8js_a23c5666e83bbbceee94adcd0851f50c4}{t}*d01/(d01+d12),
+                fb=\hyperlink{_chart_8min_8js_a23c5666e83bbbceee94adcd0851f50c4}{t}*d12/(d01+d12);
+            \textcolor{keywordflow}{return} \{
+                inner : \{
+                    \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x} : MiddlePoint.x-fa*(AfterPoint.x-FirstPoint.x),
+                    \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} : MiddlePoint.y-fa*(AfterPoint.y-FirstPoint.y)
+                \},
+                outer : \{
+                    \hyperlink{_chart_8min_8js_a81e910173af87b1161e719a504d52407}{x}: MiddlePoint.x+fb*(AfterPoint.x-FirstPoint.x),
+                    \hyperlink{_chart_8min_8js_a0b31909b1cae9ed1db6ff042057fce60}{y} : MiddlePoint.y+fb*(AfterPoint.y-FirstPoint.y)
+                \}
+            \};
+        \}
+\end{DoxyCode}
+
+
+Definition at line 379 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!template@{template}}
+\index{template@{template}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{template}{template}}]{\setlength{\rightskip}{0pt plus 5cm}var template}\hypertarget{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}{}\label{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}
+
+
+Definition at line 482 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Tooltip@{Tooltip}}
+\index{Tooltip@{Tooltip}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Tooltip}{Tooltip}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Tooltip}\hypertarget{_chart_8_core_8js_a74a44601e10d7f69765b5db7cce3ca9e}{}\label{_chart_8_core_8js_a74a44601e10d7f69765b5db7cce3ca9e}
+
+
+Definition at line 1378 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!to\+Radians@{to\+Radians}}
+\index{to\+Radians@{to\+Radians}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{to\+Radians}{toRadians}}]{\setlength{\rightskip}{0pt plus 5cm}var to\+Radians}\hypertarget{_chart_8_core_8js_aec647a8e6c8ff5b9c7b5476ade8be8a0}{}\label{_chart_8_core_8js_aec647a8e6c8ff5b9c7b5476ade8be8a0}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.radians = \textcolor{keyword}{function}(degrees)\{
+            \textcolor{keywordflow}{return} degrees * (Math.PI/180);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 354 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!Type@{Type}}
+\index{Type@{Type}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{Type}{Type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} Type}\hypertarget{_chart_8_core_8js_ab33251d1fe0bcc9e58f2ec35cabfc180}{}\label{_chart_8_core_8js_ab33251d1fe0bcc9e58f2ec35cabfc180}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data},options,chart)\{
+        this.options = options;
+        this.chart = chart;
+        this.\textcolor{keywordtype}{id} = \hyperlink{_chart_8_core_8js_a44806c676bfb70de845fd7dcd7403b01}{uid}();
+        
+        \hyperlink{_chart_8_core_8js_aa558264abd532fac507bc98637f8de54}{Chart}.instances[this.id] = \textcolor{keyword}{this};
+
+        
+        
+        \textcolor{keywordflow}{if} (options.responsive)\{
+            this.resize();
+        \}
+        this.initialize.call(\textcolor{keyword}{this},\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data});
+    \}
+\end{DoxyCode}
+
+
+Definition at line 894 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!types@{types}}
+\index{types@{types}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{types}{types}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Chart} types = \{\}}\hypertarget{_chart_8_core_8js_a0ecd014dd4c5d61d8130961daf1eed54}{}\label{_chart_8_core_8js_a0ecd014dd4c5d61d8130961daf1eed54}
+
+
+Definition at line 187 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!uid@{uid}}
+\index{uid@{uid}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{uid}{uid}}]{\setlength{\rightskip}{0pt plus 5cm}var uid}\hypertarget{_chart_8_core_8js_a44806c676bfb70de845fd7dcd7403b01}{}\label{_chart_8_core_8js_a44806c676bfb70de845fd7dcd7403b01}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.uid = (\textcolor{keyword}{function}()\{
+            var \textcolor{keywordtype}{id}=0;
+            \textcolor{keywordflow}{return} \textcolor{keyword}{function}()\{
+                \textcolor{keywordflow}{return} \textcolor{stringliteral}{"chart-"} + \textcolor{keywordtype}{id}++;
+            \};
+        \})()
+\end{DoxyCode}
+
+
+Definition at line 299 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!unbind\+Events@{unbind\+Events}}
+\index{unbind\+Events@{unbind\+Events}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{unbind\+Events}{unbindEvents}}]{\setlength{\rightskip}{0pt plus 5cm}var unbind\+Events}\hypertarget{_chart_8_core_8js_a7761a7c971e3766f489ef3fba77be9bc}{}\label{_chart_8_core_8js_a7761a7c971e3766f489ef3fba77be9bc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.unbindEvents = \textcolor{keyword}{function} (chartInstance, arrayOfEvents) \{
+            \hyperlink{_chart_8_core_8js_a26be8cfae6f8eb3568b26e9f7d4fd3ef}{each}(arrayOfEvents, \textcolor{keyword}{function}(handler,eventName)\{
+                \hyperlink{_chart_8_core_8js_ab9676d3f11734214868f7620b56eb10a}{removeEvent}(chartInstance.chart.canvas, eventName, handler);
+            \});
+        \}
+\end{DoxyCode}
+
+
+Definition at line 823 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!warn@{warn}}
+\index{warn@{warn}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{warn}{warn}}]{\setlength{\rightskip}{0pt plus 5cm}var warn}\hypertarget{_chart_8_core_8js_ad8c5c796d017ca2e3db7513c25558fbc}{}\label{_chart_8_core_8js_ad8c5c796d017ca2e3db7513c25558fbc}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.warn = \textcolor{keyword}{function}(str)\{
+            
+            \textcolor{keywordflow}{if} (window.console && typeof window.console.warn === \textcolor{stringliteral}{"function"}) console.warn(str);
+        \}
+\end{DoxyCode}
+
+
+Definition at line 305 of file Chart.\+Core.\+js.
+
+\index{Chart.\+Core.\+js@{Chart.\+Core.\+js}!where@{where}}
+\index{where@{where}!Chart.\+Core.\+js@{Chart.\+Core.\+js}}
+\subsubsection[{\texorpdfstring{where}{where}}]{\setlength{\rightskip}{0pt plus 5cm}var where}\hypertarget{_chart_8_core_8js_a2cd0517fad42cd949966517e5f2b302b}{}\label{_chart_8_core_8js_a2cd0517fad42cd949966517e5f2b302b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.where = \textcolor{keyword}{function}(collection, filterCallback)\{
+            var filtered = [];
+
+            \hyperlink{_chart_8_core_8js_afc901a5ddbc8a99b16eeeaca5b5b4e10}{helpers}.each(collection, \textcolor{keyword}{function}(item)\{
+                \textcolor{keywordflow}{if} (filterCallback(item))\{
+                    filtered.push(item);
+                \}
+            \});
+
+            \textcolor{keywordflow}{return} filtered;
+        \}
+\end{DoxyCode}
+
+
+Definition at line 246 of file Chart.\+Core.\+js.
+

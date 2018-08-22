@@ -1,0 +1,58 @@
+\hypertarget{_ossn_messages_2actions_2message_2send_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Messages/actions/message/send.php File Reference}
+\label{_ossn_messages_2actions_2message_2send_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Messages/actions/message/send.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Messages/actions/message/send.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_messages_2actions_2message_2send_8php_ac3ef1eb98db8a01e92b262323467d775}{\$send} = new \hyperlink{class_ossn_messages}{Ossn\+Messages}
+\item 
+\hyperlink{_ossn_messages_2actions_2message_2send_8php_abf17cb2dba2ed17cb28aa5f37deb5293}{\$message} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}message\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(trim(\hyperlink{ossn_8lib_8input_8php_a81d0b9187efc1b4c9988e918ae0f64ca}{ossn\+\_\+restore\+\_\+new\+\_\+lines}(\$message))== \textquotesingle{}\textquotesingle{}) \hyperlink{_ossn_messages_2actions_2message_2send_8php_ad0e9529b4e89689767bdc23a46f1d182}{\$to} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}to\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$send-\/$>$send(\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \$to, \$message)) \hyperlink{_ossn_messages_2actions_2message_2send_8php_acd6cab06649b8093f0070f6485236b8e}{else}
+\item 
+\hyperlink{_ossn_messages_2actions_2message_2send_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}!\$message@{\$message}}
+\index{\$message@{\$message}!Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}}
+\subsubsection[{\texorpdfstring{\$message}{$message}}]{\setlength{\rightskip}{0pt plus 5cm}\$message = {\bf input}(\textquotesingle{}message\textquotesingle{})}\hypertarget{_ossn_messages_2actions_2message_2send_8php_abf17cb2dba2ed17cb28aa5f37deb5293}{}\label{_ossn_messages_2actions_2message_2send_8php_abf17cb2dba2ed17cb28aa5f37deb5293}
+
+
+Definition at line 4 of file send.\+php.
+
+\index{Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}!\$send@{\$send}}
+\index{\$send@{\$send}!Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}}
+\subsubsection[{\texorpdfstring{\$send}{$send}}]{\setlength{\rightskip}{0pt plus 5cm}\$send = new {\bf Ossn\+Messages}}\hypertarget{_ossn_messages_2actions_2message_2send_8php_ac3ef1eb98db8a01e92b262323467d775}{}\label{_ossn_messages_2actions_2message_2send_8php_ac3ef1eb98db8a01e92b262323467d775}
+
+
+Definition at line 3 of file send.\+php.
+
+\index{Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}!\$to@{\$to}}
+\index{\$to@{\$to}!Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}}
+\subsubsection[{\texorpdfstring{\$to}{$to}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (trim({\bf ossn\+\_\+restore\+\_\+new\+\_\+lines}(\$message))== \textquotesingle{}\textquotesingle{}) \$to = {\bf input}(\textquotesingle{}to\textquotesingle{})}\hypertarget{_ossn_messages_2actions_2message_2send_8php_ad0e9529b4e89689767bdc23a46f1d182}{}\label{_ossn_messages_2actions_2message_2send_8php_ad0e9529b4e89689767bdc23a46f1d182}
+
+
+Definition at line 10 of file send.\+php.
+
+\index{Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}!else@{else}}
+\index{else@{else}!Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$send-\/$>$send({\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \$to, \$message)) else}\hypertarget{_ossn_messages_2actions_2message_2send_8php_acd6cab06649b8093f0070f6485236b8e}{}\label{_ossn_messages_2actions_2message_2send_8php_acd6cab06649b8093f0070f6485236b8e}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    echo 0
+\end{DoxyCode}
+
+
+Definition at line 19 of file send.\+php.
+
+\index{Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}!exit@{exit}}
+\index{exit@{exit}!Ossn\+Messages/actions/message/send.\+php@{Ossn\+Messages/actions/message/send.\+php}}
+\subsubsection[{\texorpdfstring{exit}{exit}}]{\setlength{\rightskip}{0pt plus 5cm}exit}\hypertarget{_ossn_messages_2actions_2message_2send_8php_a6733eb5f605d09eaede9845835d71c4e}{}\label{_ossn_messages_2actions_2message_2send_8php_a6733eb5f605d09eaede9845835d71c4e}
+
+
+Definition at line 24 of file send.\+php.
+

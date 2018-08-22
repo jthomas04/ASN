@@ -1,0 +1,534 @@
+\hypertarget{class_ossn_group}{}\section{Ossn\+Group Class Reference}
+\label{class_ossn_group}\index{Ossn\+Group@{Ossn\+Group}}
+
+
+Inheritance diagram for Ossn\+Group\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Group\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_group_a5fee6794de13185987b790fce43d0883}{init\+Attributes} ()
+\item 
+\hyperlink{class_ossn_group_ac21bd566989fc4f2f730db8e82dd7638}{create\+Group} (\$params)
+\item 
+\hyperlink{class_ossn_group_a9824fb7fff6b1f348aedade7b39e7b8d}{get\+Guid} ()
+\item 
+\hyperlink{class_ossn_group_a33283fa2b2cb93939b29b97c8291f3d9}{get\+User\+Groups} (\$\hyperlink{user_8php_a307051fefc937afd02c509c55646f50b}{owner\+\_\+guid})
+\item 
+\hyperlink{class_ossn_group_a6187b4fda76a8055bd08acafa57d9824}{get\+Groups} ()
+\item 
+\hyperlink{class_ossn_group_a193aeb5f7bc2e29ea10e58d9b315b796}{get\+Group} (\$guid)
+\item 
+\hyperlink{class_ossn_group_a9b4ae0e68a46347a9397f4526d84cc65}{update\+Group} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{components_2_ossn_wall_2actions_2wall_2post_2edit_8php_a7f60fcaa72b0968e6b6bd7d819fa6fd9}{description}, \$guid)
+\item 
+\hyperlink{class_ossn_group_ae6756ed2d51292c07c3933a7ad52361e}{delete\+Group} (\$guid)
+\item 
+\hyperlink{class_ossn_group_a92fafa345b20cf7a1a6c95db8ec85240}{count\+Requests} ()
+\item 
+\hyperlink{class_ossn_group_a770db4a5eee4b7d8578a46e71ee658fe}{get\+Members\+Requests} ()
+\item 
+\hyperlink{class_ossn_group_a8b15ce6b022a441d779d09702de1aa38}{is\+Member} (\$group, \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{class_ossn_group_ae1fc6879b40a1a2a837c839e0e637b4e}{get\+Members} (\$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_group_a74cf873217411619b5214ef4546bdaf6}{send\+Request} (\$from, \$group)
+\item 
+\hyperlink{class_ossn_group_a1845c2df62ccdef4f3fa076e42280877}{request\+Exists} (\$from, \$group)
+\item 
+\hyperlink{class_ossn_group_ae75e51db4e647a7bc8badf2d9630e475}{approve\+Request} (\$from, \$group)
+\item 
+\hyperlink{class_ossn_group_af549f54147f805d3624589fdb9e7cfaf}{delete\+Member} (\$from, \$group)
+\item 
+\hyperlink{class_ossn_group_ad15589659e77e2c5c32b825b04b5da3c}{search\+Groups} (\$q)
+\item 
+\hyperlink{class_ossn_group_aac6531556a8c140872610e8acc5a9eb1}{Upload\+Cover} ()
+\item 
+\hyperlink{class_ossn_group_af3c559710a53f8f4d88f38044505ee90}{Reset\+Cover\+Postition} (\$guid)
+\item 
+\hyperlink{class_ossn_group_a47cc8cd2fcde5ffef4f316341a910fdf}{have\+Cover} ()
+\item 
+\hyperlink{class_ossn_group_a0727aa262ae755a8a2028acfa9ff3443}{group\+Covers} ()
+\item 
+\hyperlink{class_ossn_group_a369080897a012c8eeff795c09fb8fb52}{cover\+U\+RL} ()
+\item 
+\hyperlink{class_ossn_group_a3e27e9dc5d2c3e06eea8801353ebab6f}{reposition\+C\+O\+V\+ER} (\$guid, \$top, \$left)
+\item 
+\hyperlink{class_ossn_group_a680f6835f3771d0af210dec9e142dd2c}{cover\+Parameters} (\$guid)
+\item 
+\hyperlink{class_ossn_group_a61f4a98193810fbb807a14d8c78196b5}{get\+My\+Groups} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Group.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Group@{Ossn\+Group}!approve\+Request@{approve\+Request}}
+\index{approve\+Request@{approve\+Request}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{approve\+Request(\$from, \$group)}{approveRequest($from, $group)}}]{\setlength{\rightskip}{0pt plus 5cm}approve\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_ae75e51db4e647a7bc8badf2d9630e475}{}\label{class_ossn_group_ae75e51db4e647a7bc8badf2d9630e475}
+Approve member request
+
+\$from Member guid \$group Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 328 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!count\+Requests@{count\+Requests}}
+\index{count\+Requests@{count\+Requests}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{count\+Requests()}{countRequests()}}]{\setlength{\rightskip}{0pt plus 5cm}count\+Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a92fafa345b20cf7a1a6c95db8ec85240}{}\label{class_ossn_group_a92fafa345b20cf7a1a6c95db8ec85240}
+Count member requests
+
+\begin{DoxyReturn}{Returns}
+int; 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!cover\+Parameters@{cover\+Parameters}}
+\index{cover\+Parameters@{cover\+Parameters}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{cover\+Parameters(\$guid)}{coverParameters($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}cover\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a680f6835f3771d0af210dec9e142dd2c}{}\label{class_ossn_group_a680f6835f3771d0af210dec9e142dd2c}
+Get cover position params
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Group guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array;  public; 
+\end{DoxyReturn}
+
+
+Definition at line 563 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!cover\+U\+RL@{cover\+U\+RL}}
+\index{cover\+U\+RL@{cover\+U\+RL}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{cover\+U\+R\+L()}{coverURL()}}]{\setlength{\rightskip}{0pt plus 5cm}cover\+U\+RL (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a369080897a012c8eeff795c09fb8fb52}{}\label{class_ossn_group_a369080897a012c8eeff795c09fb8fb52}
+Get group latest cover url
+
+\begin{DoxyReturn}{Returns}
+url;  public; 
+\end{DoxyReturn}
+
+
+Definition at line 492 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!create\+Group@{create\+Group}}
+\index{create\+Group@{create\+Group}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{create\+Group(\$params)}{createGroup($params)}}]{\setlength{\rightskip}{0pt plus 5cm}create\+Group (
+\begin{DoxyParamCaption}
+\item[{}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_ac21bd566989fc4f2f730db8e82dd7638}{}\label{class_ossn_group_ac21bd566989fc4f2f730db8e82dd7638}
+Create group
+
+\$params\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]} Name of group \$params\mbox{[}\textquotesingle{}description\textquotesingle{}\mbox{]} Group description \$params\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}\+: Guid of owner creating group \$params\mbox{[}\textquotesingle{}privacy\textquotesingle{}\mbox{]} Group Privacy
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!delete\+Group@{delete\+Group}}
+\index{delete\+Group@{delete\+Group}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{delete\+Group(\$guid)}{deleteGroup($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Group (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_ae6756ed2d51292c07c3933a7ad52361e}{}\label{class_ossn_group_ae6756ed2d51292c07c3933a7ad52361e}
+Delete group
+
+\$guid Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 133 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!delete\+Member@{delete\+Member}}
+\index{delete\+Member@{delete\+Member}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{delete\+Member(\$from, \$group)}{deleteMember($from, $group)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Member (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_af549f54147f805d3624589fdb9e7cfaf}{}\label{class_ossn_group_af549f54147f805d3624589fdb9e7cfaf}
+Delete member from group
+
+\$from Member guid \$group Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 345 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+Group@{get\+Group}}
+\index{get\+Group@{get\+Group}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+Group(\$guid)}{getGroup($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Group (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a193aeb5f7bc2e29ea10e58d9b315b796}{}\label{class_ossn_group_a193aeb5f7bc2e29ea10e58d9b315b796}
+Get group by guid
+
+\$guid group guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+Groups@{get\+Groups}}
+\index{get\+Groups@{get\+Groups}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+Groups()}{getGroups()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Groups (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a6187b4fda76a8055bd08acafa57d9824}{}\label{class_ossn_group_a6187b4fda76a8055bd08acafa57d9824}
+Get site group
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+Guid@{get\+Guid}}
+\index{get\+Guid@{get\+Guid}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+Guid()}{getGuid()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Guid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a9824fb7fff6b1f348aedade7b39e7b8d}{}\label{class_ossn_group_a9824fb7fff6b1f348aedade7b39e7b8d}
+Get guid of newly created group
+
+\begin{DoxyReturn}{Returns}
+int;  public; 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+Members@{get\+Members}}
+\index{get\+Members@{get\+Members}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+Members(\$count=false)}{getMembers($count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Members (
+\begin{DoxyParamCaption}
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_ae1fc6879b40a1a2a837c839e0e637b4e}{}\label{class_ossn_group_ae1fc6879b40a1a2a837c839e0e637b4e}
+Get group members
+
+\$object-\/$>$guid Group guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 233 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+Members\+Requests@{get\+Members\+Requests}}
+\index{get\+Members\+Requests@{get\+Members\+Requests}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+Members\+Requests()}{getMembersRequests()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Members\+Requests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a770db4a5eee4b7d8578a46e71ee658fe}{}\label{class_ossn_group_a770db4a5eee4b7d8578a46e71ee658fe}
+Get group member requests
+
+\$object-\/$>$guid Group guid
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 172 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+My\+Groups@{get\+My\+Groups}}
+\index{get\+My\+Groups@{get\+My\+Groups}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+My\+Groups(\$user)}{getMyGroups($user)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+My\+Groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a61f4a98193810fbb807a14d8c78196b5}{}\label{class_ossn_group_a61f4a98193810fbb807a14d8c78196b5}
+Get user groups (owned groups and groups user member of)
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & User entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 573 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!get\+User\+Groups@{get\+User\+Groups}}
+\index{get\+User\+Groups@{get\+User\+Groups}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{get\+User\+Groups(\$owner\+\_\+guid)}{getUserGroups($owner_guid)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+User\+Groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$owner\+\_\+guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a33283fa2b2cb93939b29b97c8291f3d9}{}\label{class_ossn_group_a33283fa2b2cb93939b29b97c8291f3d9}
+Get User groups
+
+\$owner\+\_\+guid Guid of owner creating group
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!group\+Covers@{group\+Covers}}
+\index{group\+Covers@{group\+Covers}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{group\+Covers()}{groupCovers()}}]{\setlength{\rightskip}{0pt plus 5cm}group\+Covers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a0727aa262ae755a8a2028acfa9ff3443}{}\label{class_ossn_group_a0727aa262ae755a8a2028acfa9ff3443}
+Get group covers
+
+\begin{DoxyReturn}{Returns}
+object;  public; 
+\end{DoxyReturn}
+
+
+Definition at line 475 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!have\+Cover@{have\+Cover}}
+\index{have\+Cover@{have\+Cover}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{have\+Cover()}{haveCover()}}]{\setlength{\rightskip}{0pt plus 5cm}have\+Cover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a47cc8cd2fcde5ffef4f316341a910fdf}{}\label{class_ossn_group_a47cc8cd2fcde5ffef4f316341a910fdf}
+Check if group have cover or not
+
+\begin{DoxyReturn}{Returns}
+bool;  private; 
+\end{DoxyReturn}
+
+
+Definition at line 461 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a5fee6794de13185987b790fce43d0883}{}\label{class_ossn_group_a5fee6794de13185987b790fce43d0883}
+Initialize the object.
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!is\+Member@{is\+Member}}
+\index{is\+Member@{is\+Member}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{is\+Member(\$group, \$user)}{isMember($group, $user)}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Member (
+\begin{DoxyParamCaption}
+\item[{}]{\$group, }
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a8b15ce6b022a441d779d09702de1aa38}{}\label{class_ossn_group_a8b15ce6b022a441d779d09702de1aa38}
+Cehck if the user is memeber of group or not
+
+\$user User guid \$group Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 202 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!reposition\+C\+O\+V\+ER@{reposition\+C\+O\+V\+ER}}
+\index{reposition\+C\+O\+V\+ER@{reposition\+C\+O\+V\+ER}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{reposition\+C\+O\+V\+E\+R(\$guid, \$top, \$left)}{repositionCOVER($guid, $top, $left)}}]{\setlength{\rightskip}{0pt plus 5cm}reposition\+C\+O\+V\+ER (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid, }
+\item[{}]{\$top, }
+\item[{}]{\$left}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a3e27e9dc5d2c3e06eea8801353ebab6f}{}\label{class_ossn_group_a3e27e9dc5d2c3e06eea8801353ebab6f}
+Reposition group cover
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$guid} & Group guid \$top Position from top \$left Position from left\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool;  public; 
+\end{DoxyReturn}
+
+
+Definition at line 513 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!request\+Exists@{request\+Exists}}
+\index{request\+Exists@{request\+Exists}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{request\+Exists(\$from, \$group)}{requestExists($from, $group)}}]{\setlength{\rightskip}{0pt plus 5cm}request\+Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a1845c2df62ccdef4f3fa076e42280877}{}\label{class_ossn_group_a1845c2df62ccdef4f3fa076e42280877}
+Check if member request exist or not
+
+\$from Member guid \$group Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 303 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!Reset\+Cover\+Postition@{Reset\+Cover\+Postition}}
+\index{Reset\+Cover\+Postition@{Reset\+Cover\+Postition}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{Reset\+Cover\+Postition(\$guid)}{ResetCoverPostition($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}Reset\+Cover\+Postition (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_af3c559710a53f8f4d88f38044505ee90}{}\label{class_ossn_group_af3c559710a53f8f4d88f38044505ee90}
+Reset cover position
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$guid} & Group guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool;  private; 
+\end{DoxyReturn}
+
+
+Definition at line 430 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!search\+Groups@{search\+Groups}}
+\index{search\+Groups@{search\+Groups}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{search\+Groups(\$q)}{searchGroups($q)}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$q}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_ad15589659e77e2c5c32b825b04b5da3c}{}\label{class_ossn_group_ad15589659e77e2c5c32b825b04b5da3c}
+Search group in database
+
+\$q Group Metadata
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 365 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!send\+Request@{send\+Request}}
+\index{send\+Request@{send\+Request}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{send\+Request(\$from, \$group)}{sendRequest($from, $group)}}]{\setlength{\rightskip}{0pt plus 5cm}send\+Request (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a74cf873217411619b5214ef4546bdaf6}{}\label{class_ossn_group_a74cf873217411619b5214ef4546bdaf6}
+Send group join request
+
+\$from Member guid \$group Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 262 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!update\+Group@{update\+Group}}
+\index{update\+Group@{update\+Group}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{update\+Group(\$name, \$description, \$guid)}{updateGroup($name, $description, $guid)}}]{\setlength{\rightskip}{0pt plus 5cm}update\+Group (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$description, }
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_a9b4ae0e68a46347a9397f4526d84cc65}{}\label{class_ossn_group_a9b4ae0e68a46347a9397f4526d84cc65}
+Upgrade group
+
+\$name Group name \$description Group description \$guid Group guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Ossn\+Group.\+php.
+
+\index{Ossn\+Group@{Ossn\+Group}!Upload\+Cover@{Upload\+Cover}}
+\index{Upload\+Cover@{Upload\+Cover}!Ossn\+Group@{Ossn\+Group}}
+\subsubsection[{\texorpdfstring{Upload\+Cover()}{UploadCover()}}]{\setlength{\rightskip}{0pt plus 5cm}Upload\+Cover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_group_aac6531556a8c140872610e8acc5a9eb1}{}\label{class_ossn_group_aac6531556a8c140872610e8acc5a9eb1}
+Upload group cover
+
+\begin{DoxyReturn}{Returns}
+boolean$\vert$null  public; 
+\end{DoxyReturn}
+
+
+Definition at line 388 of file Ossn\+Group.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/classes/\hyperlink{_ossn_group_8php}{Ossn\+Group.\+php}\end{DoxyCompactItemize}

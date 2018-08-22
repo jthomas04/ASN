@@ -1,0 +1,51 @@
+\hypertarget{annotation_2unlike_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Likes/actions/annotation/unlike.php File Reference}
+\label{annotation_2unlike_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Likes/actions/annotation/unlike.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Likes/actions/annotation/unlike.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{annotation_2unlike_8php_a227f36ff099a95468945a2fabc5c0782}{\$\+Ossn\+Likes} = new \hyperlink{class_ossn_likes}{Ossn\+Likes}
+\item 
+\hyperlink{annotation_2unlike_8php_af900958147bf7360167d1927035a1e9a}{\$anotation} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}annotation\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{class_ossn_likes}{Ossn\+Likes}-\/$>$Un\+Like(\$anotation, \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \textquotesingle{}annotation\textquotesingle{})) \hyperlink{annotation_2unlike_8php_accf6dc8978a602e292ced6a3501735b5}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{annotation/unlike.\+php@{annotation/unlike.\+php}!\$anotation@{\$anotation}}
+\index{\$anotation@{\$anotation}!annotation/unlike.\+php@{annotation/unlike.\+php}}
+\subsubsection[{\texorpdfstring{\$anotation}{$anotation}}]{\setlength{\rightskip}{0pt plus 5cm}\$anotation = {\bf input}(\textquotesingle{}annotation\textquotesingle{})}\hypertarget{annotation_2unlike_8php_af900958147bf7360167d1927035a1e9a}{}\label{annotation_2unlike_8php_af900958147bf7360167d1927035a1e9a}
+
+
+Definition at line 4 of file unlike.\+php.
+
+\index{annotation/unlike.\+php@{annotation/unlike.\+php}!\$\+Ossn\+Likes@{\$\+Ossn\+Likes}}
+\index{\$\+Ossn\+Likes@{\$\+Ossn\+Likes}!annotation/unlike.\+php@{annotation/unlike.\+php}}
+\subsubsection[{\texorpdfstring{\$\+Ossn\+Likes}{$OssnLikes}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Likes} = new {\bf Ossn\+Likes}}\hypertarget{annotation_2unlike_8php_a227f36ff099a95468945a2fabc5c0782}{}\label{annotation_2unlike_8php_a227f36ff099a95468945a2fabc5c0782}
+
+
+Definition at line 3 of file unlike.\+php.
+
+\index{annotation/unlike.\+php@{annotation/unlike.\+php}!else@{else}}
+\index{else@{else}!annotation/unlike.\+php@{annotation/unlike.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf Ossn\+Likes}-\/$>$Un\+Like(\$anotation, {\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \textquotesingle{}annotation\textquotesingle{})) else}\hypertarget{annotation_2unlike_8php_accf6dc8978a602e292ced6a3501735b5}{}\label{annotation_2unlike_8php_accf6dc8978a602e292ced6a3501735b5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \textcolor{keywordflow}{if} (!\hyperlink{ossn_8lib_8system_8php_ac764e738f5c840432bbe4771e4fa27a7}{ossn\_is\_xhr}()) \{
+        \hyperlink{ossn_8lib_8system_8php_a33cafdb93398ec540993c12c1daa0c48}{redirect}(\hyperlink{ossn_8lib_8system_8php_a6141904c50990cdd468f07046f29bb5c}{REF});
+    \} \textcolor{keywordflow}{else} \{
+        header(\textcolor{stringliteral}{'Content-Type: application/json'});
+        echo json\_encode(array(
+                \textcolor{stringliteral}{'done'} => 0,
+                \textcolor{stringliteral}{'button'} => \textcolor{stringliteral}{'Unlike'},
+            ));
+    \}
+\}
+
+\hyperlink{register_8php_a6733eb5f605d09eaede9845835d71c4e}{exit}
+\end{DoxyCode}
+
+
+Definition at line 15 of file unlike.\+php.
+

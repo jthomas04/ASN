@@ -1,0 +1,128 @@
+\hypertarget{ossn_8lib_8securitytoken_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+securitytoken.\+php File Reference}
+\label{ossn_8lib_8securitytoken_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+securitytoken.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+securitytoken.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8securitytoken_8php_a2a442e28fe67811329ef1319ebb035d0}{ossn\+\_\+generate\+\_\+action\+\_\+token} (\$timestamp)
+\item 
+\hyperlink{ossn_8lib_8securitytoken_8php_a561bc3c634cfba1272f0ecb5cb0ec9de}{ossn\+\_\+build\+\_\+token\+\_\+url} (\$parts)
+\item 
+\hyperlink{ossn_8lib_8securitytoken_8php_a2443079b50a74ef92704a4d9a89e294b}{ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url} (\$\hyperlink{ossn_8config_8site_8example_8php_ad643c3db2725019ef8130393d549e6db}{url})
+\item 
+\hyperlink{ossn_8lib_8securitytoken_8php_af2268fb80e90cb05db46778c84af6939}{ossn\+\_\+validate\+\_\+actions} ()
+\item 
+\hyperlink{ossn_8lib_8securitytoken_8php_acfb00d20c2fd5cf2ab7e7f1fb2f04f5f}{ossn\+\_\+action\+\_\+validate\+\_\+callback} (\$callback, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$params)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}!ossn\+\_\+action\+\_\+validate\+\_\+callback@{ossn\+\_\+action\+\_\+validate\+\_\+callback}}
+\index{ossn\+\_\+action\+\_\+validate\+\_\+callback@{ossn\+\_\+action\+\_\+validate\+\_\+callback}!ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+action\+\_\+validate\+\_\+callback(\$callback, \$type, \$params)}{ossn_action_validate_callback($callback, $type, $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+action\+\_\+validate\+\_\+callback (
+\begin{DoxyParamCaption}
+\item[{}]{\$callback, }
+\item[{}]{\$type, }
+\item[{}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8securitytoken_8php_acfb00d20c2fd5cf2ab7e7f1fb2f04f5f}{}\label{ossn_8lib_8securitytoken_8php_acfb00d20c2fd5cf2ab7e7f1fb2f04f5f}
+Validate an action token on requested action.
+
+Calls to actions will automatically validate tokens. If token is invalid the action stops and user will be redirected with warning of invalid token.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$callback} & Name of callback \\
+\hline
+string & {\em \$type} & Type of callback \\
+\hline
+array & {\em \$params} & private \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 91 of file ossn.\+lib.\+securitytoken.\+php.
+
+\index{ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}!ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url@{ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url}}
+\index{ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url@{ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url}!ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url(\$url)}{ossn_add_tokens_to_url($url)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+add\+\_\+tokens\+\_\+to\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$url}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8securitytoken_8php_a2443079b50a74ef92704a4d9a89e294b}{}\label{ossn_8lib_8securitytoken_8php_a2443079b50a74ef92704a4d9a89e294b}
+Add action tokens to url
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & Full complete url\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+This file contain code from other project
+
+See licenses/elgg/\+L\+I\+C\+E\+N\+S\+E.\+txt 
+
+Definition at line 45 of file ossn.\+lib.\+securitytoken.\+php.
+
+\index{ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}!ossn\+\_\+build\+\_\+token\+\_\+url@{ossn\+\_\+build\+\_\+token\+\_\+url}}
+\index{ossn\+\_\+build\+\_\+token\+\_\+url@{ossn\+\_\+build\+\_\+token\+\_\+url}!ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+build\+\_\+token\+\_\+url(\$parts)}{ossn_build_token_url($parts)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+build\+\_\+token\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$parts}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8securitytoken_8php_a561bc3c634cfba1272f0ecb5cb0ec9de}{}\label{ossn_8lib_8securitytoken_8php_a561bc3c634cfba1272f0ecb5cb0ec9de}
+Build url from parts
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parts} & Url parts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file ossn.\+lib.\+securitytoken.\+php.
+
+\index{ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}!ossn\+\_\+generate\+\_\+action\+\_\+token@{ossn\+\_\+generate\+\_\+action\+\_\+token}}
+\index{ossn\+\_\+generate\+\_\+action\+\_\+token@{ossn\+\_\+generate\+\_\+action\+\_\+token}!ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+generate\+\_\+action\+\_\+token(\$timestamp)}{ossn_generate_action_token($timestamp)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+generate\+\_\+action\+\_\+token (
+\begin{DoxyParamCaption}
+\item[{}]{\$timestamp}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8securitytoken_8php_a2a442e28fe67811329ef1319ebb035d0}{}\label{ossn_8lib_8securitytoken_8php_a2a442e28fe67811329ef1319ebb035d0}
+Generate token using timestamp
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$timestamp} & current timestamp \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file ossn.\+lib.\+securitytoken.\+php.
+
+\index{ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}!ossn\+\_\+validate\+\_\+actions@{ossn\+\_\+validate\+\_\+actions}}
+\index{ossn\+\_\+validate\+\_\+actions@{ossn\+\_\+validate\+\_\+actions}!ossn.\+lib.\+securitytoken.\+php@{ossn.\+lib.\+securitytoken.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+validate\+\_\+actions()}{ossn_validate_actions()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+validate\+\_\+actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8securitytoken_8php_af2268fb80e90cb05db46778c84af6939}{}\label{ossn_8lib_8securitytoken_8php_af2268fb80e90cb05db46778c84af6939}
+Validate given tokens
+
+\begin{DoxyReturn}{Returns}
+(bool) 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file ossn.\+lib.\+securitytoken.\+php.
+

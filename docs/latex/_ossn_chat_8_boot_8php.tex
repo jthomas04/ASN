@@ -1,0 +1,82 @@
+\hypertarget{_ossn_chat_8_boot_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Chat/plugins/default/js/\+Ossn\+Chat.Boot.\+php File Reference}
+\label{_ossn_chat_8_boot_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Chat/plugins/default/js/\+Ossn\+Chat.\+Boot.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Chat/plugins/default/js/\+Ossn\+Chat.\+Boot.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_chat_8_boot_8php_a4bafc097f2212902dbd94a8ae24af73a}{\$new\+\_\+all}
+\item 
+\hyperlink{_ossn_chat_8_boot_8php_a2ff54b9232fc4b350ca30dedb317056b}{\$allfriends} = \hyperlink{class_ossn_chat_a2cf575b75a8fd733d3a1dc0548ece5d6}{Ossn\+Chat\+::\+All\+New}()
+\item 
+\hyperlink{_ossn_chat_8_boot_8php_a6681a273192c19abe6db05e410162e13}{\$active\+\_\+sessions} = \hyperlink{class_ossn_chat_ab7560516e7bbdae5aa7529f3d9fa870a}{Ossn\+Chat\+::\+Get\+Active\+Sessions}()
+\item 
+\hyperlink{_ossn_chat_8_boot_8php_a9612ca0b4b59a97699c0618974905194}{\$construct\+\_\+active} = N\+U\+LL
+\item 
+\hyperlink{_ossn_chat_8_boot_8php_a94aa1be9d7b9a51dd2d68f4829b73f92}{\$new\+\_\+messages} = N\+U\+LL
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$active\+\_\+sessions) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$new\+\_\+messages) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$messages\+\_\+items) \hyperlink{_ossn_chat_8_boot_8php_aeb1d7d0f6fa007c1c1221d21eb7e5d1b}{\$api}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$active\+\_\+sessions@{\$active\+\_\+sessions}}
+\index{\$active\+\_\+sessions@{\$active\+\_\+sessions}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$active\+\_\+sessions}{$active_sessions}}]{\setlength{\rightskip}{0pt plus 5cm}\$active\+\_\+sessions = {\bf Ossn\+Chat\+::\+Get\+Active\+Sessions}()}\hypertarget{_ossn_chat_8_boot_8php_a6681a273192c19abe6db05e410162e13}{}\label{_ossn_chat_8_boot_8php_a6681a273192c19abe6db05e410162e13}
+
+
+Definition at line 18 of file Ossn\+Chat.\+Boot.\+php.
+
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$allfriends@{\$allfriends}}
+\index{\$allfriends@{\$allfriends}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$allfriends}{$allfriends}}]{\setlength{\rightskip}{0pt plus 5cm}\$allfriends = {\bf Ossn\+Chat\+::\+All\+New}()}\hypertarget{_ossn_chat_8_boot_8php_a2ff54b9232fc4b350ca30dedb317056b}{}\label{_ossn_chat_8_boot_8php_a2ff54b9232fc4b350ca30dedb317056b}
+
+
+Definition at line 16 of file Ossn\+Chat.\+Boot.\+php.
+
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$api@{\$api}}
+\index{\$api@{\$api}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$api}{$api}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$active\+\_\+sessions) {\bf if} (\$new\+\_\+messages) {\bf if} (\$messages\+\_\+items) \$api}\hypertarget{_ossn_chat_8_boot_8php_aeb1d7d0f6fa007c1c1221d21eb7e5d1b}{}\label{_ossn_chat_8_boot_8php_aeb1d7d0f6fa007c1c1221d21eb7e5d1b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= json\_encode(array(
+        \textcolor{stringliteral}{'active\_friends'} => \hyperlink{_ossn_chat_8_boot_8php_a9612ca0b4b59a97699c0618974905194}{$construct\_active},
+        \textcolor{stringliteral}{'allfriends'} => \hyperlink{_ossn_chat_8_boot_8php_a2ff54b9232fc4b350ca30dedb317056b}{$allfriends},
+        \textcolor{stringliteral}{'friends'} => array(
+                \textcolor{stringliteral}{'online'} => \hyperlink{ossn_8lib_8chat_8php_adfe2d47e3e6a6825beb8e3b9c8d4c6dd}{ossn\_chat}()->countOnlineFriends(\textcolor{stringliteral}{''}, 10),
+                \textcolor{stringliteral}{'data'} => \hyperlink{ossn_8lib_8plugins_8php_a09131ff3382e758ec6dba7bb2ea3ae32}{ossn\_plugin\_view}(\textcolor{stringliteral}{'chat/friendslist'})
+        ),
+        \textcolor{stringliteral}{'newmessages'} => $messages\_combined,
+        \textcolor{stringliteral}{'all\_new'} => \hyperlink{_ossn_chat_8_boot_8php_a4bafc097f2212902dbd94a8ae24af73a}{$new\_all}
+        
+))
+\end{DoxyCode}
+
+
+Definition at line 79 of file Ossn\+Chat.\+Boot.\+php.
+
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$construct\+\_\+active@{\$construct\+\_\+active}}
+\index{\$construct\+\_\+active@{\$construct\+\_\+active}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$construct\+\_\+active}{$construct_active}}]{\setlength{\rightskip}{0pt plus 5cm}\$construct\+\_\+active = N\+U\+LL}\hypertarget{_ossn_chat_8_boot_8php_a9612ca0b4b59a97699c0618974905194}{}\label{_ossn_chat_8_boot_8php_a9612ca0b4b59a97699c0618974905194}
+
+
+Definition at line 20 of file Ossn\+Chat.\+Boot.\+php.
+
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$new\+\_\+all@{\$new\+\_\+all}}
+\index{\$new\+\_\+all@{\$new\+\_\+all}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$new\+\_\+all}{$new_all}}]{\setlength{\rightskip}{0pt plus 5cm}\$new\+\_\+all}\hypertarget{_ossn_chat_8_boot_8php_a4bafc097f2212902dbd94a8ae24af73a}{}\label{_ossn_chat_8_boot_8php_a4bafc097f2212902dbd94a8ae24af73a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{ossn_8lib_8chat_8php_adfe2d47e3e6a6825beb8e3b9c8d4c6dd}{ossn\_chat}()->getNewAll(array(
+        \textcolor{stringliteral}{'message\_from'}
+))
+\end{DoxyCode}
+
+
+Definition at line 13 of file Ossn\+Chat.\+Boot.\+php.
+
+\index{Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}!\$new\+\_\+messages@{\$new\+\_\+messages}}
+\index{\$new\+\_\+messages@{\$new\+\_\+messages}!Ossn\+Chat.\+Boot.\+php@{Ossn\+Chat.\+Boot.\+php}}
+\subsubsection[{\texorpdfstring{\$new\+\_\+messages}{$new_messages}}]{\setlength{\rightskip}{0pt plus 5cm}\$new\+\_\+messages = N\+U\+LL}\hypertarget{_ossn_chat_8_boot_8php_a94aa1be9d7b9a51dd2d68f4829b73f92}{}\label{_ossn_chat_8_boot_8php_a94aa1be9d7b9a51dd2d68f4829b73f92}
+
+
+Definition at line 21 of file Ossn\+Chat.\+Boot.\+php.
+

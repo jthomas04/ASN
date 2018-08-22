@@ -1,0 +1,53 @@
+\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/components/list/item.php File Reference}
+\label{system_2plugins_2default_2admin_2components_2list_2item_8php}\index{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/components/list/item.\+php@{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/admin/components/list/item.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{system_2plugins_2default_2admin_2components_2list_2item_8php_a269e9c1471f261d84ee1a4f55bd70853}{\$\+Ossn\+Coms} = new \hyperlink{class_ossn_components}{Ossn\+Components}
+\item 
+\hyperlink{system_2plugins_2default_2admin_2components_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}{\$translit} = \hyperlink{class_ossn_translit_a5913009dee49e11a241b75c9dad52dd2}{Ossn\+Translit\+::urlize}(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]}-\/$>$id)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(empty(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]}-\/$>$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})) \hyperlink{system_2plugins_2default_2admin_2components_2list_2item_8php_a01270c6ccb33bf873a0aca0e6878fe44}{\$requirements} = \$Ossn\+Coms-\/$>$check\+Requirments(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]})
+\item 
+if(!\$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$is\+Active(\$params\mbox{[}\textquotesingle{}\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}\textquotesingle{}\mbox{]})) \hyperlink{cache__settings_8php_aac633c7b6b07fcf67f4504fb5c57a856}{elseif}(!in\+\_\+array(\$params\mbox{[}\textquotesingle{}\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}\textquotesingle{}\mbox{]}, \$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$required\+Components())) if(in\+\_\+array(\$params\mbox{[}\textquotesingle{}\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}\textquotesingle{}\mbox{]}, \hyperlink{ossn_8lib_8admin_8php_a87b84149d60316611a878023adecf935}{ossn\+\_\+registered\+\_\+com\+\_\+panel}())) \hyperlink{system_2plugins_2default_2admin_2components_2list_2item_8php_aca419c38bc7ef1362e2f43803b38217c}{if} (!in\+\_\+array(\$params\mbox{[}\textquotesingle{}\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}\textquotesingle{}\mbox{]}, \$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$required\+Components()))
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!\$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$is\+Active(\$params\mbox{[}\textquotesingle{}\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}\textquotesingle{}\mbox{]})) \hyperlink{system_2plugins_2default_2admin_2components_2list_2item_8php_ac434214b6967460ebc7e0b81f4390ce0}{else} \{
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}!\$\+Ossn\+Coms@{\$\+Ossn\+Coms}}
+\index{\$\+Ossn\+Coms@{\$\+Ossn\+Coms}!system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$\+Ossn\+Coms}{$OssnComs}}]{\setlength{\rightskip}{0pt plus 5cm}\$Ossn\+Coms = new {\bf Ossn\+Components}}\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php_a269e9c1471f261d84ee1a4f55bd70853}{}\label{system_2plugins_2default_2admin_2components_2list_2item_8php_a269e9c1471f261d84ee1a4f55bd70853}
+
+
+Definition at line 3 of file item.\+php.
+
+\index{system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}!\$requirements@{\$requirements}}
+\index{\$requirements@{\$requirements}!system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$requirements}{$requirements}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (empty(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]}-\/$>${\bf name})) \$requirements = \$Ossn\+Coms-\/$>$check\+Requirments(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]})}\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php_a01270c6ccb33bf873a0aca0e6878fe44}{}\label{system_2plugins_2default_2admin_2components_2list_2item_8php_a01270c6ccb33bf873a0aca0e6878fe44}
+
+
+Definition at line 8 of file item.\+php.
+
+\index{system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}!\$translit@{\$translit}}
+\index{\$translit@{\$translit}!system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}}
+\subsubsection[{\texorpdfstring{\$translit}{$translit}}]{\setlength{\rightskip}{0pt plus 5cm}\$translit = {\bf Ossn\+Translit\+::urlize}(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]}-\/$>$id)}\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}{}\label{system_2plugins_2default_2admin_2components_2list_2item_8php_afa48855eba22ae3bb558f75039d92eb6}
+
+
+Definition at line 4 of file item.\+php.
+
+\index{system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}!else@{else}}
+\index{else@{else}!system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!\$Ossn\+Coms-\/$>$is\+Old(\$params\mbox{[}\textquotesingle{}component\textquotesingle{}\mbox{]})) else \{}\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php_ac434214b6967460ebc7e0b81f4390ce0}{}\label{system_2plugins_2default_2admin_2components_2list_2item_8php_ac434214b6967460ebc7e0b81f4390ce0}
+
+
+Definition at line 37 of file item.\+php.
+
+\index{system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}!if@{if}}
+\index{if@{if}!system/plugins/default/admin/components/list/item.\+php@{system/plugins/default/admin/components/list/item.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if (!\$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$is\+Active(\$params\mbox{[}\textquotesingle{}{\bf name}\textquotesingle{}\mbox{]})) {\bf elseif} (!in\+\_\+array(\$params\mbox{[}\textquotesingle{}{\bf name}\textquotesingle{}\mbox{]}, \$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$required\+Components())) if (in\+\_\+array(\$params\mbox{[}\textquotesingle{}{\bf name}\textquotesingle{}\mbox{]}, {\bf ossn\+\_\+registered\+\_\+com\+\_\+panel}())) if(!in\+\_\+array(\$params\mbox{[}\textquotesingle{}{\bf name}\textquotesingle{}\mbox{]}, \$params\mbox{[}\textquotesingle{}Ossn\+Com\textquotesingle{}\mbox{]}-\/$>$required\+Components()))}\hypertarget{system_2plugins_2default_2admin_2components_2list_2item_8php_aca419c38bc7ef1362e2f43803b38217c}{}\label{system_2plugins_2default_2admin_2components_2list_2item_8php_aca419c38bc7ef1362e2f43803b38217c}
+
+
+Definition at line 22 of file item.\+php.
+

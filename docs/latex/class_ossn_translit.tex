@@ -1,0 +1,105 @@
+\hypertarget{class_ossn_translit}{}\section{Ossn\+Translit Class Reference}
+\label{class_ossn_translit}\index{Ossn\+Translit@{Ossn\+Translit}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_translit_a5913009dee49e11a241b75c9dad52dd2}{urlize} (\$string, \$separator= \textquotesingle{}-\/\textquotesingle{})
+\item 
+static \hyperlink{class_ossn_translit_a79ea088878aab9a4349429a98a16498f}{transliterate\+Ascii} (\$utf8)
+\item 
+static \hyperlink{class_ossn_translit_a733ce24ef24941fcfeda07510af32a5e}{get\+Ascii\+Translit\+Map} ()
+\item 
+static \hyperlink{class_ossn_translit_ad3407bf2c1b2c1d37b69a29999bb8e12}{has\+Normalizer\+Support} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 34 of file Ossn\+Translit.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Translit@{Ossn\+Translit}!get\+Ascii\+Translit\+Map@{get\+Ascii\+Translit\+Map}}
+\index{get\+Ascii\+Translit\+Map@{get\+Ascii\+Translit\+Map}!Ossn\+Translit@{Ossn\+Translit}}
+\subsubsection[{\texorpdfstring{get\+Ascii\+Translit\+Map()}{getAsciiTranslitMap()}}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Ascii\+Translit\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_translit_a733ce24ef24941fcfeda07510af32a5e}{}\label{class_ossn_translit_a733ce24ef24941fcfeda07510af32a5e}
+Get array of U\+T\+F-\/8 (N\+FC) character replacements.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Ossn\+Translit.\+php.
+
+\index{Ossn\+Translit@{Ossn\+Translit}!has\+Normalizer\+Support@{has\+Normalizer\+Support}}
+\index{has\+Normalizer\+Support@{has\+Normalizer\+Support}!Ossn\+Translit@{Ossn\+Translit}}
+\subsubsection[{\texorpdfstring{has\+Normalizer\+Support()}{hasNormalizerSupport()}}]{\setlength{\rightskip}{0pt plus 5cm}static has\+Normalizer\+Support (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_translit_ad3407bf2c1b2c1d37b69a29999bb8e12}{}\label{class_ossn_translit_ad3407bf2c1b2c1d37b69a29999bb8e12}
+Tests that \char`\"{}normalizer\+\_\+normalize\char`\"{} exists and works
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 261 of file Ossn\+Translit.\+php.
+
+\index{Ossn\+Translit@{Ossn\+Translit}!transliterate\+Ascii@{transliterate\+Ascii}}
+\index{transliterate\+Ascii@{transliterate\+Ascii}!Ossn\+Translit@{Ossn\+Translit}}
+\subsubsection[{\texorpdfstring{transliterate\+Ascii(\$utf8)}{transliterateAscii($utf8)}}]{\setlength{\rightskip}{0pt plus 5cm}static transliterate\+Ascii (
+\begin{DoxyParamCaption}
+\item[{}]{\$utf8}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_translit_a79ea088878aab9a4349429a98a16498f}{}\label{class_ossn_translit_a79ea088878aab9a4349429a98a16498f}
+Transliterate Western multibyte chars to A\+S\+C\+II
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$utf8} & a U\+T\+F-\/8 string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Ossn\+Translit.\+php.
+
+\index{Ossn\+Translit@{Ossn\+Translit}!urlize@{urlize}}
+\index{urlize@{urlize}!Ossn\+Translit@{Ossn\+Translit}}
+\subsubsection[{\texorpdfstring{urlize(\$string, \$separator= \textquotesingle{}-\/\textquotesingle{})}{urlize($string, $separator= '-')}}]{\setlength{\rightskip}{0pt plus 5cm}static urlize (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$separator = {\ttfamily \textquotesingle{}-\/\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_translit_a5913009dee49e11a241b75c9dad52dd2}{}\label{class_ossn_translit_a5913009dee49e11a241b75c9dad52dd2}
+Create a version of a string for embedding in a U\+RL
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & A U\+T\+F-\/8 string \\
+\hline
+string & {\em \$separator} & The character to separate words with \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Ossn\+Translit.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_translit_8php}{Ossn\+Translit.\+php}\end{DoxyCompactItemize}

@@ -1,0 +1,3022 @@
+\hypertarget{class_p_h_p_mailer}{}\section{P\+H\+P\+Mailer Class Reference}
+\label{class_p_h_p_mailer}\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+
+
+Inheritance diagram for P\+H\+P\+Mailer\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_h_p_mailer_a7dd626cfe1c29407eb37a713c631b5c7}{\+\_\+\+\_\+construct} (\$exceptions=null)
+\item 
+\hyperlink{class_p_h_p_mailer_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{class_p_h_p_mailer_af811636f1958d3a406ebf82e455c1f7a}{is\+H\+T\+ML} (\$is\+Html=true)
+\item 
+\hyperlink{class_p_h_p_mailer_ab7e6e8a95653c3562feff15f3f5795ff}{is\+S\+M\+TP} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a279ce48bb3b7186d2efe04487708e082}{is\+Mail} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a5a743c9fc5e1e0cae1b267d498bc16a9}{is\+Sendmail} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a2b425dbd8364d95937c932d425c72f19}{is\+Qmail} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ae2087944add1c9bf5647b9e9d49689a6}{add\+Address} (\$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_acc911962347c94dd63dd595c397f4cb3}{add\+CC} (\$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a089e714287f7577eb8d0a7632e896900}{add\+B\+CC} (\$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_aba5661a6b69f68826b39f4dc197e7a5d}{add\+Reply\+To} (\$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a313dd1ceda0f815e243fc4298ce725df}{parse\+Addresses} (\$addrstr, \$useimap=true)
+\item 
+\hyperlink{class_p_h_p_mailer_a28a927fc06372ccebb2a58213ff83b17}{set\+From} (\$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{}, \$auto=true)
+\item 
+\hyperlink{class_p_h_p_mailer_ad7aa172bae0dacb16fa63b832cb82073}{get\+Last\+Message\+ID} ()
+\item 
+\hyperlink{class_p_h_p_mailer_aeb34ed263912fba175ccb4dabc06f9c9}{idn\+Supported} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a53f031a9823e893efcae14422999619b}{punyencode\+Address} (\$address)
+\item 
+\hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a528cfdd34d79b053a812a735632593ea}{pre\+Send} ()
+\item 
+\hyperlink{class_p_h_p_mailer_aa2e32c2514a2f342c87509f9d9af34cb}{post\+Send} ()
+\item 
+\hyperlink{class_p_h_p_mailer_af7e9144e6dfd367a6a05dc8b794a4481}{get\+S\+M\+T\+P\+Instance} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a58e7e9d1a3e59fc691476b400a7b8fe0}{smtp\+Connect} (\$options=null)
+\item 
+\hyperlink{class_p_h_p_mailer_a3ec2fab4c4b1ab20a992704c35be6364}{smtp\+Close} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a9da63815ca021badd4fbffa1f568976a}{set\+Language} (\$langcode= \textquotesingle{}en\textquotesingle{}, \$lang\+\_\+path= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_ac9287affc67c9523787013f3a22731cc}{get\+Translations} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ab43217a9ec1bb4fe5a88d2f409fa7ae2}{addr\+Append} (\$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$addr)
+\item 
+\hyperlink{class_p_h_p_mailer_a9306048710347e893a743acd0f39bb45}{addr\+Format} (\$addr)
+\item 
+\hyperlink{class_p_h_p_mailer_aabf081d0812225a5cf80c27ffa74c76c}{wrap\+Text} (\$message, \$length, \$qp\+\_\+mode=false)
+\item 
+\hyperlink{class_p_h_p_mailer_a155c6b34e020054e9c19f0a94bacee38}{utf8\+Char\+Boundary} (\$encoded\+Text, \$max\+Length)
+\item 
+\hyperlink{class_p_h_p_mailer_ab3b2787c3d322ed943f863c6bf2e4bc8}{set\+Word\+Wrap} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a0e6615e9843f58e99362166dd25a185b}{create\+Header} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a4ced769572258a705d3d66f5c2243c47}{get\+Mail\+M\+I\+ME} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a705aa0508caf1e7c3e6ea4443fe1f1c6}{get\+Sent\+M\+I\+M\+E\+Message} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ad8d982cb84383c36585dab8ac1a01414}{create\+Body} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a76caf3b881a28504c1bebedd520004bd}{header\+Line} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value})
+\item 
+\hyperlink{class_p_h_p_mailer_a77108e49f31bbd9d96ec281de118b815}{text\+Line} (\$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value})
+\item 
+\hyperlink{class_p_h_p_mailer_a167cba8879ea72eae2583738abd0f68d}{add\+Attachment} (\$path, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}attachment\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_aa91862c4e237ee5b53083f41633babb6}{get\+Attachments} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a5c4cad1d383b64464ad2a2bc336db07b}{encode\+String} (\$str, \$encoding= \textquotesingle{}base64\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_aea5a3301763364fe9b62c36d06c08e5a}{encode\+Header} (\$str, \$\hyperlink{jquery-ui_8min_8js_a46cd3bf7f3b19525671d8317c10bdc49}{position}= \textquotesingle{}text\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a6bb4300a48c25d9fdec7fddf4f8e2549}{has\+Multi\+Bytes} (\$str)
+\item 
+\hyperlink{class_p_h_p_mailer_a00a5a1581e01bf5ae1a012b55a7f2b12}{has8bit\+Chars} (\$text)
+\item 
+\hyperlink{class_p_h_p_mailer_aa3aba7f0151d96a9a5d56d8ee5be8aab}{base64\+Encode\+Wrap\+MB} (\$str, \$linebreak=null)
+\item 
+\hyperlink{class_p_h_p_mailer_a8ee2de12dc615c6f5e75642265885ada}{encode\+QP} (\$string, \$line\+\_\+max=76)
+\item 
+\hyperlink{class_p_h_p_mailer_a4e86849b8958dd59a8f5e67df9bb58c3}{encode\+Q\+Pphp} (\$string, \$line\+\_\+max=76, \$space\+\_\+conv=false)
+\item 
+\hyperlink{class_p_h_p_mailer_adbbd9f5ed4492196db3f804e7db4d764}{encodeQ} (\$str, \$\hyperlink{jquery-ui_8min_8js_a46cd3bf7f3b19525671d8317c10bdc49}{position}= \textquotesingle{}text\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a1ac68ff445b3e20a0e61687a6f1a92ae}{add\+String\+Attachment} (\$string, \$filename, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}attachment\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a6f0beefe8ba70873b02374024d546042}{add\+Embedded\+Image} (\$path, \$cid, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}inline\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a7b18e8e4f8c831c4b315d31fe83a04dc}{add\+String\+Embedded\+Image} (\$string, \$cid, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}inline\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_aca2b58a55c009e10458d59b494d6189d}{inline\+Image\+Exists} ()
+\item 
+\hyperlink{class_p_h_p_mailer_aa095b5a3a9f25a8c8d1380b246d9e894}{attachment\+Exists} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ab4ce4785ba565c296f04d1e309c4a138}{alternative\+Exists} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a419fe05f1e410139292aceb24c25f26b}{clear\+Queued\+Addresses} (\$kind)
+\item 
+\hyperlink{class_p_h_p_mailer_a5abf0feadd6b4ba311bd2fd71b4aaab1}{clear\+Addresses} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a7dfe4733feb812ac7a777bdebed70e45}{clear\+C\+Cs} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a1edca04216fc6a06c059a572a0875e90}{clear\+B\+C\+Cs} ()
+\item 
+\hyperlink{class_p_h_p_mailer_aeaf9d6ef74c9c823eb5f1fcbeeb396de}{clear\+Reply\+Tos} ()
+\item 
+\hyperlink{class_p_h_p_mailer_af106137a9abfdb4b9e44fca86f7a727e}{clear\+All\+Recipients} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a2b4d4199414b58bc4db009cb17ad8e3b}{clear\+Attachments} ()
+\item 
+\hyperlink{class_p_h_p_mailer_adcdcf2709938f5ab0c6074172d73d5b7}{clear\+Custom\+Headers} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a763bcf1f1b83418647c32053ed2988db}{is\+Error} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a1b9ac8f8f734ebda9ca05c3313a42852}{fix\+E\+OL} (\$str)
+\item 
+\hyperlink{class_p_h_p_mailer_a58c011aa0d493a352c8d8d585a5e85d2}{add\+Custom\+Header} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}=null)
+\item 
+\hyperlink{class_p_h_p_mailer_a6dece3e0c6c39c2f1a80d8f62196f30a}{get\+Custom\+Headers} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a6c569c4def38cb71b40f0634f17e8230}{msg\+H\+T\+ML} (\$message, \$basedir= \textquotesingle{}\textquotesingle{}, \$advanced=false)
+\item 
+\hyperlink{class_p_h_p_mailer_adcc957bbfc73453cc7f04e412603989d}{html2text} (\$html, \$advanced=false)
+\item 
+\hyperlink{class_p_h_p_mailer_a75ddddcb4fd8f092e42a3cf96c006066}{set} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a808495366277050ff38fa5bcfab8f49e}{secure\+Header} (\$str)
+\item 
+\hyperlink{class_p_h_p_mailer_abdc7683507bef51fdb7b4c1e4a7c70d2}{sign} (\$cert\+\_\+filename, \$key\+\_\+filename, \$key\+\_\+pass, \$extracerts\+\_\+filename= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_acec5422fbacb7c17671e613d5a3c6c47}{D\+K\+I\+M\+\_\+\+QP} (\$txt)
+\item 
+\hyperlink{class_p_h_p_mailer_aadcda1cd84010ce6e24880ef263581d7}{D\+K\+I\+M\+\_\+\+Sign} (\$sign\+Header)
+\item 
+\hyperlink{class_p_h_p_mailer_a9bcf728e9960a6512c5145a413cf86f5}{D\+K\+I\+M\+\_\+\+HeaderC} (\$sign\+Header)
+\item 
+\hyperlink{class_p_h_p_mailer_a59e764f699f678a6fa52ee089e941b1b}{D\+K\+I\+M\+\_\+\+BodyC} (\$body)
+\item 
+\hyperlink{class_p_h_p_mailer_a3d464b41f5f853bb29c83d8e74fe1470}{D\+K\+I\+M\+\_\+\+Add} (\$headers\+\_\+line, \$subject, \$body)
+\item 
+\hyperlink{class_p_h_p_mailer_a60d18c0fa7be86271d905e9d19cfc024}{get\+To\+Addresses} ()
+\item 
+\hyperlink{class_p_h_p_mailer_afb6cde741994ed21899d9988e4a27227}{get\+Cc\+Addresses} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ae654887b031c19609bcff837ec51ce77}{get\+Bcc\+Addresses} ()
+\item 
+\hyperlink{class_p_h_p_mailer_aa3c2c989e01aaa5224c6913219f5053f}{get\+Reply\+To\+Addresses} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a520c29b999a7ab6b1de74f2b25d0cf0b}{get\+All\+Recipient\+Addresses} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_p_h_p_mailer_ab1751a18a24757fee7043fa3b055eb03}{validate\+Address} (\$address, \$patternselect=null)
+\item 
+static \hyperlink{class_p_h_p_mailer_a8977a3091a45017bb8454521deb71e83}{rfc\+Date} ()
+\item 
+static \hyperlink{class_p_h_p_mailer_add7b3e7830b61950b7a201f2d432289f}{\+\_\+mime\+\_\+types} (\$ext= \textquotesingle{}\textquotesingle{})
+\item 
+static \hyperlink{class_p_h_p_mailer_ac1a4d9403511e262d4723394052bf015}{filename\+To\+Type} (\$filename)
+\item 
+static \hyperlink{class_p_h_p_mailer_abefcc03813c15369c080f6361da33b90}{mb\+\_\+pathinfo} (\$path, \$options=null)
+\item 
+static \hyperlink{class_p_h_p_mailer_a0098c763eef87ec682208020c880ce71}{normalize\+Breaks} (\$text, \$breaktype=\char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{})
+\item 
+static \hyperlink{class_p_h_p_mailer_adca6f1dc6f1ec34df1a9362cf1529030}{has\+Line\+Longer\+Than\+Max} (\$str)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_h_p_mailer_a8a43e1c8b245951155d04b279276af95}{\$\+Version} = \textquotesingle{}5.\+2.\+21\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a7c6546640ba3eafd143d8f0e6805de27}{\$\+Priority} = null
+\item 
+\hyperlink{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}{\$\+Char\+Set} = \textquotesingle{}iso-\/8859-\/1\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a35c42684e94e56e60bfc1a8ec2cbcd08}{\$\+Content\+Type} = \textquotesingle{}text/plain\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a7c44f20127f1436e9315b5fcfee472f3}{\$\+Encoding} = \textquotesingle{}8bit\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a4aa7f2e8bf834210cc4522666115e03e}{\$\+Error\+Info} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a9f9e5bc6226feedebe3135b210eb5ef8}{\$\+From} = \textquotesingle{}\hyperlink{_chart_8_radar_8js_a33796d6d1aed1fe6b4c866bfd3867459}{root}@localhost\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a0338c56bfb2ac4229c555a97222f47c2}{\$\+From\+Name} = \textquotesingle{}Root User\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a0fd52b1481fe1434c5810ca3cb098985}{\$\+Sender} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a51413bc6dfa3e9122897131c4b369a19}{\$\+Return\+Path} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a2b58ba25576b17f0a874336a68a44a62}{\$\+Subject} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_afcecd01958faa0a6eec878226ffe09f1}{\$\+Body} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a5a3adc4eeed7620a1290e2364cee9084}{\$\+Alt\+Body} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ace4b3f5855e39dec9993867ed920e30b}{\$\+Ical} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a8e8553ff133401f5324229a988995a34}{\$\+Word\+Wrap} = 0
+\item 
+\hyperlink{class_p_h_p_mailer_a7792543896c9a827d4bfd3e29d2e0b01}{\$\+Mailer} = \textquotesingle{}mail\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_aea0de75e10af3f581a0a412f41b9db66}{\$\+Sendmail} = \textquotesingle{}/usr/sbin/sendmail\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a49c6457299f19cc2cb83ba1e8f98f578}{\$\+Use\+Sendmail\+Options} = true
+\item 
+\hyperlink{class_p_h_p_mailer_a80c30e6b011ed425f82610685c961df7}{\$\+Plugin\+Dir} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a7bd5233c41d3f1cd2b653433fa88b8ed}{\$\+Confirm\+Reading\+To} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a48a6eac112dcc8617b4001d985b656c8}{\$\+Hostname} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_adf09200a8d2c3460c6b16a7ae554a69e}{\$\+Message\+ID} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a4812372af8756f11c88ef5f7eac3b7ee}{\$\+Message\+Date} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ad019d6ecb4db4cd981fb7aeae7fbfc2c}{\$\+Host} = \textquotesingle{}localhost\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a3e9844389378050f7a95b67b329edf90}{\$\+Port} = 25
+\item 
+\hyperlink{class_p_h_p_mailer_a361dc28dd21d5c555a1645bcdf8bab66}{\$\+Helo} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a70335250830975e0f1f77bb73b90ca54}{\$\+S\+M\+T\+P\+Secure} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a1765f2c1205d3c2c0b7000ec66e2805f}{\$\+S\+M\+T\+P\+Auto\+T\+LS} = true
+\item 
+\hyperlink{class_p_h_p_mailer_aba02a4c8ff018b73b192831a761fe9ca}{\$\+S\+M\+T\+P\+Auth} = false
+\item 
+\hyperlink{class_p_h_p_mailer_a5d73e4c2277f6435448b321e98794bf5}{\$\+S\+M\+T\+P\+Options} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a0e2ea0d42b9b800eb5bf8660587f5f7f}{\$\+Username} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ae3ac8512c0fd8924c7112671ead08cf7}{\$\+Password} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_afd91ef8cbbb4321e6d963b8189dc1f84}{\$\+Auth\+Type} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a992213fc362ebe731af595e6f4c7e49b}{\$\+Realm} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a4523ff0871ac0a83f9e05c700d40b2a2}{\$\+Workstation} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_acaf3ec06f89f4024c5dbeb1a9ecf321c}{\$\+Timeout} = 300
+\item 
+\hyperlink{class_p_h_p_mailer_a5f952b7bed25b8423aec0a5b308d4bb1}{\$\+S\+M\+T\+P\+Debug} = 0
+\item 
+\hyperlink{class_p_h_p_mailer_a532f3412f3d97a106a36ff2b49409e42}{\$\+Debugoutput} = \textquotesingle{}echo\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a7ff340050ca2061f7dc63b92e3f18586}{\$\+S\+M\+T\+P\+Keep\+Alive} = false
+\item 
+\hyperlink{class_p_h_p_mailer_a7c792e2e3e3cb98d869c9a68b73bc3a0}{\$\+Single\+To} = false
+\item 
+\hyperlink{class_p_h_p_mailer_a1a4e8b669019fd06e46df4ad0ef47ec4}{\$\+Single\+To\+Array} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_abf2ec34ae2e6abd0f598ea202a8fa807}{\$do\+\_\+verp} = false
+\item 
+\hyperlink{class_p_h_p_mailer_a10c978cd1c0d14c12013ee1d7cd70bcb}{\$\+Allow\+Empty} = false
+\item 
+\hyperlink{class_p_h_p_mailer_a5ed269759d4ddf4fdf658930d93f69f7}{\$\+LE} = \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+\hyperlink{class_p_h_p_mailer_ac21e5612fa66eeeee43467525e6c393d}{\$\+D\+K\+I\+M\+\_\+selector} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a677f605bf9bb29be802c5d17d8a0a22c}{\$\+D\+K\+I\+M\+\_\+identity} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a4f94813eecc8b5ebf32284d9a966f594}{\$\+D\+K\+I\+M\+\_\+passphrase} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a1e49cdb6cd38fc496bd5a93092cac0e7}{\$\+D\+K\+I\+M\+\_\+domain} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ac465c52f2f7ee6eade05ce0a65fbca61}{\$\+D\+K\+I\+M\+\_\+private} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a8b211d29c0349751ae550f4084b69ea3}{\$\+D\+K\+I\+M\+\_\+private\+\_\+string} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_aa39c535046aa8919dc46727723a94a4a}{\$action\+\_\+function} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a1aca2514bdfdd3df32db20e762f0c85d}{\$\+X\+Mailer} = \textquotesingle{}\textquotesingle{}
+\item 
+const \hyperlink{class_p_h_p_mailer_a18ac47549c5fb56a395b374b3c23f04f}{S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE} = 0
+\item 
+const \hyperlink{class_p_h_p_mailer_afd1dcd18845b2e660d89726b20cd566e}{S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE} = 1
+\item 
+const \hyperlink{class_p_h_p_mailer_a9f37e989efccad58c693cdb0481c881f}{S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL} = 2
+\item 
+const \hyperlink{class_p_h_p_mailer_aa8bdd4d85e1ba0db8c09f92688c27ca6}{C\+R\+LF} = \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+const \hyperlink{class_p_h_p_mailer_a466169b7248c947b2d0d468a955573e7}{M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH} = 998
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_p_h_p_mailer_aa4e00b38f53ef571bf77fc9c3e882972}{\$validator} = \textquotesingle{}auto\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_h_p_mailer_a57893521a989230a020d8862a3bf751e}{edebug} (\$str)
+\item 
+\hyperlink{class_p_h_p_mailer_a61f7f5a3937e4382923604d6354d1934}{add\+Or\+Enqueue\+An\+Address} (\$kind, \$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})
+\item 
+\hyperlink{class_p_h_p_mailer_a57e7af9505dfbabc7c465ee9ca58e562}{add\+An\+Address} (\$kind, \$address, \$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a05940f686d59bcc249d8d42a6f2e7df0}{sendmail\+Send} (\$header, \$body)
+\item 
+\hyperlink{class_p_h_p_mailer_a9f43cac580fb8f33ef5e159f1eeb9148}{mail\+Send} (\$header, \$body)
+\item 
+\hyperlink{class_p_h_p_mailer_a49eca48203f71281e82986420773c3be}{smtp\+Send} (\$header, \$body)
+\item 
+\hyperlink{class_p_h_p_mailer_a7d660a436cd4a6931442c41184b6782a}{generate\+Id} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a57449646a9556091a31920bf34206a8a}{get\+Boundary} (\$boundary, \$char\+Set, \$content\+Type, \$encoding)
+\item 
+\hyperlink{class_p_h_p_mailer_aa1451add03edfd34d6b682c53d820a61}{end\+Boundary} (\$boundary)
+\item 
+\hyperlink{class_p_h_p_mailer_a333e5e1e8f7aabf320d5f2f950812d5b}{set\+Message\+Type} ()
+\item 
+\hyperlink{class_p_h_p_mailer_ad5142fb4a879dbe9a4280772d255fff8}{attach\+All} (\$disposition\+\_\+type, \$boundary)
+\item 
+\hyperlink{class_p_h_p_mailer_a0f50908e540f0214dd419e40f378029f}{encode\+File} (\$path, \$encoding= \textquotesingle{}base64\textquotesingle{})
+\item 
+\hyperlink{class_p_h_p_mailer_a9b84595d8561a0abd81c0b83b6238472}{set\+Error} (\$msg)
+\item 
+\hyperlink{class_p_h_p_mailer_ae0867f9651bd0b2f78fb7ccca41377a2}{server\+Hostname} ()
+\item 
+\hyperlink{class_p_h_p_mailer_a702ec4df6918a529cf123d1d09f608b7}{lang} (\$key)
+\item 
+\hyperlink{class_p_h_p_mailer_a4b0043a4373406a323cce3b6a210041f}{do\+Callback} (\$is\+Sent, \$to, \$cc, \$bcc, \$subject, \$body, \$from)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_p_h_p_mailer_aa9e20d8f3d4181d188ee1a4d43e4737e}{is\+Shell\+Safe} (\$string)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_h_p_mailer_a91bd736ba6ff85b61c24770f6bb09fda}{\$\+M\+I\+M\+E\+Body} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a272ba03cd59dc9aa3a0dc74ec74daaa1}{\$\+M\+I\+M\+E\+Header} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a3ad70a9d71fa41fd488f3148f24a2b42}{\$mail\+Header} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_aad8f984db037346667c0ca16ed00af60}{\$smtp} = null
+\item 
+\hyperlink{class_p_h_p_mailer_ac19f839b525d6d99d063fe56bf2a6d3b}{\$to} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a9b0d06c40e3b730d537b8e1ab12ce238}{\$cc} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a5e11ecd89692e5b6bfa3702c7894e23d}{\$bcc} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a856ec7458d9fa38bb18e41d255d427ca}{\$\+Reply\+To} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a54b648f01a9df77a1434edd3a9e58462}{\$all\+\_\+recipients} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a51a46f673baf030a5777085861cc2e27}{\$\+Recipients\+Queue} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a2518fc6416330a3dad2d83beff2e3a8d}{\$\+Reply\+To\+Queue} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a4019bc6f2f49dc44acb1b4168505b19e}{\$attachment} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a14f2a8bd0d170d40810d432f58884f93}{\$\+Custom\+Header} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a974888b4d036404356394cf76035174d}{\$last\+Message\+ID} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a538e1d253d02a1664a29a632e549b070}{\$message\+\_\+type} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a324c46222153b175ed4ea28967c75483}{\$boundary} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a83170d318260a5a2e2a79dccdd371b10}{\$language} = array()
+\item 
+\hyperlink{class_p_h_p_mailer_a7cdeffef92c4734cc7f303a7bea0711d}{\$error\+\_\+count} = 0
+\item 
+\hyperlink{class_p_h_p_mailer_a333572c0adf8b31023c7d868e20b8b8b}{\$sign\+\_\+cert\+\_\+file} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a984a5cd10ea13b5c25b9088004469712}{\$sign\+\_\+key\+\_\+file} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ae510d44770a6bd6f11170a5d88c0d6fc}{\$sign\+\_\+extracerts\+\_\+file} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_ad6ab22b5338f0053e25887fde1f7fd47}{\$sign\+\_\+key\+\_\+pass} = \textquotesingle{}\textquotesingle{}
+\item 
+\hyperlink{class_p_h_p_mailer_a7b3cdaf64a0a391d40bc8ecd4008218a}{\$exceptions} = false
+\item 
+\hyperlink{class_p_h_p_mailer_ab47f297d32c3522f1f7d42ed911157fd}{\$uniqueid} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file class.\+phpmailer.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$exceptions=null)}{__construct($exceptions=null)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$exceptions = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a7dd626cfe1c29407eb37a713c631b5c7}{}\label{class_p_h_p_mailer_a7dd626cfe1c29407eb37a713c631b5c7}
+Constructor. 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$exceptions} & Should we throw external exceptions? \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 657 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+destruct()}{__destruct()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a421831a265621325e1fdd19aace0c758}{}\label{class_p_h_p_mailer_a421831a265621325e1fdd19aace0c758}
+Destructor. 
+
+Definition at line 667 of file class.\+phpmailer.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\+\_\+mime\+\_\+types@{\+\_\+mime\+\_\+types}}
+\index{\+\_\+mime\+\_\+types@{\+\_\+mime\+\_\+types}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\+\_\+mime\+\_\+types(\$ext= \textquotesingle{}\textquotesingle{})}{_mime_types($ext= '')}}]{\setlength{\rightskip}{0pt plus 5cm}static \+\_\+mime\+\_\+types (
+\begin{DoxyParamCaption}
+\item[{}]{\$ext = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_add7b3e7830b61950b7a201f2d432289f}{}\label{class_p_h_p_mailer_add7b3e7830b61950b7a201f2d432289f}
+Get the M\+I\+ME type for a file extension. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ext} & File extension  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string M\+I\+ME type of file. 
+\end{DoxyReturn}
+
+
+Definition at line 3496 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Address@{add\+Address}}
+\index{add\+Address@{add\+Address}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Address(\$address, \$name= \textquotesingle{}\textquotesingle{})}{addAddress($address, $name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Address (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ae2087944add1c9bf5647b9e9d49689a6}{}\label{class_p_h_p_mailer_ae2087944add1c9bf5647b9e9d49689a6}
+Add a \char`\"{}\+To\char`\"{} address. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to send to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way 
+\end{DoxyReturn}
+
+
+Definition at line 817 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+An\+Address@{add\+An\+Address}}
+\index{add\+An\+Address@{add\+An\+Address}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+An\+Address(\$kind, \$address, \$name= \textquotesingle{}\textquotesingle{})}{addAnAddress($kind, $address, $name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+An\+Address (
+\begin{DoxyParamCaption}
+\item[{}]{\$kind, }
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a57e7af9505dfbabc7c465ee9ca58e562}{}\label{class_p_h_p_mailer_a57e7af9505dfbabc7c465ee9ca58e562}
+Add an address to one of the recipient arrays or to the Reply\+To array. Addresses that have been added already return false, but do not throw exceptions. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$kind} & One of \textquotesingle{}to\textquotesingle{}, \textquotesingle{}cc\textquotesingle{}, \textquotesingle{}bcc\textquotesingle{}, or \textquotesingle{}Reply\+To\textquotesingle{} \\
+\hline
+string & {\em \$address} & The email address to send, resp. to reply to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way  protected 
+\end{DoxyReturn}
+
+
+Definition at line 913 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Attachment@{add\+Attachment}}
+\index{add\+Attachment@{add\+Attachment}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Attachment(\$path, \$name= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$type= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}attachment\textquotesingle{})}{addAttachment($path, $name= '', $encoding= 'base64', $type= '', $disposition= 'attachment')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Attachment (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$disposition = {\ttfamily \textquotesingle{}attachment\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a167cba8879ea72eae2583738abd0f68d}{}\label{class_p_h_p_mailer_a167cba8879ea72eae2583738abd0f68d}
+Add an attachment from a path on the filesystem. Returns false if the file could not be found or read. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to the attachment. \\
+\hline
+string & {\em \$name} & Overrides the attachment name. \\
+\hline
+string & {\em \$encoding} & File encoding (see \$\+Encoding). \\
+\hline
+string & {\em \$type} & File extension (M\+I\+ME) type. \\
+\hline
+string & {\em \$disposition} & Disposition to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 2504 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+B\+CC@{add\+B\+CC}}
+\index{add\+B\+CC@{add\+B\+CC}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+B\+C\+C(\$address, \$name= \textquotesingle{}\textquotesingle{})}{addBCC($address, $name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+B\+CC (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a089e714287f7577eb8d0a7632e896900}{}\label{class_p_h_p_mailer_a089e714287f7577eb8d0a7632e896900}
+Add a \char`\"{}\+B\+C\+C\char`\"{} address. \begin{DoxyNote}{Note}
+\+: This function works with the \hyperlink{class_s_m_t_p}{S\+M\+TP} mailer on win32, not with the \char`\"{}mail\char`\"{} mailer. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to send to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way 
+\end{DoxyReturn}
+
+
+Definition at line 841 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+CC@{add\+CC}}
+\index{add\+CC@{add\+CC}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+C\+C(\$address, \$name= \textquotesingle{}\textquotesingle{})}{addCC($address, $name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+CC (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_acc911962347c94dd63dd595c397f4cb3}{}\label{class_p_h_p_mailer_acc911962347c94dd63dd595c397f4cb3}
+Add a \char`\"{}\+C\+C\char`\"{} address. \begin{DoxyNote}{Note}
+\+: This function works with the \hyperlink{class_s_m_t_p}{S\+M\+TP} mailer on win32, not with the \char`\"{}mail\char`\"{} mailer. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to send to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way 
+\end{DoxyReturn}
+
+
+Definition at line 829 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Custom\+Header@{add\+Custom\+Header}}
+\index{add\+Custom\+Header@{add\+Custom\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Custom\+Header(\$name, \$value=null)}{addCustomHeader($name, $value=null)}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Custom\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a58c011aa0d493a352c8d8d585a5e85d2}{}\label{class_p_h_p_mailer_a58c011aa0d493a352c8d8d585a5e85d2}
+Add a custom header. \$name value can be overloaded to contain both header name and value (name\+:value)  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Custom header name \\
+\hline
+string & {\em \$value} & Header value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3360 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Embedded\+Image@{add\+Embedded\+Image}}
+\index{add\+Embedded\+Image@{add\+Embedded\+Image}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Embedded\+Image(\$path, \$cid, \$name= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$type= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}inline\textquotesingle{})}{addEmbeddedImage($path, $cid, $name= '', $encoding= 'base64', $type= '', $disposition= 'inline')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Embedded\+Image (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$cid, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$disposition = {\ttfamily \textquotesingle{}inline\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a6f0beefe8ba70873b02374024d546042}{}\label{class_p_h_p_mailer_a6f0beefe8ba70873b02374024d546042}
+Add an embedded (inline) attachment from a file. This can include images, sounds, and just about any other document type. These differ from \textquotesingle{}regular\textquotesingle{} attachments in that they are intended to be displayed inline with the message, not just attached for download. This is used in H\+T\+ML messages that embed the images the H\+T\+ML refers to using the \$cid value. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path to the attachment. \\
+\hline
+string & {\em \$cid} & Content ID of the attachment; Use this to reference the content when using an embedded image in H\+T\+ML. \\
+\hline
+string & {\em \$name} & Overrides the attachment name. \\
+\hline
+string & {\em \$encoding} & File encoding (see \$\+Encoding). \\
+\hline
+string & {\em \$type} & File M\+I\+ME type. \\
+\hline
+string & {\em \$disposition} & Disposition to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True on successfully adding an attachment 
+\end{DoxyReturn}
+
+
+Definition at line 3029 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Or\+Enqueue\+An\+Address@{add\+Or\+Enqueue\+An\+Address}}
+\index{add\+Or\+Enqueue\+An\+Address@{add\+Or\+Enqueue\+An\+Address}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Or\+Enqueue\+An\+Address(\$kind, \$address, \$name)}{addOrEnqueueAnAddress($kind, $address, $name)}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Or\+Enqueue\+An\+Address (
+\begin{DoxyParamCaption}
+\item[{}]{\$kind, }
+\item[{}]{\$address, }
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a61f7f5a3937e4382923604d6354d1934}{}\label{class_p_h_p_mailer_a61f7f5a3937e4382923604d6354d1934}
+Add an address to one of the recipient arrays or to the Reply\+To array. Because \hyperlink{class_p_h_p_mailer}{P\+H\+P\+Mailer} can\textquotesingle{}t validate addresses with an I\+DN without knowing the \hyperlink{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}{P\+H\+P\+Mailer\+::\$\+Char\+Set} (that can still be modified after calling this function), addition of such addresses is delayed until \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()}. Addresses that have been added already return false, but do not throw exceptions. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$kind} & One of \textquotesingle{}to\textquotesingle{}, \textquotesingle{}cc\textquotesingle{}, \textquotesingle{}bcc\textquotesingle{}, or \textquotesingle{}Reply\+To\textquotesingle{} \\
+\hline
+string & {\em \$address} & The email address to send, resp. to reply to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way  protected 
+\end{DoxyReturn}
+
+
+Definition at line 869 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!addr\+Append@{addr\+Append}}
+\index{addr\+Append@{addr\+Append}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{addr\+Append(\$type, \$addr)}{addrAppend($type, $addr)}}]{\setlength{\rightskip}{0pt plus 5cm}addr\+Append (
+\begin{DoxyParamCaption}
+\item[{}]{\$type, }
+\item[{}]{\$addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ab43217a9ec1bb4fe5a88d2f409fa7ae2}{}\label{class_p_h_p_mailer_ab43217a9ec1bb4fe5a88d2f409fa7ae2}
+Create recipient headers.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+array & {\em \$addr} & An array of recipient, where each recipient is a 2-\/element indexed array with element 0 containing an address and element 1 containing a name, like\+: array(array(\textquotesingle{}\href{mailto:joe@example.com}{\tt joe@example.\+com}\textquotesingle{}, \textquotesingle{}Joe User\textquotesingle{}), array(\textquotesingle{}\href{mailto:zoe@example.com}{\tt zoe@example.\+com}\textquotesingle{}, \textquotesingle{}Zoe User\textquotesingle{})) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1817 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+Reply\+To@{add\+Reply\+To}}
+\index{add\+Reply\+To@{add\+Reply\+To}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+Reply\+To(\$address, \$name= \textquotesingle{}\textquotesingle{})}{addReplyTo($address, $name= '')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Reply\+To (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aba5661a6b69f68826b39f4dc197e7a5d}{}\label{class_p_h_p_mailer_aba5661a6b69f68826b39f4dc197e7a5d}
+Add a \char`\"{}\+Reply-\/\+To\char`\"{} address. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to reply to \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false if address already used or invalid in some way 
+\end{DoxyReturn}
+
+
+Definition at line 852 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!addr\+Format@{addr\+Format}}
+\index{addr\+Format@{addr\+Format}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{addr\+Format(\$addr)}{addrFormat($addr)}}]{\setlength{\rightskip}{0pt plus 5cm}addr\+Format (
+\begin{DoxyParamCaption}
+\item[{}]{\$addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a9306048710347e893a743acd0f39bb45}{}\label{class_p_h_p_mailer_a9306048710347e893a743acd0f39bb45}
+Format an address for use in a message header.  public 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$addr} & A 2-\/element indexed array, element 0 containing an address, element 1 containing a name like array(\textquotesingle{}\href{mailto:joe@example.com}{\tt joe@example.\+com}\textquotesingle{}, \textquotesingle{}Joe User\textquotesingle{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1833 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+String\+Attachment@{add\+String\+Attachment}}
+\index{add\+String\+Attachment@{add\+String\+Attachment}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+String\+Attachment(\$string, \$filename, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$type= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}attachment\textquotesingle{})}{addStringAttachment($string, $filename, $encoding= 'base64', $type= '', $disposition= 'attachment')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+String\+Attachment (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$filename, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$disposition = {\ttfamily \textquotesingle{}attachment\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a1ac68ff445b3e20a0e61687a6f1a92ae}{}\label{class_p_h_p_mailer_a1ac68ff445b3e20a0e61687a6f1a92ae}
+Add a string or binary attachment (non-\/filesystem). This method can be used to attach ascii or binary data, such as a B\+L\+OB record from a database. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & String attachment data. \\
+\hline
+string & {\em \$filename} & Name of the attachment. \\
+\hline
+string & {\em \$encoding} & File encoding (see \$\+Encoding). \\
+\hline
+string & {\em \$type} & File extension (M\+I\+ME) type. \\
+\hline
+string & {\em \$disposition} & Disposition to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2989 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!add\+String\+Embedded\+Image@{add\+String\+Embedded\+Image}}
+\index{add\+String\+Embedded\+Image@{add\+String\+Embedded\+Image}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{add\+String\+Embedded\+Image(\$string, \$cid, \$name= \textquotesingle{}\textquotesingle{}, \$encoding= \textquotesingle{}base64\textquotesingle{}, \$type= \textquotesingle{}\textquotesingle{}, \$disposition= \textquotesingle{}inline\textquotesingle{})}{addStringEmbeddedImage($string, $cid, $name= '', $encoding= 'base64', $type= '', $disposition= 'inline')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+String\+Embedded\+Image (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$cid, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$disposition = {\ttfamily \textquotesingle{}inline\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a7b18e8e4f8c831c4b315d31fe83a04dc}{}\label{class_p_h_p_mailer_a7b18e8e4f8c831c4b315d31fe83a04dc}
+Add an embedded stringified attachment. This can include images, sounds, and just about any other document type. Be sure to set the \$type to an image type for images\+: J\+P\+EG images use \textquotesingle{}image/jpeg\textquotesingle{}, G\+IF uses \textquotesingle{}image/gif\textquotesingle{}, P\+NG uses \textquotesingle{}image/png\textquotesingle{}. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The attachment binary data. \\
+\hline
+string & {\em \$cid} & Content ID of the attachment; Use this to reference the content when using an embedded image in H\+T\+ML. \\
+\hline
+string & {\em \$name} & \\
+\hline
+string & {\em \$encoding} & File encoding (see \$\+Encoding). \\
+\hline
+string & {\em \$type} & M\+I\+ME type. \\
+\hline
+string & {\em \$disposition} & Disposition to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean True on successfully adding an attachment 
+\end{DoxyReturn}
+
+
+Definition at line 3074 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!alternative\+Exists@{alternative\+Exists}}
+\index{alternative\+Exists@{alternative\+Exists}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{alternative\+Exists()}{alternativeExists()}}]{\setlength{\rightskip}{0pt plus 5cm}alternative\+Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ab4ce4785ba565c296f04d1e309c4a138}{}\label{class_p_h_p_mailer_ab4ce4785ba565c296f04d1e309c4a138}
+Check if this message has an alternative body set. \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 3134 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!attach\+All@{attach\+All}}
+\index{attach\+All@{attach\+All}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{attach\+All(\$disposition\+\_\+type, \$boundary)}{attachAll($disposition_type, $boundary)}}]{\setlength{\rightskip}{0pt plus 5cm}attach\+All (
+\begin{DoxyParamCaption}
+\item[{}]{\$disposition\+\_\+type, }
+\item[{}]{\$boundary}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ad5142fb4a879dbe9a4280772d255fff8}{}\label{class_p_h_p_mailer_ad5142fb4a879dbe9a4280772d255fff8}
+Attach all file, string, and binary attachments to the message. Returns an empty string on failure.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$disposition\+\_\+type} & \\
+\hline
+string & {\em \$boundary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2560 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!attachment\+Exists@{attachment\+Exists}}
+\index{attachment\+Exists@{attachment\+Exists}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{attachment\+Exists()}{attachmentExists()}}]{\setlength{\rightskip}{0pt plus 5cm}attachment\+Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aa095b5a3a9f25a8c8d1380b246d9e894}{}\label{class_p_h_p_mailer_aa095b5a3a9f25a8c8d1380b246d9e894}
+Check if an attachment (non-\/inline) is present. \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 3120 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!base64\+Encode\+Wrap\+MB@{base64\+Encode\+Wrap\+MB}}
+\index{base64\+Encode\+Wrap\+MB@{base64\+Encode\+Wrap\+MB}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{base64\+Encode\+Wrap\+M\+B(\$str, \$linebreak=null)}{base64EncodeWrapMB($str, $linebreak=null)}}]{\setlength{\rightskip}{0pt plus 5cm}base64\+Encode\+Wrap\+MB (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$linebreak = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aa3aba7f0151d96a9a5d56d8ee5be8aab}{}\label{class_p_h_p_mailer_aa3aba7f0151d96a9a5d56d8ee5be8aab}
+Encode and wrap long multibyte strings for mail headers without breaking lines within a character. Adapted from a function by paravoid \hyperlink{}{public  string \$str multi-\/byte text to wrap encode  string \$linebreak string to use as linefeed/end-\/of-\/line  string }
+
+Definition at line 2855 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+Addresses@{clear\+Addresses}}
+\index{clear\+Addresses@{clear\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+Addresses()}{clearAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a5abf0feadd6b4ba311bd2fd71b4aaab1}{}\label{class_p_h_p_mailer_a5abf0feadd6b4ba311bd2fd71b4aaab1}
+Clear all To recipients. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3159 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+All\+Recipients@{clear\+All\+Recipients}}
+\index{clear\+All\+Recipients@{clear\+All\+Recipients}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+All\+Recipients()}{clearAllRecipients()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+All\+Recipients (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_af106137a9abfdb4b9e44fca86f7a727e}{}\label{class_p_h_p_mailer_af106137a9abfdb4b9e44fca86f7a727e}
+Clear all recipient types. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3208 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+Attachments@{clear\+Attachments}}
+\index{clear\+Attachments@{clear\+Attachments}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+Attachments()}{clearAttachments()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Attachments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a2b4d4199414b58bc4db009cb17ad8e3b}{}\label{class_p_h_p_mailer_a2b4d4199414b58bc4db009cb17ad8e3b}
+Clear all filesystem, string, and binary attachments. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3221 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+B\+C\+Cs@{clear\+B\+C\+Cs}}
+\index{clear\+B\+C\+Cs@{clear\+B\+C\+Cs}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+B\+C\+Cs()}{clearBCCs()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+B\+C\+Cs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a1edca04216fc6a06c059a572a0875e90}{}\label{class_p_h_p_mailer_a1edca04216fc6a06c059a572a0875e90}
+Clear all B\+CC recipients. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3185 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+C\+Cs@{clear\+C\+Cs}}
+\index{clear\+C\+Cs@{clear\+C\+Cs}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+C\+Cs()}{clearCCs()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+C\+Cs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a7dfe4733feb812ac7a777bdebed70e45}{}\label{class_p_h_p_mailer_a7dfe4733feb812ac7a777bdebed70e45}
+Clear all CC recipients. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3172 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+Custom\+Headers@{clear\+Custom\+Headers}}
+\index{clear\+Custom\+Headers@{clear\+Custom\+Headers}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+Custom\+Headers()}{clearCustomHeaders()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Custom\+Headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_adcdcf2709938f5ab0c6074172d73d5b7}{}\label{class_p_h_p_mailer_adcdcf2709938f5ab0c6074172d73d5b7}
+Clear all custom headers. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3230 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+Queued\+Addresses@{clear\+Queued\+Addresses}}
+\index{clear\+Queued\+Addresses@{clear\+Queued\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+Queued\+Addresses(\$kind)}{clearQueuedAddresses($kind)}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Queued\+Addresses (
+\begin{DoxyParamCaption}
+\item[{}]{\$kind}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a419fe05f1e410139292aceb24c25f26b}{}\label{class_p_h_p_mailer_a419fe05f1e410139292aceb24c25f26b}
+Clear queued addresses of given kind.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$kind} & \textquotesingle{}to\textquotesingle{}, \textquotesingle{}cc\textquotesingle{}, or \textquotesingle{}bcc\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3145 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!clear\+Reply\+Tos@{clear\+Reply\+Tos}}
+\index{clear\+Reply\+Tos@{clear\+Reply\+Tos}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{clear\+Reply\+Tos()}{clearReplyTos()}}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Reply\+Tos (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aeaf9d6ef74c9c823eb5f1fcbeeb396de}{}\label{class_p_h_p_mailer_aeaf9d6ef74c9c823eb5f1fcbeeb396de}
+Clear all Reply\+To recipients. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3198 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!create\+Body@{create\+Body}}
+\index{create\+Body@{create\+Body}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{create\+Body()}{createBody()}}]{\setlength{\rightskip}{0pt plus 5cm}create\+Body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ad8d982cb84383c36585dab8ac1a01414}{}\label{class_p_h_p_mailer_ad8d982cb84383c36585dab8ac1a01414}
+Assemble the message body. Returns an empty string on failure.  public 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string The assembled message body 
+\end{DoxyReturn}
+
+
+Definition at line 2196 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!create\+Header@{create\+Header}}
+\index{create\+Header@{create\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{create\+Header()}{createHeader()}}]{\setlength{\rightskip}{0pt plus 5cm}create\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a0e6615e9843f58e99362166dd25a185b}{}\label{class_p_h_p_mailer_a0e6615e9843f58e99362166dd25a185b}
+Assemble message headers.  public \begin{DoxyReturn}{Returns}
+string The assembled headers 
+\end{DoxyReturn}
+
+
+Definition at line 2023 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!D\+K\+I\+M\+\_\+\+Add@{D\+K\+I\+M\+\_\+\+Add}}
+\index{D\+K\+I\+M\+\_\+\+Add@{D\+K\+I\+M\+\_\+\+Add}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{D\+K\+I\+M\+\_\+\+Add(\$headers\+\_\+line, \$subject, \$body)}{DKIM_Add($headers_line, $subject, $body)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+K\+I\+M\+\_\+\+Add (
+\begin{DoxyParamCaption}
+\item[{}]{\$headers\+\_\+line, }
+\item[{}]{\$subject, }
+\item[{}]{\$body}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a3d464b41f5f853bb29c83d8e74fe1470}{}\label{class_p_h_p_mailer_a3d464b41f5f853bb29c83d8e74fe1470}
+Create the D\+K\+IM header and body in a new message header.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$headers\+\_\+line} & Header lines \\
+\hline
+string & {\em \$subject} & Subject \\
+\hline
+string & {\em \$body} & Body \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3852 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!D\+K\+I\+M\+\_\+\+BodyC@{D\+K\+I\+M\+\_\+\+BodyC}}
+\index{D\+K\+I\+M\+\_\+\+BodyC@{D\+K\+I\+M\+\_\+\+BodyC}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{D\+K\+I\+M\+\_\+\+Body\+C(\$body)}{DKIM_BodyC($body)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+K\+I\+M\+\_\+\+BodyC (
+\begin{DoxyParamCaption}
+\item[{}]{\$body}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a59e764f699f678a6fa52ee089e941b1b}{}\label{class_p_h_p_mailer_a59e764f699f678a6fa52ee089e941b1b}
+Generate a D\+K\+IM canonicalization body.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$body} & Message Body \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3829 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!D\+K\+I\+M\+\_\+\+HeaderC@{D\+K\+I\+M\+\_\+\+HeaderC}}
+\index{D\+K\+I\+M\+\_\+\+HeaderC@{D\+K\+I\+M\+\_\+\+HeaderC}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{D\+K\+I\+M\+\_\+\+Header\+C(\$sign\+Header)}{DKIM_HeaderC($signHeader)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+K\+I\+M\+\_\+\+HeaderC (
+\begin{DoxyParamCaption}
+\item[{}]{\$sign\+Header}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a9bcf728e9960a6512c5145a413cf86f5}{}\label{class_p_h_p_mailer_a9bcf728e9960a6512c5145a413cf86f5}
+Generate a D\+K\+IM canonicalization header.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sign\+Header} & Header \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3809 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!D\+K\+I\+M\+\_\+\+QP@{D\+K\+I\+M\+\_\+\+QP}}
+\index{D\+K\+I\+M\+\_\+\+QP@{D\+K\+I\+M\+\_\+\+QP}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{D\+K\+I\+M\+\_\+\+Q\+P(\$txt)}{DKIM_QP($txt)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+K\+I\+M\+\_\+\+QP (
+\begin{DoxyParamCaption}
+\item[{}]{\$txt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_acec5422fbacb7c17671e613d5a3c6c47}{}\label{class_p_h_p_mailer_acec5422fbacb7c17671e613d5a3c6c47}
+Quoted-\/\+Printable-\/encode a D\+K\+IM header.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$txt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3742 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!D\+K\+I\+M\+\_\+\+Sign@{D\+K\+I\+M\+\_\+\+Sign}}
+\index{D\+K\+I\+M\+\_\+\+Sign@{D\+K\+I\+M\+\_\+\+Sign}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{D\+K\+I\+M\+\_\+\+Sign(\$sign\+Header)}{DKIM_Sign($signHeader)}}]{\setlength{\rightskip}{0pt plus 5cm}D\+K\+I\+M\+\_\+\+Sign (
+\begin{DoxyParamCaption}
+\item[{}]{\$sign\+Header}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aadcda1cd84010ce6e24880ef263581d7}{}\label{class_p_h_p_mailer_aadcda1cd84010ce6e24880ef263581d7}
+Generate a D\+K\+IM signature.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sign\+Header} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string The D\+K\+IM signature value 
+\end{DoxyReturn}
+
+
+Definition at line 3763 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!do\+Callback@{do\+Callback}}
+\index{do\+Callback@{do\+Callback}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{do\+Callback(\$is\+Sent, \$to, \$cc, \$bcc, \$subject, \$body, \$from)}{doCallback($isSent, $to, $cc, $bcc, $subject, $body, $from)}}]{\setlength{\rightskip}{0pt plus 5cm}do\+Callback (
+\begin{DoxyParamCaption}
+\item[{}]{\$is\+Sent, }
+\item[{}]{\$to, }
+\item[{}]{\$cc, }
+\item[{}]{\$bcc, }
+\item[{}]{\$subject, }
+\item[{}]{\$body, }
+\item[{}]{\$from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a4b0043a4373406a323cce3b6a210041f}{}\label{class_p_h_p_mailer_a4b0043a4373406a323cce3b6a210041f}
+Perform a callback. 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$is\+Sent} & \\
+\hline
+array & {\em \$to} & \\
+\hline
+array & {\em \$cc} & \\
+\hline
+array & {\em \$bcc} & \\
+\hline
+string & {\em \$subject} & \\
+\hline
+string & {\em \$body} & \\
+\hline
+string & {\em \$from} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4001 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!edebug@{edebug}}
+\index{edebug@{edebug}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{edebug(\$str)}{edebug($str)}}]{\setlength{\rightskip}{0pt plus 5cm}edebug (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a57893521a989230a020d8862a3bf751e}{}\label{class_p_h_p_mailer_a57893521a989230a020d8862a3bf751e}
+Output debugging info via user-\/defined method. Only generates output if \hyperlink{class_s_m_t_p}{S\+M\+TP} debug output is enabled (\begin{DoxySeeAlso}{See also}
+\hyperlink{class_s_m_t_p_a09ca59ee83fba6c8137646a13f1664d1}{S\+M\+T\+P\+::\$do\+\_\+debug}). 
+
+\hyperlink{class_p_h_p_mailer_a532f3412f3d97a106a36ff2b49409e42}{P\+H\+P\+Mailer\+::\$\+Debugoutput} 
+
+\hyperlink{class_p_h_p_mailer_a5f952b7bed25b8423aec0a5b308d4bb1}{P\+H\+P\+Mailer\+::\$\+S\+M\+T\+P\+Debug} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 711 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encode\+File@{encode\+File}}
+\index{encode\+File@{encode\+File}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+File(\$path, \$encoding= \textquotesingle{}base64\textquotesingle{})}{encodeFile($path, $encoding= 'base64')}}]{\setlength{\rightskip}{0pt plus 5cm}encode\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a0f50908e540f0214dd419e40f378029f}{}\label{class_p_h_p_mailer_a0f50908e540f0214dd419e40f378029f}
+Encode a file attachment in requested format. Returns an empty string on failure. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The full path to the file \\
+\hline
+string & {\em \$encoding} & The encoding to use; one of \textquotesingle{}base64\textquotesingle{}, \textquotesingle{}7bit\textquotesingle{}, \textquotesingle{}8bit\textquotesingle{}, \textquotesingle{}binary\textquotesingle{}, \textquotesingle{}quoted-\/printable\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & protected \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2685 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encode\+Header@{encode\+Header}}
+\index{encode\+Header@{encode\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+Header(\$str, \$position= \textquotesingle{}text\textquotesingle{})}{encodeHeader($str, $position= 'text')}}]{\setlength{\rightskip}{0pt plus 5cm}encode\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$position = {\ttfamily \textquotesingle{}text\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aea5a3301763364fe9b62c36d06c08e5a}{}\label{class_p_h_p_mailer_aea5a3301763364fe9b62c36d06c08e5a}
+Encode a header string optimally. Picks shortest of Q, B, quoted-\/printable or none.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+string & {\em \$position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Php\+Missing\+Break\+Statement\+Inspection 
+
+Definition at line 2762 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encodeQ@{encodeQ}}
+\index{encodeQ@{encodeQ}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+Q(\$str, \$position= \textquotesingle{}text\textquotesingle{})}{encodeQ($str, $position= 'text')}}]{\setlength{\rightskip}{0pt plus 5cm}encodeQ (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$position = {\ttfamily \textquotesingle{}text\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_adbbd9f5ed4492196db3f804e7db4d764}{}\label{class_p_h_p_mailer_adbbd9f5ed4492196db3f804e7db4d764}
+Encode a string using Q encoding. \hyperlink{}{string \$str the text to encode  string \$position Where the text is going to be used, see the R\+FC for what that means  public  string }Php\+Missing\+Break\+Statement\+Inspection 
+
+Definition at line 2938 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encode\+QP@{encode\+QP}}
+\index{encode\+QP@{encode\+QP}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+Q\+P(\$string, \$line\+\_\+max=76)}{encodeQP($string, $line_max=76)}}]{\setlength{\rightskip}{0pt plus 5cm}encode\+QP (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$line\+\_\+max = {\ttfamily 76}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a8ee2de12dc615c6f5e75642265885ada}{}\label{class_p_h_p_mailer_a8ee2de12dc615c6f5e75642265885ada}
+Encode a string in quoted-\/printable format. According to R\+F\+C2045 section 6.\+7.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The text to encode \\
+\hline
+integer & {\em \$line\+\_\+max} & Number of chars allowed on a line before wrapping \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \hyperlink{}{Adapted from this comment }
+\end{DoxyReturn}
+
+
+Definition at line 2897 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encode\+Q\+Pphp@{encode\+Q\+Pphp}}
+\index{encode\+Q\+Pphp@{encode\+Q\+Pphp}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+Q\+Pphp(\$string, \$line\+\_\+max=76, \$space\+\_\+conv=false)}{encodeQPphp($string, $line_max=76, $space_conv=false)}}]{\setlength{\rightskip}{0pt plus 5cm}encode\+Q\+Pphp (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$line\+\_\+max = {\ttfamily 76}, }
+\item[{}]{\$space\+\_\+conv = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a4e86849b8958dd59a8f5e67df9bb58c3}{}\label{class_p_h_p_mailer_a4e86849b8958dd59a8f5e67df9bb58c3}
+Backward compatibility wrapper for an old QP encoding function that was removed. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_a8ee2de12dc615c6f5e75642265885ada}{P\+H\+P\+Mailer\+::encode\+Q\+P()}  public 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+integer & {\em \$line\+\_\+max} & \\
+\hline
+boolean & {\em \$space\+\_\+conv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]Use encode\+QP instead. \end{DoxyRefDesc}
+
+\begin{DoxyParams}{Parameters}
+{\em \$space\+\_\+conv} & Php\+Unused\+Parameter\+Inspection \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 2922 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!encode\+String@{encode\+String}}
+\index{encode\+String@{encode\+String}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{encode\+String(\$str, \$encoding= \textquotesingle{}base64\textquotesingle{})}{encodeString($str, $encoding= 'base64')}}]{\setlength{\rightskip}{0pt plus 5cm}encode\+String (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$encoding = {\ttfamily \textquotesingle{}base64\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a5c4cad1d383b64464ad2a2bc336db07b}{}\label{class_p_h_p_mailer_a5c4cad1d383b64464ad2a2bc336db07b}
+Encode a string in requested format. Returns an empty string on failure. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & The text to encode \\
+\hline
+string & {\em \$encoding} & The encoding to use; one of \textquotesingle{}base64\textquotesingle{}, \textquotesingle{}7bit\textquotesingle{}, \textquotesingle{}8bit\textquotesingle{}, \textquotesingle{}binary\textquotesingle{}, \textquotesingle{}quoted-\/printable\textquotesingle{}  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2726 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!end\+Boundary@{end\+Boundary}}
+\index{end\+Boundary@{end\+Boundary}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{end\+Boundary(\$boundary)}{endBoundary($boundary)}}]{\setlength{\rightskip}{0pt plus 5cm}end\+Boundary (
+\begin{DoxyParamCaption}
+\item[{}]{\$boundary}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_aa1451add03edfd34d6b682c53d820a61}{}\label{class_p_h_p_mailer_aa1451add03edfd34d6b682c53d820a61}
+Return the end of a message boundary.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$boundary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2440 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!filename\+To\+Type@{filename\+To\+Type}}
+\index{filename\+To\+Type@{filename\+To\+Type}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{filename\+To\+Type(\$filename)}{filenameToType($filename)}}]{\setlength{\rightskip}{0pt plus 5cm}static filename\+To\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_ac1a4d9403511e262d4723394052bf015}{}\label{class_p_h_p_mailer_ac1a4d9403511e262d4723394052bf015}
+Map a file name to a M\+I\+ME type. Defaults to \textquotesingle{}application/octet-\/stream\textquotesingle{}, i.\+e.. arbitrary binary data. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & A file name or full path, does not need to exist as a file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3611 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!fix\+E\+OL@{fix\+E\+OL}}
+\index{fix\+E\+OL@{fix\+E\+OL}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{fix\+E\+O\+L(\$str)}{fixEOL($str)}}]{\setlength{\rightskip}{0pt plus 5cm}fix\+E\+OL (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a1b9ac8f8f734ebda9ca05c3313a42852}{}\label{class_p_h_p_mailer_a1b9ac8f8f734ebda9ca05c3313a42852}
+Ensure consistent line endings in a string. Changes every end of line from C\+R\+LF, CR or LF to \$this-\/$>$LE.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & String to fix\+E\+OL \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3340 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!generate\+Id@{generate\+Id}}
+\index{generate\+Id@{generate\+Id}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{generate\+Id()}{generateId()}}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a7d660a436cd4a6931442c41184b6782a}{}\label{class_p_h_p_mailer_a7d660a436cd4a6931442c41184b6782a}
+Create unique ID \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2185 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+All\+Recipient\+Addresses@{get\+All\+Recipient\+Addresses}}
+\index{get\+All\+Recipient\+Addresses@{get\+All\+Recipient\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+All\+Recipient\+Addresses()}{getAllRecipientAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+All\+Recipient\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a520c29b999a7ab6b1de74f2b25d0cf0b}{}\label{class_p_h_p_mailer_a520c29b999a7ab6b1de74f2b25d0cf0b}
+Allows for public read access to \textquotesingle{}all\+\_\+recipients\textquotesingle{} property. \begin{DoxyNote}{Note}
+\+: Before the \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()} call, queued addresses (i.\+e. with I\+DN) are not yet included.  public 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3986 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Attachments@{get\+Attachments}}
+\index{get\+Attachments@{get\+Attachments}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Attachments()}{getAttachments()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Attachments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aa91862c4e237ee5b53083f41633babb6}{}\label{class_p_h_p_mailer_aa91862c4e237ee5b53083f41633babb6}
+Return the array of attachments. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 2547 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Bcc\+Addresses@{get\+Bcc\+Addresses}}
+\index{get\+Bcc\+Addresses@{get\+Bcc\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Bcc\+Addresses()}{getBccAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Bcc\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ae654887b031c19609bcff837ec51ce77}{}\label{class_p_h_p_mailer_ae654887b031c19609bcff837ec51ce77}
+Allows for public read access to \textquotesingle{}bcc\textquotesingle{} property. \begin{DoxyNote}{Note}
+\+: Before the \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()} call, queued addresses (i.\+e. with I\+DN) are not yet included.  public 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3964 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Boundary@{get\+Boundary}}
+\index{get\+Boundary@{get\+Boundary}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Boundary(\$boundary, \$char\+Set, \$content\+Type, \$encoding)}{getBoundary($boundary, $charSet, $contentType, $encoding)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Boundary (
+\begin{DoxyParamCaption}
+\item[{}]{\$boundary, }
+\item[{}]{\$char\+Set, }
+\item[{}]{\$content\+Type, }
+\item[{}]{\$encoding}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a57449646a9556091a31920bf34206a8a}{}\label{class_p_h_p_mailer_a57449646a9556091a31920bf34206a8a}
+Return the start of a message boundary.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$boundary} & \\
+\hline
+string & {\em \$char\+Set} & \\
+\hline
+string & {\em \$content\+Type} & \\
+\hline
+string & {\em \$encoding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2410 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Cc\+Addresses@{get\+Cc\+Addresses}}
+\index{get\+Cc\+Addresses@{get\+Cc\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Cc\+Addresses()}{getCcAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cc\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_afb6cde741994ed21899d9988e4a27227}{}\label{class_p_h_p_mailer_afb6cde741994ed21899d9988e4a27227}
+Allows for public read access to \textquotesingle{}cc\textquotesingle{} property. \begin{DoxyNote}{Note}
+\+: Before the \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()} call, queued addresses (i.\+e. with I\+DN) are not yet included.  public 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3953 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Custom\+Headers@{get\+Custom\+Headers}}
+\index{get\+Custom\+Headers@{get\+Custom\+Headers}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Custom\+Headers()}{getCustomHeaders()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Custom\+Headers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a6dece3e0c6c39c2f1a80d8f62196f30a}{}\label{class_p_h_p_mailer_a6dece3e0c6c39c2f1a80d8f62196f30a}
+Returns all custom headers. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3374 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Last\+Message\+ID@{get\+Last\+Message\+ID}}
+\index{get\+Last\+Message\+ID@{get\+Last\+Message\+ID}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Last\+Message\+I\+D()}{getLastMessageID()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Last\+Message\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ad7aa172bae0dacb16fa63b832cb82073}{}\label{class_p_h_p_mailer_ad7aa172bae0dacb16fa63b832cb82073}
+Return the Message-\/\+ID header of the last email. Technically this is the value from the last time the headers were created, but it\textquotesingle{}s also the message ID of the last sent message except in pathological cases. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1044 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Mail\+M\+I\+ME@{get\+Mail\+M\+I\+ME}}
+\index{get\+Mail\+M\+I\+ME@{get\+Mail\+M\+I\+ME}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Mail\+M\+I\+M\+E()}{getMailMIME()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Mail\+M\+I\+ME (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a4ced769572258a705d3d66f5c2243c47}{}\label{class_p_h_p_mailer_a4ced769572258a705d3d66f5c2243c47}
+Get the message M\+I\+ME type headers.  public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2121 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Reply\+To\+Addresses@{get\+Reply\+To\+Addresses}}
+\index{get\+Reply\+To\+Addresses@{get\+Reply\+To\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Reply\+To\+Addresses()}{getReplyToAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Reply\+To\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aa3c2c989e01aaa5224c6913219f5053f}{}\label{class_p_h_p_mailer_aa3c2c989e01aaa5224c6913219f5053f}
+Allows for public read access to \textquotesingle{}Reply\+To\textquotesingle{} property. \begin{DoxyNote}{Note}
+\+: Before the \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()} call, queued addresses (i.\+e. with I\+DN) are not yet included.  public 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3975 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Sent\+M\+I\+M\+E\+Message@{get\+Sent\+M\+I\+M\+E\+Message}}
+\index{get\+Sent\+M\+I\+M\+E\+Message@{get\+Sent\+M\+I\+M\+E\+Message}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Sent\+M\+I\+M\+E\+Message()}{getSentMIMEMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Sent\+M\+I\+M\+E\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a705aa0508caf1e7c3e6ea4443fe1f1c6}{}\label{class_p_h_p_mailer_a705aa0508caf1e7c3e6ea4443fe1f1c6}
+Returns the whole M\+I\+ME message. Includes complete headers and body. Only valid post \hyperlink{class_p_h_p_mailer_a528cfdd34d79b053a812a735632593ea}{pre\+Send()}. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_a528cfdd34d79b053a812a735632593ea}{P\+H\+P\+Mailer\+::pre\+Send()}  public 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2176 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+S\+M\+T\+P\+Instance@{get\+S\+M\+T\+P\+Instance}}
+\index{get\+S\+M\+T\+P\+Instance@{get\+S\+M\+T\+P\+Instance}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+S\+M\+T\+P\+Instance()}{getSMTPInstance()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+S\+M\+T\+P\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_af7e9144e6dfd367a6a05dc8b794a4481}{}\label{class_p_h_p_mailer_af7e9144e6dfd367a6a05dc8b794a4481}
+Get an instance to use for \hyperlink{class_s_m_t_p}{S\+M\+TP} operations. Override this function to load your own \hyperlink{class_s_m_t_p}{S\+M\+TP} implementation \begin{DoxyReturn}{Returns}
+\hyperlink{class_s_m_t_p}{S\+M\+TP} 
+\end{DoxyReturn}
+
+
+Definition at line 1517 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+To\+Addresses@{get\+To\+Addresses}}
+\index{get\+To\+Addresses@{get\+To\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+To\+Addresses()}{getToAddresses()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+To\+Addresses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a60d18c0fa7be86271d905e9d19cfc024}{}\label{class_p_h_p_mailer_a60d18c0fa7be86271d905e9d19cfc024}
+Allows for public read access to \textquotesingle{}to\textquotesingle{} property. \begin{DoxyNote}{Note}
+\+: Before the \hyperlink{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{send()} call, queued addresses (i.\+e. with I\+DN) are not yet included.  public 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 3942 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!get\+Translations@{get\+Translations}}
+\index{get\+Translations@{get\+Translations}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{get\+Translations()}{getTranslations()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Translations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ac9287affc67c9523787013f3a22731cc}{}\label{class_p_h_p_mailer_ac9287affc67c9523787013f3a22731cc}
+Get the array of strings for the current language. \begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 1802 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!has8bit\+Chars@{has8bit\+Chars}}
+\index{has8bit\+Chars@{has8bit\+Chars}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{has8bit\+Chars(\$text)}{has8bitChars($text)}}]{\setlength{\rightskip}{0pt plus 5cm}has8bit\+Chars (
+\begin{DoxyParamCaption}
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a00a5a1581e01bf5ae1a012b55a7f2b12}{}\label{class_p_h_p_mailer_a00a5a1581e01bf5ae1a012b55a7f2b12}
+Does a string contain any 8-\/bit chars (in any charset)? 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 2840 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!has\+Line\+Longer\+Than\+Max@{has\+Line\+Longer\+Than\+Max}}
+\index{has\+Line\+Longer\+Than\+Max@{has\+Line\+Longer\+Than\+Max}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{has\+Line\+Longer\+Than\+Max(\$str)}{hasLineLongerThanMax($str)}}]{\setlength{\rightskip}{0pt plus 5cm}static has\+Line\+Longer\+Than\+Max (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_adca6f1dc6f1ec34df1a9362cf1529030}{}\label{class_p_h_p_mailer_adca6f1dc6f1ec34df1a9362cf1529030}
+Detect if a string contains a line longer than the maximum line length allowed. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 3930 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!has\+Multi\+Bytes@{has\+Multi\+Bytes}}
+\index{has\+Multi\+Bytes@{has\+Multi\+Bytes}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{has\+Multi\+Bytes(\$str)}{hasMultiBytes($str)}}]{\setlength{\rightskip}{0pt plus 5cm}has\+Multi\+Bytes (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a6bb4300a48c25d9fdec7fddf4f8e2549}{}\label{class_p_h_p_mailer_a6bb4300a48c25d9fdec7fddf4f8e2549}
+Check if a string contains multi-\/byte characters.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & multi-\/byte text to wrap encode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 2826 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!header\+Line@{header\+Line}}
+\index{header\+Line@{header\+Line}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{header\+Line(\$name, \$value)}{headerLine($name, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}header\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a76caf3b881a28504c1bebedd520004bd}{}\label{class_p_h_p_mailer_a76caf3b881a28504c1bebedd520004bd}
+Format a header line.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2477 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!html2text@{html2text}}
+\index{html2text@{html2text}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{html2text(\$html, \$advanced=false)}{html2text($html, $advanced=false)}}]{\setlength{\rightskip}{0pt plus 5cm}html2text (
+\begin{DoxyParamCaption}
+\item[{}]{\$html, }
+\item[{}]{\$advanced = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_adcc957bbfc73453cc7f04e412603989d}{}\label{class_p_h_p_mailer_adcc957bbfc73453cc7f04e412603989d}
+Convert an H\+T\+ML string into plain text. This is used by \hyperlink{class_p_h_p_mailer_a6c569c4def38cb71b40f0634f17e8230}{msg\+H\+T\+M\+L()}. Note -\/ older versions of this function used a bundled advanced converter which was been removed for license reasons in \#232. Example usage\+: {\ttfamily  // Use default conversion \$plain = \$mail-\/$>$html2text(\$html); // Use your own custom converter \$plain = \$mail-\/$>$html2text(\$html, function(\$html) \{ \$converter = new My\+Html2text(\$html); return \$converter-\/$>$get\+\_\+text(); \}); } 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$html} & The H\+T\+ML text to convert \\
+\hline
+boolean | callable & {\em \$advanced} & Any boolean value to use the internal converter, or provide your own callable for custom conversion. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3477 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!idn\+Supported@{idn\+Supported}}
+\index{idn\+Supported@{idn\+Supported}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{idn\+Supported()}{idnSupported()}}]{\setlength{\rightskip}{0pt plus 5cm}idn\+Supported (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aeb34ed263912fba175ccb4dabc06f9c9}{}\label{class_p_h_p_mailer_aeb34ed263912fba175ccb4dabc06f9c9}
+Tells whether I\+D\+Ns (Internationalized Domain Names) are supported or not. This requires the \char`\"{}intl\char`\"{} and \char`\"{}mbstring\char`\"{} P\+HP extensions. \begin{DoxyReturn}{Returns}
+bool \char`\"{}true\char`\"{} if required functions for I\+DN support are present 
+\end{DoxyReturn}
+
+
+Definition at line 1164 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!inline\+Image\+Exists@{inline\+Image\+Exists}}
+\index{inline\+Image\+Exists@{inline\+Image\+Exists}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{inline\+Image\+Exists()}{inlineImageExists()}}]{\setlength{\rightskip}{0pt plus 5cm}inline\+Image\+Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aca2b58a55c009e10458d59b494d6189d}{}\label{class_p_h_p_mailer_aca2b58a55c009e10458d59b494d6189d}
+Check if an inline attachment is present.  public \begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 3106 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+Error@{is\+Error}}
+\index{is\+Error@{is\+Error}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+Error()}{isError()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a763bcf1f1b83418647c32053ed2988db}{}\label{class_p_h_p_mailer_a763bcf1f1b83418647c32053ed2988db}
+Check if an error occurred.  public \begin{DoxyReturn}{Returns}
+boolean True if an error did occur. 
+\end{DoxyReturn}
+
+
+Definition at line 3328 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+H\+T\+ML@{is\+H\+T\+ML}}
+\index{is\+H\+T\+ML@{is\+H\+T\+ML}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+H\+T\+M\+L(\$is\+Html=true)}{isHTML($isHtml=true)}}]{\setlength{\rightskip}{0pt plus 5cm}is\+H\+T\+ML (
+\begin{DoxyParamCaption}
+\item[{}]{\$is\+Html = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_af811636f1958d3a406ebf82e455c1f7a}{}\label{class_p_h_p_mailer_af811636f1958d3a406ebf82e455c1f7a}
+Sets message type to H\+T\+ML or plain. 
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$is\+Html} & True for H\+T\+ML mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 752 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+Mail@{is\+Mail}}
+\index{is\+Mail@{is\+Mail}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+Mail()}{isMail()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Mail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a279ce48bb3b7186d2efe04487708e082}{}\label{class_p_h_p_mailer_a279ce48bb3b7186d2efe04487708e082}
+Send messages using P\+HP\textquotesingle{}s mail() function. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 774 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+Qmail@{is\+Qmail}}
+\index{is\+Qmail@{is\+Qmail}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+Qmail()}{isQmail()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Qmail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a2b425dbd8364d95937c932d425c72f19}{}\label{class_p_h_p_mailer_a2b425dbd8364d95937c932d425c72f19}
+Send messages using qmail. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 799 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+Sendmail@{is\+Sendmail}}
+\index{is\+Sendmail@{is\+Sendmail}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+Sendmail()}{isSendmail()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+Sendmail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a5a743c9fc5e1e0cae1b267d498bc16a9}{}\label{class_p_h_p_mailer_a5a743c9fc5e1e0cae1b267d498bc16a9}
+Send messages using \$\+Sendmail. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 783 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+Shell\+Safe@{is\+Shell\+Safe}}
+\index{is\+Shell\+Safe@{is\+Shell\+Safe}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+Shell\+Safe(\$string)}{isShellSafe($string)}}]{\setlength{\rightskip}{0pt plus 5cm}static is\+Shell\+Safe (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_aa9e20d8f3d4181d188ee1a4d43e4737e}{}\label{class_p_h_p_mailer_aa9e20d8f3d4181d188ee1a4d43e4737e}
+Fix C\+V\+E-\/2016-\/10033 and C\+V\+E-\/2016-\/10045 by disallowing potentially unsafe shell characters.
+
+Note that escapeshellarg and escapeshellcmd are inadequate for our purposes, especially on Windows. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string to be validated \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/PHPMailer/PHPMailer/issues/924}{\tt https\+://github.\+com/\+P\+H\+P\+Mailer/\+P\+H\+P\+Mailer/issues/924} C\+V\+E-\/2016-\/10045 bug report  protected 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1439 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!is\+S\+M\+TP@{is\+S\+M\+TP}}
+\index{is\+S\+M\+TP@{is\+S\+M\+TP}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{is\+S\+M\+T\+P()}{isSMTP()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+S\+M\+TP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ab7e6e8a95653c3562feff15f3f5795ff}{}\label{class_p_h_p_mailer_ab7e6e8a95653c3562feff15f3f5795ff}
+Send messages using \hyperlink{class_s_m_t_p}{S\+M\+TP}. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 765 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!lang@{lang}}
+\index{lang@{lang}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{lang(\$key)}{lang($key)}}]{\setlength{\rightskip}{0pt plus 5cm}lang (
+\begin{DoxyParamCaption}
+\item[{}]{\$key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a702ec4df6918a529cf123d1d09f608b7}{}\label{class_p_h_p_mailer_a702ec4df6918a529cf123d1d09f608b7}
+Get an error message in the current language.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3303 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!mail\+Send@{mail\+Send}}
+\index{mail\+Send@{mail\+Send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{mail\+Send(\$header, \$body)}{mailSend($header, $body)}}]{\setlength{\rightskip}{0pt plus 5cm}mail\+Send (
+\begin{DoxyParamCaption}
+\item[{}]{\$header, }
+\item[{}]{\$body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a9f43cac580fb8f33ef5e159f1eeb9148}{}\label{class_p_h_p_mailer_a9f43cac580fb8f33ef5e159f1eeb9148}
+Send mail using the P\+HP mail() function. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header} & The message headers \\
+\hline
+string & {\em \$body} & The message body \hyperlink{}{phpmailer\+Exception  protected  boolean }\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 1473 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!mb\+\_\+pathinfo@{mb\+\_\+pathinfo}}
+\index{mb\+\_\+pathinfo@{mb\+\_\+pathinfo}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{mb\+\_\+pathinfo(\$path, \$options=null)}{mb_pathinfo($path, $options=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static mb\+\_\+pathinfo (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$options = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_abefcc03813c15369c080f6361da33b90}{}\label{class_p_h_p_mailer_abefcc03813c15369c080f6361da33b90}
+Multi-\/byte-\/safe pathinfo replacement. Drop-\/in replacement for pathinfo(), but multibyte-\/safe, cross-\/platform-\/safe, old-\/version-\/safe. Works similarly to the one in P\+HP $>$= 5.\+2.\+0 \hyperlink{}{string \$path A filename or path, does not need to exist as a file  integer$\vert$string \$options Either a P\+A\+T\+H\+I\+N\+F\+O\+\_\+$\ast$ constant, or a string name to return only the specified piece, allows \textquotesingle{}filename\textquotesingle{} to work on P\+HP $<$ 5.\+2  string$\vert$array }
+
+Definition at line 3633 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!msg\+H\+T\+ML@{msg\+H\+T\+ML}}
+\index{msg\+H\+T\+ML@{msg\+H\+T\+ML}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{msg\+H\+T\+M\+L(\$message, \$basedir= \textquotesingle{}\textquotesingle{}, \$advanced=false)}{msgHTML($message, $basedir= '', $advanced=false)}}]{\setlength{\rightskip}{0pt plus 5cm}msg\+H\+T\+ML (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$basedir = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$advanced = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a6c569c4def38cb71b40f0634f17e8230}{}\label{class_p_h_p_mailer_a6c569c4def38cb71b40f0634f17e8230}
+Create a message body from an H\+T\+ML string. Automatically inlines images and creates a plain-\/text version by converting the H\+T\+ML, overwriting any existing values in Body and Alt\+Body. \$basedir is used when handling relative image paths, e.\+g.  will look for an image file in \$basedir/images/a.png and convert it to inline. If you don\textquotesingle{}t want to apply these transformations to your H\+T\+ML, just set Body and Alt\+Body yourself.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & H\+T\+ML message string \\
+\hline
+string & {\em \$basedir} & base directory for relative paths to images \\
+\hline
+boolean | callable & {\em \$advanced} & Whether to use the internal H\+T\+ML to text converter or your own custom converter \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_adcc957bbfc73453cc7f04e412603989d}{P\+H\+P\+Mailer\+::html2text()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+string \$message The transformed message Body 
+\end{DoxyReturn}
+
+
+Definition at line 3393 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!normalize\+Breaks@{normalize\+Breaks}}
+\index{normalize\+Breaks@{normalize\+Breaks}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{normalize\+Breaks(\$text, \$breaktype=""\textbackslash{}r\textbackslash{}n"")}{normalizeBreaks($text, $breaktype="\textbackslash{}r\textbackslash{}n")}}]{\setlength{\rightskip}{0pt plus 5cm}static normalize\+Breaks (
+\begin{DoxyParamCaption}
+\item[{}]{\$text, }
+\item[{}]{\$breaktype = {\ttfamily \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_a0098c763eef87ec682208020c880ce71}{}\label{class_p_h_p_mailer_a0098c763eef87ec682208020c880ce71}
+Normalize line breaks in a string. Converts U\+N\+IX LF, Mac CR and Windows C\+R\+LF line breaks into a single line break format. Defaults to C\+R\+LF (for message bodies) and preserves consecutive breaks. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+string & {\em \$breaktype} & What kind of line break to use, defaults to C\+R\+LF \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string  public 
+\end{DoxyReturn}
+
+
+Definition at line 3715 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!parse\+Addresses@{parse\+Addresses}}
+\index{parse\+Addresses@{parse\+Addresses}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{parse\+Addresses(\$addrstr, \$useimap=true)}{parseAddresses($addrstr, $useimap=true)}}]{\setlength{\rightskip}{0pt plus 5cm}parse\+Addresses (
+\begin{DoxyParamCaption}
+\item[{}]{\$addrstr, }
+\item[{}]{\$useimap = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a313dd1ceda0f815e243fc4298ce725df}{}\label{class_p_h_p_mailer_a313dd1ceda0f815e243fc4298ce725df}
+Parse and validate a string containing one or more R\+F\+C822-\/style comma-\/separated email addresses of the form \char`\"{}display name $<$address$>$\char`\"{} into an array of name/address pairs. Uses the imap\+\_\+rfc822\+\_\+parse\+\_\+adrlist function if the I\+M\+AP extension is available. Note that quotes in the name part are removed. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$addrstr} & The address list string \\
+\hline
+bool & {\em \$useimap} & Whether to use the I\+M\+AP extension to parse the list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array \hyperlink{}{A more careful implementation }
+\end{DoxyReturn}
+
+
+Definition at line 958 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!post\+Send@{post\+Send}}
+\index{post\+Send@{post\+Send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{post\+Send()}{postSend()}}]{\setlength{\rightskip}{0pt plus 5cm}post\+Send (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aa2e32c2514a2f342c87509f9d9af34cb}{}\label{class_p_h_p_mailer_aa2e32c2514a2f342c87509f9d9af34cb}
+Actually send a message. Send the email via the selected mechanism 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1326 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!pre\+Send@{pre\+Send}}
+\index{pre\+Send@{pre\+Send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{pre\+Send()}{preSend()}}]{\setlength{\rightskip}{0pt plus 5cm}pre\+Send (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a528cfdd34d79b053a812a735632593ea}{}\label{class_p_h_p_mailer_a528cfdd34d79b053a812a735632593ea}
+Prepare a message for sending. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1229 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!punyencode\+Address@{punyencode\+Address}}
+\index{punyencode\+Address@{punyencode\+Address}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{punyencode\+Address(\$address)}{punyencodeAddress($address)}}]{\setlength{\rightskip}{0pt plus 5cm}punyencode\+Address (
+\begin{DoxyParamCaption}
+\item[{}]{\$address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a53f031a9823e893efcae14422999619b}{}\label{class_p_h_p_mailer_a53f031a9823e893efcae14422999619b}
+Converts I\+DN in given email address to its A\+S\+C\+II form, also known as punycode, if possible. Important\+: Address must be passed in same encoding as currently set in \hyperlink{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}{P\+H\+P\+Mailer\+::\$\+Char\+Set}. This function silently returns unmodified address if\+:
+\begin{DoxyItemize}
+\item No conversion is necessary (i.\+e. domain name is not an I\+DN, or is already in A\+S\+C\+II form)
+\item Conversion to punycode is impossible (e.\+g. required P\+HP functions are not available) or fails for any reason (e.\+g. domain has characters not allowed in an I\+DN) \begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}{P\+H\+P\+Mailer\+::\$\+Char\+Set} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The encoded address in A\+S\+C\+II form 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Definition at line 1181 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!rfc\+Date@{rfc\+Date}}
+\index{rfc\+Date@{rfc\+Date}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{rfc\+Date()}{rfcDate()}}]{\setlength{\rightskip}{0pt plus 5cm}static rfc\+Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_a8977a3091a45017bb8454521deb71e83}{}\label{class_p_h_p_mailer_a8977a3091a45017bb8454521deb71e83}
+Return an R\+FC 822 formatted date.  public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3268 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!secure\+Header@{secure\+Header}}
+\index{secure\+Header@{secure\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{secure\+Header(\$str)}{secureHeader($str)}}]{\setlength{\rightskip}{0pt plus 5cm}secure\+Header (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a808495366277050ff38fa5bcfab8f49e}{}\label{class_p_h_p_mailer_a808495366277050ff38fa5bcfab8f49e}
+Strip newlines to prevent header injection.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3700 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!send@{send}}
+\index{send@{send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{send()}{send()}}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}{}\label{class_p_h_p_mailer_a12bcef5130168b80d3d52dc82213f19a}
+Create a message and send it. Uses the sending method specified by \$\+Mailer. 
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean false on error -\/ See the Error\+Info property for details of the error. 
+\end{DoxyReturn}
+
+
+Definition at line 1207 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!sendmail\+Send@{sendmail\+Send}}
+\index{sendmail\+Send@{sendmail\+Send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{sendmail\+Send(\$header, \$body)}{sendmailSend($header, $body)}}]{\setlength{\rightskip}{0pt plus 5cm}sendmail\+Send (
+\begin{DoxyParamCaption}
+\item[{}]{\$header, }
+\item[{}]{\$body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a05940f686d59bcc249d8d42a6f2e7df0}{}\label{class_p_h_p_mailer_a05940f686d59bcc249d8d42a6f2e7df0}
+Send mail using the \$\+Sendmail program. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header} & The message headers \\
+\hline
+string & {\em \$body} & The message body \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_aea0de75e10af3f581a0a412f41b9db66}{P\+H\+P\+Mailer\+::\$\+Sendmail} 
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & protected \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1365 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!server\+Hostname@{server\+Hostname}}
+\index{server\+Hostname@{server\+Hostname}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{server\+Hostname()}{serverHostname()}}]{\setlength{\rightskip}{0pt plus 5cm}server\+Hostname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ae0867f9651bd0b2f78fb7ccca41377a2}{}\label{class_p_h_p_mailer_ae0867f9651bd0b2f78fb7ccca41377a2}
+Get the server hostname. Returns \textquotesingle{}localhost.\+localdomain\textquotesingle{} if unknown.  protected \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 3282 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set@{set}}
+\index{set@{set}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set(\$name, \$value= \textquotesingle{}\textquotesingle{})}{set($name, $value= '')}}]{\setlength{\rightskip}{0pt plus 5cm}set (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a75ddddcb4fd8f092e42a3cf96c006066}{}\label{class_p_h_p_mailer_a75ddddcb4fd8f092e42a3cf96c006066}
+Set or reset instance properties. You should avoid this function -\/ it\textquotesingle{}s more verbose, less efficient, more error-\/prone and harder to debug than setting properties directly. Usage Example\+: `\$mail-\/$>$set(\textquotesingle{}S\+M\+T\+P\+Secure\textquotesingle{}, \textquotesingle{}tls\textquotesingle{});` is the same as\+: `\$mail-\/$>$S\+M\+T\+P\+Secure = \textquotesingle{}tls\textquotesingle{};`  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The property name to set \\
+\hline
+mixed & {\em \$value} & The value to set the property to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean  Should this not be using the \+\_\+\+\_\+set() magic function? 
+\end{DoxyReturn}
+
+
+Definition at line 3683 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set\+Error@{set\+Error}}
+\index{set\+Error@{set\+Error}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set\+Error(\$msg)}{setError($msg)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a9b84595d8561a0abd81c0b83b6238472}{}\label{class_p_h_p_mailer_a9b84595d8561a0abd81c0b83b6238472}
+Add an error message to the error container.  protected 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$msg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 3241 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set\+From@{set\+From}}
+\index{set\+From@{set\+From}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set\+From(\$address, \$name= \textquotesingle{}\textquotesingle{}, \$auto=true)}{setFrom($address, $name= '', $auto=true)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+From (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$auto = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a28a927fc06372ccebb2a58213ff83b17}{}\label{class_p_h_p_mailer_a28a927fc06372ccebb2a58213ff83b17}
+Set the From and From\+Name properties. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+boolean & {\em \$auto} & Whether to also set the Sender address, defaults to true \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1011 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set\+Language@{set\+Language}}
+\index{set\+Language@{set\+Language}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set\+Language(\$langcode= \textquotesingle{}en\textquotesingle{}, \$lang\+\_\+path= \textquotesingle{}\textquotesingle{})}{setLanguage($langcode= 'en', $lang_path= '')}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Language (
+\begin{DoxyParamCaption}
+\item[{}]{\$langcode = {\ttfamily \textquotesingle{}en\textquotesingle{}}, }
+\item[{}]{\$lang\+\_\+path = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a9da63815ca021badd4fbffa1f568976a}{}\label{class_p_h_p_mailer_a9da63815ca021badd4fbffa1f568976a}
+Set the language for error messages. Returns false if it cannot load the language file. The default language is English. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$langcode} & I\+SO 639-\/1 2-\/character language code (e.\+g. French is \char`\"{}fr\char`\"{}) \\
+\hline
+string & {\em \$lang\+\_\+path} & Path to the language file directory, with trailing separator (slash) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean  public 
+\end{DoxyReturn}
+
+
+Definition at line 1736 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set\+Message\+Type@{set\+Message\+Type}}
+\index{set\+Message\+Type@{set\+Message\+Type}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set\+Message\+Type()}{setMessageType()}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Message\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a333e5e1e8f7aabf320d5f2f950812d5b}{}\label{class_p_h_p_mailer_a333e5e1e8f7aabf320d5f2f950812d5b}
+Set the message type. \hyperlink{class_p_h_p_mailer}{P\+H\+P\+Mailer} only supports some preset message types, not arbitrary M\+I\+ME structures.  protected \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 2451 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!set\+Word\+Wrap@{set\+Word\+Wrap}}
+\index{set\+Word\+Wrap@{set\+Word\+Wrap}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{set\+Word\+Wrap()}{setWordWrap()}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Word\+Wrap (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_ab3b2787c3d322ed943f863c6bf2e4bc8}{}\label{class_p_h_p_mailer_ab3b2787c3d322ed943f863c6bf2e4bc8}
+Apply word wrapping to the message body. Wraps the message body to the number of chars set in the Word\+Wrap property. You should only do this to plain-\/text bodies as wrapping H\+T\+ML tags may break them. This is called automatically by \hyperlink{class_p_h_p_mailer_ad8d982cb84383c36585dab8ac1a01414}{create\+Body()}, so you don\textquotesingle{}t need to call it yourself.  public \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1999 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!sign@{sign}}
+\index{sign@{sign}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{sign(\$cert\+\_\+filename, \$key\+\_\+filename, \$key\+\_\+pass, \$extracerts\+\_\+filename= \textquotesingle{}\textquotesingle{})}{sign($cert_filename, $key_filename, $key_pass, $extracerts_filename= '')}}]{\setlength{\rightskip}{0pt plus 5cm}sign (
+\begin{DoxyParamCaption}
+\item[{}]{\$cert\+\_\+filename, }
+\item[{}]{\$key\+\_\+filename, }
+\item[{}]{\$key\+\_\+pass, }
+\item[{}]{\$extracerts\+\_\+filename = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_abdc7683507bef51fdb7b4c1e4a7c70d2}{}\label{class_p_h_p_mailer_abdc7683507bef51fdb7b4c1e4a7c70d2}
+Set the public and private key files and password for S/\+M\+I\+ME signing.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cert\+\_\+filename} & \\
+\hline
+string & {\em \$key\+\_\+filename} & \\
+\hline
+string & {\em \$key\+\_\+pass} & Password for private key \\
+\hline
+string & {\em \$extracerts\+\_\+filename} & Optional path to chain certificate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3728 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!smtp\+Close@{smtp\+Close}}
+\index{smtp\+Close@{smtp\+Close}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{smtp\+Close()}{smtpClose()}}]{\setlength{\rightskip}{0pt plus 5cm}smtp\+Close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a3ec2fab4c4b1ab20a992704c35be6364}{}\label{class_p_h_p_mailer_a3ec2fab4c4b1ab20a992704c35be6364}
+Close the active \hyperlink{class_s_m_t_p}{S\+M\+TP} session if one exists. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 1717 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!smtp\+Connect@{smtp\+Connect}}
+\index{smtp\+Connect@{smtp\+Connect}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{smtp\+Connect(\$options=null)}{smtpConnect($options=null)}}]{\setlength{\rightskip}{0pt plus 5cm}smtp\+Connect (
+\begin{DoxyParamCaption}
+\item[{}]{\$options = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a58e7e9d1a3e59fc691476b400a7b8fe0}{}\label{class_p_h_p_mailer_a58e7e9d1a3e59fc691476b400a7b8fe0}
+Initiate a connection to an \hyperlink{class_s_m_t_p}{S\+M\+TP} server. Returns false if the operation failed. 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & An array of options compatible with stream\+\_\+context\+\_\+create()  \hyperlink{class_s_m_t_p}{S\+M\+TP}  public \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1600 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!smtp\+Send@{smtp\+Send}}
+\index{smtp\+Send@{smtp\+Send}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{smtp\+Send(\$header, \$body)}{smtpSend($header, $body)}}]{\setlength{\rightskip}{0pt plus 5cm}smtp\+Send (
+\begin{DoxyParamCaption}
+\item[{}]{\$header, }
+\item[{}]{\$body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a49eca48203f71281e82986420773c3be}{}\label{class_p_h_p_mailer_a49eca48203f71281e82986420773c3be}
+Send mail via \hyperlink{class_s_m_t_p}{S\+M\+TP}. Returns false if there is a bad M\+A\+IL F\+R\+OM, R\+C\+PT, or D\+A\+TA input. Uses the P\+H\+P\+Mailer\+S\+M\+TP class by default. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_p_h_p_mailer_af7e9144e6dfd367a6a05dc8b794a4481}{P\+H\+P\+Mailer\+::get\+S\+M\+T\+P\+Instance()} to use \hyperlink{_chart_8min_8js_aef3b685c08bc6c76c8e729bd0e93901d}{a} different class. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header} & The message headers \\
+\hline
+string & {\em \$body} & The message body \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classphpmailer_exception}{phpmailer\+Exception}} & \hyperlink{class_s_m_t_p}{S\+M\+TP}  protected \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 1537 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!text\+Line@{text\+Line}}
+\index{text\+Line@{text\+Line}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{text\+Line(\$value)}{textLine($value)}}]{\setlength{\rightskip}{0pt plus 5cm}text\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a77108e49f31bbd9d96ec281de118b815}{}\label{class_p_h_p_mailer_a77108e49f31bbd9d96ec281de118b815}
+Return a formatted mail line.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 2488 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!utf8\+Char\+Boundary@{utf8\+Char\+Boundary}}
+\index{utf8\+Char\+Boundary@{utf8\+Char\+Boundary}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{utf8\+Char\+Boundary(\$encoded\+Text, \$max\+Length)}{utf8CharBoundary($encodedText, $maxLength)}}]{\setlength{\rightskip}{0pt plus 5cm}utf8\+Char\+Boundary (
+\begin{DoxyParamCaption}
+\item[{}]{\$encoded\+Text, }
+\item[{}]{\$max\+Length}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_a155c6b34e020054e9c19f0a94bacee38}{}\label{class_p_h_p_mailer_a155c6b34e020054e9c19f0a94bacee38}
+Find the last character boundary prior to \$max\+Length in a utf-\/8 quoted-\/printable encoded string. Original written by Colin Brown.  public 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encoded\+Text} & utf-\/8 QP text \\
+\hline
+integer & {\em \$max\+Length} & Find the last character boundary prior to this length \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+Definition at line 1954 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!validate\+Address@{validate\+Address}}
+\index{validate\+Address@{validate\+Address}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{validate\+Address(\$address, \$patternselect=null)}{validateAddress($address, $patternselect=null)}}]{\setlength{\rightskip}{0pt plus 5cm}static validate\+Address (
+\begin{DoxyParamCaption}
+\item[{}]{\$address, }
+\item[{}]{\$patternselect = {\ttfamily null}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_ab1751a18a24757fee7043fa3b055eb03}{}\label{class_p_h_p_mailer_ab1751a18a24757fee7043fa3b055eb03}
+Check that a string looks like an email address. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & The email address to check \\
+\hline
+string | callable & {\em \$patternselect} & A selector for the validation pattern to use \+:
+\begin{DoxyItemize}
+\item {\ttfamily auto} Pick best pattern automatically;
+\item {\ttfamily pcre8} Use the squiloople.\+com pattern, requires P\+C\+RE $>$ 8.\+0, P\+HP $>$= 5.\+3.\+2, 5.\+2.\+14;
+\item {\ttfamily pcre} Use old P\+C\+RE implementation;
+\item {\ttfamily php} Use P\+HP built-\/in F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+E\+M\+A\+IL;
+\item {\ttfamily html5} Use the pattern given by the H\+T\+M\+L5 spec for \textquotesingle{}email\textquotesingle{} type form input elements.
+\item {\ttfamily noregex} Don\textquotesingle{}t use a regex\+: super fast, really dumb. Alternatively you may pass in a callable to inject your own validator, for example\+: \hyperlink{class_p_h_p_mailer_ab1751a18a24757fee7043fa3b055eb03}{P\+H\+P\+Mailer\+::validate\+Address}(\textquotesingle{}\href{mailto:user@example.com}{\tt user@example.\+com}\textquotesingle{}, function(\$address) \{ return (strpos(\$address, \textquotesingle{}@\textquotesingle{}) !== false); \}); You can also set the \hyperlink{class_p_h_p_mailer_aa4e00b38f53ef571bf77fc9c3e882972}{P\+H\+P\+Mailer\+::\$validator} static to a callable, allowing built-\/in methods to use your validator. 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean
+\end{DoxyReturn}
+public Uses the same R\+F\+C5322 regex on which F\+I\+L\+T\+E\+R\+\_\+\+V\+A\+L\+I\+D\+A\+T\+E\+\_\+\+E\+M\+A\+IL is based, but allows dotless domains. \hyperlink{}{2009-\/2010 Michael Rushton Feel free to use and redistribute this code. But please keep this copyright notice. This is the pattern used in the H\+T\+M\+L5 spec for validation of \textquotesingle{}email\textquotesingle{} type form input elements.  \href{http://www.whatwg.org/specs/web-apps/current-work/#e-mail-state-(type=email)}{\tt http\+://www.\+whatwg.\+org/specs/web-\/apps/current-\/work/\#e-\/mail-\/state-\/(type=email)} }
+
+Definition at line 1068 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!wrap\+Text@{wrap\+Text}}
+\index{wrap\+Text@{wrap\+Text}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{wrap\+Text(\$message, \$length, \$qp\+\_\+mode=false)}{wrapText($message, $length, $qp_mode=false)}}]{\setlength{\rightskip}{0pt plus 5cm}wrap\+Text (
+\begin{DoxyParamCaption}
+\item[{}]{\$message, }
+\item[{}]{\$length, }
+\item[{}]{\$qp\+\_\+mode = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_h_p_mailer_aabf081d0812225a5cf80c27ffa74c76c}{}\label{class_p_h_p_mailer_aabf081d0812225a5cf80c27ffa74c76c}
+Word-\/wrap message. For use with mailers that do not automatically perform wrapping and for quoted-\/printable encoded messages. Original written by philippe. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & The message to wrap \\
+\hline
+integer & {\em \$length} & The line length to wrap to \\
+\hline
+boolean & {\em \$qp\+\_\+mode} & Whether to run in Quoted-\/\+Printable mode  public \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 1855 of file class.\+phpmailer.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$action\+\_\+function@{\$action\+\_\+function}}
+\index{\$action\+\_\+function@{\$action\+\_\+function}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$action\+\_\+function}{$action_function}}]{\setlength{\rightskip}{0pt plus 5cm}\$action\+\_\+function = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_aa39c535046aa8919dc46727723a94a4a}{}\label{class_p_h_p_mailer_aa39c535046aa8919dc46727723a94a4a}
+
+
+Definition at line 451 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$all\+\_\+recipients@{\$all\+\_\+recipients}}
+\index{\$all\+\_\+recipients@{\$all\+\_\+recipients}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$all\+\_\+recipients}{$all_recipients}}]{\setlength{\rightskip}{0pt plus 5cm}\$all\+\_\+recipients = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a54b648f01a9df77a1434edd3a9e58462}{}\label{class_p_h_p_mailer_a54b648f01a9df77a1434edd3a9e58462}
+
+
+Definition at line 511 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Allow\+Empty@{\$\+Allow\+Empty}}
+\index{\$\+Allow\+Empty@{\$\+Allow\+Empty}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Allow\+Empty}{$AllowEmpty}}]{\setlength{\rightskip}{0pt plus 5cm}\$Allow\+Empty = false}\hypertarget{class_p_h_p_mailer_a10c978cd1c0d14c12013ee1d7cd70bcb}{}\label{class_p_h_p_mailer_a10c978cd1c0d14c12013ee1d7cd70bcb}
+
+
+Definition at line 383 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Alt\+Body@{\$\+Alt\+Body}}
+\index{\$\+Alt\+Body@{\$\+Alt\+Body}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Alt\+Body}{$AltBody}}]{\setlength{\rightskip}{0pt plus 5cm}\$Alt\+Body = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a5a3adc4eeed7620a1290e2364cee9084}{}\label{class_p_h_p_mailer_a5a3adc4eeed7620a1290e2364cee9084}
+
+
+Definition at line 118 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$attachment@{\$attachment}}
+\index{\$attachment@{\$attachment}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$attachment}{$attachment}}]{\setlength{\rightskip}{0pt plus 5cm}\$attachment = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a4019bc6f2f49dc44acb1b4168505b19e}{}\label{class_p_h_p_mailer_a4019bc6f2f49dc44acb1b4168505b19e}
+
+
+Definition at line 540 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Auth\+Type@{\$\+Auth\+Type}}
+\index{\$\+Auth\+Type@{\$\+Auth\+Type}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Auth\+Type}{$AuthType}}]{\setlength{\rightskip}{0pt plus 5cm}\$Auth\+Type = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_afd91ef8cbbb4321e6d963b8189dc1f84}{}\label{class_p_h_p_mailer_afd91ef8cbbb4321e6d963b8189dc1f84}
+
+
+Definition at line 294 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$bcc@{\$bcc}}
+\index{\$bcc@{\$bcc}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$bcc}{$bcc}}]{\setlength{\rightskip}{0pt plus 5cm}\$bcc = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a5e11ecd89692e5b6bfa3702c7894e23d}{}\label{class_p_h_p_mailer_a5e11ecd89692e5b6bfa3702c7894e23d}
+
+
+Definition at line 495 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Body@{\$\+Body}}
+\index{\$\+Body@{\$\+Body}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Body}{$Body}}]{\setlength{\rightskip}{0pt plus 5cm}\$Body = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_afcecd01958faa0a6eec878226ffe09f1}{}\label{class_p_h_p_mailer_afcecd01958faa0a6eec878226ffe09f1}
+
+
+Definition at line 109 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$boundary@{\$boundary}}
+\index{\$boundary@{\$boundary}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$boundary}{$boundary}}]{\setlength{\rightskip}{0pt plus 5cm}\$boundary = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a324c46222153b175ed4ea28967c75483}{}\label{class_p_h_p_mailer_a324c46222153b175ed4ea28967c75483}
+
+
+Definition at line 568 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$cc@{\$cc}}
+\index{\$cc@{\$cc}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$cc}{$cc}}]{\setlength{\rightskip}{0pt plus 5cm}\$cc = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a9b0d06c40e3b730d537b8e1ab12ce238}{}\label{class_p_h_p_mailer_a9b0d06c40e3b730d537b8e1ab12ce238}
+
+
+Definition at line 488 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Char\+Set@{\$\+Char\+Set}}
+\index{\$\+Char\+Set@{\$\+Char\+Set}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Char\+Set}{$CharSet}}]{\setlength{\rightskip}{0pt plus 5cm}\$Char\+Set = \textquotesingle{}iso-\/8859-\/1\textquotesingle{}}\hypertarget{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}{}\label{class_p_h_p_mailer_aafc11e59da1a3f7e242b6987f1cb514a}
+
+
+Definition at line 48 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Confirm\+Reading\+To@{\$\+Confirm\+Reading\+To}}
+\index{\$\+Confirm\+Reading\+To@{\$\+Confirm\+Reading\+To}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Confirm\+Reading\+To}{$ConfirmReadingTo}}]{\setlength{\rightskip}{0pt plus 5cm}\$Confirm\+Reading\+To = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a7bd5233c41d3f1cd2b653433fa88b8ed}{}\label{class_p_h_p_mailer_a7bd5233c41d3f1cd2b653433fa88b8ed}
+
+
+Definition at line 190 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Content\+Type@{\$\+Content\+Type}}
+\index{\$\+Content\+Type@{\$\+Content\+Type}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Content\+Type}{$ContentType}}]{\setlength{\rightskip}{0pt plus 5cm}\$Content\+Type = \textquotesingle{}text/plain\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a35c42684e94e56e60bfc1a8ec2cbcd08}{}\label{class_p_h_p_mailer_a35c42684e94e56e60bfc1a8ec2cbcd08}
+
+
+Definition at line 54 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Custom\+Header@{\$\+Custom\+Header}}
+\index{\$\+Custom\+Header@{\$\+Custom\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Custom\+Header}{$CustomHeader}}]{\setlength{\rightskip}{0pt plus 5cm}\$Custom\+Header = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a14f2a8bd0d170d40810d432f58884f93}{}\label{class_p_h_p_mailer_a14f2a8bd0d170d40810d432f58884f93}
+
+
+Definition at line 547 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Debugoutput@{\$\+Debugoutput}}
+\index{\$\+Debugoutput@{\$\+Debugoutput}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Debugoutput}{$Debugoutput}}]{\setlength{\rightskip}{0pt plus 5cm}\$Debugoutput = \textquotesingle{}echo\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a532f3412f3d97a106a36ff2b49409e42}{}\label{class_p_h_p_mailer_a532f3412f3d97a106a36ff2b49409e42}
+
+
+Definition at line 345 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+domain@{\$\+D\+K\+I\+M\+\_\+domain}}
+\index{\$\+D\+K\+I\+M\+\_\+domain@{\$\+D\+K\+I\+M\+\_\+domain}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+domain}{$DKIM_domain}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+domain = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a1e49cdb6cd38fc496bd5a93092cac0e7}{}\label{class_p_h_p_mailer_a1e49cdb6cd38fc496bd5a93092cac0e7}
+
+
+Definition at line 418 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+identity@{\$\+D\+K\+I\+M\+\_\+identity}}
+\index{\$\+D\+K\+I\+M\+\_\+identity@{\$\+D\+K\+I\+M\+\_\+identity}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+identity}{$DKIM_identity}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+identity = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a677f605bf9bb29be802c5d17d8a0a22c}{}\label{class_p_h_p_mailer_a677f605bf9bb29be802c5d17d8a0a22c}
+
+
+Definition at line 404 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+passphrase@{\$\+D\+K\+I\+M\+\_\+passphrase}}
+\index{\$\+D\+K\+I\+M\+\_\+passphrase@{\$\+D\+K\+I\+M\+\_\+passphrase}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+passphrase}{$DKIM_passphrase}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+passphrase = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a4f94813eecc8b5ebf32284d9a966f594}{}\label{class_p_h_p_mailer_a4f94813eecc8b5ebf32284d9a966f594}
+
+
+Definition at line 411 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+private@{\$\+D\+K\+I\+M\+\_\+private}}
+\index{\$\+D\+K\+I\+M\+\_\+private@{\$\+D\+K\+I\+M\+\_\+private}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+private}{$DKIM_private}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+private = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_ac465c52f2f7ee6eade05ce0a65fbca61}{}\label{class_p_h_p_mailer_ac465c52f2f7ee6eade05ce0a65fbca61}
+
+
+Definition at line 424 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+private\+\_\+string@{\$\+D\+K\+I\+M\+\_\+private\+\_\+string}}
+\index{\$\+D\+K\+I\+M\+\_\+private\+\_\+string@{\$\+D\+K\+I\+M\+\_\+private\+\_\+string}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+private\+\_\+string}{$DKIM_private_string}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+private\+\_\+string = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a8b211d29c0349751ae550f4084b69ea3}{}\label{class_p_h_p_mailer_a8b211d29c0349751ae550f4084b69ea3}
+
+
+Definition at line 431 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+D\+K\+I\+M\+\_\+selector@{\$\+D\+K\+I\+M\+\_\+selector}}
+\index{\$\+D\+K\+I\+M\+\_\+selector@{\$\+D\+K\+I\+M\+\_\+selector}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+D\+K\+I\+M\+\_\+selector}{$DKIM_selector}}]{\setlength{\rightskip}{0pt plus 5cm}\$D\+K\+I\+M\+\_\+selector = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_ac21e5612fa66eeeee43467525e6c393d}{}\label{class_p_h_p_mailer_ac21e5612fa66eeeee43467525e6c393d}
+
+
+Definition at line 397 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$do\+\_\+verp@{\$do\+\_\+verp}}
+\index{\$do\+\_\+verp@{\$do\+\_\+verp}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$do\+\_\+verp}{$do_verp}}]{\setlength{\rightskip}{0pt plus 5cm}\$do\+\_\+verp = false}\hypertarget{class_p_h_p_mailer_abf2ec34ae2e6abd0f598ea202a8fa807}{}\label{class_p_h_p_mailer_abf2ec34ae2e6abd0f598ea202a8fa807}
+
+
+Definition at line 377 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Encoding@{\$\+Encoding}}
+\index{\$\+Encoding@{\$\+Encoding}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Encoding}{$Encoding}}]{\setlength{\rightskip}{0pt plus 5cm}\$Encoding = \textquotesingle{}8bit\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a7c44f20127f1436e9315b5fcfee472f3}{}\label{class_p_h_p_mailer_a7c44f20127f1436e9315b5fcfee472f3}
+
+
+Definition at line 61 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$error\+\_\+count@{\$error\+\_\+count}}
+\index{\$error\+\_\+count@{\$error\+\_\+count}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$error\+\_\+count}{$error_count}}]{\setlength{\rightskip}{0pt plus 5cm}\$error\+\_\+count = 0\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a7cdeffef92c4734cc7f303a7bea0711d}{}\label{class_p_h_p_mailer_a7cdeffef92c4734cc7f303a7bea0711d}
+
+
+Definition at line 582 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Error\+Info@{\$\+Error\+Info}}
+\index{\$\+Error\+Info@{\$\+Error\+Info}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Error\+Info}{$ErrorInfo}}]{\setlength{\rightskip}{0pt plus 5cm}\$Error\+Info = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a4aa7f2e8bf834210cc4522666115e03e}{}\label{class_p_h_p_mailer_a4aa7f2e8bf834210cc4522666115e03e}
+
+
+Definition at line 67 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$exceptions@{\$exceptions}}
+\index{\$exceptions@{\$exceptions}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$exceptions}{$exceptions}}]{\setlength{\rightskip}{0pt plus 5cm}\$exceptions = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a7b3cdaf64a0a391d40bc8ecd4008218a}{}\label{class_p_h_p_mailer_a7b3cdaf64a0a391d40bc8ecd4008218a}
+
+
+Definition at line 618 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+From@{\$\+From}}
+\index{\$\+From@{\$\+From}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+From}{$From}}]{\setlength{\rightskip}{0pt plus 5cm}\$From = \textquotesingle{}{\bf root}@localhost\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a9f9e5bc6226feedebe3135b210eb5ef8}{}\label{class_p_h_p_mailer_a9f9e5bc6226feedebe3135b210eb5ef8}
+
+
+Definition at line 73 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+From\+Name@{\$\+From\+Name}}
+\index{\$\+From\+Name@{\$\+From\+Name}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+From\+Name}{$FromName}}]{\setlength{\rightskip}{0pt plus 5cm}\$From\+Name = \textquotesingle{}Root User\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a0338c56bfb2ac4229c555a97222f47c2}{}\label{class_p_h_p_mailer_a0338c56bfb2ac4229c555a97222f47c2}
+
+
+Definition at line 79 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Helo@{\$\+Helo}}
+\index{\$\+Helo@{\$\+Helo}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Helo}{$Helo}}]{\setlength{\rightskip}{0pt plus 5cm}\$Helo = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a361dc28dd21d5c555a1645bcdf8bab66}{}\label{class_p_h_p_mailer_a361dc28dd21d5c555a1645bcdf8bab66}
+
+
+Definition at line 245 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Host@{\$\+Host}}
+\index{\$\+Host@{\$\+Host}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Host}{$Host}}]{\setlength{\rightskip}{0pt plus 5cm}\$Host = \textquotesingle{}localhost\textquotesingle{}}\hypertarget{class_p_h_p_mailer_ad019d6ecb4db4cd981fb7aeae7fbfc2c}{}\label{class_p_h_p_mailer_ad019d6ecb4db4cd981fb7aeae7fbfc2c}
+
+
+Definition at line 229 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Hostname@{\$\+Hostname}}
+\index{\$\+Hostname@{\$\+Hostname}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Hostname}{$Hostname}}]{\setlength{\rightskip}{0pt plus 5cm}\$Hostname = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a48a6eac112dcc8617b4001d985b656c8}{}\label{class_p_h_p_mailer_a48a6eac112dcc8617b4001d985b656c8}
+
+
+Definition at line 199 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Ical@{\$\+Ical}}
+\index{\$\+Ical@{\$\+Ical}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Ical}{$Ical}}]{\setlength{\rightskip}{0pt plus 5cm}\$Ical = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_ace4b3f5855e39dec9993867ed920e30b}{}\label{class_p_h_p_mailer_ace4b3f5855e39dec9993867ed920e30b}
+
+
+Definition at line 128 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$language@{\$language}}
+\index{\$language@{\$language}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$language}{$language}}]{\setlength{\rightskip}{0pt plus 5cm}\$language = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a83170d318260a5a2e2a79dccdd371b10}{}\label{class_p_h_p_mailer_a83170d318260a5a2e2a79dccdd371b10}
+
+
+Definition at line 575 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$last\+Message\+ID@{\$last\+Message\+ID}}
+\index{\$last\+Message\+ID@{\$last\+Message\+ID}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$last\+Message\+ID}{$lastMessageID}}]{\setlength{\rightskip}{0pt plus 5cm}\$last\+Message\+ID = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a974888b4d036404356394cf76035174d}{}\label{class_p_h_p_mailer_a974888b4d036404356394cf76035174d}
+
+
+Definition at line 554 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+LE@{\$\+LE}}
+\index{\$\+LE@{\$\+LE}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+LE}{$LE}}]{\setlength{\rightskip}{0pt plus 5cm}\$LE = \char`\"{}\textbackslash{}n\char`\"{}}\hypertarget{class_p_h_p_mailer_a5ed269759d4ddf4fdf658930d93f69f7}{}\label{class_p_h_p_mailer_a5ed269759d4ddf4fdf658930d93f69f7}
+
+
+Definition at line 391 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Mailer@{\$\+Mailer}}
+\index{\$\+Mailer@{\$\+Mailer}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Mailer}{$Mailer}}]{\setlength{\rightskip}{0pt plus 5cm}\$Mailer = \textquotesingle{}mail\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a7792543896c9a827d4bfd3e29d2e0b01}{}\label{class_p_h_p_mailer_a7792543896c9a827d4bfd3e29d2e0b01}
+
+
+Definition at line 163 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$mail\+Header@{\$mail\+Header}}
+\index{\$mail\+Header@{\$mail\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$mail\+Header}{$mailHeader}}]{\setlength{\rightskip}{0pt plus 5cm}\$mail\+Header = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a3ad70a9d71fa41fd488f3148f24a2b42}{}\label{class_p_h_p_mailer_a3ad70a9d71fa41fd488f3148f24a2b42}
+
+
+Definition at line 149 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$message\+\_\+type@{\$message\+\_\+type}}
+\index{\$message\+\_\+type@{\$message\+\_\+type}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$message\+\_\+type}{$message_type}}]{\setlength{\rightskip}{0pt plus 5cm}\$message\+\_\+type = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a538e1d253d02a1664a29a632e549b070}{}\label{class_p_h_p_mailer_a538e1d253d02a1664a29a632e549b070}
+
+
+Definition at line 561 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Message\+Date@{\$\+Message\+Date}}
+\index{\$\+Message\+Date@{\$\+Message\+Date}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Message\+Date}{$MessageDate}}]{\setlength{\rightskip}{0pt plus 5cm}\$Message\+Date = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a4812372af8756f11c88ef5f7eac3b7ee}{}\label{class_p_h_p_mailer_a4812372af8756f11c88ef5f7eac3b7ee}
+
+
+Definition at line 216 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Message\+ID@{\$\+Message\+ID}}
+\index{\$\+Message\+ID@{\$\+Message\+ID}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Message\+ID}{$MessageID}}]{\setlength{\rightskip}{0pt plus 5cm}\$Message\+ID = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_adf09200a8d2c3460c6b16a7ae554a69e}{}\label{class_p_h_p_mailer_adf09200a8d2c3460c6b16a7ae554a69e}
+
+
+Definition at line 209 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+M\+I\+M\+E\+Body@{\$\+M\+I\+M\+E\+Body}}
+\index{\$\+M\+I\+M\+E\+Body@{\$\+M\+I\+M\+E\+Body}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+M\+I\+M\+E\+Body}{$MIMEBody}}]{\setlength{\rightskip}{0pt plus 5cm}\$M\+I\+M\+E\+Body = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a91bd736ba6ff85b61c24770f6bb09fda}{}\label{class_p_h_p_mailer_a91bd736ba6ff85b61c24770f6bb09fda}
+
+
+Definition at line 135 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+M\+I\+M\+E\+Header@{\$\+M\+I\+M\+E\+Header}}
+\index{\$\+M\+I\+M\+E\+Header@{\$\+M\+I\+M\+E\+Header}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+M\+I\+M\+E\+Header}{$MIMEHeader}}]{\setlength{\rightskip}{0pt plus 5cm}\$M\+I\+M\+E\+Header = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a272ba03cd59dc9aa3a0dc74ec74daaa1}{}\label{class_p_h_p_mailer_a272ba03cd59dc9aa3a0dc74ec74daaa1}
+
+
+Definition at line 142 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Password@{\$\+Password}}
+\index{\$\+Password@{\$\+Password}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Password}{$Password}}]{\setlength{\rightskip}{0pt plus 5cm}\$Password = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_ae3ac8512c0fd8924c7112671ead08cf7}{}\label{class_p_h_p_mailer_ae3ac8512c0fd8924c7112671ead08cf7}
+
+
+Definition at line 287 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Plugin\+Dir@{\$\+Plugin\+Dir}}
+\index{\$\+Plugin\+Dir@{\$\+Plugin\+Dir}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Plugin\+Dir}{$PluginDir}}]{\setlength{\rightskip}{0pt plus 5cm}\$Plugin\+Dir = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a80c30e6b011ed425f82610685c961df7}{}\label{class_p_h_p_mailer_a80c30e6b011ed425f82610685c961df7}
+
+
+Definition at line 184 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Port@{\$\+Port}}
+\index{\$\+Port@{\$\+Port}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Port}{$Port}}]{\setlength{\rightskip}{0pt plus 5cm}\$Port = 25}\hypertarget{class_p_h_p_mailer_a3e9844389378050f7a95b67b329edf90}{}\label{class_p_h_p_mailer_a3e9844389378050f7a95b67b329edf90}
+
+
+Definition at line 236 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Priority@{\$\+Priority}}
+\index{\$\+Priority@{\$\+Priority}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Priority}{$Priority}}]{\setlength{\rightskip}{0pt plus 5cm}\$Priority = null}\hypertarget{class_p_h_p_mailer_a7c6546640ba3eafd143d8f0e6805de27}{}\label{class_p_h_p_mailer_a7c6546640ba3eafd143d8f0e6805de27}
+
+
+Definition at line 42 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Realm@{\$\+Realm}}
+\index{\$\+Realm@{\$\+Realm}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Realm}{$Realm}}]{\setlength{\rightskip}{0pt plus 5cm}\$Realm = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a992213fc362ebe731af595e6f4c7e49b}{}\label{class_p_h_p_mailer_a992213fc362ebe731af595e6f4c7e49b}
+
+
+Definition at line 301 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Recipients\+Queue@{\$\+Recipients\+Queue}}
+\index{\$\+Recipients\+Queue@{\$\+Recipients\+Queue}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Recipients\+Queue}{$RecipientsQueue}}]{\setlength{\rightskip}{0pt plus 5cm}\$Recipients\+Queue = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a51a46f673baf030a5777085861cc2e27}{}\label{class_p_h_p_mailer_a51a46f673baf030a5777085861cc2e27}
+
+
+Definition at line 523 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Reply\+To@{\$\+Reply\+To}}
+\index{\$\+Reply\+To@{\$\+Reply\+To}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Reply\+To}{$ReplyTo}}]{\setlength{\rightskip}{0pt plus 5cm}\$Reply\+To = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a856ec7458d9fa38bb18e41d255d427ca}{}\label{class_p_h_p_mailer_a856ec7458d9fa38bb18e41d255d427ca}
+
+
+Definition at line 502 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Reply\+To\+Queue@{\$\+Reply\+To\+Queue}}
+\index{\$\+Reply\+To\+Queue@{\$\+Reply\+To\+Queue}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Reply\+To\+Queue}{$ReplyToQueue}}]{\setlength{\rightskip}{0pt plus 5cm}\$Reply\+To\+Queue = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a2518fc6416330a3dad2d83beff2e3a8d}{}\label{class_p_h_p_mailer_a2518fc6416330a3dad2d83beff2e3a8d}
+
+
+Definition at line 533 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Return\+Path@{\$\+Return\+Path}}
+\index{\$\+Return\+Path@{\$\+Return\+Path}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Return\+Path}{$ReturnPath}}]{\setlength{\rightskip}{0pt plus 5cm}\$Return\+Path = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a51413bc6dfa3e9122897131c4b369a19}{}\label{class_p_h_p_mailer_a51413bc6dfa3e9122897131c4b369a19}
+
+
+Definition at line 96 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Sender@{\$\+Sender}}
+\index{\$\+Sender@{\$\+Sender}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Sender}{$Sender}}]{\setlength{\rightskip}{0pt plus 5cm}\$Sender = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a0fd52b1481fe1434c5810ca3cb098985}{}\label{class_p_h_p_mailer_a0fd52b1481fe1434c5810ca3cb098985}
+
+
+Definition at line 86 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Sendmail@{\$\+Sendmail}}
+\index{\$\+Sendmail@{\$\+Sendmail}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Sendmail}{$Sendmail}}]{\setlength{\rightskip}{0pt plus 5cm}\$Sendmail = \textquotesingle{}/usr/sbin/sendmail\textquotesingle{}}\hypertarget{class_p_h_p_mailer_aea0de75e10af3f581a0a412f41b9db66}{}\label{class_p_h_p_mailer_aea0de75e10af3f581a0a412f41b9db66}
+
+
+Definition at line 169 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$sign\+\_\+cert\+\_\+file@{\$sign\+\_\+cert\+\_\+file}}
+\index{\$sign\+\_\+cert\+\_\+file@{\$sign\+\_\+cert\+\_\+file}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$sign\+\_\+cert\+\_\+file}{$sign_cert_file}}]{\setlength{\rightskip}{0pt plus 5cm}\$sign\+\_\+cert\+\_\+file = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a333572c0adf8b31023c7d868e20b8b8b}{}\label{class_p_h_p_mailer_a333572c0adf8b31023c7d868e20b8b8b}
+
+
+Definition at line 589 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$sign\+\_\+extracerts\+\_\+file@{\$sign\+\_\+extracerts\+\_\+file}}
+\index{\$sign\+\_\+extracerts\+\_\+file@{\$sign\+\_\+extracerts\+\_\+file}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$sign\+\_\+extracerts\+\_\+file}{$sign_extracerts_file}}]{\setlength{\rightskip}{0pt plus 5cm}\$sign\+\_\+extracerts\+\_\+file = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ae510d44770a6bd6f11170a5d88c0d6fc}{}\label{class_p_h_p_mailer_ae510d44770a6bd6f11170a5d88c0d6fc}
+
+
+Definition at line 603 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$sign\+\_\+key\+\_\+file@{\$sign\+\_\+key\+\_\+file}}
+\index{\$sign\+\_\+key\+\_\+file@{\$sign\+\_\+key\+\_\+file}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$sign\+\_\+key\+\_\+file}{$sign_key_file}}]{\setlength{\rightskip}{0pt plus 5cm}\$sign\+\_\+key\+\_\+file = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_a984a5cd10ea13b5c25b9088004469712}{}\label{class_p_h_p_mailer_a984a5cd10ea13b5c25b9088004469712}
+
+
+Definition at line 596 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$sign\+\_\+key\+\_\+pass@{\$sign\+\_\+key\+\_\+pass}}
+\index{\$sign\+\_\+key\+\_\+pass@{\$sign\+\_\+key\+\_\+pass}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$sign\+\_\+key\+\_\+pass}{$sign_key_pass}}]{\setlength{\rightskip}{0pt plus 5cm}\$sign\+\_\+key\+\_\+pass = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ad6ab22b5338f0053e25887fde1f7fd47}{}\label{class_p_h_p_mailer_ad6ab22b5338f0053e25887fde1f7fd47}
+
+
+Definition at line 611 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Single\+To@{\$\+Single\+To}}
+\index{\$\+Single\+To@{\$\+Single\+To}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Single\+To}{$SingleTo}}]{\setlength{\rightskip}{0pt plus 5cm}\$Single\+To = false}\hypertarget{class_p_h_p_mailer_a7c792e2e3e3cb98d869c9a68b73bc3a0}{}\label{class_p_h_p_mailer_a7c792e2e3e3cb98d869c9a68b73bc3a0}
+
+
+Definition at line 361 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Single\+To\+Array@{\$\+Single\+To\+Array}}
+\index{\$\+Single\+To\+Array@{\$\+Single\+To\+Array}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Single\+To\+Array}{$SingleToArray}}]{\setlength{\rightskip}{0pt plus 5cm}\$Single\+To\+Array = array()}\hypertarget{class_p_h_p_mailer_a1a4e8b669019fd06e46df4ad0ef47ec4}{}\label{class_p_h_p_mailer_a1a4e8b669019fd06e46df4ad0ef47ec4}
+
+
+Definition at line 368 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$smtp@{\$smtp}}
+\index{\$smtp@{\$smtp}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$smtp}{$smtp}}]{\setlength{\rightskip}{0pt plus 5cm}\$smtp = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_aad8f984db037346667c0ca16ed00af60}{}\label{class_p_h_p_mailer_aad8f984db037346667c0ca16ed00af60}
+
+
+Definition at line 474 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Auth@{\$\+S\+M\+T\+P\+Auth}}
+\index{\$\+S\+M\+T\+P\+Auth@{\$\+S\+M\+T\+P\+Auth}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Auth}{$SMTPAuth}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Auth = false}\hypertarget{class_p_h_p_mailer_aba02a4c8ff018b73b192831a761fe9ca}{}\label{class_p_h_p_mailer_aba02a4c8ff018b73b192831a761fe9ca}
+
+
+Definition at line 269 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Auto\+T\+LS@{\$\+S\+M\+T\+P\+Auto\+T\+LS}}
+\index{\$\+S\+M\+T\+P\+Auto\+T\+LS@{\$\+S\+M\+T\+P\+Auto\+T\+LS}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Auto\+T\+LS}{$SMTPAutoTLS}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Auto\+T\+LS = true}\hypertarget{class_p_h_p_mailer_a1765f2c1205d3c2c0b7000ec66e2805f}{}\label{class_p_h_p_mailer_a1765f2c1205d3c2c0b7000ec66e2805f}
+
+
+Definition at line 260 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Debug@{\$\+S\+M\+T\+P\+Debug}}
+\index{\$\+S\+M\+T\+P\+Debug@{\$\+S\+M\+T\+P\+Debug}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Debug}{$SMTPDebug}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Debug = 0}\hypertarget{class_p_h_p_mailer_a5f952b7bed25b8423aec0a5b308d4bb1}{}\label{class_p_h_p_mailer_a5f952b7bed25b8423aec0a5b308d4bb1}
+
+
+Definition at line 329 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Keep\+Alive@{\$\+S\+M\+T\+P\+Keep\+Alive}}
+\index{\$\+S\+M\+T\+P\+Keep\+Alive@{\$\+S\+M\+T\+P\+Keep\+Alive}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Keep\+Alive}{$SMTPKeepAlive}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Keep\+Alive = false}\hypertarget{class_p_h_p_mailer_a7ff340050ca2061f7dc63b92e3f18586}{}\label{class_p_h_p_mailer_a7ff340050ca2061f7dc63b92e3f18586}
+
+
+Definition at line 353 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Options@{\$\+S\+M\+T\+P\+Options}}
+\index{\$\+S\+M\+T\+P\+Options@{\$\+S\+M\+T\+P\+Options}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Options}{$SMTPOptions}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Options = array()}\hypertarget{class_p_h_p_mailer_a5d73e4c2277f6435448b321e98794bf5}{}\label{class_p_h_p_mailer_a5d73e4c2277f6435448b321e98794bf5}
+
+
+Definition at line 275 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+S\+M\+T\+P\+Secure@{\$\+S\+M\+T\+P\+Secure}}
+\index{\$\+S\+M\+T\+P\+Secure@{\$\+S\+M\+T\+P\+Secure}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+S\+M\+T\+P\+Secure}{$SMTPSecure}}]{\setlength{\rightskip}{0pt plus 5cm}\$S\+M\+T\+P\+Secure = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a70335250830975e0f1f77bb73b90ca54}{}\label{class_p_h_p_mailer_a70335250830975e0f1f77bb73b90ca54}
+
+
+Definition at line 252 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Subject@{\$\+Subject}}
+\index{\$\+Subject@{\$\+Subject}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Subject}{$Subject}}]{\setlength{\rightskip}{0pt plus 5cm}\$Subject = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a2b58ba25576b17f0a874336a68a44a62}{}\label{class_p_h_p_mailer_a2b58ba25576b17f0a874336a68a44a62}
+
+
+Definition at line 102 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Timeout@{\$\+Timeout}}
+\index{\$\+Timeout@{\$\+Timeout}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Timeout}{$Timeout}}]{\setlength{\rightskip}{0pt plus 5cm}\$Timeout = 300}\hypertarget{class_p_h_p_mailer_acaf3ec06f89f4024c5dbeb1a9ecf321c}{}\label{class_p_h_p_mailer_acaf3ec06f89f4024c5dbeb1a9ecf321c}
+
+
+Definition at line 315 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$to@{\$to}}
+\index{\$to@{\$to}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$to}{$to}}]{\setlength{\rightskip}{0pt plus 5cm}\$to = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ac19f839b525d6d99d063fe56bf2a6d3b}{}\label{class_p_h_p_mailer_ac19f839b525d6d99d063fe56bf2a6d3b}
+
+
+Definition at line 481 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$uniqueid@{\$uniqueid}}
+\index{\$uniqueid@{\$uniqueid}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$uniqueid}{$uniqueid}}]{\setlength{\rightskip}{0pt plus 5cm}\$uniqueid = \textquotesingle{}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_p_h_p_mailer_ab47f297d32c3522f1f7d42ed911157fd}{}\label{class_p_h_p_mailer_ab47f297d32c3522f1f7d42ed911157fd}
+
+
+Definition at line 625 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Username@{\$\+Username}}
+\index{\$\+Username@{\$\+Username}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Username}{$Username}}]{\setlength{\rightskip}{0pt plus 5cm}\$Username = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a0e2ea0d42b9b800eb5bf8660587f5f7f}{}\label{class_p_h_p_mailer_a0e2ea0d42b9b800eb5bf8660587f5f7f}
+
+
+Definition at line 281 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Use\+Sendmail\+Options@{\$\+Use\+Sendmail\+Options}}
+\index{\$\+Use\+Sendmail\+Options@{\$\+Use\+Sendmail\+Options}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Use\+Sendmail\+Options}{$UseSendmailOptions}}]{\setlength{\rightskip}{0pt plus 5cm}\$Use\+Sendmail\+Options = true}\hypertarget{class_p_h_p_mailer_a49c6457299f19cc2cb83ba1e8f98f578}{}\label{class_p_h_p_mailer_a49c6457299f19cc2cb83ba1e8f98f578}
+
+
+Definition at line 176 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$validator@{\$validator}}
+\index{\$validator@{\$validator}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$validator}{$validator}}]{\setlength{\rightskip}{0pt plus 5cm}\$validator = \textquotesingle{}auto\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_p_h_p_mailer_aa4e00b38f53ef571bf77fc9c3e882972}{}\label{class_p_h_p_mailer_aa4e00b38f53ef571bf77fc9c3e882972}
+
+
+Definition at line 467 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Version@{\$\+Version}}
+\index{\$\+Version@{\$\+Version}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Version}{$Version}}]{\setlength{\rightskip}{0pt plus 5cm}\$Version = \textquotesingle{}5.\+2.\+21\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a8a43e1c8b245951155d04b279276af95}{}\label{class_p_h_p_mailer_a8a43e1c8b245951155d04b279276af95}
+
+
+Definition at line 34 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Word\+Wrap@{\$\+Word\+Wrap}}
+\index{\$\+Word\+Wrap@{\$\+Word\+Wrap}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Word\+Wrap}{$WordWrap}}]{\setlength{\rightskip}{0pt plus 5cm}\$Word\+Wrap = 0}\hypertarget{class_p_h_p_mailer_a8e8553ff133401f5324229a988995a34}{}\label{class_p_h_p_mailer_a8e8553ff133401f5324229a988995a34}
+
+
+Definition at line 156 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+Workstation@{\$\+Workstation}}
+\index{\$\+Workstation@{\$\+Workstation}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+Workstation}{$Workstation}}]{\setlength{\rightskip}{0pt plus 5cm}\$Workstation = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a4523ff0871ac0a83f9e05c700d40b2a2}{}\label{class_p_h_p_mailer_a4523ff0871ac0a83f9e05c700d40b2a2}
+
+
+Definition at line 308 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!\$\+X\+Mailer@{\$\+X\+Mailer}}
+\index{\$\+X\+Mailer@{\$\+X\+Mailer}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{\$\+X\+Mailer}{$XMailer}}]{\setlength{\rightskip}{0pt plus 5cm}\$X\+Mailer = \textquotesingle{}\textquotesingle{}}\hypertarget{class_p_h_p_mailer_a1aca2514bdfdd3df32db20e762f0c85d}{}\label{class_p_h_p_mailer_a1aca2514bdfdd3df32db20e762f0c85d}
+
+
+Definition at line 458 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!C\+R\+LF@{C\+R\+LF}}
+\index{C\+R\+LF@{C\+R\+LF}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{C\+R\+LF}{CRLF}}]{\setlength{\rightskip}{0pt plus 5cm}const C\+R\+LF = \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{class_p_h_p_mailer_aa8bdd4d85e1ba0db8c09f92688c27ca6}{}\label{class_p_h_p_mailer_aa8bdd4d85e1ba0db8c09f92688c27ca6}
+\hyperlink{class_s_m_t_p}{S\+M\+TP} R\+FC standard line ending. 
+
+Definition at line 645 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH}}
+\index{M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH@{M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH}{MAX_LINE_LENGTH}}]{\setlength{\rightskip}{0pt plus 5cm}const M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+L\+E\+N\+G\+TH = 998}\hypertarget{class_p_h_p_mailer_a466169b7248c947b2d0d468a955573e7}{}\label{class_p_h_p_mailer_a466169b7248c947b2d0d468a955573e7}
+
+
+Definition at line 651 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE@{S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE}}
+\index{S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE@{S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE}{STOP_CONTINUE}}]{\setlength{\rightskip}{0pt plus 5cm}const S\+T\+O\+P\+\_\+\+C\+O\+N\+T\+I\+N\+UE = 1}\hypertarget{class_p_h_p_mailer_afd1dcd18845b2e660d89726b20cd566e}{}\label{class_p_h_p_mailer_afd1dcd18845b2e660d89726b20cd566e}
+Error severity\+: message, likely ok to continue processing. 
+
+Definition at line 635 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL}}
+\index{S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL@{S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL}{STOP_CRITICAL}}]{\setlength{\rightskip}{0pt plus 5cm}const S\+T\+O\+P\+\_\+\+C\+R\+I\+T\+I\+C\+AL = 2}\hypertarget{class_p_h_p_mailer_a9f37e989efccad58c693cdb0481c881f}{}\label{class_p_h_p_mailer_a9f37e989efccad58c693cdb0481c881f}
+Error severity\+: message, plus full stop, critical error reached. 
+
+Definition at line 640 of file class.\+phpmailer.\+php.
+
+\index{P\+H\+P\+Mailer@{P\+H\+P\+Mailer}!S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE@{S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE@{S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE}!P\+H\+P\+Mailer@{P\+H\+P\+Mailer}}
+\subsubsection[{\texorpdfstring{S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE}{STOP_MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}const S\+T\+O\+P\+\_\+\+M\+E\+S\+S\+A\+GE = 0}\hypertarget{class_p_h_p_mailer_a18ac47549c5fb56a395b374b3c23f04f}{}\label{class_p_h_p_mailer_a18ac47549c5fb56a395b374b3c23f04f}
+Error severity\+: message only, continue processing. 
+
+Definition at line 630 of file class.\+phpmailer.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/mail/\hyperlink{class_8phpmailer_8php}{class.\+phpmailer.\+php}\end{DoxyCompactItemize}

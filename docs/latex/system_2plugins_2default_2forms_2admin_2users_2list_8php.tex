@@ -1,0 +1,76 @@
+\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/forms/admin/users/list.php File Reference}
+\label{system_2plugins_2default_2forms_2admin_2users_2list_8php}\index{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/forms/admin/users/list.\+php@{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/forms/admin/users/list.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_ae549977dd05a017aa81372f6994bf955}{\$search} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}search\+\_\+users\textquotesingle{})
+\item 
+\hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_a28005d22fa7ef2dfe215ad886b497d9c}{\$users} = new \hyperlink{class_ossn_user}{Ossn\+User}
+\item 
+\hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_a388a4a950e936f746d3b9c1b56450ce7}{\$pagination} = new \hyperlink{class_ossn_pagination}{Ossn\+Pagination}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!empty(\$search)) \hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_a74597e8a4487f29d116665e0437a6ced}{else}
+\item 
+\hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_af789423037bbc89dc7c850e761177570}{\$count}
+\item 
+\hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_ad5b470d0a25b1bac17fbfa5e12e14b74}{if} (\$list)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!\$count@{\$count}}
+\index{\$count@{\$count}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{\$count}{$count}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf count}}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_af789423037bbc89dc7c850e761177570}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_af789423037bbc89dc7c850e761177570}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->searchUsers(array(
+                 \textcolor{stringliteral}{'keyword'} => \textcolor{keyword}{false},
+                 \textcolor{stringliteral}{'count'} => \textcolor{keyword}{true},
+            ))
+\end{DoxyCode}
+
+
+Definition at line 18 of file list.\+php.
+
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!\$pagination@{\$pagination}}
+\index{\$pagination@{\$pagination}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{\$pagination}{$pagination}}]{\setlength{\rightskip}{0pt plus 5cm}\$pagination = new {\bf Ossn\+Pagination}}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_a388a4a950e936f746d3b9c1b56450ce7}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_a388a4a950e936f746d3b9c1b56450ce7}
+
+
+Definition at line 5 of file list.\+php.
+
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!\$search@{\$search}}
+\index{\$search@{\$search}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{\$search}{$search}}]{\setlength{\rightskip}{0pt plus 5cm}\$search = {\bf input}(\textquotesingle{}search\+\_\+users\textquotesingle{})}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_ae549977dd05a017aa81372f6994bf955}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_ae549977dd05a017aa81372f6994bf955}
+
+
+Definition at line 3 of file list.\+php.
+
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!\$users@{\$users}}
+\index{\$users@{\$users}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{\$users}{$users}}]{\setlength{\rightskip}{0pt plus 5cm}\$users = new {\bf Ossn\+User}}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_a28005d22fa7ef2dfe215ad886b497d9c}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_a28005d22fa7ef2dfe215ad886b497d9c}
+
+
+Definition at line 4 of file list.\+php.
+
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!else@{else}}
+\index{else@{else}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!empty(\$search)) else}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_a74597e8a4487f29d116665e0437a6ced}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_a74597e8a4487f29d116665e0437a6ced}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+   \hyperlink{components_8php_a358b00350db3d8f227d500337cc437af}{$list} = \hyperlink{system_2plugins_2default_2forms_2admin_2users_2list_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->searchUsers(array(
+                 \textcolor{stringliteral}{'keyword'} => \textcolor{keyword}{false},
+            ))
+\end{DoxyCode}
+
+
+Definition at line 14 of file list.\+php.
+
+\index{system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}!if@{if}}
+\index{if@{if}!system/plugins/default/forms/admin/users/list.\+php@{system/plugins/default/forms/admin/users/list.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(\$list)}\hypertarget{system_2plugins_2default_2forms_2admin_2users_2list_8php_ad5b470d0a25b1bac17fbfa5e12e14b74}{}\label{system_2plugins_2default_2forms_2admin_2users_2list_8php_ad5b470d0a25b1bac17fbfa5e12e14b74}
+
+
+Definition at line 36 of file list.\+php.
+

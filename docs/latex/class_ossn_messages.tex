@@ -1,0 +1,272 @@
+\hypertarget{class_ossn_messages}{}\section{Ossn\+Messages Class Reference}
+\label{class_ossn_messages}\index{Ossn\+Messages@{Ossn\+Messages}}
+
+
+Inheritance diagram for Ossn\+Messages\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Messages\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_messages_a3e5128f5d2857f5ff72e6ec15455a2a6}{send} (\$from, \$to, \$message)
+\item 
+\hyperlink{class_ossn_messages_af9e75a329022d58cdf3742ca19ebda68}{mark\+Viewed} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_messages_afaaef0fcadfb9521efb2f49ebdb25fbc}{get\+New} (\$from, \$to, \$viewed=0)
+\item 
+\hyperlink{class_ossn_messages_a26f8b312de2c588a8ea96184c150fa39}{recent\+Chat} (\$to, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_messages_a90114bac6a16fdcc0a7460b203c3db26}{get\+With} (\$from, \$to, \$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false)
+\item 
+\hyperlink{class_ossn_messages_ac375857b49f863c35a6ee8e16f7ab3ab}{get} (\$from, \$to)
+\item 
+\hyperlink{class_ossn_messages_a8bd65f3deb7732d3ef5ca956de3cbe99}{recent\+Sent} (\$from)
+\item 
+\hyperlink{class_ossn_messages_a036648502ef138f00ae0d9adf3489e70}{count\+U\+N\+R\+E\+AD} (\$to)
+\item 
+\hyperlink{class_ossn_messages_a86ea515928072d5f7cf1f112d3031782}{get\+Message} (\$id)
+\item 
+\hyperlink{class_ossn_messages_a1ee5c14cba7ef4ca5c2b6154aef04ebc}{delete\+User} (\$guid)
+\item 
+\hyperlink{class_ossn_messages_ae63911d6ccb295518e7febf0fb35da15}{search\+Messages} (array \$params=array())
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Messages.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Messages@{Ossn\+Messages}!count\+U\+N\+R\+E\+AD@{count\+U\+N\+R\+E\+AD}}
+\index{count\+U\+N\+R\+E\+AD@{count\+U\+N\+R\+E\+AD}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{count\+U\+N\+R\+E\+A\+D(\$to)}{countUNREAD($to)}}]{\setlength{\rightskip}{0pt plus 5cm}count\+U\+N\+R\+E\+AD (
+\begin{DoxyParamCaption}
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a036648502ef138f00ae0d9adf3489e70}{}\label{class_ossn_messages_a036648502ef138f00ae0d9adf3489e70}
+Count unread messages
+
+integer \$to Users guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 209 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!delete\+User@{delete\+User}}
+\index{delete\+User@{delete\+User}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{delete\+User(\$guid)}{deleteUser($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+User (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a1ee5c14cba7ef4ca5c2b6154aef04ebc}{}\label{class_ossn_messages_a1ee5c14cba7ef4ca5c2b6154aef04ebc}
+Delete users all messages. This will also delete someone else message to this user.
+
+integer \$guid User guid.
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 246 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!get@{get}}
+\index{get@{get}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{get(\$from, \$to)}{get($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}get (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_ac375857b49f863c35a6ee8e16f7ab3ab}{}\label{class_ossn_messages_ac375857b49f863c35a6ee8e16f7ab3ab}
+Get messages between two users
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 170 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!get\+Message@{get\+Message}}
+\index{get\+Message@{get\+Message}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{get\+Message(\$id)}{getMessage($id)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Message (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a86ea515928072d5f7cf1f112d3031782}{}\label{class_ossn_messages_a86ea515928072d5f7cf1f112d3031782}
+Get message by id
+
+integer \$id ID of message
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 227 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!get\+New@{get\+New}}
+\index{get\+New@{get\+New}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{get\+New(\$from, \$to, \$viewed=0)}{getNew($from, $to, $viewed=0)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+New (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$viewed = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_afaaef0fcadfb9521efb2f49ebdb25fbc}{}\label{class_ossn_messages_afaaef0fcadfb9521efb2f49ebdb25fbc}
+Get new messages
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!get\+With@{get\+With}}
+\index{get\+With@{get\+With}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{get\+With(\$from, \$to, \$count=false)}{getWith($from, $to, $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+With (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a90114bac6a16fdcc0a7460b203c3db26}{}\label{class_ossn_messages_a90114bac6a16fdcc0a7460b203c3db26}
+Get messages between two users
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 150 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!mark\+Viewed@{mark\+Viewed}}
+\index{mark\+Viewed@{mark\+Viewed}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{mark\+Viewed(\$from, \$to)}{markViewed($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}mark\+Viewed (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_af9e75a329022d58cdf3742ca19ebda68}{}\label{class_ossn_messages_af9e75a329022d58cdf3742ca19ebda68}
+Mark message as viewed
+
+\$from\+: User 1 guid \$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!recent\+Chat@{recent\+Chat}}
+\index{recent\+Chat@{recent\+Chat}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{recent\+Chat(\$to, \$count=false)}{recentChat($to, $count=false)}}]{\setlength{\rightskip}{0pt plus 5cm}recent\+Chat (
+\begin{DoxyParamCaption}
+\item[{}]{\$to, }
+\item[{}]{\$count = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a26f8b312de2c588a8ea96184c150fa39}{}\label{class_ossn_messages_a26f8b312de2c588a8ea96184c150fa39}
+Get recently chat list
+
+\$to User 2 guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 108 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!recent\+Sent@{recent\+Sent}}
+\index{recent\+Sent@{recent\+Sent}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{recent\+Sent(\$from)}{recentSent($from)}}]{\setlength{\rightskip}{0pt plus 5cm}recent\+Sent (
+\begin{DoxyParamCaption}
+\item[{}]{\$from}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a8bd65f3deb7732d3ef5ca956de3cbe99}{}\label{class_ossn_messages_a8bd65f3deb7732d3ef5ca956de3cbe99}
+Get recent sent messages
+
+\$from User 1 guid
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 189 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!search\+Messages@{search\+Messages}}
+\index{search\+Messages@{search\+Messages}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{search\+Messages(array \$params=array())}{searchMessages(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Messages (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_ae63911d6ccb295518e7febf0fb35da15}{}\label{class_ossn_messages_ae63911d6ccb295518e7febf0fb35da15}
+Search messages by some options
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format\+: \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}id\textquotesingle{}\mbox{]}} & message id \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}message\+\_\+from\textquotesingle{}\mbox{]}} & A user G\+U\+ID who sent messages \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}message\+\_\+to\textquotesingle{}\mbox{]}} & A user G\+U\+ID who receieve messages \\
+\hline
+integer & {\em \$params,\mbox{[}\textquotesingle{}viewed\textquotesingle{}\mbox{]}} & True if message is viewed , false if message isn\textquotesingle{}t viewed or 1/0 \\
+\hline
+integer & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & Result limit default, Default is 20 values \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & To show result in sepcific order. Default is D\+E\+SC. \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}count\textquotesingle{}\mbox{]}} & Count the message\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 271 of file Ossn\+Messages.\+php.
+
+\index{Ossn\+Messages@{Ossn\+Messages}!send@{send}}
+\index{send@{send}!Ossn\+Messages@{Ossn\+Messages}}
+\subsubsection[{\texorpdfstring{send(\$from, \$to, \$message)}{send($from, $to, $message)}}]{\setlength{\rightskip}{0pt plus 5cm}send (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to, }
+\item[{}]{\$message}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_messages_a3e5128f5d2857f5ff72e6ec15455a2a6}{}\label{class_ossn_messages_a3e5128f5d2857f5ff72e6ec15455a2a6}
+Send message
+
+integer \$from\+: User 1 guid  integer \$to User 2 guid  string \$message Message
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Ossn\+Messages.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Messages/classes/\hyperlink{classes_2_ossn_messages_8php}{Ossn\+Messages.\+php}\end{DoxyCompactItemize}

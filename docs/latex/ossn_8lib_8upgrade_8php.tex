@@ -1,0 +1,242 @@
+\hypertarget{ossn_8lib_8upgrade_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+upgrade.\+php File Reference}
+\label{ossn_8lib_8upgrade_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+upgrade.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+upgrade.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a71027278c6c0c509f31824a6f3d470cf}{ossn\+\_\+upgrade\+\_\+init} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a415c3be955c0e349ad4824df543fa68c}{ossn\+\_\+get\+\_\+upgrade\+\_\+files} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a984d0f1ee4273d739939d28d00a8bedb}{ossn\+\_\+get\+\_\+upgraded\+\_\+files} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_aa625710b5f23344c056483c8f0da599c}{ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_abe956ece58bf8ca53575226e100e9c0f}{ossn\+\_\+trigger\+\_\+upgrades} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a0e9fc914b1cc3a0d955701c12b26a399}{ossn\+\_\+generate\+\_\+site\+\_\+secret} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_abf16be31885d0f588a6fb9e6cffe46a1}{ossn\+\_\+get\+\_\+upgrade\+\_\+status} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_ac5872f293941a3a3d3cab106b06f2c84}{ossn\+\_\+disable\+\_\+database\+\_\+exception} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a9360b173e2f7790cffa0b7b90b23a357}{ossn\+\_\+kill\+\_\+upgrading} ()
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_aa7120e10a9c14b722b0e25c99bc86d92}{ossn\+\_\+update\+\_\+db\+\_\+version} (\$\hyperlink{jquery-ui_8min_8js_a48872d9f9d392bdf4af857fe3e0ab638}{version}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_af5e235e44fa65a589d768b2693399250}{ossn\+\_\+update\+\_\+upgraded\+\_\+files} (\$upgrade)
+\item 
+\hyperlink{ossn_8lib_8upgrade_8php_a39390c32f8e878b292c7c1fae7d3ecb2}{ossn\+\_\+version\+\_\+upgrade} (\$upgrade, \$\hyperlink{jquery-ui_8min_8js_a48872d9f9d392bdf4af857fe3e0ab638}{version})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+disable\+\_\+database\+\_\+exception@{ossn\+\_\+disable\+\_\+database\+\_\+exception}}
+\index{ossn\+\_\+disable\+\_\+database\+\_\+exception@{ossn\+\_\+disable\+\_\+database\+\_\+exception}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+disable\+\_\+database\+\_\+exception()}{ossn_disable_database_exception()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+disable\+\_\+database\+\_\+exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_ac5872f293941a3a3d3cab106b06f2c84}{}\label{ossn_8lib_8upgrade_8php_ac5872f293941a3a3d3cab106b06f2c84}
+Disable exception during upgrade
+
+\begin{DoxyReturn}{Returns}
+void$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+generate\+\_\+site\+\_\+secret@{ossn\+\_\+generate\+\_\+site\+\_\+secret}}
+\index{ossn\+\_\+generate\+\_\+site\+\_\+secret@{ossn\+\_\+generate\+\_\+site\+\_\+secret}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+generate\+\_\+site\+\_\+secret()}{ossn_generate_site_secret()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+generate\+\_\+site\+\_\+secret (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a0e9fc914b1cc3a0d955701c12b26a399}{}\label{ossn_8lib_8upgrade_8php_a0e9fc914b1cc3a0d955701c12b26a399}
+Generate site secret key
+
+\begin{DoxyReturn}{Returns}
+str; 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files@{ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files}}
+\index{ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files@{ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files()}{ossn_get_process_upgrade_files()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+process\+\_\+upgrade\+\_\+files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_aa625710b5f23344c056483c8f0da599c}{}\label{ossn_8lib_8upgrade_8php_aa625710b5f23344c056483c8f0da599c}
+Get the files that need to be run for upgrade
+
+\begin{DoxyReturn}{Returns}
+array  private 
+\end{DoxyReturn}
+
+
+Definition at line 60 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+get\+\_\+upgrade\+\_\+files@{ossn\+\_\+get\+\_\+upgrade\+\_\+files}}
+\index{ossn\+\_\+get\+\_\+upgrade\+\_\+files@{ossn\+\_\+get\+\_\+upgrade\+\_\+files}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+upgrade\+\_\+files()}{ossn_get_upgrade_files()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+upgrade\+\_\+files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a415c3be955c0e349ad4824df543fa68c}{}\label{ossn_8lib_8upgrade_8php_a415c3be955c0e349ad4824df543fa68c}
+Get upgrade files
+
+\begin{DoxyReturn}{Returns}
+array  private 
+\end{DoxyReturn}
+
+
+Definition at line 19 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+get\+\_\+upgrade\+\_\+status@{ossn\+\_\+get\+\_\+upgrade\+\_\+status}}
+\index{ossn\+\_\+get\+\_\+upgrade\+\_\+status@{ossn\+\_\+get\+\_\+upgrade\+\_\+status}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+upgrade\+\_\+status()}{ossn_get_upgrade_status()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+upgrade\+\_\+status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_abf16be31885d0f588a6fb9e6cffe46a1}{}\label{ossn_8lib_8upgrade_8php_abf16be31885d0f588a6fb9e6cffe46a1}
+Get update status
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+get\+\_\+upgraded\+\_\+files@{ossn\+\_\+get\+\_\+upgraded\+\_\+files}}
+\index{ossn\+\_\+get\+\_\+upgraded\+\_\+files@{ossn\+\_\+get\+\_\+upgraded\+\_\+files}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+upgraded\+\_\+files()}{ossn_get_upgraded_files()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+upgraded\+\_\+files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a984d0f1ee4273d739939d28d00a8bedb}{}\label{ossn_8lib_8upgrade_8php_a984d0f1ee4273d739939d28d00a8bedb}
+Get the list of files that already being upraded
+
+\begin{DoxyReturn}{Returns}
+array  private 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+kill\+\_\+upgrading@{ossn\+\_\+kill\+\_\+upgrading}}
+\index{ossn\+\_\+kill\+\_\+upgrading@{ossn\+\_\+kill\+\_\+upgrading}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+kill\+\_\+upgrading()}{ossn_kill_upgrading()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+kill\+\_\+upgrading (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a9360b173e2f7790cffa0b7b90b23a357}{}\label{ossn_8lib_8upgrade_8php_a9360b173e2f7790cffa0b7b90b23a357}
+Kill upgrading
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+trigger\+\_\+upgrades@{ossn\+\_\+trigger\+\_\+upgrades}}
+\index{ossn\+\_\+trigger\+\_\+upgrades@{ossn\+\_\+trigger\+\_\+upgrades}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+trigger\+\_\+upgrades()}{ossn_trigger_upgrades()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+trigger\+\_\+upgrades (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_abe956ece58bf8ca53575226e100e9c0f}{}\label{ossn_8lib_8upgrade_8php_abe956ece58bf8ca53575226e100e9c0f}
+Trigger upgrade / Run upgrade
+
+\begin{DoxyReturn}{Returns}
+void;  private 
+\end{DoxyReturn}
+Since the update wiki states that disable cache, so this code never works \href{https://www.opensource-socialnetwork.org/wiki/view/708/how-to-upgrade-ossn}{\tt https\+://www.\+opensource-\/socialnetwork.\+org/wiki/view/708/how-\/to-\/upgrade-\/ossn}
+
+O\+S\+SN v4.\+2
+
+Definition at line 72 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+update\+\_\+db\+\_\+version@{ossn\+\_\+update\+\_\+db\+\_\+version}}
+\index{ossn\+\_\+update\+\_\+db\+\_\+version@{ossn\+\_\+update\+\_\+db\+\_\+version}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+update\+\_\+db\+\_\+version(\$version= \textquotesingle{}\textquotesingle{})}{ossn_update_db_version($version= '')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+update\+\_\+db\+\_\+version (
+\begin{DoxyParamCaption}
+\item[{}]{\$version = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_aa7120e10a9c14b722b0e25c99bc86d92}{}\label{ossn_8lib_8upgrade_8php_aa7120e10a9c14b722b0e25c99bc86d92}
+Update site version
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$version} & new Version\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+update\+\_\+upgraded\+\_\+files@{ossn\+\_\+update\+\_\+upgraded\+\_\+files}}
+\index{ossn\+\_\+update\+\_\+upgraded\+\_\+files@{ossn\+\_\+update\+\_\+upgraded\+\_\+files}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+update\+\_\+upgraded\+\_\+files(\$upgrade)}{ossn_update_upgraded_files($upgrade)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+update\+\_\+upgraded\+\_\+files (
+\begin{DoxyParamCaption}
+\item[{}]{\$upgrade}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_af5e235e44fa65a589d768b2693399250}{}\label{ossn_8lib_8upgrade_8php_af5e235e44fa65a589d768b2693399250}
+Update processed upgrades
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$upgrade} & New release\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 177 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+upgrade\+\_\+init@{ossn\+\_\+upgrade\+\_\+init}}
+\index{ossn\+\_\+upgrade\+\_\+init@{ossn\+\_\+upgrade\+\_\+init}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+upgrade\+\_\+init()}{ossn_upgrade_init()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+upgrade\+\_\+init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a71027278c6c0c509f31824a6f3d470cf}{}\label{ossn_8lib_8upgrade_8php_a71027278c6c0c509f31824a6f3d470cf}
+Disable Errors during upgrade
+
+\begin{DoxyReturn}{Returns}
+void  private 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file ossn.\+lib.\+upgrade.\+php.
+
+\index{ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}!ossn\+\_\+version\+\_\+upgrade@{ossn\+\_\+version\+\_\+upgrade}}
+\index{ossn\+\_\+version\+\_\+upgrade@{ossn\+\_\+version\+\_\+upgrade}!ossn.\+lib.\+upgrade.\+php@{ossn.\+lib.\+upgrade.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+version\+\_\+upgrade(\$upgrade, \$version)}{ossn_version_upgrade($upgrade, $version)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+version\+\_\+upgrade (
+\begin{DoxyParamCaption}
+\item[{}]{\$upgrade, }
+\item[{}]{\$version}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8upgrade_8php_a39390c32f8e878b292c7c1fae7d3ecb2}{}\label{ossn_8lib_8upgrade_8php_a39390c32f8e878b292c7c1fae7d3ecb2}
+Update version of Ossn
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$upgrade} & New release\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 212 of file ossn.\+lib.\+upgrade.\+php.
+

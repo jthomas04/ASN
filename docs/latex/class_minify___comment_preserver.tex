@@ -1,0 +1,75 @@
+\hypertarget{class_minify___comment_preserver}{}\section{Minify\+\_\+\+Comment\+Preserver Class Reference}
+\label{class_minify___comment_preserver}\index{Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___comment_preserver_a0effb03f48e0b63fc75462dc9383db55}{process} (\$content, \$processor, \$args=array())
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___comment_preserver_a829d62e7dd18027c1fc2c9b3fe321ae2}{\$prepend} = \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+static \hyperlink{class_minify___comment_preserver_a0363de7e77115bb52718abdab127e971}{\$append} = \char`\"{}\textbackslash{}n\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file Comment\+Preserver.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}!process@{process}}
+\index{process@{process}!Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}}
+\subsubsection[{\texorpdfstring{process(\$content, \$processor, \$args=array())}{process($content, $processor, $args=array())}}]{\setlength{\rightskip}{0pt plus 5cm}static process (
+\begin{DoxyParamCaption}
+\item[{}]{\$content, }
+\item[{}]{\$processor, }
+\item[{}]{\$args = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___comment_preserver_a0effb03f48e0b63fc75462dc9383db55}{}\label{class_minify___comment_preserver_a0effb03f48e0b63fc75462dc9383db55}
+Process a string outside of C-\/style comments that begin with \char`\"{}/$\ast$!\char`\"{}
+
+On each non-\/empty string outside these comments, the given processor function will be called. The first \char`\"{}!\char`\"{} will be removed from the preserved comments, and the comments will be surrounded by Minify\+\_\+\+Comment\+Preserver\+::\$preprend and \hyperlink{class_minify___comment_preserver_a0363de7e77115bb52718abdab127e971}{Minify\+\_\+\+Comment\+Preserver\+::\$append}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & \\
+\hline
+callback & {\em \$processor} & function \\
+\hline
+array & {\em \$args} & array of extra arguments to pass to the processor function (default = array()) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Comment\+Preserver.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}!\$append@{\$append}}
+\index{\$append@{\$append}!Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}}
+\subsubsection[{\texorpdfstring{\$append}{$append}}]{\setlength{\rightskip}{0pt plus 5cm}\$append = \char`\"{}\textbackslash{}n\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___comment_preserver_a0363de7e77115bb52718abdab127e971}{}\label{class_minify___comment_preserver_a0363de7e77115bb52718abdab127e971}
+
+
+Definition at line 27 of file Comment\+Preserver.\+php.
+
+\index{Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}!\$prepend@{\$prepend}}
+\index{\$prepend@{\$prepend}!Minify\+\_\+\+Comment\+Preserver@{Minify\+\_\+\+Comment\+Preserver}}
+\subsubsection[{\texorpdfstring{\$prepend}{$prepend}}]{\setlength{\rightskip}{0pt plus 5cm}\$prepend = \char`\"{}\textbackslash{}n\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___comment_preserver_a829d62e7dd18027c1fc2c9b3fe321ae2}{}\label{class_minify___comment_preserver_a829d62e7dd18027c1fc2c9b3fe321ae2}
+
+
+Definition at line 20 of file Comment\+Preserver.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/libraries/minify/\+Minify/\hyperlink{_comment_preserver_8php}{Comment\+Preserver.\+php}\end{DoxyCompactItemize}

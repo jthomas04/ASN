@@ -1,0 +1,98 @@
+\hypertarget{photos_2pages_2photos_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/pages/photos.php File Reference}
+\label{photos_2pages_2photos_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/pages/photos.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Photos/plugins/default/photos/pages/photos.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{photos_2pages_2photos_8php_a23e8244caaacd14d608137a383e8f0e7}{\$albums} = new \hyperlink{class_ossn_albums}{Ossn\+Albums}
+\item 
+\hyperlink{photos_2pages_2photos_8php_aada8b96bccbcf78962195b117acdc07b}{\$profile} = new \hyperlink{class_ossn_profile}{Ossn\+Profile}
+\item 
+\hyperlink{photos_2pages_2photos_8php_a7d16539c7a3688bee1d3184c81c47487}{\$photos} = \$albums-\/$>$Get\+Albums(\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid)
+\item 
+\$albums \hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count} = true
+\item 
+\hyperlink{photos_2pages_2photos_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$albums-\/$>$Get\+Albums(\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid)
+\item 
+\hyperlink{photos_2pages_2photos_8php_aab0bf08a0d7766d0c7ca7afe29e54d13}{\$profiel\+\_\+photo} = \$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$icon\+U\+RL()-\/$>$larger
+\item 
+\hyperlink{photos_2pages_2photos_8php_aadcb75bc0a6a2c89cf7d0fbe5a660c00}{\$pphotos\+\_\+album} = \hyperlink{ossn_8lib_8system_8php_a2f12f9244f99eccd1225afb76ef2ab65}{ossn\+\_\+site\+\_\+url}(\char`\"{}album/profile/\{\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid\}\char`\"{})
+\item 
+\hyperlink{photos_2pages_2photos_8php_aab05889c3b1ad8df5f0a1929858d42aa}{\$profile\+\_\+covers\+\_\+url} = \hyperlink{ossn_8lib_8system_8php_a2f12f9244f99eccd1225afb76ef2ab65}{ossn\+\_\+site\+\_\+url}(\char`\"{}album/covers/profile/\{\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}-\/$>$guid\}\char`\"{})
+\item 
+\hyperlink{photos_2pages_2photos_8php_ae6444f624d36ebfb80136c969122ece4}{\$profile\+\_\+cover} = \$profile-\/$>$get\+Cover\+U\+RL(\$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]})
+\item 
+\hyperlink{photos_2pages_2photos_8php_a866f96068cd497b122fcd4efd2ebfff4}{if} (\$photos)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$albums@{\$albums}}
+\index{\$albums@{\$albums}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$albums}{$albums}}]{\setlength{\rightskip}{0pt plus 5cm}\$albums = new {\bf Ossn\+Albums}}\hypertarget{photos_2pages_2photos_8php_a23e8244caaacd14d608137a383e8f0e7}{}\label{photos_2pages_2photos_8php_a23e8244caaacd14d608137a383e8f0e7}
+
+
+Definition at line 4 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$count@{\$count}}
+\index{\$count@{\$count}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$count}{$count}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf count} = \$albums-\/$>$Get\+Albums(\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid)}\hypertarget{photos_2pages_2photos_8php_af789423037bbc89dc7c850e761177570}{}\label{photos_2pages_2photos_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 10 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$photos@{\$photos}}
+\index{\$photos@{\$photos}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$photos}{$photos}}]{\setlength{\rightskip}{0pt plus 5cm}\$photos = \$albums-\/$>$Get\+Albums(\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid)}\hypertarget{photos_2pages_2photos_8php_a7d16539c7a3688bee1d3184c81c47487}{}\label{photos_2pages_2photos_8php_a7d16539c7a3688bee1d3184c81c47487}
+
+
+Definition at line 7 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$pphotos\+\_\+album@{\$pphotos\+\_\+album}}
+\index{\$pphotos\+\_\+album@{\$pphotos\+\_\+album}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$pphotos\+\_\+album}{$pphotos_album}}]{\setlength{\rightskip}{0pt plus 5cm}\$pphotos\+\_\+album = {\bf ossn\+\_\+site\+\_\+url}(\char`\"{}album/profile/\{\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid\}\char`\"{})}\hypertarget{photos_2pages_2photos_8php_aadcb75bc0a6a2c89cf7d0fbe5a660c00}{}\label{photos_2pages_2photos_8php_aadcb75bc0a6a2c89cf7d0fbe5a660c00}
+
+
+Definition at line 12 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$profiel\+\_\+photo@{\$profiel\+\_\+photo}}
+\index{\$profiel\+\_\+photo@{\$profiel\+\_\+photo}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$profiel\+\_\+photo}{$profiel_photo}}]{\setlength{\rightskip}{0pt plus 5cm}\$profiel\+\_\+photo = \$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$icon\+U\+RL()-\/$>$larger}\hypertarget{photos_2pages_2photos_8php_aab0bf08a0d7766d0c7ca7afe29e54d13}{}\label{photos_2pages_2photos_8php_aab0bf08a0d7766d0c7ca7afe29e54d13}
+
+
+Definition at line 11 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$profile@{\$profile}}
+\index{\$profile@{\$profile}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$profile}{$profile}}]{\setlength{\rightskip}{0pt plus 5cm}\$profile = new {\bf Ossn\+Profile}}\hypertarget{photos_2pages_2photos_8php_aada8b96bccbcf78962195b117acdc07b}{}\label{photos_2pages_2photos_8php_aada8b96bccbcf78962195b117acdc07b}
+
+
+Definition at line 5 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$profile\+\_\+cover@{\$profile\+\_\+cover}}
+\index{\$profile\+\_\+cover@{\$profile\+\_\+cover}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$profile\+\_\+cover}{$profile_cover}}]{\setlength{\rightskip}{0pt plus 5cm}\$profile\+\_\+cover = \$profile-\/$>$get\+Cover\+U\+RL(\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]})}\hypertarget{photos_2pages_2photos_8php_ae6444f624d36ebfb80136c969122ece4}{}\label{photos_2pages_2photos_8php_ae6444f624d36ebfb80136c969122ece4}
+
+
+Definition at line 15 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!\$profile\+\_\+covers\+\_\+url@{\$profile\+\_\+covers\+\_\+url}}
+\index{\$profile\+\_\+covers\+\_\+url@{\$profile\+\_\+covers\+\_\+url}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{\$profile\+\_\+covers\+\_\+url}{$profile_covers_url}}]{\setlength{\rightskip}{0pt plus 5cm}\$profile\+\_\+covers\+\_\+url = {\bf ossn\+\_\+site\+\_\+url}(\char`\"{}album/covers/profile/\{\$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}-\/$>$guid\}\char`\"{})}\hypertarget{photos_2pages_2photos_8php_aab05889c3b1ad8df5f0a1929858d42aa}{}\label{photos_2pages_2photos_8php_aab05889c3b1ad8df5f0a1929858d42aa}
+
+
+Definition at line 14 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!count@{count}}
+\index{count@{count}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{count}{count}}]{\setlength{\rightskip}{0pt plus 5cm}\$albums count = true}\hypertarget{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{}\label{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}
+
+
+Definition at line 9 of file photos.\+php.
+
+\index{photos/pages/photos.\+php@{photos/pages/photos.\+php}!if@{if}}
+\index{if@{if}!photos/pages/photos.\+php@{photos/pages/photos.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(\$photos)}\hypertarget{photos_2pages_2photos_8php_a866f96068cd497b122fcd4efd2ebfff4}{}\label{photos_2pages_2photos_8php_a866f96068cd497b122fcd4efd2ebfff4}
+
+
+Definition at line 26 of file photos.\+php.
+

@@ -1,0 +1,193 @@
+\hypertarget{class_ossn_comments}{}\section{Ossn\+Comments Class Reference}
+\label{class_ossn_comments}\index{Ossn\+Comments@{Ossn\+Comments}}
+
+
+Inheritance diagram for Ossn\+Comments\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Comments\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_comments_a13f8a2cef4315746650f0cdf5c4482ac}{Post\+Comment} (\$subject\+\_\+id, \$guid, \$comment, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_comments_abe7fd5e160fed429e44043174e3bbdd3}{Get\+Comment} (\$id)
+\item 
+\hyperlink{class_ossn_comments_a2f10d2abbb7d182237bdf6787185123c}{count\+Comments} (\$subject\+\_\+id, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_comments_a80b1f820b1d1d2a7b01c108bd6f558cd}{Get\+Comments} (\$subject, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_comments_af07cf20e993816bbe79a706893d3fbeb}{comments\+Delete\+All} (\$subject, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}comments\+:post\textquotesingle{})
+\item 
+\hyperlink{class_ossn_comments_a5e6d23edeade8f0f7442cef2d0841251}{delete\+Comment} (\$comment)
+\item 
+\hyperlink{class_ossn_comments_aeeb8d5147e17f9279f3aadd016383861}{get\+Comment\+Id} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_comments_a83e87b3cee99a9cb950307d40062a10a}{get\+Type} (\$object)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Comments.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Comments@{Ossn\+Comments}!comments\+Delete\+All@{comments\+Delete\+All}}
+\index{comments\+Delete\+All@{comments\+Delete\+All}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{comments\+Delete\+All(\$subject, \$type= \textquotesingle{}comments\+:post\textquotesingle{})}{commentsDeleteAll($subject, $type= 'comments:post')}}]{\setlength{\rightskip}{0pt plus 5cm}comments\+Delete\+All (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}comments\+:post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_af07cf20e993816bbe79a706893d3fbeb}{}\label{class_ossn_comments_af07cf20e993816bbe79a706893d3fbeb}
+Delete All Comments by Subject id
+
+\$subject\+: Subject id
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!count\+Comments@{count\+Comments}}
+\index{count\+Comments@{count\+Comments}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{count\+Comments(\$subject\+\_\+id, \$type= \textquotesingle{}post\textquotesingle{})}{countComments($subject_id, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}count\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_a2f10d2abbb7d182237bdf6787185123c}{}\label{class_ossn_comments_a2f10d2abbb7d182237bdf6787185123c}
+Count Total Comments on Subject
+
+\$subject\+\_\+id\+: Subject id \$type\+: Comments type
+
+\begin{DoxyReturn}{Returns}
+int; 
+\end{DoxyReturn}
+
+
+Definition at line 109 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!delete\+Comment@{delete\+Comment}}
+\index{delete\+Comment@{delete\+Comment}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{delete\+Comment(\$comment)}{deleteComment($comment)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$comment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_a5e6d23edeade8f0f7442cef2d0841251}{}\label{class_ossn_comments_a5e6d23edeade8f0f7442cef2d0841251}
+Delete Comment
+
+\$comment\+: Comment id
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!Get\+Comment@{Get\+Comment}}
+\index{Get\+Comment@{Get\+Comment}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{Get\+Comment(\$id)}{GetComment($id)}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_abe7fd5e160fed429e44043174e3bbdd3}{}\label{class_ossn_comments_abe7fd5e160fed429e44043174e3bbdd3}
+Get Comment
+
+\$id\+: Comment Id
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!get\+Comment\+Id@{get\+Comment\+Id}}
+\index{get\+Comment\+Id@{get\+Comment\+Id}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{get\+Comment\+Id()}{getCommentId()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Comment\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_aeeb8d5147e17f9279f3aadd016383861}{}\label{class_ossn_comments_aeeb8d5147e17f9279f3aadd016383861}
+Get newly created comment id
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Definition at line 181 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!Get\+Comments@{Get\+Comments}}
+\index{Get\+Comments@{Get\+Comments}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{Get\+Comments(\$subject, \$type= \textquotesingle{}post\textquotesingle{})}{GetComments($subject, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Get\+Comments (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_a80b1f820b1d1d2a7b01c108bd6f558cd}{}\label{class_ossn_comments_a80b1f820b1d1d2a7b01c108bd6f558cd}
+Get Comments
+
+\$subject\+\_\+id\+: Id of item on which users comment \$type\+: Post or Entity
+
+\begin{DoxyReturn}{Returns}
+object; 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{get\+Type(\$object)}{getType($object)}}]{\setlength{\rightskip}{0pt plus 5cm}static get\+Type (
+\begin{DoxyParamCaption}
+\item[{}]{\$object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_comments_a83e87b3cee99a9cb950307d40062a10a}{}\label{class_ossn_comments_a83e87b3cee99a9cb950307d40062a10a}
+Get a comment type from object
+
+\begin{DoxyReturn}{Returns}
+string; 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Ossn\+Comments.\+php.
+
+\index{Ossn\+Comments@{Ossn\+Comments}!Post\+Comment@{Post\+Comment}}
+\index{Post\+Comment@{Post\+Comment}!Ossn\+Comments@{Ossn\+Comments}}
+\subsubsection[{\texorpdfstring{Post\+Comment(\$subject\+\_\+id, \$guid, \$comment, \$type= \textquotesingle{}post\textquotesingle{})}{PostComment($subject_id, $guid, $comment, $type= 'post')}}]{\setlength{\rightskip}{0pt plus 5cm}Post\+Comment (
+\begin{DoxyParamCaption}
+\item[{}]{\$subject\+\_\+id, }
+\item[{}]{\$guid, }
+\item[{}]{\$comment, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}post\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_comments_a13f8a2cef4315746650f0cdf5c4482ac}{}\label{class_ossn_comments_a13f8a2cef4315746650f0cdf5c4482ac}
+Post Comment
+
+\$subject\+\_\+id\+: Id of item on which user comment \$guid\+: User id \$comment\+: Comment \$type\+: Post or Entity
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 27 of file Ossn\+Comments.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Comments/classes/\hyperlink{classes_2_ossn_comments_8php}{Ossn\+Comments.\+php}\end{DoxyCompactItemize}

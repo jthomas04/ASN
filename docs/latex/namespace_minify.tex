@@ -1,0 +1,41 @@
+\hypertarget{namespace_minify}{}\section{Minify Namespace Reference}
+\label{namespace_minify}\index{Minify@{Minify}}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_minify___h_t_m_l}{Minify\+\_\+\+H\+T\+ML}
+
+Compress H\+T\+ML
+
+This is a heavy regex-\/based removal of whitespace, unnecessary comments and tokens. IE conditional comments are preserved. There are also options to have S\+T\+Y\+LE and S\+C\+R\+I\+PT blocks compressed by callback functions.
+
+A test suite is available.
+
+\begin{DoxyAuthor}{Author}
+Stephen Clay \href{mailto:steve@mrclay.org}{\tt steve@mrclay.\+org}
+\end{DoxyAuthor}
+Class \hyperlink{class_minify___comment_preserver}{Minify\+\_\+\+Comment\+Preserver}
+
+Process a string in pieces preserving C-\/style comments that begin with \char`\"{}/$\ast$!\char`\"{}
+
+\begin{DoxyAuthor}{Author}
+Stephen Clay \href{mailto:steve@mrclay.org}{\tt steve@mrclay.\+org}
+\end{DoxyAuthor}
+Class \hyperlink{class_minify___c_s_s___compressor}{Minify\+\_\+\+C\+S\+S\+\_\+\+Compressor}
+
+Compress C\+SS
+
+This is a heavy regex-\/based removal of whitespace, unnecessary comments and tokens, and some C\+SS value minimization, where practical. Many steps have been taken to avoid breaking comment-\/based hacks, including the ie5/mac filter (and its inversion), but expect tricky hacks involving comment tokens in \textquotesingle{}content\textquotesingle{} value strings to break minimization badly. A test suite is available.
+
+\begin{DoxyAuthor}{Author}
+Stephen Clay \href{mailto:steve@mrclay.org}{\tt steve@mrclay.\+org} 
+
+\href{http://code.google.com/u/1stvamp/}{\tt http\+://code.\+google.\+com/u/1stvamp/} (Issue 64 patch)
+\end{DoxyAuthor}
+Class \hyperlink{class_minify___c_s_s___uri_rewriter}{Minify\+\_\+\+C\+S\+S\+\_\+\+Uri\+Rewriter}
+
+Rewrite file-\/relative U\+R\+Is as root-\/relative in C\+SS files
+
+\begin{DoxyAuthor}{Author}
+Stephen Clay \href{mailto:steve@mrclay.org}{\tt steve@mrclay.\+org} 
+\end{DoxyAuthor}

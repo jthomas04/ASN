@@ -1,0 +1,166 @@
+\hypertarget{class_ossn_profile}{}\section{Ossn\+Profile Class Reference}
+\label{class_ossn_profile}\index{Ossn\+Profile@{Ossn\+Profile}}
+
+
+Inheritance diagram for Ossn\+Profile\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Profile\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_profile_a3e27e9dc5d2c3e06eea8801353ebab6f}{reposition\+C\+O\+V\+ER} (\$guid, \$top, \$left)
+\item 
+\hyperlink{class_ossn_profile_af3c559710a53f8f4d88f38044505ee90}{Reset\+Cover\+Postition} (\$guid)
+\item 
+\hyperlink{class_ossn_profile_a680f6835f3771d0af210dec9e142dd2c}{cover\+Parameters} (\$guid)
+\item 
+\hyperlink{class_ossn_profile_a62d06508239ce032c071340235925ff0}{add\+Photo\+Wall\+Post} (\$ownerguid, \$itemguid, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}profile\+:photo\textquotesingle{})
+\item 
+\hyperlink{class_ossn_profile_abac2150731ec3868c2f8ba12ad2aafb2}{delete\+Photo\+Wall\+Post} (\$fileguid)
+\item 
+\hyperlink{class_ossn_profile_a0bf031870419a14114570d1085ae8134}{get\+Cover\+U\+RL} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}= \textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Profile.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Profile@{Ossn\+Profile}!add\+Photo\+Wall\+Post@{add\+Photo\+Wall\+Post}}
+\index{add\+Photo\+Wall\+Post@{add\+Photo\+Wall\+Post}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{add\+Photo\+Wall\+Post(\$ownerguid, \$itemguid, \$type= \textquotesingle{}profile\+:photo\textquotesingle{})}{addPhotoWallPost($ownerguid, $itemguid, $type= 'profile:photo')}}]{\setlength{\rightskip}{0pt plus 5cm}add\+Photo\+Wall\+Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$ownerguid, }
+\item[{}]{\$itemguid, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}profile\+:photo\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_a62d06508239ce032c071340235925ff0}{}\label{class_ossn_profile_a62d06508239ce032c071340235925ff0}
+Add a wall post for new profile/cover picture
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$ownerguid} & = Guid of owner \\
+\hline
+int & {\em \$itemguid} & photo guid \\
+\hline
+string & {\em \$type} & profile photo/cover\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Ossn\+Profile.\+php.
+
+\index{Ossn\+Profile@{Ossn\+Profile}!cover\+Parameters@{cover\+Parameters}}
+\index{cover\+Parameters@{cover\+Parameters}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{cover\+Parameters(\$guid)}{coverParameters($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}cover\+Parameters (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_a680f6835f3771d0af210dec9e142dd2c}{}\label{class_ossn_profile_a680f6835f3771d0af210dec9e142dd2c}
+Get cover parameters
+
+\$guid\+: User guid
+
+\begin{DoxyReturn}{Returns}
+array; 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Ossn\+Profile.\+php.
+
+\index{Ossn\+Profile@{Ossn\+Profile}!delete\+Photo\+Wall\+Post@{delete\+Photo\+Wall\+Post}}
+\index{delete\+Photo\+Wall\+Post@{delete\+Photo\+Wall\+Post}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{delete\+Photo\+Wall\+Post(\$fileguid)}{deletePhotoWallPost($fileguid)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Photo\+Wall\+Post (
+\begin{DoxyParamCaption}
+\item[{}]{\$fileguid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_abac2150731ec3868c2f8ba12ad2aafb2}{}\label{class_ossn_profile_abac2150731ec3868c2f8ba12ad2aafb2}
+Delete profile photo/cover wall post
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fileguid} & Profile/\+Cover file id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file Ossn\+Profile.\+php.
+
+\index{Ossn\+Profile@{Ossn\+Profile}!get\+Cover\+U\+RL@{get\+Cover\+U\+RL}}
+\index{get\+Cover\+U\+RL@{get\+Cover\+U\+RL}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{get\+Cover\+U\+R\+L(\$user= \textquotesingle{}\textquotesingle{})}{getCoverURL($user= '')}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cover\+U\+RL (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_a0bf031870419a14114570d1085ae8134}{}\label{class_ossn_profile_a0bf031870419a14114570d1085ae8134}
+Get cover U\+RL
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & \hyperlink{class_ossn_user}{Ossn\+User} object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$boolean 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Ossn\+Profile.\+php.
+
+\index{Ossn\+Profile@{Ossn\+Profile}!reposition\+C\+O\+V\+ER@{reposition\+C\+O\+V\+ER}}
+\index{reposition\+C\+O\+V\+ER@{reposition\+C\+O\+V\+ER}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{reposition\+C\+O\+V\+E\+R(\$guid, \$top, \$left)}{repositionCOVER($guid, $top, $left)}}]{\setlength{\rightskip}{0pt plus 5cm}reposition\+C\+O\+V\+ER (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid, }
+\item[{}]{\$top, }
+\item[{}]{\$left}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_a3e27e9dc5d2c3e06eea8801353ebab6f}{}\label{class_ossn_profile_a3e27e9dc5d2c3e06eea8801353ebab6f}
+Reposition cover
+
+\$guid\+: User guid \$top \+: Position from top \$left\+: Position from left
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Ossn\+Profile.\+php.
+
+\index{Ossn\+Profile@{Ossn\+Profile}!Reset\+Cover\+Postition@{Reset\+Cover\+Postition}}
+\index{Reset\+Cover\+Postition@{Reset\+Cover\+Postition}!Ossn\+Profile@{Ossn\+Profile}}
+\subsubsection[{\texorpdfstring{Reset\+Cover\+Postition(\$guid)}{ResetCoverPostition($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}Reset\+Cover\+Postition (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_profile_af3c559710a53f8f4d88f38044505ee90}{}\label{class_ossn_profile_af3c559710a53f8f4d88f38044505ee90}
+Reset cover back to it original position
+
+\$guid\+: User guid
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Ossn\+Profile.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/classes/\hyperlink{classes_2_ossn_profile_8php}{Ossn\+Profile.\+php}\end{DoxyCompactItemize}

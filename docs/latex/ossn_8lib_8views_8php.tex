@@ -1,0 +1,433 @@
+\hypertarget{ossn_8lib_8views_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+views.\+php File Reference}
+\label{ossn_8lib_8views_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+views.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+views.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8views_8php_a6f7d3212da6386d53cf963ffe1af5138}{ossn\+\_\+include} (\$file= \textquotesingle{}\textquotesingle{}, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8views_8php_ae16dfe3bfb4a6fa3036b1f87183380d4}{ossn\+\_\+view} (\$path= \textquotesingle{}\textquotesingle{}, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8views_8php_a90922f09de8a06ea85351afb51fac9f7}{ossn\+\_\+args} (array \$attrs)
+\item 
+\hyperlink{ossn_8lib_8views_8php_aee3550839fe09204af21e2a5f6e835dc}{ossn\+\_\+extend\+\_\+view} (\$views, \$file)
+\item 
+\hyperlink{ossn_8lib_8views_8php_a839ae6f22b1010fdaae1514bdf275ee7}{ossn\+\_\+fetch\+\_\+extend\+\_\+views} (\$layout, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8views_8php_acebe739135f3966f7e11fe616a7572fc}{ossn\+\_\+remove\+\_\+extend\+\_\+view} (\$layout)
+\item 
+\hyperlink{ossn_8lib_8views_8php_ad54fb1e96be7d93233b827eca7b99406}{ossn\+\_\+add\+\_\+context} (\$context)
+\item 
+\hyperlink{ossn_8lib_8views_8php_a9c5e42d8e9944c3b83b14ec075af64ff}{ossn\+\_\+is\+\_\+context} (\$context)
+\item 
+\hyperlink{ossn_8lib_8views_8php_ab86182e7aa8c5bc61781af6c4ce92f73}{ossn\+\_\+get\+\_\+context} ()
+\item 
+\hyperlink{ossn_8lib_8views_8php_aaac231ebc8646d7c939acd667caaeb6a}{ossn\+\_\+set\+\_\+page\+\_\+layout} (\$layout, \$params=array())
+\item 
+\hyperlink{ossn_8lib_8views_8php_a3ec93a07297ab93df41dc84b96a68249}{ossn\+\_\+view\+\_\+page} (\$title, \$content, \$page= \textquotesingle{}page\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8views_8php_afcd38fcb071f487a12a1462b9390909f}{ossn\+\_\+default\+\_\+theme} ()
+\item 
+\hyperlink{ossn_8lib_8views_8php_a5b8a8a97086965b69953e900c0315e97}{ossn\+\_\+theme\+\_\+url} (\$\hyperlink{jquery-ui_8min_8js_a087edaba374de09e6e0f0c9a8c157c87}{extend}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8views_8php_ac874e6342b6bbe7ac279180d7b4dcd2b}{ossn\+\_\+view\+\_\+form} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$args=array(), \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}core\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8views_8php_acc82c84af3b2c5e875013f74a833ae6f}{ossn\+\_\+view\+\_\+widget} (array \$params=array())
+\item 
+\hyperlink{ossn_8lib_8views_8php_ab3686418a27882f7461dc5ead6f9f69a}{ossn\+\_\+view\+\_\+template} (\$\hyperlink{_chart_8_core_8js_aad213e71e8f7878665e0af623a88a79a}{template}= \textquotesingle{}\textquotesingle{}, array \$params)
+\item 
+\hyperlink{ossn_8lib_8views_8php_a781fc073a71d40fdf9002a692c8cc553}{ossn\+\_\+view\+\_\+pagination} (\$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count}=false, \$page\+\_\+limit=10, array \$args=array())
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8views_8php_a51aed5a0c5a65be77b43fc692b66febe}{\$\+V\+I\+EW} = new std\+Class
+\item 
+\$V\+I\+EW \hyperlink{ossn_8lib_8views_8php_a8f6e4c183faf477ee38054dbc31e85c3}{register} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+add\+\_\+context@{ossn\+\_\+add\+\_\+context}}
+\index{ossn\+\_\+add\+\_\+context@{ossn\+\_\+add\+\_\+context}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+add\+\_\+context(\$context)}{ossn_add_context($context)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+add\+\_\+context (
+\begin{DoxyParamCaption}
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_ad54fb1e96be7d93233b827eca7b99406}{}\label{ossn_8lib_8views_8php_ad54fb1e96be7d93233b827eca7b99406}
+Add a context to page
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$context} & Name of context;  edit\+: \$arsalanshah\\
+\hline
+\end{DoxyParams}
+\+: Initial; \begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 135 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+args@{ossn\+\_\+args}}
+\index{ossn\+\_\+args@{ossn\+\_\+args}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+args(array \$attrs)}{ossn_args(array $attrs)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+args (
+\begin{DoxyParamCaption}
+\item[{array}]{\$attrs}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a90922f09de8a06ea85351afb51fac9f7}{}\label{ossn_8lib_8views_8php_a90922f09de8a06ea85351afb51fac9f7}
+ossn\+\_\+arg
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & Options; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+default\+\_\+theme@{ossn\+\_\+default\+\_\+theme}}
+\index{ossn\+\_\+default\+\_\+theme@{ossn\+\_\+default\+\_\+theme}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+default\+\_\+theme()}{ossn_default_theme()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+default\+\_\+theme (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_afcd38fcb071f487a12a1462b9390909f}{}\label{ossn_8lib_8views_8php_afcd38fcb071f487a12a1462b9390909f}
+Ossn get default theme path
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 210 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+extend\+\_\+view@{ossn\+\_\+extend\+\_\+view}}
+\index{ossn\+\_\+extend\+\_\+view@{ossn\+\_\+extend\+\_\+view}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+extend\+\_\+view(\$views, \$file)}{ossn_extend_view($views, $file)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+extend\+\_\+view (
+\begin{DoxyParamCaption}
+\item[{}]{\$views, }
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_aee3550839fe09204af21e2a5f6e835dc}{}\label{ossn_8lib_8views_8php_aee3550839fe09204af21e2a5f6e835dc}
+Register a view;
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & Path of view; \\
+\hline
+stringn & {\em \$file} & File name for view;  edit\+: \$arsalanshah\\
+\hline
+\end{DoxyParams}
+\+: Initial;  mix data 
+
+Definition at line 82 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+fetch\+\_\+extend\+\_\+views@{ossn\+\_\+fetch\+\_\+extend\+\_\+views}}
+\index{ossn\+\_\+fetch\+\_\+extend\+\_\+views@{ossn\+\_\+fetch\+\_\+extend\+\_\+views}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+fetch\+\_\+extend\+\_\+views(\$layout, \$params=array())}{ossn_fetch_extend_views($layout, $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+fetch\+\_\+extend\+\_\+views (
+\begin{DoxyParamCaption}
+\item[{}]{\$layout, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a839ae6f22b1010fdaae1514bdf275ee7}{}\label{ossn_8lib_8views_8php_a839ae6f22b1010fdaae1514bdf275ee7}
+Fetch a register view
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$layout} & Name of view;  string \$params Args for file;  edit\+: \$arsalanshah\\
+\hline
+\end{DoxyParams}
+\+: Initial; \begin{DoxyReturn}{Returns}
+mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 98 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+get\+\_\+context@{ossn\+\_\+get\+\_\+context}}
+\index{ossn\+\_\+get\+\_\+context@{ossn\+\_\+get\+\_\+context}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+context()}{ossn_get_context()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_ab86182e7aa8c5bc61781af6c4ce92f73}{}\label{ossn_8lib_8views_8php_ab86182e7aa8c5bc61781af6c4ce92f73}
+Get a current context;
+
+edit\+: \$arsalanshah \+: Initial;
+
+\begin{DoxyReturn}{Returns}
+false$\vert$string; 
+\end{DoxyReturn}
+
+
+Definition at line 165 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+include@{ossn\+\_\+include}}
+\index{ossn\+\_\+include@{ossn\+\_\+include}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+include(\$file= \textquotesingle{}\textquotesingle{}, \$params=array())}{ossn_include($file= '', $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+include (
+\begin{DoxyParamCaption}
+\item[{}]{\$file = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a6f7d3212da6386d53cf963ffe1af5138}{}\label{ossn_8lib_8views_8php_a6f7d3212da6386d53cf963ffe1af5138}
+Include a specific file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Valid file name; \\
+\hline
+array & {\em \$params} & Options;  edit\+: \$arsalanshah \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+is\+\_\+context@{ossn\+\_\+is\+\_\+context}}
+\index{ossn\+\_\+is\+\_\+context@{ossn\+\_\+is\+\_\+context}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+is\+\_\+context(\$context)}{ossn_is_context($context)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+is\+\_\+context (
+\begin{DoxyParamCaption}
+\item[{}]{\$context}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a9c5e42d8e9944c3b83b14ec075af64ff}{}\label{ossn_8lib_8views_8php_a9c5e42d8e9944c3b83b14ec075af64ff}
+Check the if are in registered context or not
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 149 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+remove\+\_\+extend\+\_\+view@{ossn\+\_\+remove\+\_\+extend\+\_\+view}}
+\index{ossn\+\_\+remove\+\_\+extend\+\_\+view@{ossn\+\_\+remove\+\_\+extend\+\_\+view}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+remove\+\_\+extend\+\_\+view(\$layout)}{ossn_remove_extend_view($layout)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+remove\+\_\+extend\+\_\+view (
+\begin{DoxyParamCaption}
+\item[{}]{\$layout}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_acebe739135f3966f7e11fe616a7572fc}{}\label{ossn_8lib_8views_8php_acebe739135f3966f7e11fe616a7572fc}
+Unregister a view from system
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$layout} & Name of view;\\
+\hline
+\end{DoxyParams}
+edit\+: \$arsalanshah \+: Initial; \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+set\+\_\+page\+\_\+layout@{ossn\+\_\+set\+\_\+page\+\_\+layout}}
+\index{ossn\+\_\+set\+\_\+page\+\_\+layout@{ossn\+\_\+set\+\_\+page\+\_\+layout}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+set\+\_\+page\+\_\+layout(\$layout, \$params=array())}{ossn_set_page_layout($layout, $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+set\+\_\+page\+\_\+layout (
+\begin{DoxyParamCaption}
+\item[{}]{\$layout, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_aaac231ebc8646d7c939acd667caaeb6a}{}\label{ossn_8lib_8views_8php_aaac231ebc8646d7c939acd667caaeb6a}
+Fetch a layout;
+
+edit\+: \$arsalanshah \+: Initial;
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$layout} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 181 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+theme\+\_\+url@{ossn\+\_\+theme\+\_\+url}}
+\index{ossn\+\_\+theme\+\_\+url@{ossn\+\_\+theme\+\_\+url}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+theme\+\_\+url(\$extend= \textquotesingle{}\textquotesingle{})}{ossn_theme_url($extend= '')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+theme\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$extend = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a5b8a8a97086965b69953e900c0315e97}{}\label{ossn_8lib_8views_8php_a5b8a8a97086965b69953e900c0315e97}
+Activated theme U\+RL
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$extend} & Extend the theme url with extra url param (path to file etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 220 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view@{ossn\+\_\+view}}
+\index{ossn\+\_\+view@{ossn\+\_\+view}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view(\$path= \textquotesingle{}\textquotesingle{}, \$params=array())}{ossn_view($path= '', $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view (
+\begin{DoxyParamCaption}
+\item[{}]{\$path = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_ae16dfe3bfb4a6fa3036b1f87183380d4}{}\label{ossn_8lib_8views_8php_ae16dfe3bfb4a6fa3036b1f87183380d4}
+View a file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & valid file name of php file without extension; \\
+\hline
+array & {\em \$params} & Options;  edit\+: \$arsalanshah \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view\+\_\+form@{ossn\+\_\+view\+\_\+form}}
+\index{ossn\+\_\+view\+\_\+form@{ossn\+\_\+view\+\_\+form}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+form(\$name, \$args=array(), \$type= \textquotesingle{}core\textquotesingle{})}{ossn_view_form($name, $args=array(), $type= 'core')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+form (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$args = {\ttfamily array()}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}core\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_ac874e6342b6bbe7ac279180d7b4dcd2b}{}\label{ossn_8lib_8views_8php_ac874e6342b6bbe7ac279180d7b4dcd2b}
+Ossn view form
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mix data 
+\end{DoxyReturn}
+
+
+Definition at line 230 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view\+\_\+page@{ossn\+\_\+view\+\_\+page}}
+\index{ossn\+\_\+view\+\_\+page@{ossn\+\_\+view\+\_\+page}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+page(\$title, \$content, \$page= \textquotesingle{}page\textquotesingle{})}{ossn_view_page($title, $content, $page= 'page')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{}]{\$title, }
+\item[{}]{\$content, }
+\item[{}]{\$page = {\ttfamily \textquotesingle{}page\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a3ec93a07297ab93df41dc84b96a68249}{}\label{ossn_8lib_8views_8php_a3ec93a07297ab93df41dc84b96a68249}
+View page;
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$title} & Title for page; \\
+\hline
+string & {\em \$content} & Content for page;\\
+\hline
+\end{DoxyParams}
+edit\+: \$arsalanshah  Initial; \begin{DoxyReturn}{Returns}
+mixed data; 
+\end{DoxyReturn}
+
+
+Definition at line 199 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view\+\_\+pagination@{ossn\+\_\+view\+\_\+pagination}}
+\index{ossn\+\_\+view\+\_\+pagination@{ossn\+\_\+view\+\_\+pagination}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+pagination(\$count=false, \$page\+\_\+limit=10, array \$args=array())}{ossn_view_pagination($count=false, $page_limit=10, array $args=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+pagination (
+\begin{DoxyParamCaption}
+\item[{}]{\$count = {\ttfamily false}, }
+\item[{}]{\$page\+\_\+limit = {\ttfamily 10}, }
+\item[{array}]{\$args = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_a781fc073a71d40fdf9002a692c8cc553}{}\label{ossn_8lib_8views_8php_a781fc073a71d40fdf9002a692c8cc553}
+Create a pagiantion using count and page limit
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$count} & total entities/objects \\
+\hline
+integer & {\em \$page\+\_\+limit} & Number of entities/objects per page \\
+\hline
+array & {\em \$args} & Overwrite the default behaviour of pagination view\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false$\vert$mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view\+\_\+template@{ossn\+\_\+view\+\_\+template}}
+\index{ossn\+\_\+view\+\_\+template@{ossn\+\_\+view\+\_\+template}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+template(\$template= \textquotesingle{}\textquotesingle{}, array \$params)}{ossn_view_template($template= '', array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+template (
+\begin{DoxyParamCaption}
+\item[{}]{\$template = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_ab3686418a27882f7461dc5ead6f9f69a}{}\label{ossn_8lib_8views_8php_ab3686418a27882f7461dc5ead6f9f69a}
+View a template
+
+Use a templates from core (image view, url view etc)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & A name of template \\
+\hline
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mix data 
+\end{DoxyReturn}
+
+
+Definition at line 256 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!ossn\+\_\+view\+\_\+widget@{ossn\+\_\+view\+\_\+widget}}
+\index{ossn\+\_\+view\+\_\+widget@{ossn\+\_\+view\+\_\+widget}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+view\+\_\+widget(array \$params=array())}{ossn_view_widget(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+view\+\_\+widget (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8views_8php_acc82c84af3b2c5e875013f74a833ae6f}{}\label{ossn_8lib_8views_8php_acc82c84af3b2c5e875013f74a833ae6f}
+Ossn view widget
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A options\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 243 of file ossn.\+lib.\+views.\+php.
+
+
+
+\subsection{Variable Documentation}
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!\$\+V\+I\+EW@{\$\+V\+I\+EW}}
+\index{\$\+V\+I\+EW@{\$\+V\+I\+EW}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{\$\+V\+I\+EW}{$VIEW}}]{\setlength{\rightskip}{0pt plus 5cm}\$V\+I\+EW = new std\+Class}\hypertarget{ossn_8lib_8views_8php_a51aed5a0c5a65be77b43fc692b66febe}{}\label{ossn_8lib_8views_8php_a51aed5a0c5a65be77b43fc692b66febe}
+
+
+Definition at line 4 of file ossn.\+lib.\+views.\+php.
+
+\index{ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}!register@{register}}
+\index{register@{register}!ossn.\+lib.\+views.\+php@{ossn.\+lib.\+views.\+php}}
+\subsubsection[{\texorpdfstring{register}{register}}]{\setlength{\rightskip}{0pt plus 5cm}\$V\+I\+EW register = array()}\hypertarget{ossn_8lib_8views_8php_a8f6e4c183faf477ee38054dbc31e85c3}{}\label{ossn_8lib_8views_8php_a8f6e4c183faf477ee38054dbc31e85c3}
+
+
+Definition at line 5 of file ossn.\+lib.\+views.\+php.
+

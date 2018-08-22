@@ -1,0 +1,91 @@
+\hypertarget{actions_2user_2login_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/actions/user/login.php File Reference}
+\label{actions_2user_2login_8php}\index{/home/jj/\+Projects/\+A\+S\+N/actions/user/login.\+php@{/home/jj/\+Projects/\+A\+S\+N/actions/user/login.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{ossn_8lib_8users_8php_a709b82b89b564332723652ed2a36e6b8}{ossn\+\_\+is\+Loggedin}()) \hyperlink{actions_2user_2login_8php_ae55aec6661bcbd0a1edbc7c356ad1fd4}{\$username} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username}\textquotesingle{})
+\item 
+\hyperlink{actions_2user_2login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password}\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(empty(\$\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username})$\vert$$\vert$empty(\$\hyperlink{actions_2account_8php_a3ef39d3ee8b2bcca6a288308549ccb44}{password})) \hyperlink{actions_2user_2login_8php_a7cd1f50ebd490e28acaf45f2d0100209}{\$user} = \hyperlink{ossn_8lib_8users_8php_a77fdcb678aedd165af1f9f875645c864}{ossn\+\_\+user\+\_\+by\+\_\+username}(\$\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(strpos(\$\hyperlink{actions_2account_8php_ac9b3768ccc688c2ff0811c50c107a02e}{username}, \textquotesingle{}@\textquotesingle{})!==false) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user} \&\&!\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$is\+User\+V\+A\+L\+I\+D\+A\+T\+ED()) \hyperlink{actions_2user_2login_8php_a09d52a8b7d99079a3273ba277fa2d7cb}{\$vars}
+\item 
+\hyperlink{actions_2user_2login_8php_afc31993e855f9631572adfedcfe6f34b}{\$login} = new \hyperlink{class_ossn_user}{Ossn\+User}
+\item 
+\$login \hyperlink{actions_2user_2login_8php_a5ae6e9dd2f76961089b9aa789ef054f5}{username} = \$username
+\item 
+\$login \hyperlink{actions_2user_2login_8php_a04cab294daa984a97618ae9c32c2e8e8}{password} = \$password
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$login-\/$>$Login()) \hyperlink{actions_2user_2login_8php_a514c4a3dcf615a7dd4fc6a15e5d1761b}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{actions/user/login.\+php@{actions/user/login.\+php}!\$login@{\$login}}
+\index{\$login@{\$login}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{\$login}{$login}}]{\setlength{\rightskip}{0pt plus 5cm}\$login = new {\bf Ossn\+User}}\hypertarget{actions_2user_2login_8php_afc31993e855f9631572adfedcfe6f34b}{}\label{actions_2user_2login_8php_afc31993e855f9631572adfedcfe6f34b}
+
+
+Definition at line 32 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!\$password@{\$password}}
+\index{\$password@{\$password}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{\$password}{$password}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf password} = {\bf input}(\textquotesingle{}{\bf password}\textquotesingle{})}\hypertarget{actions_2user_2login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{}\label{actions_2user_2login_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}
+
+
+Definition at line 8 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (empty(\${\bf username})$\vert$$\vert$empty(\${\bf password})) \${\bf user} = {\bf ossn\+\_\+user\+\_\+by\+\_\+username}(\${\bf username})}\hypertarget{actions_2user_2login_8php_a7cd1f50ebd490e28acaf45f2d0100209}{}\label{actions_2user_2login_8php_a7cd1f50ebd490e28acaf45f2d0100209}
+
+
+Definition at line 14 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!\$username@{\$username}}
+\index{\$username@{\$username}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{\$username}{$username}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ({\bf ossn\+\_\+is\+Loggedin}()) \${\bf username} = {\bf input}(\textquotesingle{}{\bf username}\textquotesingle{})}\hypertarget{actions_2user_2login_8php_ae55aec6661bcbd0a1edbc7c356ad1fd4}{}\label{actions_2user_2login_8php_ae55aec6661bcbd0a1edbc7c356ad1fd4}
+
+
+Definition at line 7 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!\$vars@{\$vars}}
+\index{\$vars@{\$vars}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{\$vars}{$vars}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (strpos(\${\bf username}, \textquotesingle{}@\textquotesingle{})!==false) {\bf if} (\${\bf user} \&\&!\${\bf user}-\/$>$is\+User\+V\+A\+L\+I\+D\+A\+T\+ED()) \$vars}\hypertarget{actions_2user_2login_8php_a09d52a8b7d99079a3273ba277fa2d7cb}{}\label{actions_2user_2login_8php_a09d52a8b7d99079a3273ba277fa2d7cb}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{'user'} => \hyperlink{actions_2user_2login_8php_a7cd1f50ebd490e28acaf45f2d0100209}{$user}
+)
+\end{DoxyCode}
+
+
+Definition at line 27 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!else@{else}}
+\index{else@{else}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$login-\/$>$Login()) else}\hypertarget{actions_2user_2login_8php_a514c4a3dcf615a7dd4fc6a15e5d1761b}{}\label{actions_2user_2login_8php_a514c4a3dcf615a7dd4fc6a15e5d1761b}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+        \hyperlink{ossn_8lib_8system_8php_a33cafdb93398ec540993c12c1daa0c48}{redirect}(\textcolor{stringliteral}{'login?error=1'})
+\end{DoxyCode}
+
+
+Definition at line 39 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!password@{password}}
+\index{password@{password}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{password}{password}}]{\setlength{\rightskip}{0pt plus 5cm}\$login password = \$password}\hypertarget{actions_2user_2login_8php_a04cab294daa984a97618ae9c32c2e8e8}{}\label{actions_2user_2login_8php_a04cab294daa984a97618ae9c32c2e8e8}
+
+
+Definition at line 34 of file login.\+php.
+
+\index{actions/user/login.\+php@{actions/user/login.\+php}!username@{username}}
+\index{username@{username}!actions/user/login.\+php@{actions/user/login.\+php}}
+\subsubsection[{\texorpdfstring{username}{username}}]{\setlength{\rightskip}{0pt plus 5cm}\$login username = \$username}\hypertarget{actions_2user_2login_8php_a5ae6e9dd2f76961089b9aa789ef054f5}{}\label{actions_2user_2login_8php_a5ae6e9dd2f76961089b9aa789ef054f5}
+
+
+Definition at line 33 of file login.\+php.
+

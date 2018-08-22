@@ -1,0 +1,40 @@
+\hypertarget{actions_2administrator_2theme_2delete_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/theme/delete.php File Reference}
+\label{actions_2administrator_2theme_2delete_8php}\index{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/theme/delete.\+php@{/home/jj/\+Projects/\+A\+S\+N/actions/administrator/theme/delete.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{actions_2administrator_2theme_2delete_8php_a1ae541f7fe1c5e21cb4535f88ec9e9dc}{\$theme} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}theme\textquotesingle{})
+\item 
+\hyperlink{actions_2administrator_2theme_2delete_8php_aba2374a8b713514611e21494ec2fef8d}{\$delete} = new \hyperlink{class_ossn_themes}{Ossn\+Themes}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(strtolower(\$delete-\/$>$get\+Active())==strtolower(\$theme)) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$delete-\/$>$deletetheme(\$theme)) \hyperlink{actions_2administrator_2theme_2delete_8php_ab47f7dfb658deaebf366c25c9b36e8c7}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}!\$delete@{\$delete}}
+\index{\$delete@{\$delete}!actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}}
+\subsubsection[{\texorpdfstring{\$delete}{$delete}}]{\setlength{\rightskip}{0pt plus 5cm}\$delete = new {\bf Ossn\+Themes}}\hypertarget{actions_2administrator_2theme_2delete_8php_aba2374a8b713514611e21494ec2fef8d}{}\label{actions_2administrator_2theme_2delete_8php_aba2374a8b713514611e21494ec2fef8d}
+
+
+Definition at line 4 of file delete.\+php.
+
+\index{actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}!\$theme@{\$theme}}
+\index{\$theme@{\$theme}!actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}}
+\subsubsection[{\texorpdfstring{\$theme}{$theme}}]{\setlength{\rightskip}{0pt plus 5cm}\$theme = {\bf input}(\textquotesingle{}theme\textquotesingle{})}\hypertarget{actions_2administrator_2theme_2delete_8php_a1ae541f7fe1c5e21cb4535f88ec9e9dc}{}\label{actions_2administrator_2theme_2delete_8php_a1ae541f7fe1c5e21cb4535f88ec9e9dc}
+
+
+Definition at line 3 of file delete.\+php.
+
+\index{actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}!else@{else}}
+\index{else@{else}!actions/administrator/theme/delete.\+php@{actions/administrator/theme/delete.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (strtolower(\$delete-\/$>$get\+Active())==strtolower(\$theme)) {\bf if} (\$delete-\/$>$deletetheme(\$theme)) else}\hypertarget{actions_2administrator_2theme_2delete_8php_ab47f7dfb658deaebf366c25c9b36e8c7}{}\label{actions_2administrator_2theme_2delete_8php_ab47f7dfb658deaebf366c25c9b36e8c7}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'theme:delete:error'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 12 of file delete.\+php.
+

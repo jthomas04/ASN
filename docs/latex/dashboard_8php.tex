@@ -1,0 +1,67 @@
+\hypertarget{dashboard_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/pages/administrator/contents/dashboard.php File Reference}
+\label{dashboard_8php}\index{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/pages/administrator/contents/dashboard.\+php@{/home/jj/\+Projects/\+A\+S\+N/system/plugins/default/pages/administrator/contents/dashboard.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{\$users} = new \hyperlink{class_ossn_user}{Ossn\+User}
+\item 
+\hyperlink{dashboard_8php_a241b818f48030b628685b2e5119c5624}{\$total}
+\item 
+\hyperlink{dashboard_8php_aceed569b975741ac6ce4f2f902bf3a06}{\$online}
+\item 
+\hyperlink{dashboard_8php_a77236cfffbde4d32b3f69cd4f5ed518d}{\$unvalidated} = \$users-\/$>$get\+Unvalidated\+U\+S\+E\+RS(\textquotesingle{}\textquotesingle{}, true)
+\item 
+\hyperlink{dashboard_8php_a2abcd95c5ba67818f177edcacc5d6d50}{\$flush\+\_\+cache} = \hyperlink{ossn_8lib_8system_8php_a2f12f9244f99eccd1225afb76ef2ab65}{ossn\+\_\+site\+\_\+url}(\char`\"{}action/admin/\hyperlink{jquery_8tokeninput_8js_a521016aa0ca9ff38bfba60ab069cb34b}{cache}/flush\char`\"{}, true)
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{dashboard.\+php@{dashboard.\+php}!\$flush\+\_\+cache@{\$flush\+\_\+cache}}
+\index{\$flush\+\_\+cache@{\$flush\+\_\+cache}!dashboard.\+php@{dashboard.\+php}}
+\subsubsection[{\texorpdfstring{\$flush\+\_\+cache}{$flush_cache}}]{\setlength{\rightskip}{0pt plus 5cm}\$flush\+\_\+cache = {\bf ossn\+\_\+site\+\_\+url}(\char`\"{}action/admin/{\bf cache}/flush\char`\"{}, true)}\hypertarget{dashboard_8php_a2abcd95c5ba67818f177edcacc5d6d50}{}\label{dashboard_8php_a2abcd95c5ba67818f177edcacc5d6d50}
+
+
+Definition at line 17 of file dashboard.\+php.
+
+\index{dashboard.\+php@{dashboard.\+php}!\$online@{\$online}}
+\index{\$online@{\$online}!dashboard.\+php@{dashboard.\+php}}
+\subsubsection[{\texorpdfstring{\$online}{$online}}]{\setlength{\rightskip}{0pt plus 5cm}\$online}\hypertarget{dashboard_8php_aceed569b975741ac6ce4f2f902bf3a06}{}\label{dashboard_8php_aceed569b975741ac6ce4f2f902bf3a06}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+                 \hyperlink{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->onlineByGender(\textcolor{stringliteral}{'male'}, \textcolor{keyword}{true}),
+                 \hyperlink{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->onlineByGender(\textcolor{stringliteral}{'female'}, \textcolor{keyword}{true})
+                 )
+\end{DoxyCode}
+
+
+Definition at line 11 of file dashboard.\+php.
+
+\index{dashboard.\+php@{dashboard.\+php}!\$total@{\$total}}
+\index{\$total@{\$total}!dashboard.\+php@{dashboard.\+php}}
+\subsubsection[{\texorpdfstring{\$total}{$total}}]{\setlength{\rightskip}{0pt plus 5cm}\$total}\hypertarget{dashboard_8php_a241b818f48030b628685b2e5119c5624}{}\label{dashboard_8php_a241b818f48030b628685b2e5119c5624}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= array(
+                \hyperlink{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->countByGender(),
+                \hyperlink{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{$users}->countByGender(\textcolor{stringliteral}{'female'})
+                )
+\end{DoxyCode}
+
+
+Definition at line 7 of file dashboard.\+php.
+
+\index{dashboard.\+php@{dashboard.\+php}!\$unvalidated@{\$unvalidated}}
+\index{\$unvalidated@{\$unvalidated}!dashboard.\+php@{dashboard.\+php}}
+\subsubsection[{\texorpdfstring{\$unvalidated}{$unvalidated}}]{\setlength{\rightskip}{0pt plus 5cm}\$unvalidated = \$users-\/$>$get\+Unvalidated\+U\+S\+E\+RS(\textquotesingle{}\textquotesingle{}, true)}\hypertarget{dashboard_8php_a77236cfffbde4d32b3f69cd4f5ed518d}{}\label{dashboard_8php_a77236cfffbde4d32b3f69cd4f5ed518d}
+
+
+Definition at line 16 of file dashboard.\+php.
+
+\index{dashboard.\+php@{dashboard.\+php}!\$users@{\$users}}
+\index{\$users@{\$users}!dashboard.\+php@{dashboard.\+php}}
+\subsubsection[{\texorpdfstring{\$users}{$users}}]{\setlength{\rightskip}{0pt plus 5cm}\$users = new {\bf Ossn\+User}}\hypertarget{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}{}\label{dashboard_8php_a28005d22fa7ef2dfe215ad886b497d9c}
+
+
+Definition at line 6 of file dashboard.\+php.
+

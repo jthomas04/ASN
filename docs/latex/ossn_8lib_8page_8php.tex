@@ -1,0 +1,119 @@
+\hypertarget{ossn_8lib_8page_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+page.\+php File Reference}
+\label{ossn_8lib_8page_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+page.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+page.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8page_8php_a4ff3dc87b649125fec4e4cc7f9f6110d}{ossn\+\_\+register\+\_\+page} (\$handler, \$function)
+\item 
+\hyperlink{ossn_8lib_8page_8php_a65601a60c8c15ec59e0a49847e2a7843}{ossn\+\_\+unregister\+\_\+page} (\$handler)
+\item 
+\hyperlink{ossn_8lib_8page_8php_afe254f0d39a792743c4c10b433c74ded}{ossn\+\_\+load\+\_\+page} (\$handler, \$page)
+\item 
+\hyperlink{ossn_8lib_8page_8php_a759a825117920f51093343e2878acd64}{ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid} (\$guid)
+\item 
+\hyperlink{ossn_8lib_8page_8php_acfd6df84d0141de17ddf05482caaf753}{ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}!ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid@{ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid}}
+\index{ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid@{ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid}!ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid()}{ossn_get_page_owner_guid()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+page\+\_\+owner\+\_\+guid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8page_8php_acfd6df84d0141de17ddf05482caaf753}{}\label{ossn_8lib_8page_8php_acfd6df84d0141de17ddf05482caaf753}
+Get page owner guid
+
+\begin{DoxyReturn}{Returns}
+(int) 
+\end{DoxyReturn}
+
+
+Definition at line 92 of file ossn.\+lib.\+page.\+php.
+
+\index{ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}!ossn\+\_\+load\+\_\+page@{ossn\+\_\+load\+\_\+page}}
+\index{ossn\+\_\+load\+\_\+page@{ossn\+\_\+load\+\_\+page}!ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+load\+\_\+page(\$handler, \$page)}{ossn_load_page($handler, $page)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+load\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{}]{\$handler, }
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8page_8php_afe254f0d39a792743c4c10b433c74ded}{}\label{ossn_8lib_8page_8php_afe254f0d39a792743c4c10b433c74ded}
+Output a page.
+
+If page is not registered then user will see a 404 page;
+
+
+\begin{DoxyParams}{Parameters}
+{\em (string)} & \$handler Page handler name; \\
+\hline
+{\em (string)} & \$page handler/page;  edit\+: \$arsalanshah \+: Initial;\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mix$\vert$null data  private 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file ossn.\+lib.\+page.\+php.
+
+\index{ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}!ossn\+\_\+register\+\_\+page@{ossn\+\_\+register\+\_\+page}}
+\index{ossn\+\_\+register\+\_\+page@{ossn\+\_\+register\+\_\+page}!ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+page(\$handler, \$function)}{ossn_register_page($handler, $function)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{}]{\$handler, }
+\item[{}]{\$function}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8page_8php_a4ff3dc87b649125fec4e4cc7f9f6110d}{}\label{ossn_8lib_8page_8php_a4ff3dc87b649125fec4e4cc7f9f6110d}
+Register a page handler; \+: \$handler = page; \+: \$function = function which handles page; 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$handler} & \\
+\hline
+string & {\em \$function} & edit\+: \$arsalanshah \+: Initial; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 14 of file ossn.\+lib.\+page.\+php.
+
+\index{ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}!ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid@{ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid}}
+\index{ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid@{ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid}!ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid(\$guid)}{ossn_set_page_owner_guid($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+set\+\_\+page\+\_\+owner\+\_\+guid (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8page_8php_a759a825117920f51093343e2878acd64}{}\label{ossn_8lib_8page_8php_a759a825117920f51093343e2878acd64}
+Set page owner guid, this is very useful
+
+
+\begin{DoxyParams}{Parameters}
+{\em (int)} & \$guid Guid of owner\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file ossn.\+lib.\+page.\+php.
+
+\index{ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}!ossn\+\_\+unregister\+\_\+page@{ossn\+\_\+unregister\+\_\+page}}
+\index{ossn\+\_\+unregister\+\_\+page@{ossn\+\_\+unregister\+\_\+page}!ossn.\+lib.\+page.\+php@{ossn.\+lib.\+page.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+unregister\+\_\+page(\$handler)}{ossn_unregister_page($handler)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+unregister\+\_\+page (
+\begin{DoxyParamCaption}
+\item[{}]{\$handler}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8page_8php_a65601a60c8c15ec59e0a49847e2a7843}{}\label{ossn_8lib_8page_8php_a65601a60c8c15ec59e0a49847e2a7843}
+Unregister a page from syste, 
+\begin{DoxyParams}{Parameters}
+{\em (string)} & \$handler Page handler name;\\
+\hline
+\end{DoxyParams}
+edit\+: \$arsalanshah \begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 26 of file ossn.\+lib.\+page.\+php.
+

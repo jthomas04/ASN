@@ -1,0 +1,27 @@
+var actions_2account_8php =
+[
+    [ "$add", "actions_2account_8php.html#a76aeb354fc71a358526ea9fbd7aae7a4", null ],
+    [ "$user", "actions_2account_8php.html#a48c184d1487bdbc0b0d2fe6e1521dd7d", null ],
+    [ "$user", "actions_2account_8php.html#a3c8ba9ea696968574370c51a90ff638c", null ],
+    [ "$user", "actions_2account_8php.html#a1187774c6d9942181216e0839e5e73bc", null ],
+    [ "$user", "actions_2account_8php.html#ae9de5cc5ae3fec81bb110d3a77ad7eec", null ],
+    [ "$user", "actions_2account_8php.html#a51e0459c93e600b4959a74463028a5e1", null ],
+    [ "$user", "actions_2account_8php.html#a5afbe215d7a53599cd9f661abf8196e2", null ],
+    [ "$user", "actions_2account_8php.html#a332175f698fc3f3621ba3c118bbc1d47", null ],
+    [ "$user", "actions_2account_8php.html#a65df881a94b5d52d3ef1af341679a762", null ],
+    [ "$user", "actions_2account_8php.html#a3785f2b5cf7efe5d305486227d0b4c39", null ],
+    [ "$user", "actions_2account_8php.html#a92cb1e1829b4b30d3823bdf025e17a03", null ],
+    [ "$user", "actions_2account_8php.html#a2862e61a0af8842af31bb09415bc6086", null ],
+    [ "birthdate", "actions_2account_8php.html#adcebf70992c7074e4bab2e0d5f831536", null ],
+    [ "else", "actions_2account_8php.html#a49a98b4576a0eca7fdcd120dfc90f7a1", null ],
+    [ "email", "actions_2account_8php.html#a011c66ae212438e0d7de7c0e40451bb3", null ],
+    [ "first_name", "actions_2account_8php.html#a9a79298edb546fb2a33bc6d266131c04", null ],
+    [ "gender", "actions_2account_8php.html#a44147631c08dfda5f5bf50dc774f7090", null ],
+    [ "last_name", "actions_2account_8php.html#ad28df3187bc8c49657d3800bb449f939", null ],
+    [ "OSSN_ALLOW_SYSTEM_START", "actions_2account_8php.html#a73aeae1243c8451cb328ddfe84637175", null ],
+    [ "password", "actions_2account_8php.html#a3ef39d3ee8b2bcca6a288308549ccb44", null ],
+    [ "sendactiviation", "actions_2account_8php.html#a11fe66faec6579a15979e62879ba8950", null ],
+    [ "username", "actions_2account_8php.html#ac9b3768ccc688c2ff0811c50c107a02e", null ],
+    [ "usertype", "actions_2account_8php.html#a13a7b92f40fdd23da18bc3eb7dcfd346", null ],
+    [ "validated", "actions_2account_8php.html#a2e76c73baded04b16081921afc8a709f", null ]
+];

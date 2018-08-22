@@ -1,0 +1,40 @@
+\hypertarget{unblock_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Block/actions/user/unblock.php File Reference}
+\label{unblock_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Block/actions/user/unblock.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Block/actions/user/unblock.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{unblock_8php_a7f8f86b37cd48a37bf0df573d8512d11}{\$block} = new \hyperlink{class_ossn_block}{Ossn\+Block}
+\item 
+\hyperlink{unblock_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$block-\/$>$remove\+Block(\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})) \hyperlink{unblock_8php_afdb417072b9e524a61d8a3af1bd9ff14}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{unblock.\+php@{unblock.\+php}!\$block@{\$block}}
+\index{\$block@{\$block}!unblock.\+php@{unblock.\+php}}
+\subsubsection[{\texorpdfstring{\$block}{$block}}]{\setlength{\rightskip}{0pt plus 5cm}\$block = new {\bf Ossn\+Block}}\hypertarget{unblock_8php_a7f8f86b37cd48a37bf0df573d8512d11}{}\label{unblock_8php_a7f8f86b37cd48a37bf0df573d8512d11}
+
+
+Definition at line 3 of file unblock.\+php.
+
+\index{unblock.\+php@{unblock.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!unblock.\+php@{unblock.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = {\bf input}(\textquotesingle{}{\bf user}\textquotesingle{})}\hypertarget{unblock_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{unblock_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 4 of file unblock.\+php.
+
+\index{unblock.\+php@{unblock.\+php}!else@{else}}
+\index{else@{else}!unblock.\+php@{unblock.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$block-\/$>$remove\+Block({\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid, \${\bf user})) else}\hypertarget{unblock_8php_afdb417072b9e524a61d8a3af1bd9ff14}{}\label{unblock_8php_afdb417072b9e524a61d8a3af1bd9ff14}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'user:unblock:error'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 8 of file unblock.\+php.
+

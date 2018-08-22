@@ -1,0 +1,603 @@
+\hypertarget{class_c_i___input}{}\section{C\+I\+\_\+\+Input Class Reference}
+\label{class_c_i___input}\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___input_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_c_i___input_aadbb0e5cbf9b5783c872cb402ea6a2fa}{\+\_\+sanitize\+\_\+globals} ()
+\item 
+\hyperlink{class_c_i___input_af42e370cfe61ee5a34b72cf37b919210}{\+\_\+clean\+\_\+input\+\_\+keys} (\$str)
+\item 
+\hyperlink{class_c_i___input_a9c594152e7b189a290f6425df8712b73}{\+\_\+clean\+\_\+input\+\_\+data} (\$str)
+\item 
+\hyperlink{class_c_i___input_a70c1e8a081ef955c1a52164634d4f66e}{is\+\_\+cli\+\_\+request} ()
+\item 
+\hyperlink{class_c_i___input_aec54f245bc5c3215ba81a594ed858b2f}{get\+\_\+post} (\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a7f3fe35f15454cbad4f12fd8a0e195e1}{get} (\$index=N\+U\+LL, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a206046338a68072d20b5bde395c42cd7}{\+\_\+fetch\+\_\+from\+\_\+array} (\&\$array, \$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a50ac0e340a9da4d85cc976e78d99a7c0}{post} (\$index=N\+U\+LL, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a60e581edbf6507bf0702fd5212ac79a4}{cookie} (\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_aae6a307dce00b4d06a29c6f0be9e4b59}{set\+\_\+cookie} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}= \textquotesingle{}\textquotesingle{}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value}= \textquotesingle{}\textquotesingle{}, \$expire= \textquotesingle{}\textquotesingle{}, \$domain= \textquotesingle{}\textquotesingle{}, \$path= \textquotesingle{}/\textquotesingle{}, \$prefix= \textquotesingle{}\textquotesingle{}, \$secure=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_aec2f772317b4fb79cc696412c2e455c3}{ip\+\_\+address} ()
+\item 
+\hyperlink{class_c_i___input_ae51c4a35daae69cbec7a25a5309918d9}{server} (\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a2adf8f23c98fcdafdc7588f874db4c4d}{valid\+\_\+ip} (\$ip, \$which= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_c_i___input_a638069c4ba0d3f4209c6936e5282f170}{user\+\_\+agent} ()
+\item 
+\hyperlink{class_c_i___input_a099af71b54f9edbfb20576a4e8a3df41}{get\+\_\+request\+\_\+header} (\$index, \$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a4bc8f8c9a9488ff359a61f1fb60e6097}{request\+\_\+headers} (\$xss\+\_\+clean=F\+A\+L\+SE)
+\item 
+\hyperlink{class_c_i___input_a4ae07120b0b2ace90eb2f7ec72b29426}{is\+\_\+ajax\+\_\+request} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___input_a614e10d1ab6dcf06fa7fef37af7b7eee}{\$ip\+\_\+address} = F\+A\+L\+SE
+\item 
+\hyperlink{class_c_i___input_aeea73d2dc27fea041fbcadae59f07cd5}{\$user\+\_\+agent} = F\+A\+L\+SE
+\item 
+\hyperlink{class_c_i___input_a359b1debb6f1d80e345d6215af6946fb}{\$\+\_\+allow\+\_\+get\+\_\+array} = T\+R\+UE
+\item 
+\hyperlink{class_c_i___input_ad9ebdfce8f992b3a41aaf64ea8782933}{\$\+\_\+standardize\+\_\+newlines} = T\+R\+UE
+\item 
+\hyperlink{class_c_i___input_a42b707bea5d9604a7460e953d9e39d7d}{\$\+\_\+enable\+\_\+xss} = F\+A\+L\+SE
+\item 
+\hyperlink{class_c_i___input_a463c89c07e7cf7f5e4337a2a8e460d17}{\$\+\_\+enable\+\_\+csrf} = F\+A\+L\+SE
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___input_a25d7802ebfe7e908ea45310013a24723}{\+\_\+valid\+\_\+ipv6} (\$str)
+\item 
+\hyperlink{class_c_i___input_acc1814d63877524ba3434eca5453edf0}{\+\_\+valid\+\_\+ipv4} (\$ip)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_i___input_a52500036ee807241b8b4b7e2367c49ef}{\$headers} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Input.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct()}{__construct()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a095c5d389db211932136b53f25f39685}{}\label{class_c_i___input_a095c5d389db211932136b53f25f39685}
+Constructor
+
+Sets whether to globally enable the X\+SS processing and whether to allow the \$\+\_\+\+G\+ET array
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Input.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+clean\+\_\+input\+\_\+data@{\+\_\+clean\+\_\+input\+\_\+data}}
+\index{\+\_\+clean\+\_\+input\+\_\+data@{\+\_\+clean\+\_\+input\+\_\+data}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+clean\+\_\+input\+\_\+data(\$str)}{_clean_input_data($str)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+clean\+\_\+input\+\_\+data (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a9c594152e7b189a290f6425df8712b73}{}\label{class_c_i___input_a9c594152e7b189a290f6425df8712b73}
+Clean Input Data
+
+This is a helper function. It escapes data and standardizes newline characters to ~\newline
+  private 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 250 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+clean\+\_\+input\+\_\+keys@{\+\_\+clean\+\_\+input\+\_\+keys}}
+\index{\+\_\+clean\+\_\+input\+\_\+keys@{\+\_\+clean\+\_\+input\+\_\+keys}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+clean\+\_\+input\+\_\+keys(\$str)}{_clean_input_keys($str)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+clean\+\_\+input\+\_\+keys (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_af42e370cfe61ee5a34b72cf37b919210}{}\label{class_c_i___input_af42e370cfe61ee5a34b72cf37b919210}
+Clean Keys
+
+This is a helper function. To prevent malicious users from trying to exploit keys we make sure that keys are only named with alpha-\/numeric text and a few other items.
+
+private 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 225 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+fetch\+\_\+from\+\_\+array@{\+\_\+fetch\+\_\+from\+\_\+array}}
+\index{\+\_\+fetch\+\_\+from\+\_\+array@{\+\_\+fetch\+\_\+from\+\_\+array}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+fetch\+\_\+from\+\_\+array(\&\$array, \$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{_fetch_from_array(&$array, $index= '', $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+fetch\+\_\+from\+\_\+array (
+\begin{DoxyParamCaption}
+\item[{\&}]{\$array, }
+\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a206046338a68072d20b5bde395c42cd7}{}\label{class_c_i___input_a206046338a68072d20b5bde395c42cd7}
+Fetch from array
+
+This is a helper function to retrieve values from global arrays
+
+private 
+\begin{DoxyParams}{Parameters}
+{\em array} & \\
+\hline
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 366 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+sanitize\+\_\+globals@{\+\_\+sanitize\+\_\+globals}}
+\index{\+\_\+sanitize\+\_\+globals@{\+\_\+sanitize\+\_\+globals}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+sanitize\+\_\+globals()}{_sanitize_globals()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+sanitize\+\_\+globals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_aadbb0e5cbf9b5783c872cb402ea6a2fa}{}\label{class_c_i___input_aadbb0e5cbf9b5783c872cb402ea6a2fa}
+Sanitize Globals
+
+This function does the following\+:
+
+Unsets \$\+\_\+\+G\+ET data (if query strings are not enabled)
+
+Unsets all globals if register\+\_\+globals is enabled
+
+Standardizes newline characters to ~\newline
+  private \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 121 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+valid\+\_\+ipv4@{\+\_\+valid\+\_\+ipv4}}
+\index{\+\_\+valid\+\_\+ipv4@{\+\_\+valid\+\_\+ipv4}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+valid\+\_\+ipv4(\$ip)}{_valid_ipv4($ip)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+valid\+\_\+ipv4 (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_c_i___input_acc1814d63877524ba3434eca5453edf0}{}\label{class_c_i___input_acc1814d63877524ba3434eca5453edf0}
+Validate I\+Pv4 Address
+
+Updated version suggested by Geert De Deckere
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 750 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\+\_\+valid\+\_\+ipv6@{\+\_\+valid\+\_\+ipv6}}
+\index{\+\_\+valid\+\_\+ipv6@{\+\_\+valid\+\_\+ipv6}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\+\_\+valid\+\_\+ipv6(\$str)}{_valid_ipv6($str)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+valid\+\_\+ipv6 (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_c_i___input_a25d7802ebfe7e908ea45310013a24723}{}\label{class_c_i___input_a25d7802ebfe7e908ea45310013a24723}
+Validate I\+Pv6 Address
+
+protected 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 688 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!cookie@{cookie}}
+\index{cookie@{cookie}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{cookie(\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{cookie($index= '', $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a60e581edbf6507bf0702fd5212ac79a4}{}\label{class_c_i___input_a60e581edbf6507bf0702fd5212ac79a4}
+Fetch an item from the C\+O\+O\+K\+IE array
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 414 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get@{get}}
+\index{get@{get}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{get(\$index=\+N\+U\+L\+L, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{get($index=NULL, $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}get (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily NULL}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a7f3fe35f15454cbad4f12fd8a0e195e1}{}\label{class_c_i___input_a7f3fe35f15454cbad4f12fd8a0e195e1}
+Fetch an item from the G\+ET array
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string} & \\
+\hline
+ & {\em bool} & \\
+\hline
+string & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 338 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get\+\_\+post@{get\+\_\+post}}
+\index{get\+\_\+post@{get\+\_\+post}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{get\+\_\+post(\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{get_post($index= '', $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+post (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_aec54f245bc5c3215ba81a594ed858b2f}{}\label{class_c_i___input_aec54f245bc5c3215ba81a594ed858b2f}
+Fetch an item from either the G\+ET array or the P\+O\+ST
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & The index key \\
+\hline
+{\em bool} & X\+SS cleaning \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 319 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!get\+\_\+request\+\_\+header@{get\+\_\+request\+\_\+header}}
+\index{get\+\_\+request\+\_\+header@{get\+\_\+request\+\_\+header}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{get\+\_\+request\+\_\+header(\$index, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{get_request_header($index, $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+request\+\_\+header (
+\begin{DoxyParamCaption}
+\item[{}]{\$index, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a099af71b54f9edbfb20576a4e8a3df41}{}\label{class_c_i___input_a099af71b54f9edbfb20576a4e8a3df41}
+Get Request Header
+
+Returns the value of a single member of the headers class member
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & array key for \$this-\/$>$headers \\
+\hline
+{\em boolean} & X\+SS Clean or not \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed F\+A\+L\+SE on failure, string on success 
+\end{DoxyReturn}
+
+
+Definition at line 613 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!ip\+\_\+address@{ip\+\_\+address}}
+\index{ip\+\_\+address@{ip\+\_\+address}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{ip\+\_\+address()}{ip_address()}}]{\setlength{\rightskip}{0pt plus 5cm}ip\+\_\+address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_aec2f772317b4fb79cc696412c2e455c3}{}\label{class_c_i___input_aec2f772317b4fb79cc696412c2e455c3}
+Fetch the IP Address
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 483 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!is\+\_\+ajax\+\_\+request@{is\+\_\+ajax\+\_\+request}}
+\index{is\+\_\+ajax\+\_\+request@{is\+\_\+ajax\+\_\+request}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{is\+\_\+ajax\+\_\+request()}{is_ajax_request()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+\_\+ajax\+\_\+request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a4ae07120b0b2ace90eb2f7ec72b29426}{}\label{class_c_i___input_a4ae07120b0b2ace90eb2f7ec72b29426}
+Is ajax Request?
+
+Test to see if a request contains the H\+T\+T\+P\+\_\+\+X\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+E\+D\+\_\+\+W\+I\+TH header
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 675 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!is\+\_\+cli\+\_\+request@{is\+\_\+cli\+\_\+request}}
+\index{is\+\_\+cli\+\_\+request@{is\+\_\+cli\+\_\+request}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{is\+\_\+cli\+\_\+request()}{is_cli_request()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+\_\+cli\+\_\+request (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a70c1e8a081ef955c1a52164634d4f66e}{}\label{class_c_i___input_a70c1e8a081ef955c1a52164634d4f66e}
+Is cli Request?
+
+Test to see if a request was made from the command line
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!post@{post}}
+\index{post@{post}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{post(\$index=\+N\+U\+L\+L, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{post($index=NULL, $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}post (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily NULL}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a50ac0e340a9da4d85cc976e78d99a7c0}{}\label{class_c_i___input_a50ac0e340a9da4d85cc976e78d99a7c0}
+Fetch an item from the P\+O\+ST array
+
+public 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em string} & \\
+\hline
+ & {\em bool} & \\
+\hline
+string & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 389 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!request\+\_\+headers@{request\+\_\+headers}}
+\index{request\+\_\+headers@{request\+\_\+headers}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{request\+\_\+headers(\$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{request_headers($xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}request\+\_\+headers (
+\begin{DoxyParamCaption}
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a4bc8f8c9a9488ff359a61f1fb60e6097}{}\label{class_c_i___input_a4bc8f8c9a9488ff359a61f1fb60e6097}
+Request Headers
+
+In Apache, you can simply call apache\+\_\+request\+\_\+headers(), however for people running other webservers the function is undefined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & X\+SS cleaning\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 641 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!server@{server}}
+\index{server@{server}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{server(\$index= \textquotesingle{}\textquotesingle{}, \$xss\+\_\+clean=\+F\+A\+L\+S\+E)}{server($index= '', $xss_clean=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}server (
+\begin{DoxyParamCaption}
+\item[{}]{\$index = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$xss\+\_\+clean = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_ae51c4a35daae69cbec7a25a5309918d9}{}\label{class_c_i___input_ae51c4a35daae69cbec7a25a5309918d9}
+Fetch an item from the S\+E\+R\+V\+ER array
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em bool} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 536 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!set\+\_\+cookie@{set\+\_\+cookie}}
+\index{set\+\_\+cookie@{set\+\_\+cookie}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{set\+\_\+cookie(\$name= \textquotesingle{}\textquotesingle{}, \$value= \textquotesingle{}\textquotesingle{}, \$expire= \textquotesingle{}\textquotesingle{}, \$domain= \textquotesingle{}\textquotesingle{}, \$path= \textquotesingle{}/\textquotesingle{}, \$prefix= \textquotesingle{}\textquotesingle{}, \$secure=\+F\+A\+L\+S\+E)}{set_cookie($name= '', $value= '', $expire= '', $domain= '', $path= '/', $prefix= '', $secure=FALSE)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+\_\+cookie (
+\begin{DoxyParamCaption}
+\item[{}]{\$name = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$value = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$expire = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$domain = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$path = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }
+\item[{}]{\$prefix = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$secure = {\ttfamily FALSE}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_aae6a307dce00b4d06a29c6f0be9e4b59}{}\label{class_c_i___input_aae6a307dce00b4d06a29c6f0be9e4b59}
+Set cookie
+
+Accepts six parameter, or you can submit an associative array in the first parameter containing all the values.
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em mixed} & \\
+\hline
+{\em string} & the value of the cookie \\
+\hline
+{\em string} & the number of seconds until expiration \\
+\hline
+{\em string} & the cookie domain. Usually\+: .yourdomain.\+com \\
+\hline
+{\em string} & the cookie path \\
+\hline
+{\em string} & the cookie prefix \\
+\hline
+{\em bool} & true makes the cookie secure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 436 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!user\+\_\+agent@{user\+\_\+agent}}
+\index{user\+\_\+agent@{user\+\_\+agent}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{user\+\_\+agent()}{user_agent()}}]{\setlength{\rightskip}{0pt plus 5cm}user\+\_\+agent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a638069c4ba0d3f4209c6936e5282f170}{}\label{class_c_i___input_a638069c4ba0d3f4209c6936e5282f170}
+User Agent
+
+public \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 592 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!valid\+\_\+ip@{valid\+\_\+ip}}
+\index{valid\+\_\+ip@{valid\+\_\+ip}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{valid\+\_\+ip(\$ip, \$which= \textquotesingle{}\textquotesingle{})}{valid_ip($ip, $which= '')}}]{\setlength{\rightskip}{0pt plus 5cm}valid\+\_\+ip (
+\begin{DoxyParamCaption}
+\item[{}]{\$ip, }
+\item[{}]{\$which = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_i___input_a2adf8f23c98fcdafdc7588f874db4c4d}{}\label{class_c_i___input_a2adf8f23c98fcdafdc7588f874db4c4d}
+Validate IP Address
+
+public 
+\begin{DoxyParams}{Parameters}
+{\em string} & \\
+\hline
+{\em string} & ipv4 or ipv6 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 550 of file Input.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$\+\_\+allow\+\_\+get\+\_\+array@{\$\+\_\+allow\+\_\+get\+\_\+array}}
+\index{\$\+\_\+allow\+\_\+get\+\_\+array@{\$\+\_\+allow\+\_\+get\+\_\+array}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$\+\_\+allow\+\_\+get\+\_\+array}{$_allow_get_array}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+allow\+\_\+get\+\_\+array = T\+R\+UE}\hypertarget{class_c_i___input_a359b1debb6f1d80e345d6215af6946fb}{}\label{class_c_i___input_a359b1debb6f1d80e345d6215af6946fb}
+
+
+Definition at line 49 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$\+\_\+enable\+\_\+csrf@{\$\+\_\+enable\+\_\+csrf}}
+\index{\$\+\_\+enable\+\_\+csrf@{\$\+\_\+enable\+\_\+csrf}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$\+\_\+enable\+\_\+csrf}{$_enable_csrf}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+enable\+\_\+csrf = F\+A\+L\+SE}\hypertarget{class_c_i___input_a463c89c07e7cf7f5e4337a2a8e460d17}{}\label{class_c_i___input_a463c89c07e7cf7f5e4337a2a8e460d17}
+
+
+Definition at line 69 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$\+\_\+enable\+\_\+xss@{\$\+\_\+enable\+\_\+xss}}
+\index{\$\+\_\+enable\+\_\+xss@{\$\+\_\+enable\+\_\+xss}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$\+\_\+enable\+\_\+xss}{$_enable_xss}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+enable\+\_\+xss = F\+A\+L\+SE}\hypertarget{class_c_i___input_a42b707bea5d9604a7460e953d9e39d7d}{}\label{class_c_i___input_a42b707bea5d9604a7460e953d9e39d7d}
+
+
+Definition at line 62 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$\+\_\+standardize\+\_\+newlines@{\$\+\_\+standardize\+\_\+newlines}}
+\index{\$\+\_\+standardize\+\_\+newlines@{\$\+\_\+standardize\+\_\+newlines}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$\+\_\+standardize\+\_\+newlines}{$_standardize_newlines}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+standardize\+\_\+newlines = T\+R\+UE}\hypertarget{class_c_i___input_ad9ebdfce8f992b3a41aaf64ea8782933}{}\label{class_c_i___input_ad9ebdfce8f992b3a41aaf64ea8782933}
+
+
+Definition at line 55 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$headers@{\$headers}}
+\index{\$headers@{\$headers}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$headers}{$headers}}]{\setlength{\rightskip}{0pt plus 5cm}\$headers = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_c_i___input_a52500036ee807241b8b4b7e2367c49ef}{}\label{class_c_i___input_a52500036ee807241b8b4b7e2367c49ef}
+
+
+Definition at line 75 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$ip\+\_\+address@{\$ip\+\_\+address}}
+\index{\$ip\+\_\+address@{\$ip\+\_\+address}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$ip\+\_\+address}{$ip_address}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ip\+\_\+address} = F\+A\+L\+SE}\hypertarget{class_c_i___input_a614e10d1ab6dcf06fa7fef37af7b7eee}{}\label{class_c_i___input_a614e10d1ab6dcf06fa7fef37af7b7eee}
+
+
+Definition at line 37 of file Input.\+php.
+
+\index{C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}!\$user\+\_\+agent@{\$user\+\_\+agent}}
+\index{\$user\+\_\+agent@{\$user\+\_\+agent}!C\+I\+\_\+\+Input@{C\+I\+\_\+\+Input}}
+\subsubsection[{\texorpdfstring{\$user\+\_\+agent}{$user_agent}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user\+\_\+agent} = F\+A\+L\+SE}\hypertarget{class_c_i___input_aeea73d2dc27fea041fbcadae59f07cd5}{}\label{class_c_i___input_aeea73d2dc27fea041fbcadae59f07cd5}
+
+
+Definition at line 43 of file Input.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/vendors/tinymce/plugins/jbimages/ci/system/core/\hyperlink{_input_8php}{Input.\+php}\end{DoxyCompactItemize}

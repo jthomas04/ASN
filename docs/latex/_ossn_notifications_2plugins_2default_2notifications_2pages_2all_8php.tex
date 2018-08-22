@@ -1,0 +1,59 @@
+\hypertarget{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/plugins/default/notifications/pages/all.php File Reference}
+\label{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a6dba07cf5cb37f05ef89d2b9afacf046}{\$get} = new \hyperlink{class_ossn_notifications}{Ossn\+Notifications}
+\item 
+\hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a51df68467e9bf7825dfa9f38d45e9404}{\$notifications}
+\item 
+\hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_af789423037bbc89dc7c850e761177570}{\$count}
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$notifications) \hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_ae3265141c285fe5ca304d727bccf8536}{\$pagination} = \hyperlink{ossn_8lib_8views_8php_a781fc073a71d40fdf9002a692c8cc553}{ossn\+\_\+view\+\_\+pagination}(\$\hyperlink{photos_2pages_2photos_8php_a364678aa3bd05301b3d1b8650653cf48}{count})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}!\$count@{\$count}}
+\index{\$count@{\$count}!Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}}
+\subsubsection[{\texorpdfstring{\$count}{$count}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf count}}\hypertarget{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_af789423037bbc89dc7c850e761177570}{}\label{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_af789423037bbc89dc7c850e761177570}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a6dba07cf5cb37f05ef89d2b9afacf046}{$get}->searchNotifications(array(
+                    \textcolor{stringliteral}{'owner\_guid'} => \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\_loggedin\_user}()->guid,
+                    \textcolor{stringliteral}{'count'} => \textcolor{keyword}{true},
+))
+\end{DoxyCode}
+
+
+Definition at line 10 of file all.\+php.
+
+\index{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}!\$get@{\$get}}
+\index{\$get@{\$get}!Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}}
+\subsubsection[{\texorpdfstring{\$get}{$get}}]{\setlength{\rightskip}{0pt plus 5cm}\$get = new {\bf Ossn\+Notifications}}\hypertarget{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a6dba07cf5cb37f05ef89d2b9afacf046}{}\label{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a6dba07cf5cb37f05ef89d2b9afacf046}
+
+
+Definition at line 4 of file all.\+php.
+
+\index{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}!\$notifications@{\$notifications}}
+\index{\$notifications@{\$notifications}!Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}}
+\subsubsection[{\texorpdfstring{\$notifications}{$notifications}}]{\setlength{\rightskip}{0pt plus 5cm}\$notifications}\hypertarget{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a51df68467e9bf7825dfa9f38d45e9404}{}\label{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a51df68467e9bf7825dfa9f38d45e9404}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \hyperlink{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_a6dba07cf5cb37f05ef89d2b9afacf046}{$get}->searchNotifications(array(
+                    \textcolor{stringliteral}{'owner\_guid'} => \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\_loggedin\_user}()->guid,   
+                    \textcolor{stringliteral}{'offset'} => \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textcolor{stringliteral}{'offset'}, \textcolor{stringliteral}{''}, 1),
+                    \textcolor{stringliteral}{'order\_by'} => \textcolor{stringliteral}{'n.guid DESC'},
+))
+\end{DoxyCode}
+
+
+Definition at line 5 of file all.\+php.
+
+\index{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}!\$pagination@{\$pagination}}
+\index{\$pagination@{\$pagination}!Ossn\+Notifications/plugins/default/notifications/pages/all.\+php@{Ossn\+Notifications/plugins/default/notifications/pages/all.\+php}}
+\subsubsection[{\texorpdfstring{\$pagination}{$pagination}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\$notifications) \$pagination = {\bf ossn\+\_\+view\+\_\+pagination}(\${\bf count})}\hypertarget{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_ae3265141c285fe5ca304d727bccf8536}{}\label{_ossn_notifications_2plugins_2default_2notifications_2pages_2all_8php_ae3265141c285fe5ca304d727bccf8536}
+
+
+Definition at line 21 of file all.\+php.
+

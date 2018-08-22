@@ -1,0 +1,472 @@
+\hypertarget{class_ossn_file}{}\section{Ossn\+File Class Reference}
+\label{class_ossn_file}\index{Ossn\+File@{Ossn\+File}}
+
+
+Inheritance diagram for Ossn\+File\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+File\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_file_ad0c8e2f79771e4fbe112ea438d26812e}{Max\+Size} ()
+\item 
+\hyperlink{class_ossn_file_a65c08d70e77be0b3378e24f31a091c32}{set\+File} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name})
+\item 
+\hyperlink{class_ossn_file_a5d101758b135bd36ba8992cc3bb67a24}{set\+Path} (\$path)
+\item 
+\hyperlink{class_ossn_file_a42b916003160b0cd2fc57f7a590dbe4d}{get\+File\+Extension} (\$file)
+\item 
+\hyperlink{class_ossn_file_a64f65acc2e33d6c0e63502f1b4255043}{allowed\+File\+Extensions} ()
+\item 
+\hyperlink{class_ossn_file_a38d1f71721ea40a90c36771160796198}{get\+File\+Upload\+Error} (\$code)
+\item 
+\hyperlink{class_ossn_file_abab6b73456b8b7d1255cbfde29faeaae}{show\+File\+Upload\+Error} ()
+\item 
+\hyperlink{class_ossn_file_ad85961b5e9dc395643a4bf76f83c57d4}{add\+File} ()
+\item 
+\hyperlink{class_ossn_file_a7010e197d8dce475dfdd443c11dd7ee9}{get\+Files} ()
+\item 
+\hyperlink{class_ossn_file_a8185868ddd21ffa1015dd672d76de89f}{fetch\+File} ()
+\item 
+\hyperlink{class_ossn_file_a1bf20e252d370638ce4d0602ee65fd30}{set\+Extension} (array \$extension=array())
+\item 
+\hyperlink{class_ossn_file_ab97b87cddb79c9b58e346c7f8c1a9b7c}{set\+Mime\+Types} (array \$mimtypes=array())
+\item 
+\hyperlink{class_ossn_file_a6d952ae1125eb50a79ba4834759b4ae2}{type\+Allowed} ()
+\item 
+\hyperlink{class_ossn_file_adf61e733be7f62a3f4bedbe7d2e02ec2}{get\+File} ()
+\item 
+\hyperlink{class_ossn_file_a30c5c67b2bf8e2e2ccc7e361faa20afe}{get\+Path} ()
+\item 
+\hyperlink{class_ossn_file_a746fee70ac0f3dcd5543ff033dabbc97}{is\+File} ()
+\item 
+\hyperlink{class_ossn_file_a5400301ee671ad651916b1dad7362808}{reset\+Rotation} (\$filename)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_ossn_file_aadb0fd425bbee427211d3a291155b9af}{Delete\+Dir} (\$path)
+\item 
+static \hyperlink{class_ossn_file_acf32955187b4baf4e6d275f1a3617ee8}{move\+Files} (\$from, \$to)
+\item 
+static \hyperlink{class_ossn_file_a300fd63f7a9cc9a91c15219a4b380e5a}{mime\+Types} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+File.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+File@{Ossn\+File}!add\+File@{add\+File}}
+\index{add\+File@{add\+File}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{add\+File()}{addFile()}}]{\setlength{\rightskip}{0pt plus 5cm}add\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_ad85961b5e9dc395643a4bf76f83c57d4}{}\label{class_ossn_file_ad85961b5e9dc395643a4bf76f83c57d4}
+add\+File Add file to database
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$object-\/,$>$owner\+\_\+guid} & Guid of owner , the file belongs to \\
+\hline
+string & {\em \$object-\/,$>$type} & Owner type, \\
+\hline
+string & {\em \$object-\/,$>$subtype} & file type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!allowed\+File\+Extensions@{allowed\+File\+Extensions}}
+\index{allowed\+File\+Extensions@{allowed\+File\+Extensions}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{allowed\+File\+Extensions()}{allowedFileExtensions()}}]{\setlength{\rightskip}{0pt plus 5cm}allowed\+File\+Extensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a64f65acc2e33d6c0e63502f1b4255043}{}\label{class_ossn_file_a64f65acc2e33d6c0e63502f1b4255043}
+Allowed file extensions Validate file extension before save
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!Delete\+Dir@{Delete\+Dir}}
+\index{Delete\+Dir@{Delete\+Dir}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{Delete\+Dir(\$path)}{DeleteDir($path)}}]{\setlength{\rightskip}{0pt plus 5cm}static Delete\+Dir (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_file_aadb0fd425bbee427211d3a291155b9af}{}\label{class_ossn_file_aadb0fd425bbee427211d3a291155b9af}
+Delete\+Dir Delete the directories including files
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path of directory\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!fetch\+File@{fetch\+File}}
+\index{fetch\+File@{fetch\+File}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{fetch\+File()}{fetchFile()}}]{\setlength{\rightskip}{0pt plus 5cm}fetch\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a8185868ddd21ffa1015dd672d76de89f}{}\label{class_ossn_file_a8185868ddd21ffa1015dd672d76de89f}
+Get file by id
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$object-\/,$>$file\+\_\+id} & guid of file in database \\
+\hline
+string & {\em \$object-\/,$>$type} & Owner type \\
+\hline
+string & {\em \$object-\/,$>$subtype} & file type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+will be removed in v5. use \hyperlink{class_ossn_file_adf61e733be7f62a3f4bedbe7d2e02ec2}{get\+File()} instead
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 267 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!get\+File@{get\+File}}
+\index{get\+File@{get\+File}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{get\+File()}{getFile()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_adf61e733be7f62a3f4bedbe7d2e02ec2}{}\label{class_ossn_file_adf61e733be7f62a3f4bedbe7d2e02ec2}
+Get file
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 399 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!get\+File\+Extension@{get\+File\+Extension}}
+\index{get\+File\+Extension@{get\+File\+Extension}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{get\+File\+Extension(\$file)}{getFileExtension($file)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+File\+Extension (
+\begin{DoxyParamCaption}
+\item[{}]{\$file}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a42b916003160b0cd2fc57f7a590dbe4d}{}\label{class_ossn_file_a42b916003160b0cd2fc57f7a590dbe4d}
+Get file extension from its name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Full file name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 80 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!get\+Files@{get\+Files}}
+\index{get\+Files@{get\+Files}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{get\+Files()}{getFiles()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a7010e197d8dce475dfdd443c11dd7ee9}{}\label{class_ossn_file_a7010e197d8dce475dfdd443c11dd7ee9}
+get\+Files Get owner files
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$object-\/,$>$owner\+\_\+guid} & Guid of owner , the file belongs to \\
+\hline
+string & {\em \$object-\/,$>$type} & Owner type \\
+\hline
+string & {\em \$object-\/,$>$subtype} & File type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 238 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!get\+File\+Upload\+Error@{get\+File\+Upload\+Error}}
+\index{get\+File\+Upload\+Error@{get\+File\+Upload\+Error}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{get\+File\+Upload\+Error(\$code)}{getFileUploadError($code)}}]{\setlength{\rightskip}{0pt plus 5cm}get\+File\+Upload\+Error (
+\begin{DoxyParamCaption}
+\item[{}]{\$code}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a38d1f71721ea40a90c36771160796198}{}\label{class_ossn_file_a38d1f71721ea40a90c36771160796198}
+get\+File\+Upload\+Error Print user friendly file upload error
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$code} & Error code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 119 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!get\+Path@{get\+Path}}
+\index{get\+Path@{get\+Path}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{get\+Path()}{getPath()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a30c5c67b2bf8e2e2ccc7e361faa20afe}{}\label{class_ossn_file_a30c5c67b2bf8e2e2ccc7e361faa20afe}
+Get a full file path in data root
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 415 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!is\+File@{is\+File}}
+\index{is\+File@{is\+File}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{is\+File()}{isFile()}}]{\setlength{\rightskip}{0pt plus 5cm}is\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a746fee70ac0f3dcd5543ff033dabbc97}{}\label{class_ossn_file_a746fee70ac0f3dcd5543ff033dabbc97}
+Check if file exists or not
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 427 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!Max\+Size@{Max\+Size}}
+\index{Max\+Size@{Max\+Size}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{Max\+Size()}{MaxSize()}}]{\setlength{\rightskip}{0pt plus 5cm}Max\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_ad0c8e2f79771e4fbe112ea438d26812e}{}\label{class_ossn_file_ad0c8e2f79771e4fbe112ea438d26812e}
+Max\+Size Get server post max size
+
+\begin{DoxyReturn}{Returns}
+float; 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!mime\+Types@{mime\+Types}}
+\index{mime\+Types@{mime\+Types}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{mime\+Types()}{mimeTypes()}}]{\setlength{\rightskip}{0pt plus 5cm}static mime\+Types (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_file_a300fd63f7a9cc9a91c15219a4b380e5a}{}\label{class_ossn_file_a300fd63f7a9cc9a91c15219a4b380e5a}
+M\+I\+ME types.
+
+This function contains most commonly used M\+I\+ME types in Ossn
+
+You can find mimtypes on the url below\+: \href{http://svn.apache.org/viewvc/httpd/httpd/trunk/docs/conf/mime.types?view=markup}{\tt http\+://svn.\+apache.\+org/viewvc/httpd/httpd/trunk/docs/conf/mime.\+types?view=markup}
+
+Extra mimetypes has been removed in Ossn v3.\+1. You can add a hook to extends mimetypes
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 358 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!move\+Files@{move\+Files}}
+\index{move\+Files@{move\+Files}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{move\+Files(\$from, \$to)}{moveFiles($from, $to)}}]{\setlength{\rightskip}{0pt plus 5cm}static move\+Files (
+\begin{DoxyParamCaption}
+\item[{}]{\$from, }
+\item[{}]{\$to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_ossn_file_acf32955187b4baf4e6d275f1a3617ee8}{}\label{class_ossn_file_acf32955187b4baf4e6d275f1a3617ee8}
+move\+Files Move files from one directory to another
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & Complete directory path from where you want to move files. \\
+\hline
+string & {\em \$to} & Complete directory path where you want to move files.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 327 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!reset\+Rotation@{reset\+Rotation}}
+\index{reset\+Rotation@{reset\+Rotation}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{reset\+Rotation(\$filename)}{resetRotation($filename)}}]{\setlength{\rightskip}{0pt plus 5cm}reset\+Rotation (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a5400301ee671ad651916b1dad7362808}{}\label{class_ossn_file_a5400301ee671ad651916b1dad7362808}
+Fix image rotation \#981
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 439 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!set\+Extension@{set\+Extension}}
+\index{set\+Extension@{set\+Extension}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{set\+Extension(array \$extension=array())}{setExtension(array $extension=array())}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Extension (
+\begin{DoxyParamCaption}
+\item[{array}]{\$extension = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a1bf20e252d370638ce4d0602ee65fd30}{}\label{class_ossn_file_a1bf20e252d370638ce4d0602ee65fd30}
+Set required file extension
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$extension} & Uploaded file extension can be jpg, jpeg\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 278 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!set\+File@{set\+File}}
+\index{set\+File@{set\+File}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{set\+File(\$name)}{setFile($name)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a65c08d70e77be0b3378e24f31a091c32}{}\label{class_ossn_file_a65c08d70e77be0b3378e24f31a091c32}
+set\+File Set a required file in memory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 57 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!set\+Mime\+Types@{set\+Mime\+Types}}
+\index{set\+Mime\+Types@{set\+Mime\+Types}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{set\+Mime\+Types(array \$mimtypes=array())}{setMimeTypes(array $mimtypes=array())}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Mime\+Types (
+\begin{DoxyParamCaption}
+\item[{array}]{\$mimtypes = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_ab97b87cddb79c9b58e346c7f8c1a9b7c}{}\label{class_ossn_file_ab97b87cddb79c9b58e346c7f8c1a9b7c}
+Set required file mimetype If not set, it will try to match mimetype with pre-\/defined mime type
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$mimtypes} & Mimetypes that are allowed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 289 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!set\+Path@{set\+Path}}
+\index{set\+Path@{set\+Path}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{set\+Path(\$path)}{setPath($path)}}]{\setlength{\rightskip}{0pt plus 5cm}set\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a5d101758b135bd36ba8992cc3bb67a24}{}\label{class_ossn_file_a5d101758b135bd36ba8992cc3bb67a24}
+Set a path for file where it need to upload
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path where file need to save \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 71 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!show\+File\+Upload\+Error@{show\+File\+Upload\+Error}}
+\index{show\+File\+Upload\+Error@{show\+File\+Upload\+Error}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{show\+File\+Upload\+Error()}{showFileUploadError()}}]{\setlength{\rightskip}{0pt plus 5cm}show\+File\+Upload\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_abab6b73456b8b7d1255cbfde29faeaae}{}\label{class_ossn_file_abab6b73456b8b7d1255cbfde29faeaae}
+show\+File\+Upload\+Error Show file upload errors
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 164 of file Ossn\+File.\+php.
+
+\index{Ossn\+File@{Ossn\+File}!type\+Allowed@{type\+Allowed}}
+\index{type\+Allowed@{type\+Allowed}!Ossn\+File@{Ossn\+File}}
+\subsubsection[{\texorpdfstring{type\+Allowed()}{typeAllowed()}}]{\setlength{\rightskip}{0pt plus 5cm}type\+Allowed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_file_a6d952ae1125eb50a79ba4834759b4ae2}{}\label{class_ossn_file_a6d952ae1125eb50a79ba4834759b4ae2}
+Validate a uploaded file
+
+Make sure the file extension match also check mimetype
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 299 of file Ossn\+File.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_file_8php}{Ossn\+File.\+php}\end{DoxyCompactItemize}

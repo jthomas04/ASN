@@ -1,0 +1,257 @@
+\hypertarget{class_ossn_entities}{}\section{Ossn\+Entities Class Reference}
+\label{class_ossn_entities}\index{Ossn\+Entities@{Ossn\+Entities}}
+
+
+Inheritance diagram for Ossn\+Entities\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Entities\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_entities_a837ba24a1c3095ae67613238d866f79a}{add} ()
+\item 
+\hyperlink{class_ossn_entities_a321877fa6f77cfda6c6763efe3da10e6}{get\+\_\+entity} ()
+\item 
+\hyperlink{class_ossn_entities_afc8a3c62679cf00ade9f15fb2a6d6132}{save} ()
+\item 
+\hyperlink{class_ossn_entities_af580e98d90eb524e74b3d21db5a3a09b}{get\+\_\+entities} ()
+\item 
+\hyperlink{class_ossn_entities_a21f27b72410c2bbfadf8273f0d67168e}{Added\+Entity\+Guid} ()
+\item 
+\hyperlink{class_ossn_entities_abe5ac96a7b95dd2f9f579d7477de3119}{update\+Entity} ()
+\item 
+\hyperlink{class_ossn_entities_a4fe96bc82545e1a91c1d87d02736e9c0}{delete\+By\+Owner\+Guid} (\$guid, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type})
+\item 
+\hyperlink{class_ossn_entities_af1ff761ae28dc1baaf861309f8daa812}{delete\+Entity} (\$guid= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_entities_a76dd33e48f570ebff21d3a421ce5cbc9}{search\+Entities} (array \$params=array())
+\item 
+\hyperlink{class_ossn_entities_a05804a6fe9cab2e6bb201030fabfa357}{can\+Change} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_entities_a1e268d11410f6c59c0f8a0c7b6892c00}{destruct} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 3 of file Ossn\+Entities.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Entities@{Ossn\+Entities}!add@{add}}
+\index{add@{add}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{add()}{add()}}]{\setlength{\rightskip}{0pt plus 5cm}add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a837ba24a1c3095ae67613238d866f79a}{}\label{class_ossn_entities_a837ba24a1c3095ae67613238d866f79a}
+Add new entity.
+
+Requires object \$this-\/$>$type =$>$ entity type; (this usually is user, object, annotation, site) \$this-\/$>$subtype =$>$ entity subtype; \$this-\/$>$entity\+\_\+permission =$>$ O\+S\+S\+N\+\_\+\+A\+C\+C\+E\+SS \$this-\/$>$active = is entity is active or not \$this-\/$>$value = data you want to insert \$this-\/$>$owner\+\_\+guid = entity owner guid
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!Added\+Entity\+Guid@{Added\+Entity\+Guid}}
+\index{Added\+Entity\+Guid@{Added\+Entity\+Guid}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{Added\+Entity\+Guid()}{AddedEntityGuid()}}]{\setlength{\rightskip}{0pt plus 5cm}Added\+Entity\+Guid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a21f27b72410c2bbfadf8273f0d67168e}{}\label{class_ossn_entities_a21f27b72410c2bbfadf8273f0d67168e}
+Get newly added entity guid.
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+Definition at line 258 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!can\+Change@{can\+Change}}
+\index{can\+Change@{can\+Change}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{can\+Change(\$user= \textquotesingle{}\textquotesingle{})}{canChange($user= '')}}]{\setlength{\rightskip}{0pt plus 5cm}can\+Change (
+\begin{DoxyParamCaption}
+\item[{}]{\$user = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a05804a6fe9cab2e6bb201030fabfa357}{}\label{class_ossn_entities_a05804a6fe9cab2e6bb201030fabfa357}
+Can change Check if user can change the requested item or not
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & User \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 511 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!delete\+By\+Owner\+Guid@{delete\+By\+Owner\+Guid}}
+\index{delete\+By\+Owner\+Guid@{delete\+By\+Owner\+Guid}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{delete\+By\+Owner\+Guid(\$guid, \$type)}{deleteByOwnerGuid($guid, $type)}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+By\+Owner\+Guid (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid, }
+\item[{}]{\$type}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a4fe96bc82545e1a91c1d87d02736e9c0}{}\label{class_ossn_entities_a4fe96bc82545e1a91c1d87d02736e9c0}
+Delete all entities related to owner guid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & Entity guid in database \\
+\hline
+string & {\em \$type} & Entity type\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]why not there is subtype? \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 310 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!delete\+Entity@{delete\+Entity}}
+\index{delete\+Entity@{delete\+Entity}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{delete\+Entity(\$guid= \textquotesingle{}\textquotesingle{})}{deleteEntity($guid= '')}}]{\setlength{\rightskip}{0pt plus 5cm}delete\+Entity (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_af1ff761ae28dc1baaf861309f8daa812}{}\label{class_ossn_entities_af1ff761ae28dc1baaf861309f8daa812}
+Delete entity.
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$guid} & Entity guid in database\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 334 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!destruct@{destruct}}
+\index{destruct@{destruct}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{destruct()}{destruct()}}]{\setlength{\rightskip}{0pt plus 5cm}destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a1e268d11410f6c59c0f8a0c7b6892c00}{}\label{class_ossn_entities_a1e268d11410f6c59c0f8a0c7b6892c00}
+Manual self destruct
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 528 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!get\+\_\+entities@{get\+\_\+entities}}
+\index{get\+\_\+entities@{get\+\_\+entities}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{get\+\_\+entities()}{get_entities()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+entities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_af580e98d90eb524e74b3d21db5a3a09b}{}\label{class_ossn_entities_af580e98d90eb524e74b3d21db5a3a09b}
+Get entities.
+
+Requires object \$this-\/$>$type =$>$ entity type; \$this-\/$>$subtype =$>$ entity subtype; \$this-\/$>$owner\+\_\+guid =$>$ guid of entity owner \$this-\/$>$order\+\_\+by = to sort the data in a recordset
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 238 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!get\+\_\+entity@{get\+\_\+entity}}
+\index{get\+\_\+entity@{get\+\_\+entity}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{get\+\_\+entity()}{get_entity()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+\_\+entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a321877fa6f77cfda6c6763efe3da10e6}{}\label{class_ossn_entities_a321877fa6f77cfda6c6763efe3da10e6}
+Get Entity.
+
+Requires object \$this-\/$>$entity\+\_\+guid Entity guid in database;
+
+\begin{DoxyReturn}{Returns}
+object$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 120 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!save@{save}}
+\index{save@{save}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{save()}{save()}}]{\setlength{\rightskip}{0pt plus 5cm}save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_afc8a3c62679cf00ade9f15fb2a6d6132}{}\label{class_ossn_entities_afc8a3c62679cf00ade9f15fb2a6d6132}
+Update Entity in database.
+
+Requires \$object-\/$>$data
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 158 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!search\+Entities@{search\+Entities}}
+\index{search\+Entities@{search\+Entities}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{search\+Entities(array \$params=array())}{searchEntities(array $params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}search\+Entities (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_a76dd33e48f570ebff21d3a421ce5cbc9}{}\label{class_ossn_entities_a76dd33e48f570ebff21d3a421ce5cbc9}
+Search entities
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & A valid options in format\+: \textquotesingle{}search\+\_\+type\textquotesingle{} =$>$ true(default) to performs matching on a per-\/character basis false for performs matching on exact value. \textquotesingle{}subtype\textquotesingle{} =$>$ Valid entity subtype \textquotesingle{}type\textquotesingle{} =$>$ Valid entity type \textquotesingle{}value\textquotesingle{} =$>$ Value which you want to search \textquotesingle{}owner\+\_\+guid\textquotesingle{} =$>$ A valid owner guid, which results integer value \textquotesingle{}limit\textquotesingle{} =$>$ Result limit default, Default is 20 values \textquotesingle{}order\+\_\+by\textquotesingle{} =$>$ To show result in sepcific order. There is no default order.\\
+\hline
+\end{DoxyParams}
+reutrn array$\vert$false; 
+
+Definition at line 392 of file Ossn\+Entities.\+php.
+
+\index{Ossn\+Entities@{Ossn\+Entities}!update\+Entity@{update\+Entity}}
+\index{update\+Entity@{update\+Entity}!Ossn\+Entities@{Ossn\+Entities}}
+\subsubsection[{\texorpdfstring{update\+Entity()}{updateEntity()}}]{\setlength{\rightskip}{0pt plus 5cm}update\+Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_entities_abe5ac96a7b95dd2f9f579d7477de3119}{}\label{class_ossn_entities_abe5ac96a7b95dd2f9f579d7477de3119}
+Update entity metadata only.
+
+\begin{DoxyReturn}{Returns}
+bool; 
+\end{DoxyReturn}
+
+
+Definition at line 267 of file Ossn\+Entities.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_entities_8php}{Ossn\+Entities.\+php}\end{DoxyCompactItemize}

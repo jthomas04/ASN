@@ -1,0 +1,131 @@
+\hypertarget{ossn_8lib_8input_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+input.\+php File Reference}
+\label{ossn_8lib_8input_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+input.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+input.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8input_8php_a67f33ea74764837318135e97ed4791fe}{ossn\+\_\+input\+\_\+escape} (\$str, \$newlines=true)
+\item 
+\hyperlink{ossn_8lib_8input_8php_a878b195792cd3559f04b6734c3156b78}{ossn\+\_\+emojis\+\_\+to\+\_\+entites} (\$content)
+\item 
+\hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input} (\$input, \$noencode= \textquotesingle{}\textquotesingle{}, \$default=false, \$strip=true)
+\item 
+\hyperlink{ossn_8lib_8input_8php_a81d0b9187efc1b4c9988e918ae0f64ca}{ossn\+\_\+restore\+\_\+new\+\_\+lines} (\$string, \$br=false)
+\item 
+\hyperlink{ossn_8lib_8input_8php_a2a97d43ade04d805fa4bb6f18ddc56ac}{ossn\+\_\+set\+\_\+input} (\$\hyperlink{user_8php_a765af5e9671743530143a6d3670fd9a6}{name}, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}!input@{input}}
+\index{input@{input}!ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}}
+\subsubsection[{\texorpdfstring{input(\$input, \$noencode= \textquotesingle{}\textquotesingle{}, \$default=false, \$strip=true)}{input($input, $noencode= '', $default=false, $strip=true)}}]{\setlength{\rightskip}{0pt plus 5cm}input (
+\begin{DoxyParamCaption}
+\item[{}]{\$input, }
+\item[{}]{\$noencode = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$default = {\ttfamily false}, }
+\item[{}]{\$strip = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{}\label{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}
+Get input from user; using secure method;
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & Name of input; \\
+\hline
+integer & {\em \$noencode} & If you don\textquotesingle{}t want to encode to html entities then add 1 as second arg in function. \\
+\hline
+boolean & {\em \$strip} & Remove spaces from start and end of input\\
+\hline
+\end{DoxyParams}
+edit\+: \$arsalanshah \+: fix docs; \begin{DoxyReturn}{Returns}
+false$\vert$string 
+\end{DoxyReturn}
+
+
+Definition at line 81 of file ossn.\+lib.\+input.\+php.
+
+\index{ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}!ossn\+\_\+emojis\+\_\+to\+\_\+entites@{ossn\+\_\+emojis\+\_\+to\+\_\+entites}}
+\index{ossn\+\_\+emojis\+\_\+to\+\_\+entites@{ossn\+\_\+emojis\+\_\+to\+\_\+entites}!ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+emojis\+\_\+to\+\_\+entites(\$content)}{ossn_emojis_to_entites($content)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+emojis\+\_\+to\+\_\+entites (
+\begin{DoxyParamCaption}
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8input_8php_a878b195792cd3559f04b6734c3156b78}{}\label{ossn_8lib_8input_8php_a878b195792cd3559f04b6734c3156b78}
+
+
+Definition at line 44 of file ossn.\+lib.\+input.\+php.
+
+\index{ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}!ossn\+\_\+input\+\_\+escape@{ossn\+\_\+input\+\_\+escape}}
+\index{ossn\+\_\+input\+\_\+escape@{ossn\+\_\+input\+\_\+escape}!ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+input\+\_\+escape(\$str, \$newlines=true)}{ossn_input_escape($str, $newlines=true)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+input\+\_\+escape (
+\begin{DoxyParamCaption}
+\item[{}]{\$str, }
+\item[{}]{\$newlines = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8input_8php_a67f33ea74764837318135e97ed4791fe}{}\label{ossn_8lib_8input_8php_a67f33ea74764837318135e97ed4791fe}
+Escape input string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & A valid string in which you want to restore lines. \\
+\hline
+boolean & {\em \$newlines} & If you also want to escape new lines , default settings will replace it\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file ossn.\+lib.\+input.\+php.
+
+\index{ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}!ossn\+\_\+restore\+\_\+new\+\_\+lines@{ossn\+\_\+restore\+\_\+new\+\_\+lines}}
+\index{ossn\+\_\+restore\+\_\+new\+\_\+lines@{ossn\+\_\+restore\+\_\+new\+\_\+lines}!ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+restore\+\_\+new\+\_\+lines(\$string, \$br=false)}{ossn_restore_new_lines($string, $br=false)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+restore\+\_\+new\+\_\+lines (
+\begin{DoxyParamCaption}
+\item[{}]{\$string, }
+\item[{}]{\$br = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8input_8php_a81d0b9187efc1b4c9988e918ae0f64ca}{}\label{ossn_8lib_8input_8php_a81d0b9187efc1b4c9988e918ae0f64ca}
+Ossn Restore New Lines Restore ~\newline
+ from the string to new line
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & A valid string in which you want to restore lines. \\
+\hline
+boolean & {\em \$br} & If you want newlines to replaced by html ~\newline
+ tag.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 130 of file ossn.\+lib.\+input.\+php.
+
+\index{ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}!ossn\+\_\+set\+\_\+input@{ossn\+\_\+set\+\_\+input}}
+\index{ossn\+\_\+set\+\_\+input@{ossn\+\_\+set\+\_\+input}!ossn.\+lib.\+input.\+php@{ossn.\+lib.\+input.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+set\+\_\+input(\$name, \$value)}{ossn_set_input($name, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+set\+\_\+input (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8input_8php_a2a97d43ade04d805fa4bb6f18ddc56ac}{}\label{ossn_8lib_8input_8php_a2a97d43ade04d805fa4bb6f18ddc56ac}
+Set a value for input
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Name of input \\
+\hline
+string & {\em \$value} & Value of input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 153 of file ossn.\+lib.\+input.\+php.
+

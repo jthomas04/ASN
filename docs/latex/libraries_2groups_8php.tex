@@ -1,0 +1,146 @@
+\hypertarget{libraries_2groups_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/libraries/groups.php File Reference}
+\label{libraries_2groups_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/libraries/groups.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Groups/libraries/groups.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{libraries_2groups_8php_a134232596460947e7923a5ec7b255375}{ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid} (\$guid)
+\item 
+\hyperlink{libraries_2groups_8php_a956c8d55021aefc4fe492d87c9062e6e}{ossn\+\_\+group\+\_\+layout} (\$contents)
+\item 
+\hyperlink{libraries_2groups_8php_a226ccf437bc67900b1fe22018fc0e629}{ossn\+\_\+get\+\_\+user\+\_\+groups} (\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user})
+\item 
+\hyperlink{libraries_2groups_8php_ac4cc65b588c6d67f0fcc02a4b2bc6a72}{ossn\+\_\+group\+\_\+subpage} (\$page)
+\item 
+\hyperlink{libraries_2groups_8php_a0b01c462e1a0cf0d909f90270a8dd85c}{ossn\+\_\+is\+\_\+group\+\_\+subapge} (\$page)
+\item 
+\hyperlink{libraries_2groups_8php_a762b20786aaf63146452b418bffcd6f1}{ossn\+\_\+group\+\_\+url} (\$group)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid@{ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid}}
+\index{ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid@{ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid(\$guid)}{ossn_get_group_by_guid($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+group\+\_\+by\+\_\+guid (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_a134232596460947e7923a5ec7b255375}{}\label{libraries_2groups_8php_a134232596460947e7923a5ec7b255375}
+Get group by guid
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Group guid \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file groups.\+php.
+
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+get\+\_\+user\+\_\+groups@{ossn\+\_\+get\+\_\+user\+\_\+groups}}
+\index{ossn\+\_\+get\+\_\+user\+\_\+groups@{ossn\+\_\+get\+\_\+user\+\_\+groups}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+user\+\_\+groups(\$user)}{ossn_get_user_groups($user)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+user\+\_\+groups (
+\begin{DoxyParamCaption}
+\item[{}]{\$user}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_a226ccf437bc67900b1fe22018fc0e629}{}\label{libraries_2groups_8php_a226ccf437bc67900b1fe22018fc0e629}
+Get user groups (owned/member of)
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$user} & User entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file groups.\+php.
+
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+group\+\_\+layout@{ossn\+\_\+group\+\_\+layout}}
+\index{ossn\+\_\+group\+\_\+layout@{ossn\+\_\+group\+\_\+layout}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+group\+\_\+layout(\$contents)}{ossn_group_layout($contents)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+group\+\_\+layout (
+\begin{DoxyParamCaption}
+\item[{}]{\$contents}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_a956c8d55021aefc4fe492d87c9062e6e}{}\label{libraries_2groups_8php_a956c8d55021aefc4fe492d87c9062e6e}
+Get group layout
+
+
+\begin{DoxyParams}[1]{Parameters}
+html & {\em \$contents} & Content of page (html, php) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed data 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file groups.\+php.
+
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+group\+\_\+subpage@{ossn\+\_\+group\+\_\+subpage}}
+\index{ossn\+\_\+group\+\_\+subpage@{ossn\+\_\+group\+\_\+subpage}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+group\+\_\+subpage(\$page)}{ossn_group_subpage($page)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+group\+\_\+subpage (
+\begin{DoxyParamCaption}
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_ac4cc65b588c6d67f0fcc02a4b2bc6a72}{}\label{libraries_2groups_8php_ac4cc65b588c6d67f0fcc02a4b2bc6a72}
+Group subpage set
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$page} & Page name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file groups.\+php.
+
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+group\+\_\+url@{ossn\+\_\+group\+\_\+url}}
+\index{ossn\+\_\+group\+\_\+url@{ossn\+\_\+group\+\_\+url}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+group\+\_\+url(\$group)}{ossn_group_url($group)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+group\+\_\+url (
+\begin{DoxyParamCaption}
+\item[{}]{\$group}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_a762b20786aaf63146452b418bffcd6f1}{}\label{libraries_2groups_8php_a762b20786aaf63146452b418bffcd6f1}
+Get group url
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$group} & Group entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file groups.\+php.
+
+\index{libraries/groups.\+php@{libraries/groups.\+php}!ossn\+\_\+is\+\_\+group\+\_\+subapge@{ossn\+\_\+is\+\_\+group\+\_\+subapge}}
+\index{ossn\+\_\+is\+\_\+group\+\_\+subapge@{ossn\+\_\+is\+\_\+group\+\_\+subapge}!libraries/groups.\+php@{libraries/groups.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+is\+\_\+group\+\_\+subapge(\$page)}{ossn_is_group_subapge($page)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+is\+\_\+group\+\_\+subapge (
+\begin{DoxyParamCaption}
+\item[{}]{\$page}
+\end{DoxyParamCaption}
+)}\hypertarget{libraries_2groups_8php_a0b01c462e1a0cf0d909f90270a8dd85c}{}\label{libraries_2groups_8php_a0b01c462e1a0cf0d909f90270a8dd85c}
+Check if page is instace of group subpage
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$page} & Page name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file groups.\+php.
+

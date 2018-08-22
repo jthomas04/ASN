@@ -1,0 +1,308 @@
+\hypertarget{class_ossn_database}{}\section{Ossn\+Database Class Reference}
+\label{class_ossn_database}\index{Ossn\+Database@{Ossn\+Database}}
+
+
+Inheritance diagram for Ossn\+Database\+:
+% FIG 0
+
+
+Collaboration diagram for Ossn\+Database\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ossn_database_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_ossn_database_a9ac768272a054d6ef7e8436f1144b730}{Connect} ()
+\item 
+\hyperlink{class_ossn_database_a67366620fdfeaab4b480b6e4dca64deb}{insert} (\$params)
+\item 
+\hyperlink{class_ossn_database_a812aa354225cdde955b865cef5c967f5}{statement} (\$query)
+\item 
+\hyperlink{class_ossn_database_a1909f4b7f8129c7790cb75de2ffbe1e4}{execute} ()
+\item 
+\hyperlink{class_ossn_database_aca051dccb34dc51f6c1ab0bbece6c537}{update} (\$params=array())
+\item 
+\hyperlink{class_ossn_database_a338c1b725a2a6e89a70f9a9e55ce6e0a}{select} (\$params, \$multi= \textquotesingle{}\textquotesingle{})
+\item 
+\hyperlink{class_ossn_database_ae1a03ebf8cdff6b14b83f429c56fa78c}{fetch} (\$\hyperlink{components_2_ossn_comments_2actions_2comment_2edit_8php_a2b67189b42ab547221cb2a6408f4746a}{data}=false)
+\item 
+\hyperlink{class_ossn_database_a2fb5b35138aabdbcdbabde07ff1df4b6}{delete} (\$params)
+\item 
+\hyperlink{class_ossn_database_ac0afce8b5b8d0f22f932a2b867077785}{get\+Last\+Entry} ()
+\item 
+\hyperlink{class_ossn_database_a286f7a23f5d02a605f4ac3d9425721a3}{construct\+Wheres} (array \$array, \$operator=\char`\"{}A\+ND\char`\"{})
+\item 
+\hyperlink{class_ossn_database_abd05f480df8b663e423708e7533538e3}{generate\+Limit} (\$data\+\_\+limit=false, \$page\+\_\+limit=false, \$offset=false)
+\item 
+\hyperlink{class_ossn_database_a1e268d11410f6c59c0f8a0c7b6892c00}{destruct} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 4 of file Ossn\+Database.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ossn\+Database@{Ossn\+Database}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct()}{__construct()}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a095c5d389db211932136b53f25f39685}{}\label{class_ossn_database_a095c5d389db211932136b53f25f39685}
+Initialize the database
+
+return void 
+
+Definition at line 10 of file Ossn\+Database.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ossn\+Database@{Ossn\+Database}!Connect@{Connect}}
+\index{Connect@{Connect}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{Connect()}{Connect()}}]{\setlength{\rightskip}{0pt plus 5cm}Connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a9ac768272a054d6ef7e8436f1144b730}{}\label{class_ossn_database_a9ac768272a054d6ef7e8436f1144b730}
+Connect to mysql database
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!construct\+Wheres@{construct\+Wheres}}
+\index{construct\+Wheres@{construct\+Wheres}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{construct\+Wheres(array \$array, \$operator=""A\+ND"")}{constructWheres(array $array, $operator="AND")}}]{\setlength{\rightskip}{0pt plus 5cm}construct\+Wheres (
+\begin{DoxyParamCaption}
+\item[{array}]{\$array, }
+\item[{}]{\$operator = {\ttfamily \char`\"{}AND\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a286f7a23f5d02a605f4ac3d9425721a3}{}\label{class_ossn_database_a286f7a23f5d02a605f4ac3d9425721a3}
+Create a wheres clause for database
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & A valid array containg wheres clauses; \\
+\hline
+string & {\em \$operator} & A\+ND, OR, L\+I\+KE\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 270 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!delete@{delete}}
+\index{delete@{delete}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{delete(\$params)}{delete($params)}}]{\setlength{\rightskip}{0pt plus 5cm}delete (
+\begin{DoxyParamCaption}
+\item[{}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a2fb5b35138aabdbcdbabde07ff1df4b6}{}\label{class_ossn_database_a2fb5b35138aabdbcdbabde07ff1df4b6}
+Prepare a query to delete data from database
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array(); \textquotesingle{}from\textquotesingle{} Names of table \textquotesingle{}wheres\textquotesingle{} Specify a selection criteria to get required records\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 233 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!destruct@{destruct}}
+\index{destruct@{destruct}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{destruct()}{destruct()}}]{\setlength{\rightskip}{0pt plus 5cm}destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a1e268d11410f6c59c0f8a0c7b6892c00}{}\label{class_ossn_database_a1e268d11410f6c59c0f8a0c7b6892c00}
+Manual self destruct
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 314 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!execute@{execute}}
+\index{execute@{execute}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{execute()}{execute()}}]{\setlength{\rightskip}{0pt plus 5cm}execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a1909f4b7f8129c7790cb75de2ffbe1e4}{}\label{class_ossn_database_a1909f4b7f8129c7790cb75de2ffbe1e4}
+Execute a mysqli query and store result in memory
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!fetch@{fetch}}
+\index{fetch@{fetch}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{fetch(\$data=false)}{fetch($data=false)}}]{\setlength{\rightskip}{0pt plus 5cm}fetch (
+\begin{DoxyParamCaption}
+\item[{}]{\$data = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_ae1a03ebf8cdff6b14b83f429c56fa78c}{}\label{class_ossn_database_ae1a03ebf8cdff6b14b83f429c56fa78c}
+Fetch the data from memory that is stored during execution;
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$data} & Ture if you want to fetch all data , or false if only one row\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 201 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!generate\+Limit@{generate\+Limit}}
+\index{generate\+Limit@{generate\+Limit}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{generate\+Limit(\$data\+\_\+limit=false, \$page\+\_\+limit=false, \$offset=false)}{generateLimit($data_limit=false, $page_limit=false, $offset=false)}}]{\setlength{\rightskip}{0pt plus 5cm}generate\+Limit (
+\begin{DoxyParamCaption}
+\item[{}]{\$data\+\_\+limit = {\ttfamily false}, }
+\item[{}]{\$page\+\_\+limit = {\ttfamily false}, }
+\item[{}]{\$offset = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_abd05f480df8b663e423708e7533538e3}{}\label{class_ossn_database_abd05f480df8b663e423708e7533538e3}
+Generate limit from options
+
+
+\begin{DoxyParams}[1]{Parameters}
+integer & {\em \$data\+\_\+limit} & How much data should be fetched? \\
+\hline
+integer & {\em \$page\+\_\+limit} & Limit of data on one page \\
+\hline
+integer & {\em \$offset} & Offset value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 286 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!get\+Last\+Entry@{get\+Last\+Entry}}
+\index{get\+Last\+Entry@{get\+Last\+Entry}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{get\+Last\+Entry()}{getLastEntry()}}]{\setlength{\rightskip}{0pt plus 5cm}get\+Last\+Entry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_ac0afce8b5b8d0f22f932a2b867077785}{}\label{class_ossn_database_ac0afce8b5b8d0f22f932a2b867077785}
+Get a guid of newly create entry
+
+\begin{DoxyReturn}{Returns}
+integer 
+\end{DoxyReturn}
+
+
+Definition at line 257 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!insert@{insert}}
+\index{insert@{insert}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{insert(\$params)}{insert($params)}}]{\setlength{\rightskip}{0pt plus 5cm}insert (
+\begin{DoxyParamCaption}
+\item[{}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a67366620fdfeaab4b480b6e4dca64deb}{}\label{class_ossn_database_a67366620fdfeaab4b480b6e4dca64deb}
+Prepare a query to insert data in database
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array(); \textquotesingle{}names\textquotesingle{} Names of columns \textquotesingle{}values\textquotesingle{} Values that need to be inserted \textquotesingle{}into\textquotesingle{} Table name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 43 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!select@{select}}
+\index{select@{select}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{select(\$params, \$multi= \textquotesingle{}\textquotesingle{})}{select($params, $multi= '')}}]{\setlength{\rightskip}{0pt plus 5cm}select (
+\begin{DoxyParamCaption}
+\item[{}]{\$params, }
+\item[{}]{\$multi = {\ttfamily \textquotesingle{}\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a338c1b725a2a6e89a70f9a9e55ce6e0a}{}\label{class_ossn_database_a338c1b725a2a6e89a70f9a9e55ce6e0a}
+Prepare a query to select data from database
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array(); \textquotesingle{}from\textquotesingle{} Names of table \textquotesingle{}params\textquotesingle{} Names of columns which you want to select \textquotesingle{}wheres\textquotesingle{} Specify a selection criteria to get required records\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 151 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!statement@{statement}}
+\index{statement@{statement}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{statement(\$query)}{statement($query)}}]{\setlength{\rightskip}{0pt plus 5cm}statement (
+\begin{DoxyParamCaption}
+\item[{}]{\$query}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_a812aa354225cdde955b865cef5c967f5}{}\label{class_ossn_database_a812aa354225cdde955b865cef5c967f5}
+Prepare a mysqli query
+
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Ossn\+Database.\+php.
+
+\index{Ossn\+Database@{Ossn\+Database}!update@{update}}
+\index{update@{update}!Ossn\+Database@{Ossn\+Database}}
+\subsubsection[{\texorpdfstring{update(\$params=array())}{update($params=array())}}]{\setlength{\rightskip}{0pt plus 5cm}update (
+\begin{DoxyParamCaption}
+\item[{}]{\$params = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ossn_database_aca051dccb34dc51f6c1ab0bbece6c537}{}\label{class_ossn_database_aca051dccb34dc51f6c1ab0bbece6c537}
+Prepare a query to update data in database
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & array(); \textquotesingle{}names\textquotesingle{} Names of columns \textquotesingle{}values\textquotesingle{} Values that need to be updated \textquotesingle{}table\textquotesingle{} Table name \textquotesingle{}wheres\textquotesingle{} Specify a selection criteria to update required records\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 112 of file Ossn\+Database.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/classes/\hyperlink{_ossn_database_8php}{Ossn\+Database.\+php}\end{DoxyCompactItemize}

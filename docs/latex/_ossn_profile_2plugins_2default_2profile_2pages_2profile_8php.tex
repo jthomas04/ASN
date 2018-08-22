@@ -1,0 +1,67 @@
+\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/pages/profile.php File Reference}
+\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user} = \$params\mbox{[}\textquotesingle{}\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}\textquotesingle{}\mbox{]}
+\item 
+\hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}{\$cover} = new \hyperlink{class_ossn_profile}{Ossn\+Profile}
+\item 
+\hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ac6626e9aed3cadde1cdf83c93435b779}{\$coverp} = \$cover-\/$>$cover\+Parameters(\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!empty(\$coverp\mbox{[}0\mbox{]})) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(!empty(\$coverp\mbox{[}1\mbox{]})) \hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(ossn\+\_\+is\+Logged\+In()) \hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_aef498ff3a1f67173465745ae95c6d26a}{else}
+\item 
+\hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a75c57ef602ea74be196b1cff74c4eae1}{if} (\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid==\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid)
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid==\$\hyperlink{ossn_8config_8db_8example_8php_a802544b7ba9f79bbf24ef67773d53bed}{user}-\/$>$guid) \hyperlink{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ab7afea8efe6cc87e7d4efca065083741}{\$viewer} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!\$cover@{\$cover}}
+\index{\$cover@{\$cover}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$cover}{$cover}}]{\setlength{\rightskip}{0pt plus 5cm}\$cover = new {\bf Ossn\+Profile}}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a753dd5b85d0d36fb54a13adb92b005f3}
+
+
+Definition at line 5 of file profile.\+php.
+
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!\$coverp@{\$coverp}}
+\index{\$coverp@{\$coverp}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$coverp}{$coverp}}]{\setlength{\rightskip}{0pt plus 5cm}\$coverp = \$cover-\/$>$cover\+Parameters(\${\bf user}-\/$>$guid)}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ac6626e9aed3cadde1cdf83c93435b779}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ac6626e9aed3cadde1cdf83c93435b779}
+
+
+Definition at line 7 of file profile.\+php.
+
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!\$user@{\$user}}
+\index{\$user@{\$user}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$user}{$user}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf user} = \$params\mbox{[}\textquotesingle{}{\bf user}\textquotesingle{}\mbox{]}}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a598ca4e71b15a1313ec95f0df1027ca5}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a598ca4e71b15a1313ec95f0df1027ca5}
+
+
+Definition at line 4 of file profile.\+php.
+
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!\$viewer@{\$viewer}}
+\index{\$viewer@{\$viewer}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{\$viewer}{$viewer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} ({\bf ossn\+\_\+loggedin\+\_\+user}() -\/$>$guid==\${\bf user}-\/$>$guid) \$viewer = \textquotesingle{}\textquotesingle{}}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ab7afea8efe6cc87e7d4efca065083741}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_ab7afea8efe6cc87e7d4efca065083741}
+
+
+Definition at line 57 of file profile.\+php.
+
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!else@{else}}
+\index{else@{else}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (!empty(\$coverp\mbox{[}0\mbox{]})) {\bf if} (!empty(\$coverp\mbox{[}1\mbox{]})) {\bf if} (ossn\+\_\+is\+Logged\+In()) else}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_aef498ff3a1f67173465745ae95c6d26a}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_aef498ff3a1f67173465745ae95c6d26a}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{dropdown_8php_a252ba022809910ea710a068fc1bab657}{$class} = \textcolor{stringliteral}{'ossn-profile ossn-profile-tn'}
+\end{DoxyCode}
+
+
+Definition at line 18 of file profile.\+php.
+
+\index{Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}!if@{if}}
+\index{if@{if}!Ossn\+Profile/plugins/default/profile/pages/profile.\+php@{Ossn\+Profile/plugins/default/profile/pages/profile.\+php}}
+\subsubsection[{\texorpdfstring{if}{if}}]{\setlength{\rightskip}{0pt plus 5cm}if(ossn\+\_\+is\+Logged\+In())}\hypertarget{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a75c57ef602ea74be196b1cff74c4eae1}{}\label{_ossn_profile_2plugins_2default_2profile_2pages_2profile_8php_a75c57ef602ea74be196b1cff74c4eae1}
+
+
+Definition at line 28 of file profile.\+php.
+

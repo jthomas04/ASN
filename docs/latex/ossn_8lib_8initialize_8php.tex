@@ -1,0 +1,152 @@
+\hypertarget{ossn_8lib_8initialize_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+initialize.\+php File Reference}
+\label{ossn_8lib_8initialize_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+initialize.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+initialize.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{user__timeline_8php_a1b18c909b5f0affc85267f294d947c4b}{foreach}(\$available\+\_\+languages as \$language) \hyperlink{ossn_8lib_8initialize_8php_a43234a736acd32cf477a4570182c0aab}{ossn\+\_\+initialize} ()
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_a6538a52228e25b60943c5e678be8374d}{newfeed\+\_\+menu\+\_\+handler} (\$hook, \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}, \$return)
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_ad4a069f16229b894a799da3444554552}{ossn\+\_\+system\+\_\+error\+\_\+pagehandler} (\$pages)
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_afd7ce2207f286bfb5a151c1b5212b508}{ossn\+\_\+user\+\_\+pagehandler} (\$home, \$handler)
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_ad2663d432a5530e51df00aec7b195bef}{ossn\+\_\+index\+\_\+pagehandler} (\$index)
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_a5c1d6389d5ef2d2efa7cdfe0d51580a9}{ossn\+\_\+pow\+\_\+lnk\+\_\+args} ()
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_a389eb1f6c181523a851f58f7211da866}{ossn\+\_\+system\+\_\+plugins\+\_\+load} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8initialize_8php_acfd919cfddfa9d0455035bf186b96050}{\$available\+\_\+languages} = \hyperlink{ossn_8lib_8languages_8php_aacfdf2defbdd672a72a05af06772d97b}{ossn\+\_\+get\+\_\+available\+\_\+languages}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!newfeed\+\_\+menu\+\_\+handler@{newfeed\+\_\+menu\+\_\+handler}}
+\index{newfeed\+\_\+menu\+\_\+handler@{newfeed\+\_\+menu\+\_\+handler}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{newfeed\+\_\+menu\+\_\+handler(\$hook, \$type, \$return)}{newfeed_menu_handler($hook, $type, $return)}}]{\setlength{\rightskip}{0pt plus 5cm}newfeed\+\_\+menu\+\_\+handler (
+\begin{DoxyParamCaption}
+\item[{}]{\$hook, }
+\item[{}]{\$type, }
+\item[{}]{\$return}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_a6538a52228e25b60943c5e678be8374d}{}\label{ossn_8lib_8initialize_8php_a6538a52228e25b60943c5e678be8374d}
+Add left menu to newsfeed page
+
+\begin{DoxyReturn}{Returns}
+menu 
+\end{DoxyReturn}
+
+
+Definition at line 65 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+index\+\_\+pagehandler@{ossn\+\_\+index\+\_\+pagehandler}}
+\index{ossn\+\_\+index\+\_\+pagehandler@{ossn\+\_\+index\+\_\+pagehandler}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+index\+\_\+pagehandler(\$index)}{ossn_index_pagehandler($index)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+index\+\_\+pagehandler (
+\begin{DoxyParamCaption}
+\item[{}]{\$index}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_ad2663d432a5530e51df00aec7b195bef}{}\label{ossn_8lib_8initialize_8php_ad2663d432a5530e51df00aec7b195bef}
+Register site index page \+: index or home,
+
+\begin{DoxyReturn}{Returns}
+boolean$\vert$null 
+\end{DoxyReturn}
+
+
+Definition at line 167 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+initialize@{ossn\+\_\+initialize}}
+\index{ossn\+\_\+initialize@{ossn\+\_\+initialize}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+initialize()}{ossn_initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf foreach} (\$available\+\_\+languages as \$language) ossn\+\_\+initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_a43234a736acd32cf477a4570182c0aab}{}\label{ossn_8lib_8initialize_8php_a43234a736acd32cf477a4570182c0aab}
+Initialize the css library
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 15 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+pow\+\_\+lnk\+\_\+args@{ossn\+\_\+pow\+\_\+lnk\+\_\+args}}
+\index{ossn\+\_\+pow\+\_\+lnk\+\_\+args@{ossn\+\_\+pow\+\_\+lnk\+\_\+args}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+pow\+\_\+lnk\+\_\+args()}{ossn_pow_lnk_args()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+pow\+\_\+lnk\+\_\+args (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_a5c1d6389d5ef2d2efa7cdfe0d51580a9}{}\label{ossn_8lib_8initialize_8php_a5c1d6389d5ef2d2efa7cdfe0d51580a9}
+Ossn pow lnk args
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Definition at line 191 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+system\+\_\+error\+\_\+pagehandler@{ossn\+\_\+system\+\_\+error\+\_\+pagehandler}}
+\index{ossn\+\_\+system\+\_\+error\+\_\+pagehandler@{ossn\+\_\+system\+\_\+error\+\_\+pagehandler}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+system\+\_\+error\+\_\+pagehandler(\$pages)}{ossn_system_error_pagehandler($pages)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+system\+\_\+error\+\_\+pagehandler (
+\begin{DoxyParamCaption}
+\item[{}]{\$pages}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_ad4a069f16229b894a799da3444554552}{}\label{ossn_8lib_8initialize_8php_ad4a069f16229b894a799da3444554552}
+System Errors \+: unknown,
+
+\begin{DoxyReturn}{Returns}
+boolean$\vert$null 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+system\+\_\+plugins\+\_\+load@{ossn\+\_\+system\+\_\+plugins\+\_\+load}}
+\index{ossn\+\_\+system\+\_\+plugins\+\_\+load@{ossn\+\_\+system\+\_\+plugins\+\_\+load}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+system\+\_\+plugins\+\_\+load()}{ossn_system_plugins_load()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+system\+\_\+plugins\+\_\+load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_a389eb1f6c181523a851f58f7211da866}{}\label{ossn_8lib_8initialize_8php_a389eb1f6c181523a851f58f7211da866}
+Loads system plugins before we load components.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 212 of file ossn.\+lib.\+initialize.\+php.
+
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!ossn\+\_\+user\+\_\+pagehandler@{ossn\+\_\+user\+\_\+pagehandler}}
+\index{ossn\+\_\+user\+\_\+pagehandler@{ossn\+\_\+user\+\_\+pagehandler}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+user\+\_\+pagehandler(\$home, \$handler)}{ossn_user_pagehandler($home, $handler)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+user\+\_\+pagehandler (
+\begin{DoxyParamCaption}
+\item[{}]{\$home, }
+\item[{}]{\$handler}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8initialize_8php_afd7ce2207f286bfb5a151c1b5212b508}{}\label{ossn_8lib_8initialize_8php_afd7ce2207f286bfb5a151c1b5212b508}
+Register basic pages \+: home, login, registered
+
+\begin{DoxyReturn}{Returns}
+mixed contents 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file ossn.\+lib.\+initialize.\+php.
+
+
+
+\subsection{Variable Documentation}
+\index{ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}!\$available\+\_\+languages@{\$available\+\_\+languages}}
+\index{\$available\+\_\+languages@{\$available\+\_\+languages}!ossn.\+lib.\+initialize.\+php@{ossn.\+lib.\+initialize.\+php}}
+\subsubsection[{\texorpdfstring{\$available\+\_\+languages}{$available_languages}}]{\setlength{\rightskip}{0pt plus 5cm}\$available\+\_\+languages = {\bf ossn\+\_\+get\+\_\+available\+\_\+languages}()}\hypertarget{ossn_8lib_8initialize_8php_acfd919cfddfa9d0455035bf186b96050}{}\label{ossn_8lib_8initialize_8php_acfd919cfddfa9d0455035bf186b96050}
+
+
+Definition at line 5 of file ossn.\+lib.\+initialize.\+php.
+

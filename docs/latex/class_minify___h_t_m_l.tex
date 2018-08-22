@@ -1,0 +1,273 @@
+\hypertarget{class_minify___h_t_m_l}{}\section{Minify\+\_\+\+H\+T\+ML Class Reference}
+\label{class_minify___h_t_m_l}\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minify___h_t_m_l_a9d6c4b41cafc4b0c44de4eeb3b4361bd}{\+\_\+\+\_\+construct} (\$html, \$options=array())
+\item 
+\hyperlink{class_minify___h_t_m_l_a7d4ad4038b036a67eece619e6f88c89e}{process} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_minify___h_t_m_l_a312730bd02eca8042c4ec505fd7f1283}{minify} (\$html, \$options=array())
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minify___h_t_m_l_adcc2cc65695e86d694a6b5563660264e}{\+\_\+comment\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___h_t_m_l_ac9893e59df61211d88333648c3c2880c}{\+\_\+remove\+Pre\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___h_t_m_l_a87e1eef7a0aab954b9e0e14819c93471}{\+\_\+reserve\+Place} (\$content)
+\item 
+\hyperlink{class_minify___h_t_m_l_a81514a60ec8faf04eb8bb7a61d95e868}{\+\_\+remove\+Textarea\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___h_t_m_l_a13ef95cfa51603054d618cb52c52e096}{\+\_\+remove\+Style\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\item 
+\hyperlink{class_minify___h_t_m_l_a876c6dbee0fbc7780daac2243bdf4233}{\+\_\+remove\+Cdata} (\$str)
+\item 
+\hyperlink{class_minify___h_t_m_l_ac0f5c79a940f0c5d1b60f77830238d38}{\+\_\+needs\+Cdata} (\$str)
+\item 
+\hyperlink{class_minify___h_t_m_l_a681d17c6a1526d7447969341ccdc3ef2}{\+\_\+remove\+Script\+CB} (\$\hyperlink{_chart_8min_8js_a9e77e016b2928d7dcb493b89a0c9dc32}{m})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_minify___h_t_m_l_a45f73ef72946f1789a51878da5137a4f}{\$\+\_\+js\+Clean\+Comments} = true
+\item 
+\hyperlink{class_minify___h_t_m_l_a776a831ec77b14707f9f778980247f5c}{\$\+\_\+is\+Xhtml} = null
+\item 
+\hyperlink{class_minify___h_t_m_l_a6fd24402e7ef89f7a53d3f28caa0e99d}{\$\+\_\+replacement\+Hash} = null
+\item 
+\hyperlink{class_minify___h_t_m_l_a3d9bdc0b92480ec4d920984f225b69cb}{\$\+\_\+placeholders} = array()
+\item 
+\hyperlink{class_minify___h_t_m_l_a7e2cb042cf9c54594d78323128249f66}{\$\+\_\+css\+Minifier} = null
+\item 
+\hyperlink{class_minify___h_t_m_l_a2b2e64f084b0385ffb35ae53ee059d0f}{\$\+\_\+js\+Minifier} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file H\+T\+M\+L.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+\+\_\+construct(\$html, \$options=array())}{__construct($html, $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$html, }
+\item[{}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_minify___h_t_m_l_a9d6c4b41cafc4b0c44de4eeb3b4361bd}{}\label{class_minify___h_t_m_l_a9d6c4b41cafc4b0c44de4eeb3b4361bd}
+Create a minifier object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$html} & \\
+\hline
+array & {\em \$options} & \textquotesingle{}css\+Minifier\textquotesingle{} \+: (optional) callback function to process content of S\+T\+Y\+LE elements.\\
+\hline
+\end{DoxyParams}
+\textquotesingle{}js\+Minifier\textquotesingle{} \+: (optional) callback function to process content of S\+C\+R\+I\+PT elements. Note\+: the type attribute is ignored.
+
+\textquotesingle{}js\+Clean\+Comments\textquotesingle{} \+: (optional) whether to remove H\+T\+ML comments beginning and end of script block
+
+\textquotesingle{}xhtml\textquotesingle{} \+: (optional boolean) should content be treated as X\+H\+T\+M\+L1.\+0? If unset, minify will sniff for an X\+H\+T\+ML doctype.
+
+\begin{DoxyReturn}{Returns}
+null 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file H\+T\+M\+L.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+comment\+CB@{\+\_\+comment\+CB}}
+\index{\+\_\+comment\+CB@{\+\_\+comment\+CB}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+comment\+C\+B(\$m)}{_commentCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+comment\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_adcc2cc65695e86d694a6b5563660264e}{}\label{class_minify___h_t_m_l_adcc2cc65695e86d694a6b5563660264e}
+
+
+Definition at line 152 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+needs\+Cdata@{\+\_\+needs\+Cdata}}
+\index{\+\_\+needs\+Cdata@{\+\_\+needs\+Cdata}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+needs\+Cdata(\$str)}{_needsCdata($str)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+needs\+Cdata (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_ac0f5c79a940f0c5d1b60f77830238d38}{}\label{class_minify___h_t_m_l_ac0f5c79a940f0c5d1b60f77830238d38}
+
+
+Definition at line 193 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+remove\+Cdata@{\+\_\+remove\+Cdata}}
+\index{\+\_\+remove\+Cdata@{\+\_\+remove\+Cdata}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+remove\+Cdata(\$str)}{_removeCdata($str)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+remove\+Cdata (
+\begin{DoxyParamCaption}
+\item[{}]{\$str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a876c6dbee0fbc7780daac2243bdf4233}{}\label{class_minify___h_t_m_l_a876c6dbee0fbc7780daac2243bdf4233}
+
+
+Definition at line 186 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+remove\+Pre\+CB@{\+\_\+remove\+Pre\+CB}}
+\index{\+\_\+remove\+Pre\+CB@{\+\_\+remove\+Pre\+CB}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+remove\+Pre\+C\+B(\$m)}{_removePreCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+remove\+Pre\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_ac9893e59df61211d88333648c3c2880c}{}\label{class_minify___h_t_m_l_ac9893e59df61211d88333648c3c2880c}
+
+
+Definition at line 156 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+remove\+Script\+CB@{\+\_\+remove\+Script\+CB}}
+\index{\+\_\+remove\+Script\+CB@{\+\_\+remove\+Script\+CB}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+remove\+Script\+C\+B(\$m)}{_removeScriptCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+remove\+Script\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a681d17c6a1526d7447969341ccdc3ef2}{}\label{class_minify___h_t_m_l_a681d17c6a1526d7447969341ccdc3ef2}
+
+
+Definition at line 197 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+remove\+Style\+CB@{\+\_\+remove\+Style\+CB}}
+\index{\+\_\+remove\+Style\+CB@{\+\_\+remove\+Style\+CB}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+remove\+Style\+C\+B(\$m)}{_removeStyleCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+remove\+Style\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a13ef95cfa51603054d618cb52c52e096}{}\label{class_minify___h_t_m_l_a13ef95cfa51603054d618cb52c52e096}
+
+
+Definition at line 170 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+remove\+Textarea\+CB@{\+\_\+remove\+Textarea\+CB}}
+\index{\+\_\+remove\+Textarea\+CB@{\+\_\+remove\+Textarea\+CB}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+remove\+Textarea\+C\+B(\$m)}{_removeTextareaCB($m)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+remove\+Textarea\+CB (
+\begin{DoxyParamCaption}
+\item[{}]{\$m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a81514a60ec8faf04eb8bb7a61d95e868}{}\label{class_minify___h_t_m_l_a81514a60ec8faf04eb8bb7a61d95e868}
+
+
+Definition at line 166 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\+\_\+reserve\+Place@{\+\_\+reserve\+Place}}
+\index{\+\_\+reserve\+Place@{\+\_\+reserve\+Place}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\+\_\+reserve\+Place(\$content)}{_reservePlace($content)}}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+reserve\+Place (
+\begin{DoxyParamCaption}
+\item[{}]{\$content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a87e1eef7a0aab954b9e0e14819c93471}{}\label{class_minify___h_t_m_l_a87e1eef7a0aab954b9e0e14819c93471}
+
+
+Definition at line 160 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!minify@{minify}}
+\index{minify@{minify}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{minify(\$html, \$options=array())}{minify($html, $options=array())}}]{\setlength{\rightskip}{0pt plus 5cm}static minify (
+\begin{DoxyParamCaption}
+\item[{}]{\$html, }
+\item[{}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_minify___h_t_m_l_a312730bd02eca8042c4ec505fd7f1283}{}\label{class_minify___h_t_m_l_a312730bd02eca8042c4ec505fd7f1283}
+\char`\"{}\+Minify\char`\"{} an H\+T\+ML page
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$html} & \\
+\hline
+array & {\em \$options} & \textquotesingle{}css\+Minifier\textquotesingle{} \+: (optional) callback function to process content of S\+T\+Y\+LE elements.\\
+\hline
+\end{DoxyParams}
+\textquotesingle{}js\+Minifier\textquotesingle{} \+: (optional) callback function to process content of S\+C\+R\+I\+PT elements. Note\+: the type attribute is ignored.
+
+\textquotesingle{}xhtml\textquotesingle{} \+: (optional boolean) should content be treated as X\+H\+T\+M\+L1.\+0? If unset, minify will sniff for an X\+H\+T\+ML doctype.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!process@{process}}
+\index{process@{process}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{process()}{process()}}]{\setlength{\rightskip}{0pt plus 5cm}process (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_minify___h_t_m_l_a7d4ad4038b036a67eece619e6f88c89e}{}\label{class_minify___h_t_m_l_a7d4ad4038b036a67eece619e6f88c89e}
+\hyperlink{namespace_minify}{Minify} the markeup given in the constructor
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file H\+T\+M\+L.\+php.
+
+
+
+\subsection{Field Documentation}
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+css\+Minifier@{\$\+\_\+css\+Minifier}}
+\index{\$\+\_\+css\+Minifier@{\$\+\_\+css\+Minifier}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+css\+Minifier}{$_cssMinifier}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+css\+Minifier = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a7e2cb042cf9c54594d78323128249f66}{}\label{class_minify___h_t_m_l_a7e2cb042cf9c54594d78323128249f66}
+
+
+Definition at line 27 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+is\+Xhtml@{\$\+\_\+is\+Xhtml}}
+\index{\$\+\_\+is\+Xhtml@{\$\+\_\+is\+Xhtml}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+is\+Xhtml}{$_isXhtml}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+is\+Xhtml = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a776a831ec77b14707f9f778980247f5c}{}\label{class_minify___h_t_m_l_a776a831ec77b14707f9f778980247f5c}
+
+
+Definition at line 24 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+js\+Clean\+Comments@{\$\+\_\+js\+Clean\+Comments}}
+\index{\$\+\_\+js\+Clean\+Comments@{\$\+\_\+js\+Clean\+Comments}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+js\+Clean\+Comments}{$_jsCleanComments}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+js\+Clean\+Comments = true\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a45f73ef72946f1789a51878da5137a4f}{}\label{class_minify___h_t_m_l_a45f73ef72946f1789a51878da5137a4f}
+
+
+Definition at line 23 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+js\+Minifier@{\$\+\_\+js\+Minifier}}
+\index{\$\+\_\+js\+Minifier@{\$\+\_\+js\+Minifier}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+js\+Minifier}{$_jsMinifier}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+js\+Minifier = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a2b2e64f084b0385ffb35ae53ee059d0f}{}\label{class_minify___h_t_m_l_a2b2e64f084b0385ffb35ae53ee059d0f}
+
+
+Definition at line 28 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+placeholders@{\$\+\_\+placeholders}}
+\index{\$\+\_\+placeholders@{\$\+\_\+placeholders}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+placeholders}{$_placeholders}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+placeholders = array()\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a3d9bdc0b92480ec4d920984f225b69cb}{}\label{class_minify___h_t_m_l_a3d9bdc0b92480ec4d920984f225b69cb}
+
+
+Definition at line 26 of file H\+T\+M\+L.\+php.
+
+\index{Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}!\$\+\_\+replacement\+Hash@{\$\+\_\+replacement\+Hash}}
+\index{\$\+\_\+replacement\+Hash@{\$\+\_\+replacement\+Hash}!Minify\+\_\+\+H\+T\+ML@{Minify\+\_\+\+H\+T\+ML}}
+\subsubsection[{\texorpdfstring{\$\+\_\+replacement\+Hash}{$_replacementHash}}]{\setlength{\rightskip}{0pt plus 5cm}\$\+\_\+replacement\+Hash = null\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_minify___h_t_m_l_a6fd24402e7ef89f7a53d3f28caa0e99d}{}\label{class_minify___h_t_m_l_a6fd24402e7ef89f7a53d3f28caa0e99d}
+
+
+Definition at line 25 of file H\+T\+M\+L.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jj/\+Projects/\+A\+S\+N/libraries/minify/\hyperlink{_h_t_m_l_8php}{H\+T\+M\+L.\+php}\end{DoxyCompactItemize}

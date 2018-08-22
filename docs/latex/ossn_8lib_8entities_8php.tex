@@ -1,0 +1,125 @@
+\hypertarget{ossn_8lib_8entities_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+entities.\+php File Reference}
+\label{ossn_8lib_8entities_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+entities.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+entities.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8entities_8php_a6167f40e5a04dc1984990eef4fc7c112}{ossn\+\_\+get\+\_\+entity} (\$guid)
+\item 
+\hyperlink{ossn_8lib_8entities_8php_a9f5ff2f2853395ef7cb7fd1824324395}{ossn\+\_\+get\+\_\+entities} (array \$params)
+\item 
+\hyperlink{ossn_8lib_8entities_8php_a19c9a51334805d8edbd6771d744c80c2}{ossn\+\_\+add\+\_\+entity} (array \$params)
+\item 
+\hyperlink{ossn_8lib_8entities_8php_a2b50eb56c2bc4fb10c823a33c12e7c9d}{ossn\+\_\+update\+\_\+entity} (\$guid, \$\hyperlink{fullpage_2plugin_8min_8js_ac56c57897e10f699d124e0103921aa20}{value})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}!ossn\+\_\+add\+\_\+entity@{ossn\+\_\+add\+\_\+entity}}
+\index{ossn\+\_\+add\+\_\+entity@{ossn\+\_\+add\+\_\+entity}!ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+add\+\_\+entity(array \$params)}{ossn_add_entity(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+add\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8entities_8php_a19c9a51334805d8edbd6771d744c80c2}{}\label{ossn_8lib_8entities_8php_a19c9a51334805d8edbd6771d744c80c2}
+Ossn Add Entity
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & search data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & Entity type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & Entity subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}value\textquotesingle{}\mbox{]}} & Entity Value \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & Owner guid \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}permission\textquotesingle{}\mbox{]}} & Permission (access of entity) \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}active\textquotesingle{}\mbox{]}} & 1 or 0 Does your entity is active?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file ossn.\+lib.\+entities.\+php.
+
+\index{ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}!ossn\+\_\+get\+\_\+entities@{ossn\+\_\+get\+\_\+entities}}
+\index{ossn\+\_\+get\+\_\+entities@{ossn\+\_\+get\+\_\+entities}!ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+entities(array \$params)}{ossn_get_entities(array $params)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+entities (
+\begin{DoxyParamCaption}
+\item[{array}]{\$params}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8entities_8php_a9f5ff2f2853395ef7cb7fd1824324395}{}\label{ossn_8lib_8entities_8php_a9f5ff2f2853395ef7cb7fd1824324395}
+Ossn Get Entities
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & search data \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}type\textquotesingle{}\mbox{]}} & Entity type \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}subtype\textquotesingle{}\mbox{]}} & Entity subtype \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}order\+\_\+by\textquotesingle{}\mbox{]}} & Order by (A\+SC , D\+E\+SC) \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}limit\textquotesingle{}\mbox{]}} & Limit for data that need to be fetched \\
+\hline
+string & {\em \$params,\mbox{[}\textquotesingle{}owner\+\_\+guid\textquotesingle{}\mbox{]}} & Owner guid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file ossn.\+lib.\+entities.\+php.
+
+\index{ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}!ossn\+\_\+get\+\_\+entity@{ossn\+\_\+get\+\_\+entity}}
+\index{ossn\+\_\+get\+\_\+entity@{ossn\+\_\+get\+\_\+entity}!ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+get\+\_\+entity(\$guid)}{ossn_get_entity($guid)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+get\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8entities_8php_a6167f40e5a04dc1984990eef4fc7c112}{}\label{ossn_8lib_8entities_8php_a6167f40e5a04dc1984990eef4fc7c112}
+Ossn Get Entity
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Guid of entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file ossn.\+lib.\+entities.\+php.
+
+\index{ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}!ossn\+\_\+update\+\_\+entity@{ossn\+\_\+update\+\_\+entity}}
+\index{ossn\+\_\+update\+\_\+entity@{ossn\+\_\+update\+\_\+entity}!ossn.\+lib.\+entities.\+php@{ossn.\+lib.\+entities.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+update\+\_\+entity(\$guid, \$value)}{ossn_update_entity($guid, $value)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+update\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{}]{\$guid, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8entities_8php_a2b50eb56c2bc4fb10c823a33c12e7c9d}{}\label{ossn_8lib_8entities_8php_a2b50eb56c2bc4fb10c823a33c12e7c9d}
+Ossn update entity
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$guid} & Entity guid \\
+\hline
+string & {\em \$value} & Entity new value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Definition at line 84 of file ossn.\+lib.\+entities.\+php.
+

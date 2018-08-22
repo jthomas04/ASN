@@ -1,0 +1,117 @@
+\hypertarget{ossn_8lib_8plugins_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.lib.\+plugins.\+php File Reference}
+\label{ossn_8lib_8plugins_8php}\index{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+plugins.\+php@{/home/jj/\+Projects/\+A\+S\+N/libraries/ossn.\+lib.\+plugins.\+php}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ossn_8lib_8plugins_8php_a51b2ffa9e53dee8b98b6029cd8e38dc2}{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path} (\$path)
+\item 
+\hyperlink{ossn_8lib_8plugins_8php_a09131ff3382e758ec6dba7bb2ea3ae32}{ossn\+\_\+plugin\+\_\+view} (\$plugin= \textquotesingle{}\textquotesingle{}, \$vars=array(), \$\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type}= \textquotesingle{}default\textquotesingle{})
+\item 
+\hyperlink{ossn_8lib_8plugins_8php_aef1ce7f1f2d0fb53812f67b278dd0599}{ossn\+\_\+uregister\+\_\+plugin\+\_\+view} (\$plugin)
+\item 
+\hyperlink{ossn_8lib_8plugins_8php_a8827763d8856dc85a4d62554d17c9003}{ossn\+\_\+plugins\+\_\+cache\+\_\+paths} ()
+\item 
+\hyperlink{ossn_8lib_8plugins_8php_adbd2e963171a0b069f736ee79914ce6b}{ossn\+\_\+plugin\+\_\+set} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}!ossn\+\_\+plugin\+\_\+set@{ossn\+\_\+plugin\+\_\+set}}
+\index{ossn\+\_\+plugin\+\_\+set@{ossn\+\_\+plugin\+\_\+set}!ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+plugin\+\_\+set()}{ossn_plugin_set()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+plugin\+\_\+set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8plugins_8php_adbd2e963171a0b069f736ee79914ce6b}{}\label{ossn_8lib_8plugins_8php_adbd2e963171a0b069f736ee79914ce6b}
+If cache enabled then load paths for cache
+
+\begin{DoxyReturn}{Returns}
+void; 
+\end{DoxyReturn}
+
+
+Definition at line 101 of file ossn.\+lib.\+plugins.\+php.
+
+\index{ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}!ossn\+\_\+plugin\+\_\+view@{ossn\+\_\+plugin\+\_\+view}}
+\index{ossn\+\_\+plugin\+\_\+view@{ossn\+\_\+plugin\+\_\+view}!ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+plugin\+\_\+view(\$plugin= \textquotesingle{}\textquotesingle{}, \$vars=array(), \$type= \textquotesingle{}default\textquotesingle{})}{ossn_plugin_view($plugin= '', $vars=array(), $type= 'default')}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+plugin\+\_\+view (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugin = {\ttfamily \textquotesingle{}\textquotesingle{}}, }
+\item[{}]{\$vars = {\ttfamily array()}, }
+\item[{}]{\$type = {\ttfamily \textquotesingle{}default\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8plugins_8php_a09131ff3382e758ec6dba7bb2ea3ae32}{}\label{ossn_8lib_8plugins_8php_a09131ff3382e758ec6dba7bb2ea3ae32}
+View a plugin Plugins are registered using \hyperlink{ossn_8lib_8plugins_8php_a51b2ffa9e53dee8b98b6029cd8e38dc2}{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path()}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plugin} & A valid plugin name; \\
+\hline
+array | object & {\em \$vars} & A valid arrays or object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void$\vert$mixed 
+\end{DoxyReturn}
+
+
+Definition at line 59 of file ossn.\+lib.\+plugins.\+php.
+
+\index{ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}!ossn\+\_\+plugins\+\_\+cache\+\_\+paths@{ossn\+\_\+plugins\+\_\+cache\+\_\+paths}}
+\index{ossn\+\_\+plugins\+\_\+cache\+\_\+paths@{ossn\+\_\+plugins\+\_\+cache\+\_\+paths}!ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+plugins\+\_\+cache\+\_\+paths()}{ossn_plugins_cache_paths()}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+plugins\+\_\+cache\+\_\+paths (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8plugins_8php_a8827763d8856dc85a4d62554d17c9003}{}\label{ossn_8lib_8plugins_8php_a8827763d8856dc85a4d62554d17c9003}
+Generate a paths for plugins for cache
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+
+
+Definition at line 88 of file ossn.\+lib.\+plugins.\+php.
+
+\index{ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}!ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path@{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path}}
+\index{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path@{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path}!ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path(\$path)}{ossn_register_plugins_by_path($path)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+register\+\_\+plugins\+\_\+by\+\_\+path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8plugins_8php_a51b2ffa9e53dee8b98b6029cd8e38dc2}{}\label{ossn_8lib_8plugins_8php_a51b2ffa9e53dee8b98b6029cd8e38dc2}
+Register a plugins by path This will help us to override components files easily.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A valid path; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Definition at line 10 of file ossn.\+lib.\+plugins.\+php.
+
+\index{ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}!ossn\+\_\+uregister\+\_\+plugin\+\_\+view@{ossn\+\_\+uregister\+\_\+plugin\+\_\+view}}
+\index{ossn\+\_\+uregister\+\_\+plugin\+\_\+view@{ossn\+\_\+uregister\+\_\+plugin\+\_\+view}!ossn.\+lib.\+plugins.\+php@{ossn.\+lib.\+plugins.\+php}}
+\subsubsection[{\texorpdfstring{ossn\+\_\+uregister\+\_\+plugin\+\_\+view(\$plugin)}{ossn_uregister_plugin_view($plugin)}}]{\setlength{\rightskip}{0pt plus 5cm}ossn\+\_\+uregister\+\_\+plugin\+\_\+view (
+\begin{DoxyParamCaption}
+\item[{}]{\$plugin}
+\end{DoxyParamCaption}
+)}\hypertarget{ossn_8lib_8plugins_8php_aef1ce7f1f2d0fb53812f67b278dd0599}{}\label{ossn_8lib_8plugins_8php_aef1ce7f1f2d0fb53812f67b278dd0599}
+Unregister a plugin view We need this if we want to disable a plugin view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$plugin} & A valid plugin name; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file ossn.\+lib.\+plugins.\+php.
+

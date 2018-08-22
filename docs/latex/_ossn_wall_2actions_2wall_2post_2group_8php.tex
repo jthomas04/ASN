@@ -1,0 +1,85 @@
+\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php}{}\section{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/group.php File Reference}
+\label{_ossn_wall_2actions_2wall_2post_2group_8php}\index{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/group.\+php@{/home/jj/\+Projects/\+A\+S\+N/components/\+Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a3fe8a689739786120fddd91dedeb172b}{\$\+Ossn\+Wall} = new \hyperlink{class_ossn_wall}{Ossn\+Wall}
+\item 
+\$\hyperlink{class_ossn_wall}{Ossn\+Wall} \hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a24eb7b66e353d8983f6f2af979250671}{poster\+\_\+guid} = \hyperlink{ossn_8lib_8users_8php_aa3c8068d0e6638b414d6a2f6c62565b8}{ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid
+\item 
+\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a9aabf46bdb166877480b2094d7ca01a7}{\$owner} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}wallowner\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(isset(\$owner)\&\&!empty(\$owner)) \$\hyperlink{class_ossn_wall}{Ossn\+Wall} \hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{type} = \textquotesingle{}group\textquotesingle{}
+\item 
+\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_a53d6c7669d97392c407c4f959a5263db}{\$post} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}post\textquotesingle{})
+\item 
+\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_afb66104a0d5a5b286634a265d216b8d6}{\$friends} = false
+\item 
+\hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_ac319193077976bb217112e5a7b7b8022}{\$location} = \hyperlink{ossn_8lib_8input_8php_a64ebee98b041c4f75f71ed3cd73cc8ed}{input}(\textquotesingle{}\hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location}\textquotesingle{})
+\item 
+\hyperlink{jquery_8tokeninput_8js_ad8dd46a3cbc004569e34401e9e71771a}{if}(\$\hyperlink{class_ossn_wall}{Ossn\+Wall}-\/$>$Post(\$post, \$friends, \$\hyperlink{_chart_8_doughnut_8js_a761c752fb16f7c0bfe1026b787ca0032}{location}, \hyperlink{ossn_8lib_8system_8php_a982684c5e83907832c9079348ec7edd3}{O\+S\+S\+N\+\_\+\+P\+R\+I\+V\+A\+TE})) \hyperlink{_ossn_wall_2actions_2wall_2post_2group_8php_ae7f30c1564dcb7344463fc71e818e572}{else}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!\$friends@{\$friends}}
+\index{\$friends@{\$friends}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{\$friends}{$friends}}]{\setlength{\rightskip}{0pt plus 5cm}\$friends = false}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_afb66104a0d5a5b286634a265d216b8d6}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_afb66104a0d5a5b286634a265d216b8d6}
+
+
+Definition at line 16 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!\$location@{\$location}}
+\index{\$location@{\$location}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{\$location}{$location}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf location} = {\bf input}(\textquotesingle{}{\bf location}\textquotesingle{})}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_ac319193077976bb217112e5a7b7b8022}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_ac319193077976bb217112e5a7b7b8022}
+
+
+Definition at line 17 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!\$\+Ossn\+Wall@{\$\+Ossn\+Wall}}
+\index{\$\+Ossn\+Wall@{\$\+Ossn\+Wall}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{\$\+Ossn\+Wall}{$OssnWall}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Wall} = new {\bf Ossn\+Wall}}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_a3fe8a689739786120fddd91dedeb172b}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_a3fe8a689739786120fddd91dedeb172b}
+
+
+Definition at line 4 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!\$owner@{\$owner}}
+\index{\$owner@{\$owner}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{\$owner}{$owner}}]{\setlength{\rightskip}{0pt plus 5cm}\$owner = {\bf input}(\textquotesingle{}wallowner\textquotesingle{})}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_a9aabf46bdb166877480b2094d7ca01a7}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_a9aabf46bdb166877480b2094d7ca01a7}
+
+
+Definition at line 8 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!\$post@{\$post}}
+\index{\$post@{\$post}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{\$post}{$post}}]{\setlength{\rightskip}{0pt plus 5cm}\$post = {\bf input}(\textquotesingle{}post\textquotesingle{})}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_a53d6c7669d97392c407c4f959a5263db}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_a53d6c7669d97392c407c4f959a5263db}
+
+
+Definition at line 15 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!else@{else}}
+\index{else@{else}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{else}{else}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (\${\bf Ossn\+Wall}-\/$>$Post(\$post, \$friends, \${\bf location}, {\bf O\+S\+S\+N\+\_\+\+P\+R\+I\+V\+A\+TE})) else}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_ae7f30c1564dcb7344463fc71e818e572}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_ae7f30c1564dcb7344463fc71e818e572}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+\{
+    \hyperlink{ossn_8lib_8system_8php_ab3f23f23f32f50c12e7aea0ffaccaac7}{ossn\_trigger\_message}(\hyperlink{ossn_8lib_8languages_8php_a2be5d1c4b695593a9b9067b96df2150a}{ossn\_print}(\textcolor{stringliteral}{'post:create:error'}), \textcolor{stringliteral}{'error'})
+\end{DoxyCode}
+
+
+Definition at line 34 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!poster\+\_\+guid@{poster\+\_\+guid}}
+\index{poster\+\_\+guid@{poster\+\_\+guid}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{poster\+\_\+guid}{poster_guid}}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf Ossn\+Wall} poster\+\_\+guid = {\bf ossn\+\_\+loggedin\+\_\+user}()-\/$>$guid}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_a24eb7b66e353d8983f6f2af979250671}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_a24eb7b66e353d8983f6f2af979250671}
+
+
+Definition at line 6 of file group.\+php.
+
+\index{Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}!type@{type}}
+\index{type@{type}!Ossn\+Wall/actions/wall/post/group.\+php@{Ossn\+Wall/actions/wall/post/group.\+php}}
+\subsubsection[{\texorpdfstring{type}{type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf if} (isset(\$owner)\&\&!empty(\$owner)) \${\bf Ossn\+Wall} type = \textquotesingle{}group\textquotesingle{}}\hypertarget{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}{}\label{_ossn_wall_2actions_2wall_2post_2group_8php_a2dc1bb4e1ed0029daa81ac0776b14b51}
+
+
+Definition at line 13 of file group.\+php.
+
