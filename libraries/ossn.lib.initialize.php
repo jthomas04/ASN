@@ -196,6 +196,7 @@ function ossn_pow_lnk_args() {
 		$lnk = base64_decode(OSSN_LNK);
 		$lnk = ossn_string_decrypt($lnk, 'ossn');
 		$lnk = trim($lnk);
+		//$lnk = "www.addiee.com";
 		
 		return array(
 				'name' => $pow,

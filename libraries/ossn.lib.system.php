@@ -394,7 +394,7 @@ function ossn_access_types() {
 		OSSN_PRIVATE
 	);
 }
-0
+
 /**
  * Validate Access
  *
